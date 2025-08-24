@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,10 +26,12 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardHeader>
       <CardContent className="p-6 flex-grow">
         <CardTitle className="text-xl font-semibold mb-2 leading-tight">{product.name}</CardTitle>
-        <CardDescription>{product.description}</CardDescription>
+        <CardDescription asChild>
+           <div dangerouslySetInnerHTML={{ __html: product.description || '' }} />
+        </CardDescription>
       </CardContent>
       <CardFooter className="p-6 pt-0 flex justify-between items-center">
-        <p className="text-2xl font-bold text-foreground">${product.price.toFixed(2)}</p>
+        <p className="text-2xl font-bold text-foreground">${product.price > 0 ? product.price.toFixed(2) : 'Cotizar'}</p>
         <Button asChild>
           <Link href="/contact">Cotizar</Link>
         </Button>

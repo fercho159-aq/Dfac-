@@ -34,7 +34,7 @@ export default function ProductsPage() {
           const productData = results.data.map((row: any) => ({
             id: String(row.ID),
             name: row.Nombre,
-            price: Number(row.Precio) || 0,
+            price: (Number(row.Precio) || 0) / 100,
             description: row.Descripción,
             image: row['URL Imagen'] || 'https://placehold.co/400x300.png',
             category: 'Accesorios' // Default category, as it's not in the CSV
