@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, Scaling, Wrench } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSelect, Scaling, ShoppingCart, Star, Wrench } from 'lucide-react';
 import Image from 'next/image';
+import { ProductCard } from '@/components/product-card';
+import { products } from '@/lib/data';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -19,6 +21,53 @@ const features = [
   "Precios competitivos en el mercado"
 ];
 
+const testimonials = [
+  {
+    name: "Constructora XYZ",
+    quote: "La calidad de los puntales y la velocidad de entrega de DFAC no tienen comparación. Son nuestro proveedor de confianza para cada obra.",
+    rating: 5,
+  },
+  {
+    name: "Ing. Roberto Morales",
+    quote: "El equipo de DFAC siempre está dispuesto a asesorarte. Gracias a ellos, optimizamos nuestros costos de apuntalamiento en un 15%.",
+    rating: 5,
+  },
+  {
+    name: "ARQ. Sofia Castillo",
+    quote: "Los andamios son robustos y seguros. La plataforma antideslizante es un detalle que marca la diferencia en la seguridad del personal.",
+    rating: 5,
+  }
+];
+
+const processSteps = [
+    {
+      icon: <PackageSelect className="w-12 h-12 text-primary" />,
+      title: "1. Elige tu material",
+      description: "Explora nuestro catálogo y selecciona los productos que necesitas."
+    },
+    {
+      icon: <ShoppingCart className="w-12 h-12 text-primary" />,
+      title: "2. Cotiza y Confirma",
+      description: "Recibe tu cotización al instante y confirma tu pedido con un asesor."
+    },
+    {
+      icon: <HardHat className="w-12 h-12 text-primary" />,
+      title: "3. Recibe en tu Obra",
+      description: "Recibe tu material en menos de 24 horas, listo para usarse."
+    }
+];
+
+const clientLogos = [
+    { name: 'Client Logo 1', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Client Logo 2', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Client Logo 3', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Client Logo 4', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Client Logo 5', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Client Logo 6', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+];
+
+const featuredProducts = products.slice(0, 3);
+
 export default function Home() {
   return (
     <>
@@ -26,48 +75,37 @@ export default function Home() {
       <section className="relative bg-card py-20 md:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-black font-headline text-foreground tracking-tight">
-            Soluciones para Cimbra, <span className="text-primary">Construcción sin Límites.</span>
+            Tu Socio en Cimbra y Andamiaje. <span className="text-primary">Calidad y Velocidad Garantizadas.</span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            En DFAC, proveemos los mejores accesorios para cimbra y andamiaje con la promesa de entrega más rápida del mercado.
+            En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con entrega en tu obra en menos de 24 horas.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/products">Ver Productos</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-              <Link href="#">Cotizar Ahora</Link>
+              <Link href="#">Solicitar Cotización</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section id="categories" className="py-20 bg-background">
+      {/* Client Logos Section */}
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestras Categorías</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Explora nuestra amplia gama de productos para cada necesidad de tu obra.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {categories.map((category) => (
-              <Link href={category.href} key={category.name} className="block">
-                <Card className="text-center h-full hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
-                  <CardHeader>
-                    {category.icon}
-                    <CardTitle className="text-xl font-semibold">{category.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-accent font-semibold">Ver más &rarr;</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
+            <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFIAN EN NOSOTROS</h3>
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+                {clientLogos.map((logo, index) => (
+                    <div key={index} className="flex justify-center">
+                        <Image src={logo.src} alt={logo.name} width={120} height={40} className="grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all" data-ai-hint={logo.hint}/>
+                    </div>
+                ))}
+            </div>
         </div>
       </section>
-      
-      {/* Features Section */}
+
+      {/* Benefits/Features Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -75,9 +113,9 @@ export default function Home() {
               <Image src="https://placehold.co/600x400.png" alt="Equipo de construcción" width={600} height={400} className="rounded-lg shadow-2xl" data-ai-hint="construction equipment" />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Por qué elegir DFAC?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Tu proyecto no puede esperar. El nuestro tampoco.</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Estamos comprometidos con el éxito de tu proyecto, ofreciendo calidad, velocidad y soporte inigualables.
+                Resolvemos los problemas más críticos de tu obra: tiempo, calidad y seguridad.
               </p>
               <ul className="mt-8 space-y-4">
                 {features.map((feature, index) => (
@@ -91,7 +129,7 @@ export default function Home() {
               </ul>
               <div className="mt-8">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href="#">Hablemos de tu proyecto</Link>
+                  <Link href="#">Cotiza tu Proyecto</Link>
                 </Button>
               </div>
             </div>
@@ -99,16 +137,82 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Products Section */}
+      <section id="featured-products" className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Productos Destacados</h2>
+            <p className="mt-4 text-lg text-muted-foreground">Material listo para resolver las necesidades de tu obra.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          <div className="text-center mt-12">
+             <Button asChild size="lg">
+                <Link href="/products">Ver Todo el Catálogo</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* How it Works Section */}
+      <section className="py-20 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en 3 Pasos</h2>
+                  <p className="mt-4 text-lg text-muted-foreground">Comienza a construir de forma más rápida y segura.</p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                  {processSteps.map((step) => (
+                      <div key={step.title} className="flex flex-col items-center">
+                          <div className="bg-primary-foreground p-4 rounded-full mb-4">{step.icon}</div>
+                          <h3 className="text-xl font-bold">{step.title}</h3>
+                          <p className="text-muted-foreground mt-2">{step.description}</p>
+                      </div>
+                  ))}
+              </div>
+          </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
+            <p className="mt-4 text-lg text-muted-foreground">Nuestros clientes son nuestra mejor carta de presentación.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="flex flex-col justify-between">
+                <CardHeader>
+                  <div className="flex items-center">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-foreground italic">"{testimonial.quote}"</p>
+                </CardContent>
+                <CardTitle className="p-6 pt-0 text-base font-semibold">- {testimonial.name}</CardTitle>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con nosotros?</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Contacta a nuestros expertos para una cotización inmediata y sin compromiso.
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la máxima eficiencia?</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-accent-foreground/80">
+            Contacta a nuestros expertos para una cotización inmediata y sin compromiso. Recibe la mejor asesoría para tu proyecto hoy mismo.
           </p>
           <form className="mt-8 max-w-md mx-auto flex gap-2">
-            <Input type="email" placeholder="Tu correo electrónico" className="py-6" required />
-            <Button type="submit" size="lg" className="py-6">Solicitar Información</Button>
+            <Input type="email" placeholder="Tu correo electrónico" className="py-6 text-foreground" required />
+            <Button type="submit" size="lg" className="py-6 bg-primary text-primary-foreground hover:bg-primary/90">Solicitar Información</Button>
           </form>
         </div>
       </section>
