@@ -69,10 +69,10 @@ export default function AboutPage() {
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-black font-headline text-white tracking-tight">
-            Somos el cimiento de tus <span className="text-primary">grandes proyectos</span>.
+            Somos el <b className="text-primary">cimiento</b> de tus <span className="text-primary">grandes proyectos</span>.
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-200">
-            Más que un proveedor, somos tu socio estratégico en cada obra, comprometidos con la seguridad, la calidad y la eficiencia.
+            Más que un proveedor, somos tu <b className="text-white">socio estratégico</b> en cada obra, comprometidos con la <b className="text-white">seguridad</b>, la <b className="text-white">calidad</b> y la <b className="text-white">eficiencia</b>.
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Quiénes Somos?</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-            En DFAC, nos dedicamos a proveer soluciones de cimbra y andamiaje que garantizan seguridad, eficiencia y rapidez en cada obra. Nacimos para resolver un problema clave en la construcción: la necesidad de contar con material de alta resistencia de forma inmediata. Por eso, nuestra promesa es simple y poderosa: <span className="font-semibold text-foreground">calidad que soporta tus ideas, entregada en menos de 24 horas.</span>
+            En DFAC, nos dedicamos a proveer <b className="text-foreground">soluciones de cimbra y andamiaje</b> que garantizan seguridad, eficiencia y rapidez en cada obra. Nacimos para resolver un problema clave en la construcción: la necesidad de contar con material de alta resistencia de forma inmediata. Por eso, nuestra promesa es simple y poderosa: <span className="font-semibold text-primary">calidad que soporta tus ideas, entregada en menos de 24 horas.</span>
             </p>
         </div>
       </section>
@@ -94,17 +94,17 @@ export default function AboutPage() {
                 <div className="flex flex-col items-center">
                     <Target className="w-12 h-12 text-primary mb-4" />
                     <h3 className="text-2xl font-bold">Misión</h3>
-                    <p className="text-muted-foreground mt-2">Facilitar el éxito de cada proyecto con accesorios de alta calidad y un servicio de entrega inigualable.</p>
+                    <p className="text-muted-foreground mt-2">Facilitar el <b className="text-foreground">éxito</b> de cada proyecto con accesorios de alta calidad y un servicio de entrega inigualable.</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <Eye className="w-12 h-12 text-primary mb-4" />
                     <h3 className="text-2xl font-bold">Visión</h3>
-                    <p className="text-muted-foreground mt-2">Ser el proveedor líder y de mayor confianza en soluciones para cimbra y andamiaje en todo el país.</p>
+                    <p className="text-muted-foreground mt-2">Ser el proveedor <b className="text-foreground">líder y de mayor confianza</b> en soluciones para cimbra y andamiaje en todo el país.</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <Gem className="w-12 h-12 text-primary mb-4" />
                     <h3 className="text-2xl font-bold">Valores</h3>
-                    <p className="text-muted-foreground mt-2">Confianza, Innovación, Responsabilidad, Pasión por el cliente.</p>
+                    <p className="text-muted-foreground mt-2"><b className="text-foreground">Confianza, Innovación, Responsabilidad, Pasión por el cliente.</b></p>
                 </div>
             </div>
         </div>
@@ -114,8 +114,8 @@ export default function AboutPage() {
         <section className="py-20 bg-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestra Trayectoria</h2>
-                    <p className="mt-4 text-lg text-muted-foreground">Más de una década construyendo confianza.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestra <span className="text-primary">Trayectoria</span></h2>
+                    <p className="mt-4 text-lg text-muted-foreground">Más de una década construyendo <b className="text-foreground">confianza</b>.</p>
                 </div>
                 <div className="relative">
                     {/* Linea de tiempo */}
@@ -126,7 +126,7 @@ export default function AboutPage() {
                             <div className="hidden md:block w-5/12"></div>
                             <div className="z-10 flex items-center justify-center bg-primary text-primary-foreground w-12 h-12 rounded-full font-bold text-lg">{milestone.year}</div>
                             <div className="w-full md:w-5/12 bg-card p-4 rounded-lg shadow-md ml-4 md:ml-0">
-                                <p className="text-foreground">{milestone.event}</p>
+                                <p className="text-foreground font-semibold">{milestone.event}</p>
                             </div>
                         </div>
                     ))}
@@ -138,8 +138,8 @@ export default function AboutPage() {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Equipo</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Las personas que hacen posible nuestro compromiso.</p>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Equipo</span></h2>
+            <p className="mt-4 text-lg text-muted-foreground">Las personas que hacen posible nuestro <b className="text-foreground">compromiso</b>.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
@@ -162,8 +162,8 @@ export default function AboutPage() {
       <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Por qué Confiar en DFAC?</h2>
-                  <p className="mt-4 text-lg text-muted-foreground">Te damos más que productos, te damos soluciones.</p>
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Por qué Confiar en <span className="text-primary">DFAC?</span></h2>
+                  <p className="mt-4 text-lg text-muted-foreground">Te damos más que productos, te damos <b className="text-foreground">soluciones</b>.</p>
               </div>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                   {differentiators.map((d) => (
@@ -194,9 +194,9 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para llevar tu proyecto al <br/><span className="italic">siguiente nivel?</span></h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
-            Contacta a nuestro equipo para obtener una cotización y asesoría personalizada.
+            Contacta a nuestro equipo para obtener una <b className="text-white">cotización y asesoría</b> personalizada.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">

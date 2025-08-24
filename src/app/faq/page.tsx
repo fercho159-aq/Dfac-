@@ -72,9 +72,9 @@ export default function FaqPage() {
     <>
       <div className="bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-black font-headline">Preguntas Frecuentes</h1>
+          <h1 className="text-4xl md:text-5xl font-black font-headline">Preguntas <span className="text-primary">Frecuentes</span></h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Aquí encontrarás respuesta a las dudas más comunes sobre nuestros productos, envíos y servicios. Queremos facilitar tu proceso de compra.
+            Aquí encontrarás respuesta a las dudas más comunes sobre nuestros <b className="text-foreground">productos, envíos y servicios</b>. Queremos <b className="text-foreground">facilitar tu proceso</b> de compra.
           </p>
         </div>
       </div>
@@ -99,14 +99,14 @@ export default function FaqPage() {
         </div>
 
         <div className="mt-16 text-center bg-primary text-primary-foreground p-10 rounded-lg">
-            <h2 className="text-3xl font-bold font-headline">¿No encontraste tu respuesta?</h2>
+            <h2 className="text-3xl font-bold font-headline">¿No encontraste tu <br/> <span className="italic">respuesta?</span></h2>
             <p className="mt-2 text-lg text-primary-foreground/80">
-                Nuestro equipo de expertos está listo para ayudarte.
+                Nuestro equipo de <b className="text-white">expertos</b> está listo para ayudarte.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" variant="secondary">
                     <Link href="/contact">
-                        <MessageSquare className="mr-2 h-5 w-5" /> Hablemos de tu proyecto
+                        <MessageSquare className="mr-2 h-5 w-5" /> <b className="font-bold">Hablemos de tu proyecto</b>
                     </Link>
                 </Button>
             </div>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from 'react';
@@ -63,8 +64,8 @@ export default function ProductsPage() {
     <div className="bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-black font-headline">Nuestro Catálogo de Productos</h1>
-          <p className="mt-4 text-lg text-muted-foreground">Encuentra todo lo que necesitas para tu proyecto de construcción.</p>
+          <h1 className="text-4xl md:text-5xl font-black font-headline">Nuestro Catálogo de <span className="text-primary">Productos</span></h1>
+          <p className="mt-4 text-lg text-muted-foreground">Encuentra <b className="text-foreground">todo lo que necesitas</b> para tu proyecto de construcción.</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">

@@ -85,7 +85,7 @@ const promotionImages = [
     { src: "https://placehold.co/400x300.png", alt: "Promoción 2", hint: "building offer" },
     { src: "https://placehold.co/400x300.png", alt: "Promoción 3", hint: "construction sale" },
     { src: "https://placehold.co/400x300.png", alt: "Promoción 4", hint: "equipment discount" },
-    { src: "https://placehold.co/400x300.png.png", alt: "Promoción 5", hint: "formwork deal" },
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 5", hint: "formwork deal" },
     { src: "https://placehold.co/400x300.png", alt: "Promoción 6", hint: "scaffolding special" },
 ]
 
@@ -99,7 +99,7 @@ export default function Home() {
             Tu Socio en Cimbra y Andamiaje. <span className="text-primary">Calidad y Velocidad Garantizadas.</span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con entrega en tu obra en menos de 24 horas.
+            En DFAC, te damos la <b className="text-foreground">confianza</b> para construir <b className="text-foreground">sin límites</b>. Accesorios de alta resistencia con entrega en tu obra en <b className="text-foreground">menos de 24 horas</b>.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-lg px-8 py-6">
@@ -134,9 +134,9 @@ export default function Home() {
               <Image src="https://placehold.co/600x400.png" alt="Equipo de construcción" width={600} height={400} className="rounded-lg shadow-2xl" data-ai-hint="construction equipment" />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Tu proyecto no puede esperar. El nuestro tampoco.</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Tu proyecto no puede esperar. <span className="text-primary">El nuestro tampoco.</span></h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Resolvemos los problemas más críticos de tu obra: tiempo, calidad y seguridad.
+                Resolvemos los problemas más críticos de tu obra: <b className="text-foreground">tiempo, calidad y seguridad</b>.
               </p>
               <ul className="mt-8 space-y-4">
                 {features.map((feature, index) => (
@@ -144,7 +144,7 @@ export default function Home() {
                     <div className="flex-shrink-0">
                       <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
                     </div>
-                    <p className="ml-3 text-lg text-foreground">{feature}</p>
+                    <p className="ml-3 text-lg text-foreground font-semibold">{feature}</p>
                   </li>
                 ))}
               </ul>
@@ -163,7 +163,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Productos Destacados</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Material listo para resolver las necesidades de tu obra.</p>
+            <p className="mt-4 text-lg text-muted-foreground">Material <b className="text-foreground">listo para resolver</b> las necesidades de tu obra.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProducts.map((product) => (
@@ -182,7 +182,7 @@ export default function Home() {
       <section id="promociones" className="py-20 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase text-primary tracking-wider">¡POR QUE TU LO PEDISTE! DESCUENTOS EXCLUSIVOS</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> DESCUENTOS EXCLUSIVOS</h2>
               </div>
               <Carousel 
                   opts={{
@@ -212,7 +212,7 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">QUEREMOS QUE TUS PROYECTOS SEAN TAN GRANDES COMO TUS SUEÑOS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="grid gap-4">
@@ -255,8 +255,8 @@ export default function Home() {
       <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en 3 Pasos</h2>
-                  <p className="mt-4 text-lg text-muted-foreground">Comienza a construir de forma más rápida y segura.</p>
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en <span className="text-primary">3 Pasos Simples</span></h2>
+                  <p className="mt-4 text-lg text-muted-foreground">Comienza a construir de forma más <b className="text-foreground">rápida y segura</b>.</p>
               </div>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                   {processSteps.map((step) => (
@@ -275,7 +275,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Nuestros clientes son nuestra mejor carta de presentación.</p>
+            <p className="mt-4 text-lg text-muted-foreground">Nuestros <b className="text-foreground">clientes</b> son nuestra mejor carta de presentación.</p>
           </div>
           <Carousel
             opts={{
@@ -312,9 +312,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la máxima eficiencia?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la <br/> <span className="italic">máxima eficiencia</span>?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
-            Contacta a nuestros expertos para una cotización inmediata y sin compromiso. Recibe la mejor asesoría para tu proyecto hoy mismo.
+            Contacta a nuestros expertos para una <b className="text-white">cotización inmediata</b> y sin compromiso. Recibe la mejor asesoría para tu proyecto <b className="text-white">hoy mismo</b>.
           </p>
           <div className="mt-8">
              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
