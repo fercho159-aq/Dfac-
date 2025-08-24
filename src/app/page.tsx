@@ -24,7 +24,7 @@ const features = [
 ];
 
 const testimonials = [
-  {
+    {
     name: "Constructora XYZ",
     quote: "La calidad de los puntales y la velocidad de entrega de DFAC no tienen comparación. Son nuestro proveedor de confianza para cada obra.",
     rating: 5,
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="relative bg-card py-20 md:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-black font-headline text-foreground tracking-tight">
-            Tu Socio en Cimbra y Andamiaje. <span className="text-primary">Calidad y Velocidad Garantizadas.</span>
+            Tu Socio en Cimbra y Andamiaje. <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">Calidad y Velocidad Garantizadas.</span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
             En DFAC, te damos la <b className="text-foreground">confianza</b> para construir <b className="text-foreground">sin límites</b>. Accesorios de alta resistencia con entrega en tu obra en <b className="text-foreground">menos de 24 horas</b>.
@@ -326,3 +326,5 @@ export default function Home() {
     </>
   );
 }
+
+    
