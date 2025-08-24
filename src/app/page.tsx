@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -140,57 +140,66 @@ const heroSlides = [
 ];
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
-       <section className="relative w-full h-screen-hero">
-        <Carousel
-          plugins={[plugin.current]}
-          className="w-full h-full"
-          opts={{ loop: true }}
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-        >
-          <CarouselContent className="h-full">
-            {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-full">
-                <div className="relative w-full h-full">
-                  <Image
-                    src={slide.image}
-                    alt={slide.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="brightness-50"
-                    data-ai-hint={slide.hint}
-                    priority={index === 0}
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-                       <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight" dangerouslySetInnerHTML={{ __html: `${slide.title} <span class="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">${slide.subtitle}</span>`}}>
-                      </h1>
-                      <p className="mt-6 text-lg md:text-xl text-slate-200" dangerouslySetInnerHTML={{ __html: slide.description }}>
-                      </p>
-                      <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button asChild size="lg" className="text-lg px-8 py-6">
-                          <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5"/></Link>
-                        </Button>
-                        <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 text-white border-white hover:bg-white hover:text-primary">
-                          <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
-                        </Button>
+      <section className="relative w-full h-screen-hero">
+        {isClient ? (
+          <Carousel
+            plugins={[plugin.current]}
+            className="w-full h-full"
+            opts={{ loop: true }}
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+          >
+            <CarouselContent className="h-full">
+              {heroSlides.map((slide, index) => (
+                <CarouselItem key={index} className="h-full">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={slide.image}
+                      alt={slide.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="brightness-50"
+                      data-ai-hint={slide.hint}
+                      priority={index === 0}
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+                      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                        <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight" dangerouslySetInnerHTML={{ __html: `${slide.title} <span class="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">${slide.subtitle}</span>`}}>
+                        </h1>
+                        <p className="mt-6 text-lg md:text-xl text-slate-200" dangerouslySetInnerHTML={{ __html: slide.description }}>
+                        </p>
+                        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                          <Button asChild size="lg" className="text-lg px-8 py-6">
+                            <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5"/></Link>
+                          </Button>
+                          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 text-white border-white hover:bg-white hover:text-primary">
+                            <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-        </Carousel>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+          </Carousel>
+        ) : (
+          <div className="w-full h-full bg-card" />
+        )}
       </section>
 
       {/* Client Logos Section */}
@@ -407,3 +416,5 @@ export default function Home() {
     </>
   );
 }
+
+    
