@@ -9,9 +9,10 @@ import { Input } from '@/components/ui/input';
 import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
-import { products } from '@/lib/data';
+import { Product } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
+import Papa from 'papaparse';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -92,8 +93,6 @@ const clientLogos = [
     { name: 'Client Logo 6', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
 ];
 
-const featuredProducts = products.slice(0, 3);
-
 const promotionImages = [
     { src: "https://placehold.co/400x300.png", alt: "Promoción 1", hint: "construction promotion" },
     { src: "https://placehold.co/400x300.png", alt: "Promoción 2", hint: "building offer" },
@@ -141,12 +140,40 @@ const heroSlides = [
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
+  const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
   useEffect(() => {
     setIsClient(true);
+    
+    const fetchProducts = async () => {
+      const response = await fetch('/data/products.csv');
+      const reader = response.body?.getReader();
+      const result = await reader?.read();
+      const decoder = new TextDecoder('utf-8');
+      const csv = decoder.decode(result?.value);
+      
+      Papa.parse(csv, {
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        complete: (results) => {
+          const productData = results.data.map((row: any) => ({
+            id: String(row.ID),
+            name: row.Nombre,
+            price: Number(row.Precio) || 0,
+            description: row.Descripción,
+            image: row['URL Imagen'] || 'https://placehold.co/400x300.png',
+            category: 'Accesorios' // Default category, as it's not in the CSV
+          }));
+          setFeaturedProducts(productData.slice(0, 3));
+        }
+      });
+    };
+
+    fetchProducts();
   }, []);
 
   return (

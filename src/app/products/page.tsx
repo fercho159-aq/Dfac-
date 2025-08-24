@@ -1,30 +1,61 @@
 
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { ProductCard } from '@/components/product-card';
-import { products, categories } from '@/lib/data';
+import { categories, Product } from '@/lib/data';
 import { ListFilter, Search } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
+import Papa from 'papaparse';
 
 export default function ProductsPage() {
+  const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch('/data/products.csv');
+      const reader = response.body?.getReader();
+      const result = await reader?.read();
+      const decoder = new TextDecoder('utf-8');
+      const csv = decoder.decode(result?.value);
+      
+      Papa.parse(csv, {
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        complete: (results) => {
+          const productData = results.data.map((row: any) => ({
+            id: String(row.ID),
+            name: row.Nombre,
+            price: Number(row.Precio) || 0,
+            description: row.Descripción,
+            image: row['URL Imagen'] || 'https://placehold.co/400x300.png',
+            category: 'Accesorios' // Default category, as it's not in the CSV
+          }));
+          setAllProducts(productData);
+        }
+      });
+    };
+
+    fetchProducts();
+  }, []);
+
   const filteredProducts = useMemo(() => {
-    return products
+    return allProducts
       .filter(product => 
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
       )
       .filter(product => 
         selectedCategory === 'all' || product.category.toLowerCase() === categories.find(c => c.id === selectedCategory)?.name.toLowerCase()
       );
-  }, [searchTerm, selectedCategory]);
+  }, [searchTerm, selectedCategory, allProducts]);
   
   const FilterSidebarContent = () => (
     <div className="space-y-6">
