@@ -11,7 +11,6 @@ import { ProductCard } from '@/components/product-card';
 import { categories, Product } from '@/lib/data';
 import { ListFilter, Search } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import Papa from 'papaparse';
 
 export default function ProductsPage() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -20,28 +19,17 @@ export default function ProductsPage() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('/data/products.csv');
-      const reader = response.body?.getReader();
-      const result = await reader?.read();
-      const decoder = new TextDecoder('utf-8');
-      const csv = decoder.decode(result?.value);
-      
-      Papa.parse(csv, {
-        header: true,
-        dynamicTyping: true,
-        skipEmptyLines: true,
-        complete: (results) => {
-          const productData = results.data.map((row: any) => ({
-            id: String(row.ID),
-            name: row.Nombre,
-            price: (Number(row.Precio) || 0) / 100,
-            description: row.Descripción,
-            image: row['URL Imagen'] || 'https://placehold.co/400x300.png',
-            category: 'Accesorios' // Default category, as it's not in the CSV
-          }));
-          setAllProducts(productData);
-        }
-      });
+      const response = await fetch('/data/products.json');
+      const data = await response.json();
+      const productData = data.map((row: any) => ({
+        id: String(row.id),
+        name: row.name,
+        price: (Number(row.prices.price) || 0) / 100,
+        description: row.description,
+        image: row.images[0]?.src || 'https://placehold.co/400x300.png',
+        category: row.categories[0]?.name || 'Accesorios'
+      }));
+      setAllProducts(productData);
     };
 
     fetchProducts();

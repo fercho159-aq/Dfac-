@@ -12,7 +12,6 @@ import { ProductCard } from '@/components/product-card';
 import { Product } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
-import Papa from 'papaparse';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -149,28 +148,17 @@ export default function Home() {
     setIsClient(true);
     
     const fetchProducts = async () => {
-      const response = await fetch('/data/products.csv');
-      const reader = response.body?.getReader();
-      const result = await reader?.read();
-      const decoder = new TextDecoder('utf-8');
-      const csv = decoder.decode(result?.value);
-      
-      Papa.parse(csv, {
-        header: true,
-        dynamicTyping: true,
-        skipEmptyLines: true,
-        complete: (results) => {
-          const productData = results.data.map((row: any) => ({
-            id: String(row.ID),
-            name: row.Nombre,
-            price: (Number(row.Precio) || 0) / 100,
-            description: row.Descripción,
-            image: row['URL Imagen'] || 'https://placehold.co/400x300.png',
-            category: 'Accesorios' // Default category, as it's not in the CSV
-          }));
-          setFeaturedProducts(productData.slice(0, 3));
-        }
-      });
+      const response = await fetch('/data/products.json');
+      const data = await response.json();
+      const productData = data.map((row: any) => ({
+        id: String(row.id),
+        name: row.name,
+        price: (Number(row.prices.price) || 0) / 100,
+        description: row.description,
+        image: row.images[0]?.src || 'https://placehold.co/400x300.png',
+        category: row.categories[0]?.name || 'Accesorios'
+      }));
+      setFeaturedProducts(productData.slice(0, 3));
     };
 
     fetchProducts();
