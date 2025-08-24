@@ -69,7 +69,7 @@ export default function AboutPage() {
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-black font-headline text-white tracking-tight">
-            Somos el <b className="text-primary">cimiento</b> de tus <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">grandes proyectos</span>.
+            Somos el <b className="text-primary">cimiento</b> de tus <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg">grandes proyectos</span>.
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-200">
             Más que un proveedor, somos tu <b className="text-white">socio estratégico</b> en cada obra, comprometidos con la <b className="text-white">seguridad</b>, la <b className="text-white">calidad</b> y la <b className="text-white">eficiencia</b>.
@@ -208,7 +208,3 @@ export default function AboutPage() {
     </>
   );
 }
-
-    
-
-    

@@ -14,7 +14,7 @@ export default function ContactPage() {
     <>
       <div className="bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-black font-headline">Hablemos de tu <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">proyecto</span></h1>
+          <h1 className="text-4xl md:text-5xl font-black font-headline">Hablemos de tu <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg">proyecto</span></h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Estamos <b className="text-foreground">listos para ayudarte</b>. Déjanos un mensaje y te responderemos lo antes posible.
           </p>
@@ -118,5 +118,3 @@ export default function ContactPage() {
     </>
   );
 }
-
-    

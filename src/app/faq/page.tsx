@@ -99,7 +99,7 @@ export default function FaqPage() {
         </div>
 
         <div className="mt-16 text-center bg-primary text-primary-foreground p-10 rounded-lg">
-            <h2 className="text-3xl font-bold font-headline">¿No encontraste tu <br/> <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-background rounded-lg italic">respuesta?</span></h2>
+            <h2 className="text-3xl font-bold font-headline">¿No encontraste tu <br/> <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-background rounded-lg italic">respuesta?</span></h2>
             <p className="mt-2 text-lg text-primary-foreground/80">
                 Nuestro equipo de <b className="text-white">expertos</b> está listo para ayudarte.
             </p>
@@ -115,5 +115,3 @@ export default function FaqPage() {
     </>
   );
 }
-
-    
