@@ -37,6 +37,16 @@ const testimonials = [
     name: "ARQ. Sofia Castillo",
     quote: "Los andamios son robustos y seguros. La plataforma antideslizante es un detalle que marca la diferencia en la seguridad del personal.",
     rating: 5,
+  },
+  {
+    name: "Grupo Constructor Alfa",
+    quote: "Tuvimos un requerimiento de último minuto y DFAC nos resolvió en tiempo récord. Su servicio al cliente es excepcional.",
+    rating: 5,
+  },
+  {
+    name: "Proyectos Verticales S.A.",
+    quote: "Su catálogo es muy completo. Encontramos todo lo que necesitábamos para el sistema de cimbra de nuestro nuevo edificio en un solo lugar.",
+    rating: 5,
   }
 ];
 
@@ -85,7 +95,7 @@ export default function Home() {
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/products">Ver Productos</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground">
               <Link href="/contact">Solicitar Cotización</Link>
             </Button>
           </div>
