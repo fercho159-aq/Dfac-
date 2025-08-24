@@ -1,0 +1,53 @@
+import Link from "next/link"
+import { HardHat, Mail, Phone } from "lucide-react"
+import { Button } from "./ui/button"
+
+export function Footer() {
+  return (
+    <footer className="bg-card border-t">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-foreground">
+              <HardHat className="h-8 w-8 text-primary" />
+              <span className="font-black">DFAC</span>
+            </Link>
+            <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground">Navegación</h3>
+            <ul className="mt-4 space-y-2">
+              <li><Link href="/" className="text-muted-foreground hover:text-primary transition-colors">Inicio</Link></li>
+              <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">Productos</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground">Contacto</h3>
+            <ul className="mt-4 space-y-2">
+              <li className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                <Phone className="h-5 w-5" />
+                <span>+52 123 456 7890</span>
+              </li>
+              <li className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                <Mail className="h-5 w-5" />
+                <span>ventas@dfac.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-foreground">Legal</h3>
+            <ul className="mt-4 space-y-2">
+              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</Link></li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-8 border-t pt-8 text-center text-muted-foreground">
+          <p>&copy; {new Date().getFullYear()} DFAC. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
