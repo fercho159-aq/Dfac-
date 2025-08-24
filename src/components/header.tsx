@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/products", label: "Productos" },
   { href: "/about", label: "Nosotros" },
   { href: "/faq", label: "Preguntas frecuentes" },
-  { href: "/contact", label: "Contacto" },
 ];
 
 export function Header() {
