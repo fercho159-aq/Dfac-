@@ -39,7 +39,7 @@ const testimonials = [
     quote: "Los andamios son robustos y seguros. La plataforma antideslizante es un detalle que marca la diferencia en la seguridad del personal.",
     rating: 5,
   },
-  {
+   {
     name: "Grupo Constructor Alfa",
     quote: "Tuvimos un requerimiento de último minuto y DFAC nos resolvió en tiempo récord. Su servicio al cliente es excepcional.",
     rating: 5,
@@ -169,8 +169,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it Works Section */}
+      {/* Mosaic Gallery Section */}
       <section className="py-20 bg-card">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">QUEREMOS QUE TUS PROYECTOS SEAN TAN GRANDES COMO TUS SUEÑOS</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid gap-4">
+              <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x600.png" alt="Proyecto de construcción 1" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction architecture" />
+              </div>
+              <div className="overflow-hidden rounded-lg shadow-lg">
+                 <Image src="https://placehold.co/400x400.png" alt="Detalle de andamio" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="scaffolding detail" />
+              </div>
+            </div>
+            <div className="grid gap-4">
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x400.png" alt="Equipo trabajando en obra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction workers" />
+              </div>
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x600.png" alt="Estructura de edificio" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="building structure" />
+              </div>
+            </div>
+            <div className="grid gap-4">
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x600.png" alt="Proyecto de construcción 2" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="modern architecture" />
+              </div>
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                 <Image src="https://placehold.co/400x400.png" alt="Material de cimbra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="formwork materials" />
+              </div>
+            </div>
+             <div className="grid gap-4">
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x400.png" alt="Vista aérea de construcción" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction site aerial" />
+              </div>
+               <div className="overflow-hidden rounded-lg shadow-lg">
+                <Image src="https://placehold.co/400x600.png" alt="Detalle de puntal" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="shoring post" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it Works Section */}
+      <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en 3 Pasos</h2>
@@ -178,8 +221,8 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                   {processSteps.map((step) => (
-                      <div key={step.title} className="flex flex-col items-center">
-                          <div className="bg-primary-foreground p-4 rounded-full mb-4">{step.icon}</div>
+                      <div key={step.title} className="flex flex-col items-center p-6 bg-card rounded-lg shadow-md border">
+                          <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">{step.icon}</div>
                           <h3 className="text-xl font-bold">{step.title}</h3>
                           <p className="text-muted-foreground mt-2">{step.description}</p>
                       </div>
@@ -189,7 +232,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-background">
+      <section id="testimonials" className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
@@ -200,31 +243,29 @@ export default function Home() {
               align: "start",
               loop: true,
             }}
-            className="w-full"
+            className="w-full max-w-4xl mx-auto"
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="flex flex-col justify-between h-full">
-                      <CardHeader>
-                        <div className="flex items-center">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <div className="p-4 h-full">
+                    <Card className="flex flex-col justify-between h-full text-center p-6">
+                       <CardContent className="flex-grow mb-4">
+                        <p className="text-foreground text-lg italic">"{testimonial.quote}"</p>
+                      </CardContent>
+                      <div className="flex items-center justify-center mb-2">
                           {Array.from({ length: testimonial.rating }).map((_, i) => (
-                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                            <Star key={i} className="w-5 h-5 text-primary fill-current" />
                           ))}
                         </div>
-                      </CardHeader>
-                      <CardContent className="flex-grow">
-                        <p className="text-foreground italic">"{testimonial.quote}"</p>
-                      </CardContent>
-                      <CardTitle className="p-6 pt-0 text-base font-semibold">- {testimonial.name}</CardTitle>
+                      <CardTitle className="text-base font-semibold">- {testimonial.name}</CardTitle>
                     </Card>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-[-50px]" />
+            <CarouselNext className="right-[-50px]" />
           </Carousel>
         </div>
       </section>
