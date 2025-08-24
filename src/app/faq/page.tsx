@@ -98,13 +98,13 @@ export default function FaqPage() {
           ))}
         </div>
 
-        <div className="mt-16 text-center bg-accent text-accent-foreground p-10 rounded-lg">
+        <div className="mt-16 text-center bg-primary text-primary-foreground p-10 rounded-lg">
             <h2 className="text-3xl font-bold font-headline">¿No encontraste tu respuesta?</h2>
-            <p className="mt-2 text-lg text-accent-foreground/80">
+            <p className="mt-2 text-lg text-primary-foreground/80">
                 Nuestro equipo de expertos está listo para ayudarte.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button asChild size="lg" variant="secondary">
                     <Link href="/contact">
                         <MessageSquare className="mr-2 h-5 w-5" /> Hablemos de tu proyecto
                     </Link>

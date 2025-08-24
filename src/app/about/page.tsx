@@ -192,14 +192,14 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-accent-foreground/80">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
             Contacta a nuestro equipo para obtener una cotización y asesoría personalizada.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+            <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
                 <Link href="/contact">Hablemos de tu Proyecto</Link>
             </Button>
           </div>

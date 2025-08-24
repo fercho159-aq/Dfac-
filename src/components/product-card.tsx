@@ -29,7 +29,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="p-6 pt-0 flex justify-between items-center">
         <p className="text-2xl font-bold text-foreground">${product.price.toFixed(2)}</p>
-        <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+        <Button asChild>
           <Link href="/contact">Cotizar</Link>
         </Button>
       </CardFooter>

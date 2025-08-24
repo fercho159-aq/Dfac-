@@ -105,7 +105,7 @@ export default function Home() {
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/products">Ver Productos</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Link href="/contact">Solicitar Cotización</Link>
             </Button>
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-8">
-                <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button asChild size="lg">
                   <Link href="/contact">Cotiza tu Proyecto</Link>
                 </Button>
               </div>
@@ -294,7 +294,7 @@ export default function Home() {
                       </CardContent>
                       <div className="flex items-center justify-center mb-2">
                           {Array.from({ length: testimonial.rating }).map((_, i) => (
-                            <Star key={i} className="w-5 h-5 text-primary fill-current" />
+                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                           ))}
                         </div>
                       <CardTitle className="text-base font-semibold">- {testimonial.name}</CardTitle>
@@ -310,14 +310,14 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-accent text-accent-foreground">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la máxima eficiencia?</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-accent-foreground/80">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
             Contacta a nuestros expertos para una cotización inmediata y sin compromiso. Recibe la mejor asesoría para tu proyecto hoy mismo.
           </p>
           <div className="mt-8">
-             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
                 <Link href="/contact">Solicitar Información</Link>
             </Button>
           </div>

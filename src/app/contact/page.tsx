@@ -46,7 +46,7 @@ export default function ContactPage() {
                   <Label htmlFor="message">Mensaje</Label>
                   <Textarea id="message" placeholder="¿En qué podemos ayudarte?" rows={5} />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button type="submit" size="lg" className="w-full">
                   Enviar Mensaje
                 </Button>
               </form>

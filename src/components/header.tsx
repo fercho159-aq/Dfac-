@@ -46,10 +46,10 @@ export function Header() {
           </nav>
           <div className="flex items-center space-x-4">
              <div className="hidden sm:flex items-center space-x-2 bg-secondary px-3 py-2 rounded-full">
-               <Truck className="h-6 w-6 text-accent animate-pulse" />
-               <span className="text-sm font-semibold text-accent">Entrega en 24 horas</span>
+               <Truck className="h-6 w-6 text-primary animate-pulse" />
+               <span className="text-sm font-semibold text-primary">Entrega en 24 horas</span>
              </div>
-            <Button asChild className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild className="hidden md:inline-flex">
               <Link href="/contact">Contáctenos</Link>
             </Button>
             <div className="md:hidden">
@@ -81,10 +81,10 @@ export function Header() {
                       ))}
                     </nav>
                      <div className="flex sm:hidden items-center space-x-2 bg-secondary px-3 py-2 rounded-full">
-                       <Truck className="h-6 w-6 text-accent animate-pulse" />
-                       <span className="text-sm font-semibold text-accent">Entrega en 24 horas</span>
+                       <Truck className="h-6 w-6 text-primary animate-pulse" />
+                       <span className="text-sm font-semibold text-primary">Entrega en 24 horas</span>
                      </div>
-                    <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button asChild className="w-full">
                       <Link href="/contact" onClick={() => setIsOpen(false)}>Contáctenos</Link>
                     </Button>
                   </div>
