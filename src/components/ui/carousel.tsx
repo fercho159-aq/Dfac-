@@ -4,6 +4,7 @@ import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
+import Autoplay from "embla-carousel-autoplay"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -19,6 +20,8 @@ type CarouselProps = {
   plugins?: CarouselPlugin
   orientation?: "horizontal" | "vertical"
   setApi?: (api: CarouselApi) => void
+  autoplayDelay?: number
+  autoplayOptions?: Parameters<typeof Autoplay>[0]
 }
 
 type CarouselContextProps = {
@@ -54,16 +57,26 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      autoplayDelay,
+      autoplayOptions,
       ...props
     },
     ref
   ) => {
+    const autoplayPlugin = React.useRef(
+        Autoplay({
+            delay: autoplayDelay || 5000,
+            stopOnInteraction: true,
+            ...autoplayOptions,
+        })
+    );
+
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
       },
-      plugins
+      [...(plugins || []), autoplayDelay ? autoplayPlugin.current : []]
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
@@ -157,11 +170,11 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel()
 
   return (
-    <div ref={carouselRef} className="overflow-hidden">
+    <div ref={carouselRef} className="overflow-hidden h-full">
       <div
         ref={ref}
         className={cn(
-          "flex",
+          "flex h-full",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
@@ -260,3 +273,5 @@ export {
   CarouselPrevious,
   CarouselNext,
 }
+
+    

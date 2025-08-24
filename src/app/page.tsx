@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/data';
@@ -48,6 +48,16 @@ const testimonials = [
     name: "Proyectos Verticales S.A.",
     quote: "Su catálogo es muy completo. Encontramos todo lo que necesitábamos para el sistema de cimbra de nuestro nuevo edificio en un solo lugar.",
     rating: 5,
+  },
+  {
+    name: "Desarrollos Urbanos MX",
+    quote: "La asesoría técnica que recibimos fue clave para el éxito de nuestro proyecto más reciente. ¡Totalmente recomendados!",
+    rating: 5
+  },
+  {
+    name: "Edifica Corp.",
+    quote: "Los precios son muy competitivos y la calidad del material es de primera. No hemos tenido un solo problema.",
+    rating: 5
   }
 ];
 
@@ -89,27 +99,91 @@ const promotionImages = [
     { src: "https://placehold.co/400x300.png", alt: "Promoción 6", hint: "scaffolding special" },
 ]
 
+const heroSlides = [
+    {
+        image: "https://placehold.co/1920x1080.png",
+        hint: "construction site scaffolding",
+        title: "Tu Socio en Cimbra y Andamiaje",
+        subtitle: "Calidad y Velocidad Garantizadas",
+        description: "En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con entrega en tu obra en menos de 24 horas.",
+        cta1_text: "Ver Productos",
+        cta1_href: "/products",
+        cta2_text: "Solicitar Cotización",
+        cta2_href: "/contact"
+    },
+    {
+        image: "https://placehold.co/1920x1080.png",
+        hint: "construction workers logistics",
+        title: "Entrega Inmediata en tu Obra",
+        subtitle: "Material listo en menos de 24H",
+        description: "Sabemos que tu tiempo es oro. Nuestro sistema logístico asegura que tengas lo que necesitas, justo cuando lo necesitas.",
+        cta1_text: "Conoce más",
+        cta1_href: "/about",
+        cta2_text: "Contáctanos",
+        cta2_href: "/contact"
+    },
+    {
+        image: "https://placehold.co/1920x1080.png",
+        hint: "engineer planning construction",
+        title: "Asesoría Experta para tu Proyecto",
+        subtitle: "Maximizamos tu seguridad y eficiencia",
+        description: "No solo vendemos productos, ofrecemos soluciones. Nuestro equipo te acompaña para garantizar el éxito de tu obra.",
+        cta1_text: "Nuestros Servicios",
+        cta1_href: "/faq",
+        cta2_text: "Hablar con un experto",
+        cta2_href: "/contact"
+    }
+];
+
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-card py-20 md:py-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-black font-headline text-foreground tracking-tight">
-            Tu Socio en Cimbra y Andamiaje. <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">Calidad y Velocidad Garantizadas.</span>
-          </h1>
-          <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            En DFAC, te damos la <b className="text-foreground">confianza</b> para construir <b className="text-foreground">sin límites</b>. Accesorios de alta resistencia con entrega en tu obra en <b className="text-foreground">menos de 24 horas</b>.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-6">
-              <Link href="/products">Ver Productos</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href="/contact">Solicitar Cotización</Link>
-            </Button>
-          </div>
-        </div>
+       <section className="relative w-full h-screen-hero">
+        <Carousel
+          opts={{ loop: true }}
+          className="w-full h-full"
+          autoplayDelay={5000}
+          autoplayOptions={{ stopOnInteraction: false }}
+        >
+          <CarouselContent className="h-full">
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index} className="h-full">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="brightness-50"
+                    data-ai-hint={slide.hint}
+                    priority={index === 0}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                       <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight">
+                        {slide.title} <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">{slide.subtitle}</span>
+                      </h1>
+                      <p className="mt-6 text-lg md:text-xl text-slate-200">
+                        {slide.description}
+                      </p>
+                      <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button asChild size="lg" className="text-lg px-8 py-6">
+                          <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5"/></Link>
+                        </Button>
+                        <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 text-white border-white hover:bg-white hover:text-primary">
+                          <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+        </Carousel>
       </section>
 
       {/* Client Logos Section */}
@@ -326,5 +400,7 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
