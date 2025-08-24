@@ -1,6 +1,5 @@
 import Link from "next/link"
-import { HardHat, Mail, Phone } from "lucide-react"
-import { Button } from "./ui/button"
+import { HardHat, Mail, Phone, Facebook, Instagram, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -13,6 +12,11 @@ export function Footer() {
               <span className="font-black">DFAC</span>
             </Link>
             <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
+            <div className="flex space-x-4">
+                <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook /></Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram /></Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary"><Linkedin /></Link>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-foreground">Navegación</h3>
@@ -21,19 +25,19 @@ export function Footer() {
               <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">Productos</Link></li>
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
               <li><Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">Preguntas frecuentes</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-foreground">Contacto</h3>
             <ul className="mt-4 space-y-2">
-              <li className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-                <Phone className="h-5 w-5" />
-                <span>+52 123 456 7890</span>
+              <li className="flex items-center space-x-2 text-muted-foreground">
+                <Phone className="h-5 w-5 text-primary" />
+                <a href="tel:+521234567890" className="hover:text-primary transition-colors">+52 123 456 7890</a>
               </li>
-              <li className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-                <Mail className="h-5 w-5" />
-                <span>ventas@dfac.com</span>
+              <li className="flex items-center space-x-2 text-muted-foreground">
+                <Mail className="h-5 w-5 text-primary" />
+                <a href="mailto:ventas@dfac.com" className="hover:text-primary transition-colors">ventas@dfac.com</a>
               </li>
             </ul>
           </div>

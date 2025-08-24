@@ -105,13 +105,8 @@ export default function FaqPage() {
             </p>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                    <Link href="#">
-                        <MessageSquare className="mr-2 h-5 w-5" /> Hablar por WhatsApp
-                    </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent">
-                    <Link href="#">
-                        <Phone className="mr-2 h-5 w-5" /> Llamar ahora
+                    <Link href="/contact">
+                        <MessageSquare className="mr-2 h-5 w-5" /> Contáctanos
                     </Link>
                 </Button>
             </div>

@@ -86,7 +86,7 @@ export default function Home() {
               <Link href="/products">Ver Productos</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-              <Link href="#">Solicitar Cotización</Link>
+              <Link href="/contact">Solicitar Cotización</Link>
             </Button>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function Home() {
               </ul>
               <div className="mt-8">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href="#">Cotiza tu Proyecto</Link>
+                  <Link href="/contact">Cotiza tu Proyecto</Link>
                 </Button>
               </div>
             </div>
@@ -211,10 +211,11 @@ export default function Home() {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-accent-foreground/80">
             Contacta a nuestros expertos para una cotización inmediata y sin compromiso. Recibe la mejor asesoría para tu proyecto hoy mismo.
           </p>
-          <form className="mt-8 max-w-md mx-auto flex gap-2">
-            <Input type="email" placeholder="Tu correo electrónico" className="py-6 text-foreground" required />
-            <Button type="submit" size="lg" className="py-6 bg-primary text-primary-foreground hover:bg-primary/90">Solicitar Información</Button>
-          </form>
+          <div className="mt-8">
+             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+                <Link href="/contact">Solicitar Información</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>

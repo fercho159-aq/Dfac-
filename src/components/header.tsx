@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/products", label: "Productos" },
   { href: "/about", label: "Nosotros" },
   { href: "/faq", label: "Preguntas frecuentes" },
+  { href: "/contact", label: "Contacto" },
 ];
 
 export function Header() {
@@ -48,8 +49,8 @@ export function Header() {
                <Truck className="h-6 w-6 text-accent animate-pulse" />
                <span className="text-sm font-semibold text-accent">Entrega en 24 horas</span>
              </div>
-            <Button className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
-              Contáctenos
+            <Button asChild className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/contact">Contáctenos</Link>
             </Button>
             <div className="md:hidden">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -83,8 +84,8 @@ export function Header() {
                        <Truck className="h-6 w-6 text-accent animate-pulse" />
                        <span className="text-sm font-semibold text-accent">Entrega en 24 horas</span>
                      </div>
-                    <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                      Contáctenos
+                    <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                      <Link href="/contact">Contáctenos</Link>
                     </Button>
                   </div>
                 </SheetContent>
