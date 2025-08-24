@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSelect, Scaling, ShoppingCart, Star, Wrench } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/data';
@@ -41,7 +41,7 @@ const testimonials = [
 
 const processSteps = [
     {
-      icon: <PackageSelect className="w-12 h-12 text-primary" />,
+      icon: <PackageSearch className="w-12 h-12 text-primary" />,
       title: "1. Elige tu material",
       description: "Explora nuestro catálogo y selecciona los productos que necesitas."
     },
