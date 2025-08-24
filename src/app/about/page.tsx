@@ -196,11 +196,11 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-accent-foreground/80">
-            Descubre nuestro catálogo completo y comprueba por qué somos líderes en el sector.
+            Contacta a nuestro equipo para obtener una cotización y asesoría personalizada.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
-                <Link href="/products">Ver Productos</Link>
+                <Link href="/contact">Hablemos de tu Proyecto</Link>
             </Button>
           </div>
         </div>

@@ -106,7 +106,7 @@ export default function FaqPage() {
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                     <Link href="/contact">
-                        <MessageSquare className="mr-2 h-5 w-5" /> Contáctanos
+                        <MessageSquare className="mr-2 h-5 w-5" /> Hablemos de tu proyecto
                     </Link>
                 </Button>
             </div>
