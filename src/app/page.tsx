@@ -1,4 +1,6 @@
+"use client";
 
+import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -8,6 +10,7 @@ import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay"
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -58,6 +61,16 @@ const testimonials = [
     name: "Edifica Corp.",
     quote: "Los precios son muy competitivos y la calidad del material es de primera. No hemos tenido un solo problema.",
     rating: 5
+  },
+  {
+    name: "Constructora Delta",
+    quote: "Su atención al detalle y la calidad de los materiales son de primera categoría. Siempre cumplen con lo prometido.",
+    rating: 5
+  },
+  {
+    name: "Ingeniería y Edificaciones Modernas",
+    quote: "La rapidez con la que entregan es fundamental para nosotros. Con DFAC, nunca hemos tenido retrasos en la obra.",
+    rating: 5
   }
 ];
 
@@ -105,7 +118,7 @@ const heroSlides = [
         hint: "construction site scaffolding",
         title: "Tu Socio en Cimbra y Andamiaje",
         subtitle: "Calidad y Velocidad Garantizadas",
-        description: "En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con entrega en tu obra en menos de 24 horas.",
+        description: "En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con <b class='text-primary'>entrega en tu obra en menos de 24 horas.</b>",
         cta1_text: "Ver Productos",
         cta1_href: "/products",
         cta2_text: "Solicitar Cotización",
@@ -136,15 +149,18 @@ const heroSlides = [
 ];
 
 export default function Home() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false })
+  );
+
   return (
     <>
       {/* Hero Section */}
        <section className="relative w-full h-screen-hero">
         <Carousel
-          opts={{ loop: true }}
+          plugins={[plugin.current]}
           className="w-full h-full"
-          autoplayDelay={5000}
-          autoplayOptions={{ stopOnInteraction: false }}
+          opts={{ loop: true }}
         >
           <CarouselContent className="h-full">
             {heroSlides.map((slide, index) => (
@@ -161,11 +177,9 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center text-center text-white">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-                       <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight">
-                        {slide.title} <span className="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">{slide.subtitle}</span>
+                       <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight" dangerouslySetInnerHTML={{ __html: `${slide.title} <span class="inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary rounded-lg">${slide.subtitle}</span>`}}>
                       </h1>
-                      <p className="mt-6 text-lg md:text-xl text-slate-200">
-                        {slide.description}
+                      <p className="mt-6 text-lg md:text-xl text-slate-200" dangerouslySetInnerHTML={{ __html: slide.description }}>
                       </p>
                       <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                         <Button asChild size="lg" className="text-lg px-8 py-6">
@@ -400,7 +414,3 @@ export default function Home() {
     </>
   );
 }
-
-    
-
-    
