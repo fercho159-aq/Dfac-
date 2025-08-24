@@ -182,7 +182,7 @@ export default function Home() {
       <section id="promociones" className="py-20 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> DESCUENTOS EXCLUSIVOS</h2>
+                  <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107] text-primary'>DESCUENTOS EXCLUSIVOS</span></h2>
               </div>
               <Carousel 
                   opts={{
