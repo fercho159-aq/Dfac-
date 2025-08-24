@@ -7,6 +7,7 @@ import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, 
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/data';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -95,7 +96,7 @@ export default function Home() {
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/products">Ver Productos</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground">
+            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
               <Link href="/contact">Solicitar Cotización</Link>
             </Button>
           </div>
@@ -194,23 +195,37 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
             <p className="mt-4 text-lg text-muted-foreground">Nuestros clientes son nuestra mejor carta de presentación.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="flex flex-col justify-between">
-                <CardHeader>
-                  <div className="flex items-center">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="flex flex-col justify-between h-full">
+                      <CardHeader>
+                        <div className="flex items-center">
+                          {Array.from({ length: testimonial.rating }).map((_, i) => (
+                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                      </CardHeader>
+                      <CardContent className="flex-grow">
+                        <p className="text-foreground italic">"{testimonial.quote}"</p>
+                      </CardContent>
+                      <CardTitle className="p-6 pt-0 text-base font-semibold">- {testimonial.name}</CardTitle>
+                    </Card>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-foreground italic">"{testimonial.quote}"</p>
-                </CardContent>
-                <CardTitle className="p-6 pt-0 text-base font-semibold">- {testimonial.name}</CardTitle>
-              </Card>
-            ))}
-          </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
