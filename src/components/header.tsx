@@ -84,7 +84,7 @@ export function Header() {
                        <span className="text-sm font-semibold text-accent">Entrega en 24 horas</span>
                      </div>
                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                      <Link href="/contact">Contáctenos</Link>
+                      <Link href="/contact" onClick={() => setIsOpen(false)}>Contáctenos</Link>
                     </Button>
                   </div>
                 </SheetContent>
