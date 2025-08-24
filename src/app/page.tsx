@@ -80,6 +80,15 @@ const clientLogos = [
 
 const featuredProducts = products.slice(0, 3);
 
+const promotionImages = [
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 1", hint: "construction promotion" },
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 2", hint: "building offer" },
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 3", hint: "construction sale" },
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 4", hint: "equipment discount" },
+    { src: "https://placehold.co/400x300.png.png", alt: "Promoción 5", hint: "formwork deal" },
+    { src: "https://placehold.co/400x300.png", alt: "Promoción 6", hint: "scaffolding special" },
+]
+
 export default function Home() {
   return (
     <>
@@ -169,8 +178,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Promotions Section */}
+      <section id="promociones" className="py-20 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase text-primary tracking-wider">¡POR QUE TU LO PEDISTE! DESCUENTOS EXCLUSIVOS</h2>
+              </div>
+              <Carousel 
+                  opts={{
+                      align: "start",
+                      loop: true,
+                  }}
+                  className="w-full"
+              >
+                  <CarouselContent>
+                      {promotionImages.map((image, index) => (
+                          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                              <div className="p-1">
+                                  <div className="overflow-hidden rounded-lg shadow-lg">
+                                      <Image src={image.src} alt={image.alt} width={400} height={300} className="hover:scale-105 transition-transform duration-300" data-ai-hint={image.hint} />
+                                  </div>
+                              </div>
+                          </CarouselItem>
+                      ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+              </Carousel>
+          </div>
+      </section>
+
       {/* Mosaic Gallery Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">QUEREMOS QUE TUS PROYECTOS SEAN TAN GRANDES COMO TUS SUEÑOS</h2>
