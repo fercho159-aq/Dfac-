@@ -1,6 +1,7 @@
+
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -52,7 +53,7 @@ const testimonials = [
     quote: "Su catálogo es muy completo. Encontramos todo lo que necesitábamos para el sistema de cimbra de nuestro nuevo edificio en un solo lugar.",
     rating: 5,
   },
-  {
+    {
     name: "Desarrollos Urbanos MX",
     quote: "La asesoría técnica que recibimos fue clave para el éxito de nuestro proyecto más reciente. ¡Totalmente recomendados!",
     rating: 5
@@ -62,16 +63,6 @@ const testimonials = [
     quote: "Los precios son muy competitivos y la calidad del material es de primera. No hemos tenido un solo problema.",
     rating: 5
   },
-  {
-    name: "Constructora Delta",
-    quote: "Su atención al detalle y la calidad de los materiales son de primera categoría. Siempre cumplen con lo prometido.",
-    rating: 5
-  },
-  {
-    name: "Ingeniería y Edificaciones Modernas",
-    quote: "La rapidez con la que entregan es fundamental para nosotros. Con DFAC, nunca hemos tenido retrasos en la obra.",
-    rating: 5
-  }
 ];
 
 const processSteps = [
@@ -118,7 +109,7 @@ const heroSlides = [
         hint: "construction site scaffolding",
         title: "Tu Socio en Cimbra y Andamiaje",
         subtitle: "Calidad y Velocidad Garantizadas",
-        description: "En DFAC, te damos la confianza para construir sin límites. Accesorios de alta resistencia con <b class='text-primary'>entrega en tu obra en menos de 24 horas.</b>",
+        description: "En DFAC, te damos la <b class='text-white'>confianza</b> para construir sin límites. Accesorios de alta resistencia con <b class='text-primary'>entrega en tu obra en menos de 24 horas.</b>",
         cta1_text: "Ver Productos",
         cta1_href: "/products",
         cta2_text: "Solicitar Cotización",
@@ -149,8 +140,8 @@ const heroSlides = [
 ];
 
 export default function Home() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
+  const plugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
   return (
@@ -161,6 +152,8 @@ export default function Home() {
           plugins={[plugin.current]}
           className="w-full h-full"
           opts={{ loop: true }}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent className="h-full">
             {heroSlides.map((slide, index) => (
