@@ -152,7 +152,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-screen-hero">
+       <section className="relative w-full h-screen-hero">
         {isClient ? (
           <Carousel
             plugins={[plugin.current]}
@@ -417,4 +417,3 @@ export default function Home() {
   );
 }
 
-    
