@@ -30,7 +30,7 @@ export default function ProductsPage() {
         description: row.description,
         image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
         images: row.images,
-        category: row.categories?.[0]?.name || 'Accesorios'
+        category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "") || 'Accesorios'
       }));
       setAllProducts(productData);
     };
@@ -39,24 +39,17 @@ export default function ProductsPage() {
   }, []);
 
   const filteredProducts = useMemo(() => {
-    const lowercasedSearchTerm = searchTerm.toLowerCase();
-
     return allProducts.filter(product => {
-      // Category filter
       const categoryMatch = selectedCategory === 'all' || 
         product.category.toLowerCase().includes(
             categories.find(c => c.id === selectedCategory)?.name.toLowerCase() || ''
         );
-
-      if (!categoryMatch) return false;
       
-      // Search term filter (now includes description)
-      if (!lowercasedSearchTerm) return true;
-      
-      const searchMatch = product.name.toLowerCase().includes(lowercasedSearchTerm) ||
-                          (product.description && product.description.toLowerCase().includes(lowercasedSearchTerm));
+      const searchMatch = !searchTerm || 
+                          product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                          (product.description && product.description.toLowerCase().includes(searchTerm.toLowerCase()));
 
-      return searchMatch;
+      return categoryMatch && searchMatch;
     });
   }, [searchTerm, selectedCategory, allProducts]);
   
@@ -86,7 +79,7 @@ export default function ProductsPage() {
   );
 
   const FilterSidebar = () => (
-    <Card className="h-full sticky top-24">
+    <Card className="h-full">
       <CardContent className="p-6">
         <h3 className="text-xl font-semibold mb-4">Filtros</h3>
         <FilterSidebarContent />
@@ -104,7 +97,7 @@ export default function ProductsPage() {
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filters - Sidebar for desktop */}
-          <aside className="hidden lg:block w-1/4 xl:w-1/5">
+          <aside className="hidden lg:block w-1/4 xl:w-1/5 sticky top-24 h-fit">
             <FilterSidebar />
           </aside>
 
