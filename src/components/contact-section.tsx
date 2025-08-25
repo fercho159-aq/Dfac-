@@ -88,7 +88,7 @@ export function ContactSection() {
                         <div>
                             <h3 className="text-lg md:text-xl font-semibold">WhatsApp</h3>
                             <p className="text-muted-foreground">El canal <b className="text-foreground">más rápido</b> para resolver dudas.</p>
-                            <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Chatea con nosotros</a>
+                            <a href="https://wa.me/5215525989751" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Chatea con nosotros</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">

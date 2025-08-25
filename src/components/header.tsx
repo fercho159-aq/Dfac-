@@ -12,6 +12,7 @@ import Image from "next/image"
 const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/products", label: "Productos" },
+  { href: "/catalog", label: "Catálogo" },
   { href: "/about", label: "Nosotros" },
   { href: "/#promociones", label: "Promociones" },
   { href: "/faq", label: "Preguntas frecuentes" },
@@ -37,7 +38,7 @@ export function Header() {
                 href={link.href} 
                 className={cn(
                   "text-[15px] font-medium transition-colors",
-                  pathname === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                  (pathname === link.href || (link.href.startsWith("/#") && pathname === "/")) ? "text-primary" : "text-foreground hover:text-primary"
                 )}
               >
                 {link.label}
@@ -72,7 +73,7 @@ export function Header() {
                           href={link.href} 
                           className={cn(
                             "text-[15px] font-medium transition-colors",
-                            pathname === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                            (pathname === link.href || (link.href.startsWith("/#") && pathname === "/")) ? "text-primary" : "text-foreground hover:text-primary"
                           )}
                           onClick={() => setIsOpen(false)}>
                           {link.label}
