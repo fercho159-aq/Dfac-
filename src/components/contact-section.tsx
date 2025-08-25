@@ -62,9 +62,13 @@ export function ContactSection() {
                             <Phone className="w-6 h-6" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold">Teléfono</h3>
+                            <h3 className="text-lg md:text-xl font-semibold">Teléfonos</h3>
                             <p className="text-muted-foreground">Llámanos para una <b className="text-foreground">atención inmediata</b>.</p>
-                            <a href="tel:+521234567890" className="text-primary font-semibold hover:underline">+52 123 456 7890</a>
+                            <div className="flex flex-col space-y-1 mt-1">
+                                <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
+                                <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
+                                <a href="tel:5555715084" className="text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
+                            </div>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">

@@ -30,10 +30,14 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-foreground">Contacto</h3>
-            <ul className="mt-4 space-y-2">
-              <li className="flex items-center space-x-2 text-muted-foreground">
-                <Phone className="h-5 w-5 text-primary" />
-                <a href="tel:+521234567890" className="hover:text-primary transition-colors">+52 123 456 7890</a>
+            <ul className="mt-4 space-y-3">
+              <li className="flex items-start space-x-2 text-muted-foreground">
+                <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div className="flex flex-col">
+                  <a href="tel:5525989751" className="hover:text-primary transition-colors">01 (55) 2598-9751</a>
+                  <a href="tel:5541673745" className="hover:text-primary transition-colors">01 (55) 4167-3745</a>
+                  <a href="tel:5555715084" className="hover:text-primary transition-colors">01 (55) 5571-5084</a>
+                </div>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary" />
