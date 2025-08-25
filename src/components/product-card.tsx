@@ -10,13 +10,26 @@ interface ProductCardProps {
   product: Product;
 }
 
+const getLocalImagePath = (url: string) => {
+    if (!url || !url.includes('/')) return 'https://placehold.co/400x300.png';
+    try {
+        const urlObject = new URL(url);
+        const imageName = urlObject.pathname.split('/').pop();
+        return `/image/${imageName}`;
+    } catch (e) {
+        return 'https://placehold.co/400x300.png';
+    }
+}
+
 export function ProductCard({ product }: ProductCardProps) {
+  const imagePath = getLocalImagePath(product.image);
+  
   return (
     <Card className="flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <CardHeader className="p-0 relative">
         <Link href={`/products/${product.slug}`}>
             <Image 
-              src={product.image} 
+              src={imagePath}
               alt={product.name} 
               width={400} 
               height={300} 
