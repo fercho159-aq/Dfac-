@@ -6,17 +6,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const getLocalImagePath = (url: string) => {
-    if (!url || !url.includes('/')) return 'https://placehold.co/400x300.png';
-    try {
-        const urlObject = new URL(url);
-        const imageName = urlObject.pathname.split('/').pop();
-        return `/image/${imageName}`;
-    } catch (e) {
-        // Fallback for cases where URL is not valid, like a local path already
-        if (typeof url === 'string' && url.startsWith('/image/')) {
-            return url;
-        }
-        const imageName = url.split('/').pop();
-        return `/image/${imageName}`;
+    if (!url || typeof url !== 'string' || !url.includes('/')) {
+        return 'https://placehold.co/400x300.png';
     }
+    const imageName = url.substring(url.lastIndexOf('/') + 1);
+    if (!imageName) {
+        return 'https://placehold.co/400x300.png';
+    }
+    return `/image/${imageName}`;
 }
