@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import HTMLFlipBook from 'react-pageflip';
 import { Button } from '@/components/ui/button';
@@ -39,6 +39,11 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const flipBook = useRef<any>(null);
+
+  const fileOptions = useMemo(() => ({
+    url: pdfUrl,
+    withCredentials: false
+  }), [pdfUrl]);
 
   useEffect(() => {
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -79,7 +84,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
         )}
         <div className={isLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-500'}>
         <Document
-          file={{ url: pdfUrl, withCredentials: false }}
+          file={fileOptions}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={(error) => {
             console.error('Failed to load PDF', error);
