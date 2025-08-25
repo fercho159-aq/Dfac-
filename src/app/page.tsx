@@ -142,7 +142,7 @@ const getLocalImagePath = (url: string) => {
     try {
         const urlObject = new URL(url);
         const imageName = urlObject.pathname.split('/').pop();
-        return `/products/${imageName}`;
+        return `/image/${imageName}`;
     } catch (e) {
         return 'https://placehold.co/400x300.png';
     }
