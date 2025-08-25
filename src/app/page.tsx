@@ -351,39 +351,31 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="grid gap-4">
-              <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="transition-transform duration-300" data-ai-hint="construction architecture" />
+          <div className="columns-2 md:columns-4 gap-4">
+              <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction architecture" />
               </div>
-              <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="transition-transform duration-300" data-ai-hint="scaffolding detail" />
+              <div className="mb-4 break-inside-avoid">
+                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding detail" />
               </div>
-            </div>
-            <div className="grid gap-4">
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="transition-transform duration-300" data-ai-hint="construction workers" />
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction workers" />
               </div>
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="transition-transform duration-300" data-ai-hint="building structure" />
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
               </div>
-            </div>
-            <div className="grid gap-4">
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="transition-transform duration-300" data-ai-hint="modern architecture" />
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="modern architecture" />
               </div>
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="transition-transform duration-300" data-ai-hint="formwork materials" />
+               <div className="mb-4 break-inside-avoid">
+                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork materials" />
               </div>
-            </div>
-             <div className="grid gap-4">
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="transition-transform duration-300" data-ai-hint="construction site aerial" />
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site aerial" />
               </div>
-               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="transition-transform duration-300" data-ai-hint="shoring post" />
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="shoring post" />
               </div>
-            </div>
           </div>
            <div className="text-center mt-12">
                 <Button asChild size="lg">
