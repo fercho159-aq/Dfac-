@@ -243,7 +243,18 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <Image src="https://placehold.co/600x400.png" alt="Equipo de construcción" width={600} height={400} className="rounded-lg shadow-2xl" data-ai-hint="construction equipment" />
+              <div className="rounded-lg shadow-2xl overflow-hidden">
+                <video
+                  src="/videos/video.mp4"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  controls
+                />
+              </div>
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-headline">Tu proyecto no puede esperar. <span className="text-primary">El nuestro tampoco.</span></h2>
