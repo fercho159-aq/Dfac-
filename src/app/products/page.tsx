@@ -39,19 +39,25 @@ export default function ProductsPage() {
   }, []);
 
   const filteredProducts = useMemo(() => {
-    return allProducts
-      .filter(product => 
-        product.name.toLowerCase().includes(searchTerm.toLowerCase())
-      )
-      .filter(product => {
-        if (selectedCategory === 'all') return true;
-        // Normalize both category names for comparison
-        const productCategory = product.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        const selectedCategoryName = categories.find(c => c.id === selectedCategory)?.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        const mainProductCategory = (product.category.split('>')[0] || "").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        
-        return productCategory.includes(selectedCategoryName!) || mainProductCategory.includes(selectedCategoryName!);
-      });
+    const lowercasedSearchTerm = searchTerm.toLowerCase();
+
+    return allProducts.filter(product => {
+      // Category filter
+      const categoryMatch = selectedCategory === 'all' || 
+        product.category.toLowerCase().includes(
+            categories.find(c => c.id === selectedCategory)?.name.toLowerCase() || ''
+        );
+
+      if (!categoryMatch) return false;
+      
+      // Search term filter (now includes description)
+      if (!lowercasedSearchTerm) return true;
+      
+      const searchMatch = product.name.toLowerCase().includes(lowercasedSearchTerm) ||
+                          (product.description && product.description.toLowerCase().includes(lowercasedSearchTerm));
+
+      return searchMatch;
+    });
   }, [searchTerm, selectedCategory, allProducts]);
   
   const FilterSidebarContent = () => (
@@ -109,7 +115,7 @@ export default function ProductsPage() {
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                 <Input
                   type="search"
-                  placeholder="Buscar productos..."
+                  placeholder="Buscar por nombre o descripción..."
                   className="pl-10 w-full h-12 text-base"
                   value={searchTerm}
                   onChange={e => setSearchTerm(e.target.value)}
