@@ -93,12 +93,17 @@ const clientLogos = [
 ];
 
 const promotionImages = [
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 1", hint: "construction promotion" },
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 2", hint: "building offer" },
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 3", hint: "construction sale" },
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 4", hint: "equipment discount" },
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 5", hint: "formwork deal" },
-    { src: "https://placehold.co/400x300.png", alt: "Promoción 6", hint: "scaffolding special" },
+    { src: "/Image/Promos/PROMO-CUNAS.png", alt: "Promoción 1", hint: "construction promotion" },
+    { src: "/Image/Promos/PROMO-CUNAS1.png", alt: "Promoción 2", hint: "building offer" },
+    { src: "/Image/Promos/PROMO-MONOS.png", alt: "Promoción 3", hint: "construction sale" },
+    { src: "/Image/Promos/PROMO-MONOS1.png", alt: "Promoción 4", hint: "equipment discount" },
+    { src: "/Image/Promos/PROMO-MOTORES-5.5HP-REDUCTOR.png", alt: "Promoción 5", hint: "formwork deal" },
+    { src: "/Image/Promos/PROMO-MOTORES-7HP-REDUCTOR.png", alt: "Promoción 6", hint: "scaffolding special" },
+    { src: "/Image/Promos/PROMO-MOTORES-9HP.png", alt: "Promoción 7", hint: "scaffolding special" },
+    { src: "/Image/Promos/PROMO-MOTORES-13HP.png", alt: "Promoción 8", hint: "scaffolding special" },
+    { src: "/Image/Promos/PROMO-MOTORES-15HP.png", alt: "Promoción 9", hint: "scaffolding special" },
+    { src: "/Image/Promos/PROMO-MOTORES.png", alt: "Promoción 10", hint: "scaffolding special" },
+
 ]
 
 const heroSlides = [
@@ -125,7 +130,7 @@ const heroSlides = [
         cta2_href: "/contact"
     },
     {
-         image: "/Image/Fotos Banner/1.jpg",
+         image: "/Image/Fotos Banner/3.jpg",
         hint: "engineer planning construction",
         title: "Asesoría Experta para tu Proyecto",
         subtitle: "Maximizamos tu seguridad y eficiencia",
@@ -201,7 +206,7 @@ export default function Home() {
                           <Button asChild size="lg" className="text-lg px-8 py-6">
                             <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5"/></Link>
                           </Button>
-                          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 text-white border-white hover:bg-white hover:text-primary">
+                          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-black/30 border-white text-white hover:bg-white hover:text-primary">
                             <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
                           </Button>
                         </div>
@@ -329,34 +334,34 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="grid gap-4">
               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x600.png" alt="Proyecto de construcción 1" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction architecture" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction architecture" />
               </div>
               <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="https://placehold.co/400x400.png" alt="Detalle de andamio" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="scaffolding detail" />
+                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="scaffolding detail" />
               </div>
             </div>
             <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x400.png" alt="Equipo trabajando en obra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction workers" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction workers" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x600.png" alt="Estructura de edificio" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="building structure" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="building structure" />
               </div>
             </div>
             <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x600.png" alt="Proyecto de construcción 2" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="modern architecture" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="modern architecture" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="https://placehold.co/400x400.png" alt="Material de cimbra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="formwork materials" />
+                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="formwork materials" />
               </div>
             </div>
              <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x400.png" alt="Vista aérea de construcción" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction site aerial" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction site aerial" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="https://placehold.co/400x600.png" alt="Detalle de puntal" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="shoring post" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="shoring post" />
               </div>
             </div>
           </div>
