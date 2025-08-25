@@ -40,6 +40,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
                                         alt={product.name}
                                         fill
                                         className="object-contain"
+                                        data-ai-hint="product image"
                                     />
                                 </div>
                             </CarouselItem>
@@ -52,6 +53,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
                                     alt={product.name}
                                     fill
                                     className="object-contain"
+                                    data-ai-hint="product image placeholder"
                                 />
                             </div>
                         </CarouselItem>
