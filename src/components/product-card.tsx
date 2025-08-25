@@ -5,20 +5,10 @@ import { Button } from "@/components/ui/button";
 import type { Product } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import { getLocalImagePath } from '@/lib/utils';
 
 interface ProductCardProps {
   product: Product;
-}
-
-const getLocalImagePath = (url: string) => {
-    if (!url || !url.includes('/')) return 'https://placehold.co/400x300.png';
-    try {
-        const urlObject = new URL(url);
-        const imageName = urlObject.pathname.split('/').pop();
-        return `/image/${imageName}`;
-    } catch (e) {
-        return 'https://placehold.co/400x300.png';
-    }
 }
 
 export function ProductCard({ product }: ProductCardProps) {

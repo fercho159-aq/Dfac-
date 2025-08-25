@@ -10,17 +10,8 @@ import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { getLocalImagePath } from '@/lib/utils';
 
-const getLocalImagePath = (url: string) => {
-    if (!url || !url.includes('/')) return 'https://placehold.co/600x400.png';
-    try {
-        const urlObject = new URL(url);
-        const imageName = urlObject.pathname.split('/').pop();
-        return `/image/${imageName}`;
-    } catch (e) {
-        return 'https://placehold.co/600x400.png';
-    }
-}
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const [product, setProduct] = useState<Product | null>(null);
@@ -42,8 +33,8 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               slug: foundProductData.slug,
               price: (Number(foundProductData.prices?.price) || 0) / 100,
               description: foundProductData.description,
-              image: getLocalImagePath(foundProductData.images?.[0]?.src),
-              images: foundProductData.images?.map((img: any) => ({...img, src: getLocalImagePath(img.src)})),
+              image: foundProductData.images?.[0]?.src || 'https://placehold.co/400x300.png',
+              images: foundProductData.images,
               category: foundProductData.categories?.[0]?.name || 'Accesorios'
             };
             setProduct(productData);
@@ -87,7 +78,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                             <CarouselItem key={img.id}>
                                 <div className="aspect-square relative w-full overflow-hidden rounded-lg border">
                                     <Image
-                                        src={img.src}
+                                        src={getLocalImagePath(img.src)}
                                         alt={product.name}
                                         fill
                                         className="object-contain"
@@ -99,7 +90,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                          <CarouselItem>
                             <div className="aspect-square relative w-full overflow-hidden rounded-lg border">
                                 <Image
-                                    src={product.image}
+                                    src={getLocalImagePath(product.image)}
                                     alt={product.name}
                                     fill
                                     className="object-contain"
