@@ -103,7 +103,7 @@ const promotionImages = [
 
 const heroSlides = [
     {
-        image: "https://placehold.co/1920x1080.png",
+        image: "/Image/Fotos Banner/1.jpg",
         hint: "construction site scaffolding",
         title: "Tu Socio en Cimbra y Andamiaje",
         subtitle: "Calidad y Velocidad Garantizadas",
@@ -114,7 +114,7 @@ const heroSlides = [
         cta2_href: "/contact"
     },
     {
-        image: "https://placehold.co/1920x1080.png",
+      image: "/Image/Fotos Banner/2.jpg",
         hint: "construction workers logistics",
         title: "Entrega Inmediata en tu Obra",
         subtitle: "Material listo en menos de 24H",
@@ -125,7 +125,7 @@ const heroSlides = [
         cta2_href: "/contact"
     },
     {
-        image: "https://placehold.co/1920x1080.png",
+         image: "/Image/Fotos Banner/1.jpg",
         hint: "engineer planning construction",
         title: "Asesoría Experta para tu Proyecto",
         subtitle: "Maximizamos tu seguridad y eficiencia",
@@ -158,7 +158,7 @@ export default function Home() {
             description: row.description,
             image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
             images: row.images,
-            category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "") || 'Accesorios'
+            category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() || 'accesorios'
         }));
         setFeaturedProducts(productData.slice(0, 3));
     };
