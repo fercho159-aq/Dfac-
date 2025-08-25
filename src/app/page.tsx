@@ -12,6 +12,8 @@ import { ProductCard } from '@/components/product-card';
 import { Product, ProductImage } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { ContactSection } from '@/components/contact-section';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -318,9 +320,16 @@ export default function Home() {
                       {promotionImages.map((image, index) => (
                           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                               <div className="p-1">
-                                  <div className="overflow-hidden rounded-lg shadow-lg">
-                                      <Image src={image.src} alt={image.alt} width={400} height={300} className="hover:scale-105 transition-transform duration-300" data-ai-hint={image.hint} />
-                                  </div>
+                                <Dialog>
+                                  <DialogTrigger asChild>
+                                    <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                                        <Image src={image.src} alt={image.alt} width={400} height={300} className="hover:scale-105 transition-transform duration-300" data-ai-hint={image.hint} />
+                                    </div>
+                                  </DialogTrigger>
+                                  <DialogContent className="max-w-4xl p-0">
+                                      <ContactSection />
+                                  </DialogContent>
+                                </Dialog>
                               </div>
                           </CarouselItem>
                       ))}
