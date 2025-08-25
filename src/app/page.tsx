@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
-import { Product } from '@/lib/data';
+import { Product, ProductImage } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
 
@@ -137,6 +137,18 @@ const heroSlides = [
     }
 ];
 
+const getLocalImagePath = (url: string) => {
+    if (!url || !url.includes('/')) return 'https://placehold.co/400x300.png';
+    try {
+        const urlObject = new URL(url);
+        const imageName = urlObject.pathname.split('/').pop();
+        return `/products/${imageName}`;
+    } catch (e) {
+        return 'https://placehold.co/400x300.png';
+    }
+}
+
+
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
@@ -148,18 +160,19 @@ export default function Home() {
     setIsClient(true);
     
     const fetchProducts = async () => {
-      const response = await fetch('/data/products.json');
-      const data = await response.json();
-      const productData = data.map((row: any) => ({
-        id: String(row.id),
-        name: row.name,
-        slug: row.slug,
-        price: (Number(row.prices.price) || 0) / 100,
-        description: row.description,
-        image: row.images[0]?.src || 'https://placehold.co/400x300.png',
-        category: row.categories[0]?.name || 'Accesorios'
-      }));
-      setFeaturedProducts(productData.slice(0, 3));
+        const response = await fetch('/data/products.json');
+        const data = await response.json();
+        const productData = data.map((row: any) => ({
+            id: String(row.id),
+            name: row.name,
+            slug: row.slug,
+            price: (Number(row.prices?.price) || 0) / 100,
+            description: row.description,
+            image: getLocalImagePath(row.images?.[0]?.src),
+            images: row.images?.map((img: any) => ({...img, src: getLocalImagePath(img.src)})),
+            category: row.categories?.[0]?.name || 'Accesorios'
+        }));
+        setFeaturedProducts(productData.slice(0, 3));
     };
 
     fetchProducts();

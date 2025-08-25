@@ -12,6 +12,17 @@ import { categories, Product } from '@/lib/data';
 import { ListFilter, Search } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 
+const getLocalImagePath = (url: string) => {
+    if (!url || !url.includes('/')) return 'https://placehold.co/400x300.png';
+    try {
+        const urlObject = new URL(url);
+        const imageName = urlObject.pathname.split('/').pop();
+        return `/products/${imageName}`;
+    } catch (e) {
+        return 'https://placehold.co/400x300.png';
+    }
+}
+
 export default function ProductsPage() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,10 +36,11 @@ export default function ProductsPage() {
         id: String(row.id),
         name: row.name,
         slug: row.slug,
-        price: (Number(row.prices.price) || 0) / 100,
+        price: (Number(row.prices?.price) || 0) / 100,
         description: row.description,
-        image: row.images[0]?.src || 'https://placehold.co/400x300.png',
-        category: row.categories[0]?.name || 'Accesorios'
+        image: getLocalImagePath(row.images?.[0]?.src),
+        images: row.images?.map((img: any) => ({...img, src: getLocalImagePath(img.src)})),
+        category: row.categories?.[0]?.name || 'Accesorios'
       }));
       setAllProducts(productData);
     };

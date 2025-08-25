@@ -11,6 +11,17 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
+const getLocalImagePath = (url: string) => {
+    if (!url || !url.includes('/')) return 'https://placehold.co/600x400.png';
+    try {
+        const urlObject = new URL(url);
+        const imageName = urlObject.pathname.split('/').pop();
+        return `/products/${imageName}`;
+    } catch (e) {
+        return 'https://placehold.co/600x400.png';
+    }
+}
+
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -29,11 +40,11 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               id: String(foundProductData.id),
               name: foundProductData.name,
               slug: foundProductData.slug,
-              price: (Number(foundProductData.prices.price) || 0) / 100,
+              price: (Number(foundProductData.prices?.price) || 0) / 100,
               description: foundProductData.description,
-              image: foundProductData.images[0]?.src || 'https://placehold.co/600x400.png',
-              images: foundProductData.images,
-              category: foundProductData.categories[0]?.name || 'Accesorios'
+              image: getLocalImagePath(foundProductData.images?.[0]?.src),
+              images: foundProductData.images?.map((img: any) => ({...img, src: getLocalImagePath(img.src)})),
+              category: foundProductData.categories?.[0]?.name || 'Accesorios'
             };
             setProduct(productData);
           }

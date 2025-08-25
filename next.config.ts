@@ -16,18 +16,6 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
-        protocol: 'http',
-        hostname: 'cimbrayaccesorios.com.mx',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cimbrayaccesorios.com.mx',
-        port: '',
-        pathname: '/**',
-      }
     ],
   },
 };
