@@ -323,7 +323,7 @@ export default function Home() {
                                 <Dialog>
                                   <DialogTrigger asChild>
                                     <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                                        <Image src={image.src} alt={image.alt} width={400} height={300} className="hover:scale-105 transition-transform duration-300" data-ai-hint={image.hint} />
+                                        <Image src={image.src} alt={image.alt} width={400} height={300} className="transition-transform duration-300" data-ai-hint={image.hint} />
                                     </div>
                                   </DialogTrigger>
                                   <DialogContent className="max-w-4xl p-6">
@@ -354,34 +354,34 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="grid gap-4">
               <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction architecture" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="transition-transform duration-300" data-ai-hint="construction architecture" />
               </div>
               <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="scaffolding detail" />
+                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="transition-transform duration-300" data-ai-hint="scaffolding detail" />
               </div>
             </div>
             <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction workers" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="transition-transform duration-300" data-ai-hint="construction workers" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="building structure" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="transition-transform duration-300" data-ai-hint="building structure" />
               </div>
             </div>
             <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="modern architecture" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="transition-transform duration-300" data-ai-hint="modern architecture" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="formwork materials" />
+                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="transition-transform duration-300" data-ai-hint="formwork materials" />
               </div>
             </div>
              <div className="grid gap-4">
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="hover:scale-105 transition-transform duration-300" data-ai-hint="construction site aerial" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="transition-transform duration-300" data-ai-hint="construction site aerial" />
               </div>
                <div className="overflow-hidden rounded-lg shadow-lg">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="hover:scale-105 transition-transform duration-300" data-ai-hint="shoring post" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="transition-transform duration-300" data-ai-hint="shoring post" />
               </div>
             </div>
           </div>
