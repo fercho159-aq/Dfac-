@@ -14,7 +14,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Autoplay from "embla-carousel-autoplay"
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { ContactSection } from '@/components/contact-section';
-import { Flipbook } from '@/components/flipbook';
+import dynamic from 'next/dynamic';
+import { Skeleton } from '@/components/ui/skeleton';
+
+const Flipbook = dynamic(() => import('@/components/flipbook').then(mod => mod.Flipbook), {
+    ssr: false,
+    loading: () => <Skeleton className="w-full max-w-5xl aspect-[2/1.414]" />,
+});
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -146,7 +152,6 @@ const heroSlides = [
 ];
 
 export default function Home() {
-  const [isClient, setIsClient] = useState(false);
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
@@ -155,8 +160,6 @@ export default function Home() {
 
 
   useEffect(() => {
-    setIsClient(true);
-    
     const fetchProducts = async () => {
         const response = await fetch('/data/products.json');
         const data = await response.json();
@@ -180,7 +183,6 @@ export default function Home() {
     <>
       {/* Hero Section */}
        <section className="relative w-full h-screen-hero">
-        {isClient ? (
           <Carousel
             plugins={[plugin.current]}
             className="w-full h-full"
@@ -224,9 +226,6 @@ export default function Home() {
             <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
             <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
           </Carousel>
-        ) : (
-          <div className="w-full h-full bg-card" />
-        )}
       </section>
 
       {/* Client Logos Section */}
@@ -313,7 +312,7 @@ export default function Home() {
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
                   <p className="mt-4 text-lg text-muted-foreground">Explora nuestros productos de manera interactiva.</p>
               </div>
-              {isClient && <Flipbook pdfUrl={catalogPdfUrl} />}
+              <Flipbook pdfUrl={catalogPdfUrl} />
           </div>
       </section>
 
