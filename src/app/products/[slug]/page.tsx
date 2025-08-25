@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { ArrowLeft, MessageSquare } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { ContactSection } from '@/components/contact-section';
 
 // This is a new Client Component that will handle the interactive parts.
 function ProductDetailsClient({ product }: { product: Product }) {
@@ -89,21 +90,9 @@ function ProductDetailsClient({ product }: { product: Product }) {
         </div>
       </div>
     </div>
-    <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold font-headline">¿Interesado en este <span className="text-primary">producto?</span></h2>
-            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Nuestro equipo está listo para proporcionarte una <b className="text-foreground">cotización detallada</b> y asesorarte en lo que necesites.
-            </p>
-            <div className="mt-6">
-                <Button asChild size="lg">
-                    <Link href="/contact">
-                        <MessageSquare className="mr-2 h-5 w-5" /> Contactar a un asesor
-                    </Link>
-                </Button>
-            </div>
-        </div>
-      </section>
+    <section className="py-16 bg-card">
+      <ContactSection />
+    </section>
     </>
   );
 }
