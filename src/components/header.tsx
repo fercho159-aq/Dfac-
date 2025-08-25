@@ -3,10 +3,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Truck, HardHat } from "lucide-react"
+import { Menu, Truck } from "lucide-react"
 import { useState } from "react"
 import { usePathname } from 'next/navigation'
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const navLinks = [
   { href: "/", label: "Inicio" },
@@ -25,9 +26,8 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-foreground">
-              <HardHat className="h-8 w-8 text-primary" />
-              <span className="font-black">DFAC</span>
+            <Link href="/">
+              <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
           </div>
           <nav className="hidden lg:flex lg:items-center lg:space-x-8">
@@ -62,9 +62,8 @@ export function Header() {
                 </SheetTrigger>
                 <SheetContent side="right">
                   <div className="flex flex-col space-y-6 p-6">
-                    <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-foreground" onClick={() => setIsOpen(false)}>
-                      <HardHat className="h-8 w-8 text-primary" />
-                      <span className="font-black">DFAC</span>
+                    <Link href="/" onClick={() => setIsOpen(false)}>
+                      <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
                     </Link>
                     <nav className="flex flex-col space-y-4">
                       {navLinks.map((link) => (

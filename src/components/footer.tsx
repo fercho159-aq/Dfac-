@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { HardHat, Mail, Phone, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Mail, Phone, Facebook, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -7,9 +8,8 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-foreground">
-              <HardHat className="h-8 w-8 text-primary" />
-              <span className="font-black">DFAC</span>
+            <Link href="/">
+              <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
             <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
             <div className="flex space-x-4">
