@@ -64,7 +64,7 @@ export function Header() {
                 <SheetContent side="right">
                   <div className="flex flex-col space-y-6 p-6">
                     <Link href="/" onClick={() => setIsOpen(false)}>
-                      <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+                      <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
                     </Link>
                     <nav className="flex flex-col space-y-4">
                       {navLinks.map((link) => (

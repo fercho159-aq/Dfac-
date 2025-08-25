@@ -44,7 +44,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative bg-card py-20 md:py-32">
         <div className="absolute inset-0 bg-black/50">
-            <Image src="https://placehold.co/1200x400.png" alt="Equipo de DFAC trabajando" layout="fill" objectFit="cover" className="opacity-30" data-ai-hint="team working construction" />
+            <Image src="/Image/Fotos Banner/1.jpg" alt="Equipo de DFAC trabajando" layout="fill" objectFit="cover" className="opacity-30" data-ai-hint="team working construction" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-black font-headline text-white tracking-tight">
