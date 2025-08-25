@@ -40,7 +40,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardDescription>
       </CardContent>
       <CardFooter className="p-6 pt-0 flex justify-between items-center">
-        <p className="text-2xl font-bold text-foreground">${product.price > 0 ? product.price.toFixed(2) : 'Cotizar'}</p>
+        <p className="text-2xl font-bold text-foreground">{product.price > 0 ? `$${product.price.toFixed(2)}` : 'Cotizar'}</p>
         <Button asChild>
           <Link href={`/products/${product.slug}`}>Detalles</Link>
         </Button>
@@ -48,3 +48,5 @@ export function ProductCard({ product }: ProductCardProps) {
     </Card>
   );
 }
+
+    
