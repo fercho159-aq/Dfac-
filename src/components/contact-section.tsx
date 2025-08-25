@@ -9,13 +9,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export function ContactSection() {
     const isMobile = useIsMobile();
 
     return (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className={cn(
+                "grid gap-12",
+                !isMobile && "md:grid-cols-2"
+            )}>
             
             {/* Contact Form - Hidden on mobile */}
             {!isMobile && (
@@ -51,14 +55,14 @@ export function ContactSection() {
 
             {/* Contact Info */}
             <div className="space-y-8">
-                <h2 className="text-3xl font-bold font-headline">Otras formas de <span className="text-primary">contactar</span></h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-headline">Otras formas de <span className="text-primary">contactar</span></h2>
                 <div className="space-y-6">
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
                             <Phone className="w-6 h-6" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold">Teléfono</h3>
+                            <h3 className="text-lg md:text-xl font-semibold">Teléfono</h3>
                             <p className="text-muted-foreground">Llámanos para una <b className="text-foreground">atención inmediata</b>.</p>
                             <a href="tel:+521234567890" className="text-primary font-semibold hover:underline">+52 123 456 7890</a>
                         </div>
@@ -68,7 +72,7 @@ export function ContactSection() {
                             <Mail className="w-6 h-6" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold">Correo Electrónico</h3>
+                            <h3 className="text-lg md:text-xl font-semibold">Correo Electrónico</h3>
                             <p className="text-muted-foreground">Envíanos tus <b className="text-foreground">requerimientos y cotizaciones</b>.</p>
                             <a href="mailto:ventas@dfac.com" className="text-primary font-semibold hover:underline">ventas@dfac.com</a>
                         </div>
@@ -78,7 +82,7 @@ export function ContactSection() {
                             <MessageSquare className="w-6 h-6" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold">WhatsApp</h3>
+                            <h3 className="text-lg md:text-xl font-semibold">WhatsApp</h3>
                             <p className="text-muted-foreground">El canal <b className="text-foreground">más rápido</b> para resolver dudas.</p>
                             <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Chatea con nosotros</a>
                         </div>
@@ -88,14 +92,14 @@ export function ContactSection() {
                             <MapPin className="w-6 h-6" />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold">Oficina Central</h3>
+                            <h3 className="text-lg md:text-xl font-semibold">Oficina Central</h3>
                             <p className="text-muted-foreground">Av. de la Industria 123, Parque Industrial, Querétaro, Qro. CP 76150</p>
                             <p className="text-sm text-muted-foreground"><b className="text-foreground">Horario:</b> Lunes a Viernes de 9:00 a 18:00 hrs.</p>
                         </div>
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">Síguenos en <span className="text-primary">redes</span></h3>
+                    <h3 className="text-lg md:text-xl font-semibold">Síguenos en <span className="text-primary">redes</span></h3>
                     <div className="flex space-x-4">
                         <Button asChild variant="outline" size="icon" className="text-muted-foreground hover:text-primary hover:border-primary">
                             <Link href="#"><Facebook /></Link>
