@@ -78,7 +78,7 @@ export function ContactSection() {
                         <div>
                             <h3 className="text-lg md:text-xl font-semibold">Correo Electrónico</h3>
                             <p className="text-muted-foreground">Envíanos tus <b className="text-foreground">requerimientos y cotizaciones</b>.</p>
-                            <a href="mailto:ventas@dfac.com" className="text-primary font-semibold hover:underline">ventas@dfac.com</a>
+                            <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-primary font-semibold hover:underline">ventas@cimbrayaccesorios.com.mx</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">

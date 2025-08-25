@@ -41,7 +41,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:ventas@dfac.com" className="hover:text-primary transition-colors">ventas@dfac.com</a>
+                <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="hover:text-primary transition-colors">ventas@cimbrayaccesorios.com.mx</a>
               </li>
             </ul>
           </div>
