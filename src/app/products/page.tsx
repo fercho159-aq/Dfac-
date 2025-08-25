@@ -24,6 +24,7 @@ export default function ProductsPage() {
       const productData = data.map((row: any) => ({
         id: String(row.id),
         name: row.name,
+        slug: row.slug,
         price: (Number(row.prices.price) || 0) / 100,
         description: row.description,
         image: row.images[0]?.src || 'https://placehold.co/400x300.png',
