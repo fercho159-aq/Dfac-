@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Product, ProductImage } from '@/lib/data';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
@@ -16,15 +15,16 @@ import { getLocalImagePath } from '@/lib/utils';
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
+  const { slug } = params;
 
   useEffect(() => {
-    if (params.slug) {
+    if (slug) {
       const fetchProduct = async () => {
         setLoading(true);
         try {
           const response = await fetch('/data/products.json');
           const products = await response.json();
-          const foundProductData = products.find((p: any) => p.slug === params.slug);
+          const foundProductData = products.find((p: any) => p.slug === slug);
           
           if (foundProductData) {
             const productData: Product = {
@@ -47,7 +47,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       };
       fetchProduct();
     }
-  }, [params.slug]);
+  }, [slug]);
 
   if (loading) {
     return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">Cargando...</div>;
