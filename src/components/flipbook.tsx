@@ -45,6 +45,11 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
     withCredentials: false
   }), [pdfUrl]);
 
+  const options = useMemo(() => ({
+    cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
+    cMapPacked: true,
+  }), []);
+
   useEffect(() => {
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(
       'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -90,10 +95,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
             console.error('Failed to load PDF', error);
             setIsLoading(false);
           }}
-          options={{
-             cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
-             cMapPacked: true,
-          }}
+          options={options}
           loading="" // We handle loading state ourselves
         >
           <HTMLFlipBook

@@ -156,7 +156,7 @@ export default function Home() {
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
-  const catalogPdfUrl = "https://cimbrayaccesorios.com.mx/wp-content/uploads/2023/12/CATALOGO-DFAC_compressed.pdf";
+  const catalogPdfUrl = "/archivos/CATALOGO-DFAC_compressed.pdf";
 
 
   useEffect(() => {
@@ -249,7 +249,7 @@ export default function Home() {
             <div>
               <div className="rounded-lg shadow-2xl overflow-hidden">
                 <video
-                  src="/videos/video.mp4"
+                  src="/Video/VIDEO-2025-08-05-12-37-33.mp4"
                   width={600}
                   height={400}
                   className="w-full h-full object-cover"
