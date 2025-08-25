@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, MessageSquare } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -16,6 +16,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
   }
 
   return (
+    <>
     <div className="bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
@@ -88,6 +89,22 @@ function ProductDetailsClient({ product }: { product: Product }) {
         </div>
       </div>
     </div>
+    <section className="py-20 bg-card">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold font-headline">¿Interesado en este <span className="text-primary">producto?</span></h2>
+            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Nuestro equipo está listo para proporcionarte una <b className="text-foreground">cotización detallada</b> y asesorarte en lo que necesites.
+            </p>
+            <div className="mt-6">
+                <Button asChild size="lg">
+                    <Link href="/contact">
+                        <MessageSquare className="mr-2 h-5 w-5" /> Contactar a un asesor
+                    </Link>
+                </Button>
+            </div>
+        </div>
+      </section>
+    </>
   );
 }
 
