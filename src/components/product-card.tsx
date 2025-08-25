@@ -32,7 +32,7 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.name}
           </Link>
         </CardTitle>
-        <CardDescription asChild>
+        <CardDescription>
            <div className="line-clamp-3" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
         </CardDescription>
       </CardContent>
