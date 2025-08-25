@@ -6,7 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { getLocalImagePath } from '@/lib/utils';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -37,7 +36,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
                             <CarouselItem key={img.id}>
                                 <div className="aspect-square relative w-full overflow-hidden rounded-lg border">
                                     <Image
-                                        src={getLocalImagePath(img.src)}
+                                        src={img.src || 'https://placehold.co/600x600.png'}
                                         alt={product.name}
                                         fill
                                         className="object-contain"
@@ -49,7 +48,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
                          <CarouselItem>
                             <div className="aspect-square relative w-full overflow-hidden rounded-lg border">
                                 <Image
-                                    src={getLocalImagePath(product.image)}
+                                    src={product.image || 'https://placehold.co/600x600.png'}
                                     alt={product.name}
                                     fill
                                     className="object-contain"

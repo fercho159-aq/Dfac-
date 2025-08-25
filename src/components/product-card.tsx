@@ -5,14 +5,13 @@ import { Button } from "@/components/ui/button";
 import type { Product } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
-import { getLocalImagePath } from '@/lib/utils';
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const imagePath = getLocalImagePath(product.image);
+  const imagePath = product.image || 'https://placehold.co/400x300.png';
   
   return (
     <Card className="flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -48,5 +47,3 @@ export function ProductCard({ product }: ProductCardProps) {
     </Card>
   );
 }
-
-    
