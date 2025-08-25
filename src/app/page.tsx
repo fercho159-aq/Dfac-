@@ -326,7 +326,7 @@ export default function Home() {
                                         <Image src={image.src} alt={image.alt} width={400} height={300} className="hover:scale-105 transition-transform duration-300" data-ai-hint={image.hint} />
                                     </div>
                                   </DialogTrigger>
-                                  <DialogContent className="max-w-4xl p-0">
+                                  <DialogContent className="max-w-4xl p-6">
                                       <ContactSection />
                                   </DialogContent>
                                 </Dialog>
