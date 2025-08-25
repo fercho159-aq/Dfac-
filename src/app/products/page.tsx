@@ -43,9 +43,15 @@ export default function ProductsPage() {
       .filter(product => 
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
       )
-      .filter(product => 
-        selectedCategory === 'all' || product.category.toLowerCase() === categories.find(c => c.id === selectedCategory)?.name.toLowerCase()
-      );
+      .filter(product => {
+        if (selectedCategory === 'all') return true;
+        // Normalize both category names for comparison
+        const productCategory = product.category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const selectedCategoryName = categories.find(c => c.id === selectedCategory)?.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const mainProductCategory = (product.category.split('>')[0] || "").trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        
+        return productCategory.includes(selectedCategoryName!) || mainProductCategory.includes(selectedCategoryName!);
+      });
   }, [searchTerm, selectedCategory, allProducts]);
   
   const FilterSidebarContent = () => (
