@@ -5,27 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Eye, Gem, Handshake, ShieldCheck, Star, Target, Users, Zap } from 'lucide-react';
 
-const teamMembers = [
-  {
-    name: "Juan Pérez",
-    role: "Fundador y Director General",
-    image: "https://placehold.co/300x300.png",
-    bio: "Con más de 20 años en la industria, Juan lidera DFAC con una visión clara: ofrecer calidad y confianza a cada cliente.",
-  },
-  {
-    name: "Ana García",
-    role: "Gerente de Operaciones",
-    image: "https://placehold.co/300x300.png",
-    bio: "Ana asegura que cada pedido llegue a tiempo y en perfectas condiciones, optimizando nuestra promesa de entrega en 24 horas.",
-  },
-  {
-    name: "Carlos Rodríguez",
-    role: "Jefe de Asesoría Técnica",
-    image: "https://placehold.co/300x300.png",
-    bio: "Carlos y su equipo están dedicados a encontrar la solución perfecta para los desafíos técnicos de tu obra.",
-  },
-];
-
 const milestones = [
   { year: "2010", event: "Fundación de DFAC con la misión de innovar en el mercado de la cimbra." },
   { year: "2015", event: "Expandimos nuestro catálogo para incluir sistemas de andamiaje certificados." },
@@ -156,30 +135,6 @@ export default function AboutPage() {
                 </div>
             </div>
         </section>
-
-      {/* Equipo Humano */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Equipo</span></h2>
-            <p className="mt-4 text-lg text-muted-foreground">Las personas que hacen posible nuestro <b className="text-foreground">compromiso</b>.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="text-center">
-                <CardHeader>
-                  <Image src={member.image} alt={member.name} width={150} height={150} className="rounded-full mx-auto shadow-lg" data-ai-hint="person professional portrait" />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="text-xl">{member.name}</CardTitle>
-                  <p className="text-primary font-semibold mt-1">{member.role}</p>
-                  <p className="text-muted-foreground mt-2 text-sm">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Por qué elegirnos */}
       <section className="py-20 bg-background">
