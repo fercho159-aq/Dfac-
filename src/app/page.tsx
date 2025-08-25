@@ -361,11 +361,11 @@ export default function Home() {
                <div className="mb-4 break-inside-avoid">
                 <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction workers" />
               </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
+              <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC14-D5.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
               </div>
                <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC5-D5.jpg" alt="Proyecto de construcción 2" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="modern architecture" />
+                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
               </div>
                <div className="mb-4 break-inside-avoid">
                  <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork materials" />
