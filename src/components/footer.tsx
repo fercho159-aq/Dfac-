@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/">
-              <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+              <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
             <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
             <div className="flex space-x-4">

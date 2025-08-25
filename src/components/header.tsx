@@ -28,7 +28,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link href="/">
-              <Image src="/logo.png" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+              <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
           </div>
           <nav className="hidden lg:flex lg:items-center lg:space-x-8">
