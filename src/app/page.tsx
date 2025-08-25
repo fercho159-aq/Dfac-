@@ -158,7 +158,7 @@ export default function Home() {
             description: row.description,
             image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
             images: row.images,
-            category: row.categories?.[0]?.name || 'Accesorios'
+            category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "") || 'Accesorios'
         }));
         setFeaturedProducts(productData.slice(0, 3));
     };
@@ -312,6 +312,11 @@ export default function Home() {
                   <CarouselPrevious />
                   <CarouselNext />
               </Carousel>
+               <div className="text-center mt-12">
+                <Button asChild size="lg">
+                    <Link href="/contact">Aprovecha Ahora</Link>
+                </Button>
+            </div>
           </div>
       </section>
 
@@ -355,6 +360,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+           <div className="text-center mt-12">
+                <Button asChild size="lg">
+                    <Link href="/about">Inspírate con Nosotros</Link>
+                </Button>
+            </div>
         </div>
       </section>
 
@@ -374,6 +384,11 @@ export default function Home() {
                       </div>
                   ))}
               </div>
+               <div className="text-center mt-12">
+                <Button asChild size="lg">
+                    <Link href="/contact">Comienza tu Cotización</Link>
+                </Button>
+            </div>
           </div>
       </section>
 
@@ -413,6 +428,11 @@ export default function Home() {
             <CarouselPrevious className="left-[-50px]" />
             <CarouselNext className="right-[-50px]" />
           </Carousel>
+           <div className="text-center mt-12">
+                <Button asChild size="lg" variant="outline">
+                    <Link href="/contact">Conviértete en Nuestro Próximo Caso de Éxito</Link>
+                </Button>
+            </div>
         </div>
       </section>
 
