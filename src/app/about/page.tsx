@@ -122,14 +122,37 @@ export default function AboutPage() {
                     <div className="absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
 
                     {milestones.map((milestone, index) => (
-                        <div key={index} className="mb-8 flex justify-between items-center w-full">
-                            <div className="hidden md:block w-5/12"></div>
-                            <div className="z-10 flex items-center justify-center bg-primary text-primary-foreground w-12 h-12 rounded-full font-bold text-lg">{milestone.year}</div>
-                            <div className="w-full md:w-5/12 bg-card p-4 rounded-lg shadow-md ml-4 md:ml-0">
-                                <p className="text-foreground font-semibold">{milestone.event}</p>
-                            </div>
-                        </div>
-                    ))}
+                       <div key={index} className="mb-8 flex md:justify-between md:items-center w-full">
+                           {index % 2 === 0 ? (
+                               <>
+                                   {/* Contenido Izquierda */}
+                                   <div className="hidden md:block w-5/12 text-right">
+                                       <div className="w-full bg-card p-4 rounded-lg shadow-md">
+                                           <p className="text-foreground font-semibold">{milestone.event}</p>
+                                       </div>
+                                   </div>
+                                   {/* Círculo */}
+                                   <div className="z-10 flex items-center justify-center bg-primary text-primary-foreground w-12 h-12 rounded-full font-bold text-lg">{milestone.year}</div>
+                                   {/* Contenido Derecha (Mobile) */}
+                                   <div className="w-full md:w-5/12 bg-card p-4 rounded-lg shadow-md ml-4 md:ml-0 md:hidden">
+                                       <p className="text-foreground font-semibold">{milestone.event}</p>
+                                   </div>
+                                    <div className="hidden md:block w-5/12"></div>
+                               </>
+                           ) : (
+                               <>
+                                    {/* Placeholder Izquierda */}
+                                   <div className="hidden md:block w-5/12"></div>
+                                    {/* Círculo */}
+                                   <div className="z-10 flex items-center justify-center bg-primary text-primary-foreground w-12 h-12 rounded-full font-bold text-lg">{milestone.year}</div>
+                                    {/* Contenido Derecha */}
+                                   <div className="w-full md:w-5/12 bg-card p-4 rounded-lg shadow-md ml-4 md:ml-0">
+                                       <p className="text-foreground font-semibold">{milestone.event}</p>
+                                   </div>
+                               </>
+                           )}
+                       </div>
+                   ))}
                 </div>
             </div>
         </section>
