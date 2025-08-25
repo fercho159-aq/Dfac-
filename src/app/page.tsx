@@ -376,6 +376,18 @@ export default function Home() {
                <div className="mb-4 break-inside-avoid">
                 <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="shoring post" />
               </div>
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC3-D5.jpg" alt="Proyecto de construcción 3" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site" />
+              </div>
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC6-D5.jpg" alt="Material de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding material" />
+              </div>
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC8-D5.jpg" alt="Trabajador de construcción" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction worker" />
+              </div>
+               <div className="mb-4 break-inside-avoid">
+                <Image src="/Image/Galeria/CARRUSEL-DFAC9-D5.jpg" alt="Cimbra para construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork" />
+              </div>
           </div>
            <div className="text-center mt-12">
                 <Button asChild size="lg">
