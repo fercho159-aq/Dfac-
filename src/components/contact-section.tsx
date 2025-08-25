@@ -97,7 +97,7 @@ export function ContactSection() {
                         </div>
                         <div>
                             <h3 className="text-lg md:text-xl font-semibold">Oficina Central</h3>
-                            <p className="text-muted-foreground">Av. de la Industria 123, Parque Industrial, Querétaro, Qro. CP 76150</p>
+                            <p className="text-muted-foreground">Cuauhtémoc 105, San Pedro Iztacalco, Iztacalco, 08220 Ciudad de México, CDMX</p>
                             <p className="text-sm text-muted-foreground"><b className="text-foreground">Horario:</b> Lunes a Viernes de 9:00 a 18:00 hrs.</p>
                         </div>
                     </div>
