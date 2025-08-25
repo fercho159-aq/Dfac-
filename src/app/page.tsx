@@ -14,6 +14,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Autoplay from "embla-carousel-autoplay"
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { ContactSection } from '@/components/contact-section';
+import { Flipbook } from '@/components/flipbook';
 
 const categories = [
   { name: 'Anclajes', icon: <Wrench className="w-10 h-10 mx-auto mb-4 text-primary" />, href: "/products" },
@@ -150,6 +151,8 @@ export default function Home() {
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
+  const catalogPdfUrl = "https://cimbrayaccesorios.com.mx/wp-content/uploads/2023/12/CATALOGO-DFAC_compressed.pdf";
+
 
   useEffect(() => {
     setIsClient(true);
@@ -303,8 +306,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Catalog Section */}
+      <section id="catalog" className="py-20 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
+                  <p className="mt-4 text-lg text-muted-foreground">Explora nuestros productos de manera interactiva.</p>
+              </div>
+              {isClient && <Flipbook pdfUrl={catalogPdfUrl} />}
+          </div>
+      </section>
+
       {/* Promotions Section */}
-      <section id="promociones" className="py-20 bg-card">
+      <section id="promociones" className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg'>DESCUENTOS EXCLUSIVOS</span></h2>
@@ -346,7 +360,7 @@ export default function Home() {
       </section>
 
       {/* Mosaic Gallery Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
