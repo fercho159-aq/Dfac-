@@ -6,6 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import HTMLFlipBook from 'react-pageflip';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Loader2, Download } from 'lucide-react';
+import Link from 'next/link';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
