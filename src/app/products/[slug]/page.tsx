@@ -1,7 +1,4 @@
 
-"use client"
-
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Product, ProductImage } from '@/lib/data';
 import { Button } from '@/components/ui/button';
@@ -10,49 +7,11 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { getLocalImagePath } from '@/lib/utils';
+import { promises as fs } from 'fs';
+import path from 'path';
 
-
-export default function ProductDetailPage({ params }: { params: { slug: string } }) {
-  const [product, setProduct] = useState<Product | null>(null);
-  const [loading, setLoading] = useState(true);
-  const { slug } = params;
-
-  useEffect(() => {
-    if (slug) {
-      const fetchProduct = async () => {
-        setLoading(true);
-        try {
-          const response = await fetch('/data/products.json');
-          const products = await response.json();
-          const foundProductData = products.find((p: any) => p.slug === slug);
-          
-          if (foundProductData) {
-            const productData: Product = {
-              id: String(foundProductData.id),
-              name: foundProductData.name,
-              slug: foundProductData.slug,
-              price: (Number(foundProductData.prices?.price) || 0) / 100,
-              description: foundProductData.description,
-              image: foundProductData.images?.[0]?.src || 'https://placehold.co/400x300.png',
-              images: foundProductData.images,
-              category: foundProductData.categories?.[0]?.name || 'Accesorios'
-            };
-            setProduct(productData);
-          }
-        } catch (error) {
-          console.error("Error fetching product:", error);
-        } finally {
-          setLoading(false);
-        }
-      };
-      fetchProduct();
-    }
-  }, [slug]);
-
-  if (loading) {
-    return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">Cargando...</div>;
-  }
-
+// This is a new Client Component that will handle the interactive parts.
+function ProductDetailsClient({ product }: { product: Product }) {
   if (!product) {
     return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">Producto no encontrado.</div>;
   }
@@ -129,4 +88,34 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       </div>
     </div>
   );
+}
+
+
+// This is now a Server Component
+export default async function ProductDetailPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  
+  // Fetch data on the server
+  const jsonDirectory = path.join(process.cwd(), 'public', 'data');
+  const fileContents = await fs.readFile(path.join(jsonDirectory, 'products.json'), 'utf8');
+  const products = JSON.parse(fileContents);
+  
+  const foundProductData = products.find((p: any) => p.slug === slug);
+  
+  let product: Product | null = null;
+  if (foundProductData) {
+    product = {
+      id: String(foundProductData.id),
+      name: foundProductData.name,
+      slug: foundProductData.slug,
+      price: (Number(foundProductData.prices?.price) || 0) / 100,
+      description: foundProductData.description,
+      image: foundProductData.images?.[0]?.src || 'https://placehold.co/400x300.png',
+      images: foundProductData.images,
+      category: foundProductData.categories?.[0]?.name || 'Accesorios'
+    };
+  }
+
+  // Pass the fetched data to the client component
+  return <ProductDetailsClient product={product!} />;
 }
