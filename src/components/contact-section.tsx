@@ -1,45 +1,53 @@
 
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import Link from "next/link";
 
 export function ContactSection() {
+    const isMobile = useIsMobile();
+
     return (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card>
-                <CardHeader>
-                <CardTitle className="text-2xl font-bold">Envíanos un mensaje</CardTitle>
-                </CardHeader>
-                <CardContent>
-                <form className="space-y-6">
-                    <div className="space-y-2">
-                    <Label htmlFor="name" className="font-semibold">Nombre completo</Label>
-                    <Input id="name" placeholder="Tu nombre" />
-                    </div>
-                    <div className="space-y-2">
-                    <Label htmlFor="email" className="font-semibold">Correo electrónico</Label>
-                    <Input id="email" type="email" placeholder="tu@email.com" />
-                    </div>
-                    <div className="space-y-2">
-                    <Label htmlFor="phone" className="font-semibold">Teléfono (Opcional)</Label>
-                    <Input id="phone" type="tel" placeholder="Tu número de teléfono" />
-                    </div>
-                    <div className="space-y-2">
-                    <Label htmlFor="message" className="font-semibold">Mensaje</Label>
-                    <Textarea id="message" placeholder="¿En qué podemos ayudarte?" rows={5} />
-                    </div>
-                    <Button type="submit" size="lg" className="w-full font-bold">
-                    Enviar Mensaje
-                    </Button>
-                </form>
-                </CardContent>
-            </Card>
+            
+            {/* Contact Form - Hidden on mobile */}
+            {!isMobile && (
+                <Card>
+                    <CardHeader>
+                    <CardTitle className="text-2xl font-bold">Envíanos un mensaje</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                    <form className="space-y-6">
+                        <div className="space-y-2">
+                        <Label htmlFor="name" className="font-semibold">Nombre completo</Label>
+                        <Input id="name" placeholder="Tu nombre" />
+                        </div>
+                        <div className="space-y-2">
+                        <Label htmlFor="email" className="font-semibold">Correo electrónico</Label>
+                        <Input id="email" type="email" placeholder="tu@email.com" />
+                        </div>
+                        <div className="space-y-2">
+                        <Label htmlFor="phone" className="font-semibold">Teléfono (Opcional)</Label>
+                        <Input id="phone" type="tel" placeholder="Tu número de teléfono" />
+                        </div>
+                        <div className="space-y-2">
+                        <Label htmlFor="message" className="font-semibold">Mensaje</Label>
+                        <Textarea id="message" placeholder="¿En qué podemos ayudarte?" rows={5} />
+                        </div>
+                        <Button type="submit" size="lg" className="w-full font-bold">
+                        Enviar Mensaje
+                        </Button>
+                    </form>
+                    </CardContent>
+                </Card>
+            )}
 
             {/* Contact Info */}
             <div className="space-y-8">
