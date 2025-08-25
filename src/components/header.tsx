@@ -30,13 +30,13 @@ export function Header() {
               <span className="font-black">DFAC</span>
             </Link>
           </div>
-          <nav className="hidden md:flex md:items-center md:space-x-8">
+          <nav className="hidden lg:flex lg:items-center lg:space-x-8">
             {navLinks.map((link) => (
               <Link 
                 key={link.href} 
                 href={link.href} 
                 className={cn(
-                  "text-lg font-medium transition-colors",
+                  "text-base font-medium transition-colors",
                   pathname === link.href ? "text-primary" : "text-foreground hover:text-primary"
                 )}
               >
@@ -49,10 +49,10 @@ export function Header() {
                <Truck className="h-6 w-6 text-primary animate-pulse" />
                <span className="text-sm font-semibold text-primary">Entrega en 24 horas</span>
              </div>
-            <Button asChild className="hidden md:inline-flex">
+            <Button asChild className="hidden lg:inline-flex">
               <Link href="/contact">Contáctenos</Link>
             </Button>
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon">
@@ -72,7 +72,7 @@ export function Header() {
                           key={link.href} 
                           href={link.href} 
                           className={cn(
-                            "text-lg font-medium transition-colors",
+                            "text-base font-medium transition-colors",
                             pathname === link.href ? "text-primary" : "text-foreground hover:text-primary"
                           )}
                           onClick={() => setIsOpen(false)}>
