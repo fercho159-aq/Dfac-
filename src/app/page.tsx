@@ -6,13 +6,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { Product, ProductImage } from '@/lib/data';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { ContactSection } from '@/components/contact-section';
 import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -153,6 +153,7 @@ const heroSlides = [
 
 export default function Home() {
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
+  const [isUrgentDialogOpen, setIsUrgentDialogOpen] = useState(false);
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
@@ -177,10 +178,54 @@ export default function Home() {
     };
 
     fetchProducts();
+
+    const timer = setTimeout(() => {
+      setIsUrgentDialogOpen(true);
+    }, 10000); // 10 seconds delay
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
+      {/* Urgent Contact Dialog */}
+      <Dialog open={isUrgentDialogOpen} onOpenChange={setIsUrgentDialogOpen}>
+        <DialogContent className="sm:max-w-md text-center">
+            <DialogHeader>
+            <DialogTitle className="text-2xl font-bold font-headline text-primary">¿Necesitas Material de URGENCIA?</DialogTitle>
+            <DialogDescription className="mt-2 text-muted-foreground">
+                ¡No te preocupes! Entregamos en tu obra en menos de 24 horas. <br/> Contáctanos ahora mismo.
+            </DialogDescription>
+            </DialogHeader>
+            <div className="py-4 space-y-4">
+                <a href="https://wa.me/5215525989751" target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
+                        <MessageSquare className="mr-2 h-5 w-5" /> Chatear por WhatsApp
+                    </Button>
+                </a>
+                <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
+                    <Phone className="w-6 h-6 text-primary mt-1" />
+                    <div>
+                        <h3 className="text-lg font-semibold text-left">Llámanos</h3>
+                        <div className="flex flex-col space-y-1 mt-1 text-left">
+                            <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
+                            <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
+                            <a href="tel:5555715084" className="text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
+                        </div>
+                    </div>
+                </div>
+                 <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
+                    <Mail className="w-6 h-6 text-primary mt-1" />
+                    <div>
+                        <h3 className="text-lg font-semibold text-left">Escríbenos</h3>
+                        <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-primary font-semibold hover:underline text-left block">ventas@cimbrayaccesorios.com.mx</a>
+                    </div>
+                </div>
+            </div>
+        </DialogContent>
+      </Dialog>
+
+
       {/* Hero Section */}
        <section className="relative w-full h-screen-hero">
           <Carousel
@@ -495,3 +540,5 @@ export default function Home() {
     </>
   );
 }
+
+    
