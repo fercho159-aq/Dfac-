@@ -179,11 +179,9 @@ export default function Home() {
 
     fetchProducts();
 
-    const timer = setTimeout(() => {
-      setIsUrgentDialogOpen(true);
-    }, 10000); // 10 seconds delay
+    // Show the dialog immediately after the component mounts
+    setIsUrgentDialogOpen(true);
 
-    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -540,5 +538,3 @@ export default function Home() {
     </>
   );
 }
-
-    
