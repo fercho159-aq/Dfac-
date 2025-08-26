@@ -128,7 +128,7 @@ const heroSlides = [
         cta2_href: "/contact"
     },
     {
-      image: "/Image/Fotos Banner/2.jpg",
+      image: "/Image/CARRUSEL-DFAC17-D5.jpg",
         hint: "construction workers logistics",
         title: "Entrega Inmediata en tu Obra",
         subtitle: "Material listo en menos de 24H",
@@ -139,7 +139,7 @@ const heroSlides = [
         cta2_href: "/contact"
     },
     {
-         image: "/Image/Fotos Banner/3.jpg",
+         image: "/Image/CARRUSEL-DFAC23-D5.jpg",
         hint: "engineer planning construction",
         title: "Asesoría Experta para tu Proyecto",
         subtitle: "Maximizamos tu seguridad y eficiencia",
