@@ -80,7 +80,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
 
   return (
     <div className="w-full flex flex-col items-center space-y-4">
-      <div className="w-full max-w-5xl aspect-[2/1.414] relative">
+      <div className="w-full max-w-5xl aspect-[2/1.414] md:aspect-[2/1.414] relative">
         {isLoading && (
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-card rounded-lg shadow-lg z-10">
             <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
@@ -111,7 +111,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
             mobileScrollSupport={true}
             onFlip={handleFlip}
             ref={flipBook}
-            className="rounded-lg shadow-2xl"
+            className="rounded-lg shadow-2xl w-[75vw] h-auto md:w-full"
           >
             <PageCover>
                 <h2 className="text-2xl font-bold text-primary">Catálogo de Productos</h2>
