@@ -38,7 +38,9 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
   const [numPages, setNumPages] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [width, setWidth] = useState(0);
   const flipBook = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const fileOptions = useMemo(() => ({
     url: pdfUrl,
@@ -78,9 +80,26 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
     }
   };
 
+  useEffect(() => {
+    if (containerRef.current) {
+      setWidth(containerRef.current.clientWidth);
+    }
+    const handleResize = () => {
+      if(containerRef.current) {
+        setWidth(containerRef.current.clientWidth);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+  const bookWidth = Math.min(width, 1000);
+  const bookHeight = bookWidth * 1.414;
+
   return (
     <div className="w-full flex flex-col items-center space-y-4">
-      <div className="w-full max-w-5xl aspect-[2/1.414] md:aspect-[2/1.414] relative">
+      <div ref={containerRef} className="w-full max-w-5xl md:aspect-[2/1.414] relative">
         {isLoading && (
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-card rounded-lg shadow-lg z-10">
             <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
@@ -99,19 +118,19 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
           loading="" 
         >
           <HTMLFlipBook
-            width={500}
-            height={707}
+            width={bookWidth / 2}
+            height={bookHeight / 2}
             size="stretch"
-            minWidth={300}
-            maxWidth={1000}
-            minHeight={424}
-            maxHeight={1414}
+            minWidth={150}
+            maxWidth={500}
+            minHeight={212}
+            maxHeight={707}
             maxShadowOpacity={0.5}
             showCover={true}
             mobileScrollSupport={true}
             onFlip={handleFlip}
             ref={flipBook}
-            className="rounded-lg shadow-2xl w-[90vw] h-auto md:w-full"
+            className="rounded-lg shadow-2xl mx-auto"
           >
             <PageCover>
                 <h2 className="text-2xl font-bold text-primary">Catálogo de Productos</h2>
@@ -122,7 +141,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
               <PdfPage key={`page_${index + 1}`}>
                 <Page
                   pageNumber={index + 1}
-                  width={500}
+                  width={bookWidth / 2}
                   renderTextLayer={false}
                   renderAnnotationLayer={false}
                 />
