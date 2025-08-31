@@ -96,7 +96,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
             setIsLoading(false);
           }}
           options={options}
-          loading="" // We handle loading state ourselves
+          loading="" 
         >
           <HTMLFlipBook
             width={500}
@@ -111,7 +111,7 @@ export function Flipbook({ pdfUrl }: FlipbookProps) {
             mobileScrollSupport={true}
             onFlip={handleFlip}
             ref={flipBook}
-            className="rounded-lg shadow-2xl w-[75vw] h-auto md:w-full"
+            className="rounded-lg shadow-2xl w-[90vw] h-auto md:w-full"
           >
             <PageCover>
                 <h2 className="text-2xl font-bold text-primary">Catálogo de Productos</h2>
