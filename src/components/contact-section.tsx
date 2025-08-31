@@ -59,51 +59,51 @@ export function ContactSection() {
                 <div className="space-y-6">
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
-                            <Phone className="w-6 h-6" />
+                            <Phone className="w-5 h-5 md:w-6 md:h-6" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold">Teléfonos</h3>
-                            <p className="text-muted-foreground">Llámanos para una <b className="text-foreground">atención inmediata</b>.</p>
+                            <h3 className="text-base md:text-xl font-semibold">Teléfonos</h3>
+                            <p className="text-sm text-muted-foreground">Llámanos para una <b className="text-foreground">atención inmediata</b>.</p>
                             <div className="flex flex-col space-y-1 mt-1">
-                                <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
-                                <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
-                                <a href="tel:5555715084" className="text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
+                                <a href="tel:5525989751" className="text-sm text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
+                                <a href="tel:5541673745" className="text-sm text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
+                                <a href="tel:5555715084" className="text-sm text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
                             </div>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
-                            <Mail className="w-6 h-6" />
+                            <Mail className="w-5 h-5 md:w-6 md:h-6" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold">Correo Electrónico</h3>
-                            <p className="text-muted-foreground">Envíanos tus <b className="text-foreground">requerimientos y cotizaciones</b>.</p>
-                            <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-primary font-semibold hover:underline">ventas@cimbrayaccesorios.com.mx</a>
+                            <h3 className="text-base md:text-xl font-semibold">Correo Electrónico</h3>
+                            <p className="text-sm text-muted-foreground">Envíanos tus <b className="text-foreground">requerimientos y cotizaciones</b>.</p>
+                            <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-sm text-primary font-semibold hover:underline">ventas@cimbrayaccesorios.com.mx</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
-                            <MessageSquare className="w-6 h-6" />
+                            <MessageSquare className="w-5 h-5 md:w-6 md:h-6" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold">WhatsApp</h3>
-                            <p className="text-muted-foreground">El canal <b className="text-foreground">más rápido</b> para resolver dudas.</p>
-                            <a href="https://wa.me/5215525989751" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Chatea con nosotros</a>
+                            <h3 className="text-base md:text-xl font-semibold">WhatsApp</h3>
+                            <p className="text-sm text-muted-foreground">El canal <b className="text-foreground">más rápido</b> para resolver dudas.</p>
+                            <a href="https://wa.me/5215525989751" target="_blank" rel="noopener noreferrer" className="text-sm text-primary font-semibold hover:underline">Chatea con nosotros</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
-                            <MapPin className="w-6 h-6" />
+                            <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold">Oficina Central</h3>
-                            <p className="text-muted-foreground">Cuauhtémoc 105, San Pedro Iztacalco, Iztacalco, 08220 Ciudad de México, CDMX</p>
-                            <p className="text-sm text-muted-foreground"><b className="text-foreground">Horario:</b> Lunes a Viernes de 9:00 a 18:00 hrs.</p>
+                            <h3 className="text-base md:text-xl font-semibold">Oficina Central</h3>
+                            <p className="text-sm text-muted-foreground">Cuauhtémoc 105, San Pedro Iztacalco, Iztacalco, 08220 Ciudad de México, CDMX</p>
+                            <p className="text-xs text-muted-foreground"><b className="text-foreground">Horario:</b> Lunes a Viernes de 9:00 a 18:00 hrs.</p>
                         </div>
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-lg md:text-xl font-semibold">Síguenos en <span className="text-primary">redes</span></h3>
+                    <h3 className="text-base md:text-xl font-semibold">Síguenos en <span className="text-primary">redes</span></h3>
                     <div className="flex space-x-4">
                         <Button asChild variant="outline" size="icon" className="text-muted-foreground hover:text-primary hover:border-primary">
                             <Link href="#"><Facebook /></Link>
