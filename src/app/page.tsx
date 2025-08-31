@@ -93,10 +93,10 @@ const processSteps = [
 ];
 
 const clientLogos = [
-    { name: 'Client Logo 1', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Client Logo 2', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Client Logo 3', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Client Logo 4', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'BBVA Bancomer', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'Secretaría de Marina', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'UNAM', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
     { name: 'Client Logo 5', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
     { name: 'Client Logo 6', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
 ];
