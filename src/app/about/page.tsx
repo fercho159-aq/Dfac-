@@ -31,10 +31,10 @@ const differentiators = [
 ];
 
 const clientLogos = [
-    { name: 'BBVA Bancomer', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Secretaría de Marina', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'UNAM', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'BBVA Bancomer', src: 'https://upload.wikimedia.org/wikipedia/commons/1/15/BBVA_Bancomer_logo.svg' , hint: 'BBVA Bancomer logo'},
+    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/010aeropuerto-felipe-angeles-2.jpg' , hint: 'AIFA airport logo'},
+    { name: 'Secretaría de Marina', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SEMAR_Logo_2019.svg/2560px-SEMAR_Logo_2019.svg.png' , hint: 'Secretaria de Marina logo'},
+    { name: 'UNAM', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1024px-Escudo-UNAM-escalable.svg.png' , hint: 'UNAM university logo'},
 ];
 
 

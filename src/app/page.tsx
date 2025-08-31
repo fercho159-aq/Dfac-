@@ -93,12 +93,10 @@ const processSteps = [
 ];
 
 const clientLogos = [
-    { name: 'BBVA Bancomer', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Secretaría de Marina', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'UNAM', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Client Logo 5', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
-    { name: 'Client Logo 6', src: 'https://placehold.co/150x60.png' , hint: 'company logo'},
+    { name: 'BBVA Bancomer', src: 'https://upload.wikimedia.org/wikipedia/commons/1/15/BBVA_Bancomer_logo.svg' , hint: 'BBVA Bancomer logo'},
+    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/010aeropuerto-felipe-angeles-2.jpg' , hint: 'AIFA airport logo'},
+    { name: 'Secretaría de Marina', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SEMAR_Logo_2019.svg/2560px-SEMAR_Logo_2019.svg.png' , hint: 'Secretaria de Marina logo'},
+    { name: 'UNAM', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1024px-Escudo-UNAM-escalable.svg.png' , hint: 'UNAM university logo'},
 ];
 
 const promotionImages = [
@@ -275,7 +273,7 @@ export default function Home() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFIAN EN NOSOTROS</h3>
-            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
                 {clientLogos.map((logo, index) => (
                     <div key={index} className="flex justify-center">
                         <Image src={logo.src} alt={logo.name} width={120} height={40} className="grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all" data-ai-hint={logo.hint}/>
