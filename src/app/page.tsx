@@ -100,8 +100,17 @@ const clientLogos = [
 ];
 
 const promotionImages = [
+    { src: "/Image/Promos/PROMO-CUNAS.png", alt: "Promoción 1", hint: "construction sale" },
+    { src: "/Image/Promos/PROMO-CUNAS1.png", alt: "Promoción 2", hint: "equipment discount" },
     { src: "/Image/Promos/PROMO-MONOS.png", alt: "Promoción 3", hint: "construction sale" },
     { src: "/Image/Promos/PROMO-MONOS1.png", alt: "Promoción 4", hint: "equipment discount" },
+    { src: "/Image/Promos/PROMO-MOTORES-5.5HP-REDUCTOR.png", alt: "Promoción 5", hint: "construction sale" },
+    { src: "/Image/Promos/PROMO-MOTORES-7HP-REDUCTOR.png", alt: "Promoción 6", hint: "equipment discount" },
+    { src: "/Image/Promos/PROMO-MOTORES-9HP.png", alt: "Promoción 7", hint: "construction sale" },
+    { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES-13HP.png", alt: "Promoción 8", hint: "equipment discount" },
+    { src: "/Image/Promos/PROMO-MOTORES-15HP.png", alt: "Promoción 9", hint: "construction sale" },
+    { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES.png", alt: "Promoción 10", hint: "equipment discount" }
+
 ]
 
 const heroSlides = [
