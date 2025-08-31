@@ -404,8 +404,8 @@ export default function Home() {
                           </CarouselItem>
                       ))}
                   </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
+                  <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+                  <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
               </Carousel>
                <div className="text-center mt-12">
                 <Button asChild size="lg">
