@@ -100,17 +100,8 @@ const clientLogos = [
 ];
 
 const promotionImages = [
-    { src: "/Image/Promos/PROMO-CUNAS.png", alt: "Promoción 1", hint: "construction promotion" },
-    { src: "/Image/Promos/PROMO-CUNAS1.png", alt: "Promoción 2", hint: "building offer" },
     { src: "/Image/Promos/PROMO-MONOS.png", alt: "Promoción 3", hint: "construction sale" },
     { src: "/Image/Promos/PROMO-MONOS1.png", alt: "Promoción 4", hint: "equipment discount" },
-    { src: "/Image/Promos/PROMO-MOTORES-5.5HP-REDUCTOR.png", alt: "Promoción 5", hint: "formwork deal" },
-    { src: "/Image/Promos/PROMO-MOTORES-7HP-REDUCTOR.png", alt: "Promoción 6", hint: "scaffolding special" },
-    { src: "/Image/Promos/PROMO-MOTORES-9HP.png", alt: "Promoción 7", hint: "scaffolding special" },
-    { src: "/Image/Promos/PROMO-MOTORES-13HP.png", alt: "Promoción 8", hint: "scaffolding special" },
-    { src: "/Image/Promos/PROMO-MOTORES-15HP.png", alt: "Promoción 9", hint: "scaffolding special" },
-    { src: "/Image/Promos/PROMO-MOTORES.png", alt: "Promoción 10", hint: "scaffolding special" },
-
 ]
 
 const heroSlides = [
@@ -172,7 +163,32 @@ export default function Home() {
             images: row.images,
             category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() || 'accesorios'
         }));
-        setFeaturedProducts(productData.slice(0, 3));
+        
+        const featuredKeywords = ["puntal", "viga", "moño"];
+        const filtered = productData.filter((product: Product) => {
+          const productName = product.name.toLowerCase();
+          return featuredKeywords.some(keyword => productName.includes(keyword));
+        });
+
+        // Prioritize to show one of each if possible, then fill up to 3
+        const prioritized: Product[] = [];
+        const seenKeywords = new Set();
+
+        for (const keyword of featuredKeywords) {
+          const product = filtered.find(p => p.name.toLowerCase().includes(keyword) && !prioritized.some(fp => fp.id === p.id));
+          if (product) {
+            prioritized.push(product);
+            seenKeywords.add(keyword);
+          }
+        }
+        
+        // Add remaining products if we still have less than 3
+        if (prioritized.length < 3) {
+            const remaining = filtered.filter(p => !prioritized.some(fp => fp.id === p.id));
+            prioritized.push(...remaining.slice(0, 3 - prioritized.length));
+        }
+
+        setFeaturedProducts(prioritized.slice(0, 3));
     };
 
     fetchProducts();
