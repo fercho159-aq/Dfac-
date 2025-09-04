@@ -75,7 +75,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
             <Badge variant="secondary">{product.category}</Badge>
             <h1 className="text-3xl md:text-4xl font-bold my-2">{product.name}</h1>
             <p className="text-3xl font-bold text-primary mb-4">
-              {product.price > 0 ? `$${product.price.toFixed(2)}` : 'Precio a cotizar'}
+              Precio a cotizar
             </p>
             <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
             
@@ -126,3 +126,4 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
   // Pass the fetched data to the client component
   return <ProductDetailsClient product={product!} />;
 }
+
