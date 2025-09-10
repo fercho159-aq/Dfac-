@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -37,6 +37,7 @@ export const categories: Category[] = [
   { id: 'water-stop', name: 'Water Stop', icon: ShieldBan },
   { id: 'cintillas-de-respaldo', name: 'Cintillas de Respaldo', icon: CircleSlash },
   { id: 'repelentes', name: 'Repelentes', icon: Shield },
+  { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
 ];
 
 // Product data is now loaded from /public/data/products.json
