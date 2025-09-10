@@ -37,20 +37,20 @@ export const categories: Category[] = [
     name: 'PRODUCTOS QUIMICOS PARA CONCRETO', 
     icon: FlaskConical,
     children: [
-        { id: 'aditivos-para-concreto', name: 'ADITIVOS PARA CONCRETO', icon: Beaker },
-        { id: 'cintillas-de-respaldo', name: 'CINTILLAS DE RESPALDO PARA SELLO DE JUNTAS', icon: CircleSlash },
-        { id: 'endurecedores-para-pisos', name: 'ENDURECEDORES PARA PISOS', icon: Shield },
-        { id: 'epoxicos', name: 'EPÓXICOS', icon: Beaker },
-        { id: 'estabilizadores-de-volumen', name: 'ESTABILIZADORES DE VOLUMEN', icon: Beaker },
-        { id: 'impermeabilizantes-acrilicos', name: 'IMPERMEABILIZANTES ACRÍLICOS', icon: Shield },
-        { id: 'impermeabilizantes-asfalticos', name: 'IMPERMEABILIZANTES ASFÁLTICOS', icon: Shield },
-        { id: 'membranas-de-curado-y-desmoldantes', name: 'MEMBRANAS DE CURADO Y DESMOLDANTES', icon: SprayCan },
-        { id: 'membranas-de-refuerzo', name: 'MEMBRANAS DE REFUERZO', icon: Layers },
-        { id: 'membranas-drenantes', name: 'MEMBRANAS DRENANTES', icon: Layers },
-        { id: 'repelentes', name: 'REPELENTES', icon: Shield },
-        { id: 'selladores', name: 'SELLADORES', icon: Wrench },
-        { id: 'varios', name: 'VARIOS', icon: Package },
-        { id: 'water-stop', name: 'WATER STOP', icon: ShieldBan },
+        { id: 'aditivos-para-concreto', name: 'Aditivos para concreto', icon: Beaker },
+        { id: 'cintillas-de-respaldo', name: 'Cintillas de respaldo para sello de juntas', icon: CircleSlash },
+        { id: 'endurecedores-para-pisos', name: 'Endurecedores para pisos', icon: Shield },
+        { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
+        { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de volumen', icon: Beaker },
+        { id_ 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes acrílicos', icon: Shield },
+        { id: 'impermeabilizantes-asfalticos', name: 'Impermeabilizantes asfálticos', icon: Shield },
+        { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de curado y desmoldantes', icon: SprayCan },
+        { id: 'membranas-de-refuerzo', name: 'Membranas de refuerzo', icon: Layers },
+        { id: 'membranas-drenantes', name: 'Membranas drenantes', icon: Layers },
+        { id: 'repelentes', name: 'Repelentes', icon: Shield },
+        { id: 'selladores', name: 'Selladores', icon: Wrench },
+        { id: 'varios', name: 'Varios', icon: Package },
+        { id: 'water-stop', name: 'Water stop', icon: ShieldBan },
     ]
   },
 ];
@@ -58,3 +58,4 @@ export const categories: Category[] = [
 
 // Product data is now loaded from /public/data/products.json
 export const products: Product[] = [];
+
