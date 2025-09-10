@@ -34,6 +34,7 @@ export const categories: Category[] = [
   { id: 'selladores', name: 'Selladores', icon: Wrench },
   { id: 'varios', name: 'Varios', icon: Package },
   { id: 'membranas-drenantes', name: 'Membranas Drenantes', icon: Layers },
+  { id: 'membranas-de-refuerzo', name: 'Membranas de Refuerzo', icon: Layers },
   { id: 'water-stop', name: 'Water Stop', icon: ShieldBan },
   { id: 'cintillas-de-respaldo', name: 'Cintillas de Respaldo', icon: CircleSlash },
   { id: 'repelentes', name: 'Repelentes', icon: Shield },
