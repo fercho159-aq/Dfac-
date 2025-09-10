@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -30,6 +30,7 @@ export const categories: Category[] = [
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
+  { id: 'varios', name: 'Varios', icon: Package },
 ];
 
 // Product data is now loaded from /public/data/products.json
