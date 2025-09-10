@@ -40,6 +40,7 @@ export const categories: Category[] = [
   { id: 'repelentes', name: 'Repelentes', icon: Shield },
   { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
   { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes Acrílicos', icon: Shield },
+  { id: 'endurecedores-para-pisos', name: 'Endurecedores para Pisos', icon: Shield },
 ];
 
 // Product data is now loaded from /public/data/products.json
