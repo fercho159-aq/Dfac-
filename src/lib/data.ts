@@ -39,6 +39,7 @@ export const categories: Category[] = [
   { id: 'cintillas-de-respaldo', name: 'Cintillas de Respaldo', icon: CircleSlash },
   { id: 'repelentes', name: 'Repelentes', icon: Shield },
   { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
+  { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes Acrílicos', icon: Shield },
 ];
 
 // Product data is now loaded from /public/data/products.json
