@@ -102,7 +102,7 @@ export default function ProductsPage() {
                 <div className="flex items-center justify-between w-full">
                    <div className="flex items-center space-x-2">
                       <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
-                      <Label htmlFor={`cat-${category.id}`} className="font-semibold cursor-pointer">{category.name}</Label>
+                      <Label htmlFor={`cat-${category.id}`} className="font-normal cursor-pointer">{category.name}</Label>
                    </div>
                    <CollapsibleTrigger asChild>
                      <Button variant="ghost" size="sm" className="w-9 p-0">
