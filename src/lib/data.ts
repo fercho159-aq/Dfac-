@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, Chemical, Building } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, FlaskConical } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -28,14 +28,14 @@ export interface Product {
 }
 
 export const categories: Category[] = [
+  { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'anclajes', name: 'Anclajes', icon: Wrench },
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
-  { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
   { 
     id: 'productos-quimicos', 
     name: 'PRODUCTOS QUIMICOS PARA CONCRETO', 
-    icon: Chemical,
+    icon: FlaskConical,
     children: [
         { id: 'aditivos-para-concreto', name: 'ADITIVOS PARA CONCRETO', icon: Beaker },
         { id: 'cintillas-de-respaldo', name: 'CINTILLAS DE RESPALDO PARA SELLO DE JUNTAS', icon: CircleSlash },
