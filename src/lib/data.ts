@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -42,6 +42,7 @@ export const categories: Category[] = [
   { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes Acrílicos', icon: Shield },
   { id: 'endurecedores-para-pisos', name: 'Endurecedores para Pisos', icon: Shield },
   { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de Volumen', icon: Beaker },
+  { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de Curado y Desmoldantes', icon: SprayCan },
 ];
 
 // Product data is now loaded from /public/data/products.json
