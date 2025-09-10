@@ -34,7 +34,7 @@ export const categories: Category[] = [
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
   { 
     id: 'productos-quimicos', 
-    name: 'PRODUCTOS QUIMICOS PARA CONCRETO', 
+    name: 'Productos quimicos para concreto', 
     icon: FlaskConical,
     children: [
         { id: 'aditivos-para-concreto', name: 'Aditivos para concreto', icon: Beaker },
