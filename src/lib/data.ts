@@ -41,6 +41,7 @@ export const categories: Category[] = [
   { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
   { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes Acrílicos', icon: Shield },
   { id: 'endurecedores-para-pisos', name: 'Endurecedores para Pisos', icon: Shield },
+  { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de Volumen', icon: Beaker },
 ];
 
 // Product data is now loaded from /public/data/products.json
