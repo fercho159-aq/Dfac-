@@ -88,13 +88,15 @@ export default function ProductsPage() {
               </div>
             ) : (
               <Collapsible key={category.id} className="space-y-2">
-                <CollapsibleTrigger className="flex items-center justify-between w-full">
+                <div className="flex items-center justify-between w-full">
                    <div className="flex items-center space-x-2">
                       <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
                       <Label htmlFor={`cat-${category.id}`} className="font-semibold cursor-pointer">{category.name}</Label>
                    </div>
-                   <ChevronRight className="h-4 w-4 transition-transform duration-200 [&[data-state=open]]:rotate-90" />
-                </CollapsibleTrigger>
+                   <CollapsibleTrigger>
+                    <ChevronRight className="h-4 w-4 transition-transform duration-200 [&[data-state=open]]:rotate-90" />
+                   </CollapsibleTrigger>
+                </div>
                 <CollapsibleContent className="pl-6 space-y-2">
                    {category.children.map(child => (
                      <div key={child.id} className="flex items-center space-x-2">
