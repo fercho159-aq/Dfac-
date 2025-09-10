@@ -43,6 +43,7 @@ export const categories: Category[] = [
   { id: 'endurecedores-para-pisos', name: 'Endurecedores para Pisos', icon: Shield },
   { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de Volumen', icon: Beaker },
   { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de Curado y Desmoldantes', icon: SprayCan },
+  { id: 'aditivos-para-concreto', name: 'Aditivos para Concreto', icon: Beaker },
 ];
 
 // Product data is now loaded from /public/data/products.json
