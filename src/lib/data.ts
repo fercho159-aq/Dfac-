@@ -42,7 +42,7 @@ export const categories: Category[] = [
         { id: 'endurecedores-para-pisos', name: 'Endurecedores para pisos', icon: Shield },
         { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
         { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de volumen', icon: Beaker },
-        { id_ 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes acrílicos', icon: Shield },
+        { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes acrílicos', icon: Shield },
         { id: 'impermeabilizantes-asfalticos', name: 'Impermeabilizantes asfálticos', icon: Shield },
         { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de curado y desmoldantes', icon: SprayCan },
         { id: 'membranas-de-refuerzo', name: 'Membranas de refuerzo', icon: Layers },
@@ -58,4 +58,3 @@ export const categories: Category[] = [
 
 // Product data is now loaded from /public/data/products.json
 export const products: Product[] = [];
-
