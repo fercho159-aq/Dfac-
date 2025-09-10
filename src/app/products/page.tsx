@@ -54,14 +54,25 @@ export default function ProductsPage() {
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter(product => {
-      const categoryName = getCategoryNameById(selectedCategory, categories);
-
-      const categoryMatch = selectedCategory === 'all' || 
-        (categoryName && product.category.toLowerCase().includes(categoryName.toLowerCase()));
-      
       const searchMatch = !searchTerm || 
                           product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           (product.description && product.description.toLowerCase().includes(searchTerm.toLowerCase()));
+
+      if (selectedCategory === 'all') {
+        return searchMatch;
+      }
+
+      if (selectedCategory === 'productos-quimicos') {
+        const chemicalCategory = categories.find(c => c.id === 'productos-quimicos');
+        const chemicalSubcategories = chemicalCategory?.children?.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()) || [];
+        const categoryMatch = chemicalSubcategories.includes(product.category.toLowerCase());
+        return categoryMatch && searchMatch;
+      }
+      
+      const categoryName = getCategoryNameById(selectedCategory, categories);
+      const normalizedCategoryName = categoryName?.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+      const categoryMatch = normalizedCategoryName && product.category.toLowerCase().includes(normalizedCategoryName.toLowerCase());
 
       return categoryMatch && searchMatch;
     });
@@ -93,8 +104,11 @@ export default function ProductsPage() {
                       <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
                       <Label htmlFor={`cat-${category.id}`} className="font-semibold cursor-pointer">{category.name}</Label>
                    </div>
-                   <CollapsibleTrigger>
-                    <ChevronRight className="h-4 w-4 transition-transform duration-200 [&[data-state=open]]:rotate-90" />
+                   <CollapsibleTrigger asChild>
+                     <Button variant="ghost" size="sm" className="w-9 p-0">
+                       <ChevronRight className="h-4 w-4 transition-transform duration-200 [&[data-state=open]]:rotate-90" />
+                       <span className="sr-only">Toggle</span>
+                     </Button>
                    </CollapsibleTrigger>
                 </div>
                 <CollapsibleContent className="pl-6 space-y-2">
