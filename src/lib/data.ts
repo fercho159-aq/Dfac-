@@ -31,6 +31,7 @@ export const categories: Category[] = [
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
+  { id: 'selladores', name: 'Selladores', icon: Wrench },
   { id: 'varios', name: 'Varios', icon: Package },
   { id: 'membranas-drenantes', name: 'Membranas Drenantes', icon: Layers },
   { id: 'water-stop', name: 'Water Stop', icon: ShieldBan },
