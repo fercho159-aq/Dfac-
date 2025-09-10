@@ -62,10 +62,10 @@ export default function ProductsPage() {
         return searchMatch;
       }
 
-      if (selectedCategory === 'productos-quimicos') {
-        const chemicalCategory = categories.find(c => c.id === 'productos-quimicos');
-        const chemicalSubcategories = chemicalCategory?.children?.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()) || [];
-        const categoryMatch = chemicalSubcategories.includes(product.category.toLowerCase());
+      if (selectedCategory === 'productos-quimicos' || selectedCategory === 'maquinaria') {
+        const parentCategory = categories.find(c => c.id === selectedCategory);
+        const subcategories = parentCategory?.children?.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()) || [];
+        const categoryMatch = subcategories.includes(product.category.toLowerCase());
         return categoryMatch && searchMatch;
       }
       

@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, FlaskConical } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, FlaskConical, Cog, Vibrate, Cable, ArrowDownUp, Power, RotateCw } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -32,6 +32,18 @@ export const categories: Category[] = [
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'anclajes', name: 'Anclajes', icon: Wrench },
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
+  { 
+    id: 'maquinaria',
+    name: 'Maquinaria',
+    icon: Cog,
+    children: [
+        { id: 'bailarina', name: 'Bailarina', icon: ArrowDownUp },
+        { id: 'chicote', name: 'Chicote', icon: Cable },
+        { id: 'motor', name: 'Motor', icon: Power },
+        { id: 'revolvedora', name: 'Revolvedora', icon: RotateCw },
+        { id: 'vibradores', name: 'Vibradores', icon: Vibrate },
+    ]
+  },
   { 
     id: 'productos-quimicos', 
     name: 'Productos quimicos para concreto', 
