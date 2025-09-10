@@ -351,8 +351,59 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Moños Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <div className="rounded-lg shadow-2xl overflow-hidden">
+                <Image
+                  src="/Image/Fotos Banner/FOTO-MONO.jpg"
+                  alt="Moños para cimbra"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                  data-ai-hint="form ties construction"
+                />
+              </div>
+            </div>
+            <div className="md:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Moños para Cimbra: <span className="text-primary">La clave para un concreto perfecto.</span></h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+              Asegura la estabilidad y el espesor de tus muros con nuestros moños y cuñas de alta resistencia. Fabricados para soportar la presión del concreto y garantizar un acabado impecable.
+              </p>
+              <ul className="mt-8 space-y-4">
+                <li className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                    </div>
+                    <p className="ml-3 text-lg text-foreground font-semibold">Máxima resistencia a la tensión</p>
+                  </li>
+                 <li className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                    </div>
+                    <p className="ml-3 text-lg text-foreground font-semibold">Fácil y rápido de instalar</p>
+                  </li>
+                   <li className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                    </div>
+                    <p className="ml-3 text-lg text-foreground font-semibold">Disponibles en todas las medidas</p>
+                  </li>
+              </ul>
+              <div className="mt-8">
+                <Button asChild size="lg">
+                  <Link href="/products">Ver Moños y Accesorios</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Products Section */}
-      <section id="featured-products" className="py-20 bg-background">
+      <section id="featured-products" className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Productos Destacados</h2>
@@ -372,7 +423,7 @@ export default function Home() {
       </section>
 
       {/* Catalog Section */}
-      <section id="catalog" className="py-20 bg-card">
+      <section id="catalog" className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
@@ -383,7 +434,7 @@ export default function Home() {
       </section>
 
       {/* Promotions Section */}
-      <section id="promociones" className="py-20 bg-background">
+      <section id="promociones" className="py-20 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg'>DESCUENTOS EXCLUSIVOS</span></h2>
@@ -425,7 +476,7 @@ export default function Home() {
       </section>
 
       {/* Mosaic Gallery Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
@@ -477,7 +528,7 @@ export default function Home() {
       </section>
 
       {/* How it Works Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en <span className="text-primary">3 Pasos Simples</span></h2>
@@ -485,7 +536,7 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                   {processSteps.map((step) => (
-                      <div key={step.title} className="flex flex-col items-center p-6 bg-card rounded-lg shadow-md border">
+                      <div key={step.title} className="flex flex-col items-center p-6 bg-background rounded-lg shadow-md border">
                           <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">{step.icon}</div>
                           <h3 className="text-xl font-bold">{step.title}</h3>
                           <p className="text-muted-foreground mt-2">{step.description}</p>
@@ -501,7 +552,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-card">
+      <section id="testimonials" className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
@@ -518,7 +569,7 @@ export default function Home() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-4 h-full">
-                    <Card className="flex flex-col justify-between h-full text-center p-6">
+                    <Card className="flex flex-col justify-between h-full text-center p-6 bg-card">
                        <CardContent className="flex-grow mb-4">
                         <p className="text-foreground text-lg italic">"{testimonial.quote}"</p>
                       </CardContent>
@@ -561,3 +612,5 @@ export default function Home() {
     </>
   );
 }
+
+    
