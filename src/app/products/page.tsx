@@ -8,10 +8,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { ProductCard } from '@/components/product-card';
-import { categories, Product } from '@/lib/data';
-import { ListFilter, Search } from 'lucide-react';
+import { categories, Product, Category } from '@/lib/data';
+import { ListFilter, Search, ChevronRight } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
 
 export default function ProductsPage() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -38,12 +39,25 @@ export default function ProductsPage() {
     fetchProducts();
   }, []);
 
+  const getCategoryNameById = (id: string, categoryList: Category[]): string | undefined => {
+    for (const category of categoryList) {
+      if (category.id === id) {
+        return category.name;
+      }
+      if (category.children) {
+        const found = getCategoryNameById(id, category.children);
+        if (found) return found;
+      }
+    }
+    return undefined;
+  };
+
   const filteredProducts = useMemo(() => {
     return allProducts.filter(product => {
+      const categoryName = getCategoryNameById(selectedCategory, categories);
+
       const categoryMatch = selectedCategory === 'all' || 
-        product.category.toLowerCase().includes(
-            categories.find(c => c.id === selectedCategory)?.name.toLowerCase() || ''
-        );
+        (categoryName && product.category.toLowerCase().includes(categoryName.toLowerCase()));
       
       const searchMatch = !searchTerm || 
                           product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -67,14 +81,33 @@ export default function ProductsPage() {
             <Label htmlFor="cat-all" className="font-normal cursor-pointer">Todas</Label>
           </div>
           {categories.map(category => (
-            <div key={category.id} className="flex items-center space-x-2">
-              <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
-              <Label htmlFor={`cat-${category.id}`} className="font-normal cursor-pointer">{category.name}</Label>
-            </div>
+            !category.children ? (
+              <div key={category.id} className="flex items-center space-x-2">
+                <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
+                <Label htmlFor={`cat-${category.id}`} className="font-normal cursor-pointer">{category.name}</Label>
+              </div>
+            ) : (
+              <Collapsible key={category.id} className="space-y-2">
+                <CollapsibleTrigger className="flex items-center justify-between w-full">
+                   <div className="flex items-center space-x-2">
+                      <RadioGroupItem value={category.id} id={`cat-${category.id}`} />
+                      <Label htmlFor={`cat-${category.id}`} className="font-semibold cursor-pointer">{category.name}</Label>
+                   </div>
+                   <ChevronRight className="h-4 w-4 transition-transform duration-200 [&[data-state=open]]:rotate-90" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="pl-6 space-y-2">
+                   {category.children.map(child => (
+                     <div key={child.id} className="flex items-center space-x-2">
+                       <RadioGroupItem value={child.id} id={`cat-${child.id}`} />
+                       <Label htmlFor={`cat-${child.id}`} className="font-normal cursor-pointer">{child.name}</Label>
+                     </div>
+                   ))}
+                </CollapsibleContent>
+              </Collapsible>
+            )
           ))}
         </RadioGroup>
       </div>
-      {/* Potential future filters can be added here */}
     </div>
   );
 

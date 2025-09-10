@@ -1,11 +1,12 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, Chemical, Building } from 'lucide-react';
 
 export interface Category {
   id: string;
   name: string;
   icon: LucideIcon;
+  children?: Category[];
 }
 
 export interface ProductImage {
@@ -27,26 +28,33 @@ export interface Product {
 }
 
 export const categories: Category[] = [
-  { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'anclajes', name: 'Anclajes', icon: Wrench },
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
-  // PRODUCTOS QUIMICOS PARA CONCRETO
-  { id: 'aditivos-para-concreto', name: 'Aditivos para Concreto', icon: Beaker },
-  { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de Curado y Desmoldantes', icon: SprayCan },
-  { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de Volumen', icon: Beaker },
-  { id: 'endurecedores-para-pisos', name: 'Endurecedores para Pisos', icon: Shield },
-  { id: 'impermeabilizantes-asfalticos', name: 'Impermeabilizantes Asfálticos', icon: Shield },
-  { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes Acrílicos', icon: Shield },
-  { id: 'membranas-de-refuerzo', name: 'Membranas de Refuerzo', icon: Layers },
-  { id: 'epoxicos', name: 'Epóxicos', icon: Beaker },
-  { id: 'repelentes', name: 'Repelentes', icon: Shield },
-  { id: 'selladores', name: 'Selladores', icon: Wrench },
-  { id: 'cintillas-de-respaldo', name: 'Cintillas de Respaldo', icon: CircleSlash },
-  { id: 'water-stop', name: 'Water Stop', icon: ShieldBan },
-  { id: 'membranas-drenantes', name: 'Membranas Drenantes', icon: Layers },
-  { id: 'varios', name: 'Varios', icon: Package },
+  { id: 'accesorios', name: 'Accesorios', icon: DraftingCompass },
+  { 
+    id: 'productos-quimicos', 
+    name: 'PRODUCTOS QUIMICOS PARA CONCRETO', 
+    icon: Chemical,
+    children: [
+        { id: 'aditivos-para-concreto', name: 'ADITIVOS PARA CONCRETO', icon: Beaker },
+        { id: 'cintillas-de-respaldo', name: 'CINTILLAS DE RESPALDO PARA SELLO DE JUNTAS', icon: CircleSlash },
+        { id: 'endurecedores-para-pisos', name: 'ENDURECEDORES PARA PISOS', icon: Shield },
+        { id: 'epoxicos', name: 'EPÓXICOS', icon: Beaker },
+        { id: 'estabilizadores-de-volumen', name: 'ESTABILIZADORES DE VOLUMEN', icon: Beaker },
+        { id: 'impermeabilizantes-acrilicos', name: 'IMPERMEABILIZANTES ACRÍLICOS', icon: Shield },
+        { id: 'impermeabilizantes-asfalticos', name: 'IMPERMEABILIZANTES ASFÁLTICOS', icon: Shield },
+        { id: 'membranas-de-curado-y-desmoldantes', name: 'MEMBRANAS DE CURADO Y DESMOLDANTES', icon: SprayCan },
+        { id: 'membranas-de-refuerzo', name: 'MEMBRANAS DE REFUERZO', icon: Layers },
+        { id: 'membranas-drenantes', name: 'MEMBRANAS DRENANTES', icon: Layers },
+        { id: 'repelentes', name: 'REPELENTES', icon: Shield },
+        { id: 'selladores', name: 'SELLADORES', icon: Wrench },
+        { id: 'varios', name: 'VARIOS', icon: Package },
+        { id: 'water-stop', name: 'WATER STOP', icon: ShieldBan },
+    ]
+  },
 ];
+
 
 // Product data is now loaded from /public/data/products.json
 export const products: Product[] = [];
