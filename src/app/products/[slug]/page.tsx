@@ -79,12 +79,17 @@ function ProductDetailsClient({ product }: { product: Product }) {
             </p>
             <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
             
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col gap-4">
                 <Button size="lg" asChild>
                     <Link href="/contact">
                         Solicitar cotización
                     </Link>
                 </Button>
+                <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" variant="secondary" className="w-full bg-green-500 hover:bg-green-600 text-white">
+                        <MessageSquare className="mr-2 h-5 w-5" /> Para entregas urgentes envíanos un WhatsApp
+                    </Button>
+                </a>
             </div>
           </div>
         </div>
