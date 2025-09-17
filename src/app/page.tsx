@@ -149,6 +149,29 @@ const heroSlides = [
     }
 ];
 
+const solutionsSlides = [
+    {
+        image: "/Image/Galeria/CARRUSEL-DFAC9-D5.jpg",
+        title: "Moños para cimbra",
+        hint: "formwork ties"
+    },
+    {
+        image: "/Image/Galeria/CARRUSEL-DFAC11-D5.jpg",
+        title: "Puntales para cimbra",
+        hint: "shoring props"
+    },
+    {
+        image: "/Image/Galeria/CARRUSEL-DFAC3-D5.jpg",
+        title: "Bandas de PVC",
+        hint: "PVC waterstop"
+    },
+    {
+        image: "/Image/Galeria/CARRUSEL-DFAC-D5.jpg",
+        title: "Cuñas para moño",
+        hint: "formwork wedges"
+    }
+];
+
 export default function Home() {
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const [isUrgentDialogOpen, setIsUrgentDialogOpen] = useState(false);
@@ -402,8 +425,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Solutions Carousel Section */}
+      <section className="py-20 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestras <span className="text-primary">Soluciones Principales</span></h2>
+              </div>
+              <Carousel 
+                  opts={{
+                      align: "start",
+                      loop: true,
+                  }}
+                  className="w-full max-w-6xl mx-auto"
+              >
+                  <CarouselContent>
+                      {solutionsSlides.map((slide, index) => (
+                          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                              <div className="p-2">
+                                <Card className="overflow-hidden">
+                                    <CardContent className="p-0">
+                                        <Image src={slide.image} alt={slide.title} width={400} height={400} className="aspect-square object-cover w-full" data-ai-hint={slide.hint} />
+                                        <div className="p-4">
+                                            <h3 className="font-semibold text-lg">{slide.title}</h3>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                              </div>
+                          </CarouselItem>
+                      ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+                  <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+              </Carousel>
+               <div className="text-center mt-12">
+                <Button asChild size="lg">
+                    <Link href="/products">Explorar Productos</Link>
+                </Button>
+            </div>
+          </div>
+      </section>
+
       {/* Featured Products Section */}
-      <section id="featured-products" className="py-20 bg-card">
+      <section id="featured-products" className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Productos Destacados</h2>
@@ -423,7 +486,7 @@ export default function Home() {
       </section>
 
       {/* Catalog Section */}
-      <section id="catalog" className="py-20 bg-background">
+      <section id="catalog" className="py-20 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
@@ -434,7 +497,7 @@ export default function Home() {
       </section>
 
       {/* Promotions Section */}
-      <section id="promociones" className="py-20 bg-card">
+      <section id="promociones" className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg'>DESCUENTOS EXCLUSIVOS</span></h2>
@@ -476,7 +539,7 @@ export default function Home() {
       </section>
 
       {/* Mosaic Gallery Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
@@ -528,7 +591,7 @@ export default function Home() {
       </section>
 
       {/* How it Works Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en <span className="text-primary">3 Pasos Simples</span></h2>
@@ -536,7 +599,7 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                   {processSteps.map((step) => (
-                      <div key={step.title} className="flex flex-col items-center p-6 bg-background rounded-lg shadow-md border">
+                      <div key={step.title} className="flex flex-col items-center p-6 bg-card rounded-lg shadow-md border">
                           <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">{step.icon}</div>
                           <h3 className="text-xl font-bold">{step.title}</h3>
                           <p className="text-muted-foreground mt-2">{step.description}</p>
@@ -552,7 +615,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-background">
+      <section id="testimonials" className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">No solo lo decimos nosotros</h2>
@@ -569,7 +632,7 @@ export default function Home() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-4 h-full">
-                    <Card className="flex flex-col justify-between h-full text-center p-6 bg-card">
+                    <Card className="flex flex-col justify-between h-full text-center p-6 bg-background">
                        <CardContent className="flex-grow mb-4">
                         <p className="text-foreground text-lg italic">"{testimonial.quote}"</p>
                       </CardContent>
