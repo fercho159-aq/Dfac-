@@ -425,46 +425,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solutions Carousel Section */}
-      <section className="py-20 bg-card">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestras <span className="text-primary">Soluciones Principales</span></h2>
-              </div>
-              <Carousel 
-                  opts={{
-                      align: "start",
-                      loop: true,
-                  }}
-                  className="w-full max-w-6xl mx-auto"
-              >
-                  <CarouselContent>
-                      {solutionsSlides.map((slide, index) => (
-                          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-                              <div className="p-2">
-                                <Card className="overflow-hidden">
-                                    <CardContent className="p-0">
-                                        <Image src={slide.image} alt={slide.title} width={400} height={400} className="aspect-square object-cover w-full" data-ai-hint={slide.hint} />
-                                        <div className="p-4">
-                                            <h3 className="font-semibold text-lg">{slide.title}</h3>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                              </div>
-                          </CarouselItem>
-                      ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-                  <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-              </Carousel>
-               <div className="text-center mt-12">
-                <Button asChild size="lg">
-                    <Link href="/products">Explorar Productos</Link>
-                </Button>
-            </div>
-          </div>
-      </section>
-
       {/* Featured Products Section */}
       <section id="featured-products" className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
