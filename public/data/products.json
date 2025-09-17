@@ -1860,9 +1860,9 @@
     "categories": [
       {
         "id": 46,
-        "name": "APUNTALAMIENTO",
-        "slug": "apuntalamiento",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/apuntalamiento/"
+        "name": "ANCLAJES",
+        "slug": "anclajes",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/anclajes/"
       }
     ],
     "tags": [],
@@ -1914,7 +1914,7 @@
   },
   {
     "id": 6128,
-    "name": "LLANTA 8&#8243;",
+    "name": "LLANTA 8",
     "slug": "llanta-8",
     "parent": 0,
     "type": "variable",
@@ -2048,9 +2048,9 @@
     "categories": [
       {
         "id": 46,
-        "name": "APUNTALAMIENTO",
-        "slug": "apuntalamiento",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/apuntalamiento/"
+        "name": "ANDAMIOS",
+        "slug": "Andamios",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/andamio/"
       }
     ],
     "tags": [],
@@ -2145,9 +2145,9 @@
     "categories": [
       {
         "id": 46,
-        "name": "APUNTALAMIENTO",
-        "slug": "apuntalamiento",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/apuntalamiento/"
+        "name": "ANDAMIOS",
+        "slug": "Andamios",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/andamio/"
       }
     ],
     "tags": [],
