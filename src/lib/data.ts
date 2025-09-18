@@ -1,6 +1,6 @@
 
 import type { LucideIcon } from 'lucide-react';
-import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, FlaskConical, Cog, Vibrate, Cable, ArrowDownUp, Power, RotateCw } from 'lucide-react';
+import { Wrench, Scaling, HardHat, DraftingCompass, Package, Layers, ShieldBan, CircleSlash, Shield, Beaker, SprayCan, FlaskConical, Cog, Vibrate, Cable, ArrowDownUp, Power, RotateCw, CheckSquare } from 'lucide-react';
 
 export interface Category {
   id: string;
@@ -32,6 +32,7 @@ export const categories: Category[] = [
   { id: 'andamios', name: 'Andamios', icon: HardHat },
   { id: 'anclajes', name: 'Anclajes', icon: Wrench },
   { id: 'apuntalamiento', name: 'Apuntalamiento', icon: Scaling },
+  { id: 'silletas', name: 'Silletas', icon: CheckSquare },
   { 
     id: 'maquinaria',
     name: 'Maquinaria',
