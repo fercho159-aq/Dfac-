@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'DFAC - Accesorios para Cimbra',
@@ -21,6 +22,18 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+        
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-T74VLVQB70"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-T74VLVQB70');
+          `}
+        </Script>
       </head>
       <body className="font-body antialiased">
         <div className="flex flex-col min-h-screen">
@@ -33,5 +46,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-    
