@@ -39,13 +39,13 @@ export default function ProductsPage() {
     fetchProducts();
   }, []);
 
-  const getCategoryNameById = (id: string, categoryList: Category[]): string | undefined => {
+  const getCategoryById = (id: string, categoryList: Category[]): Category | undefined => {
     for (const category of categoryList) {
       if (category.id === id) {
-        return category.name;
+        return category;
       }
       if (category.children) {
-        const found = getCategoryNameById(id, category.children);
+        const found = getCategoryById(id, category.children);
         if (found) return found;
       }
     }
@@ -62,19 +62,21 @@ export default function ProductsPage() {
         return searchMatch;
       }
 
-      if (selectedCategory === 'productos-quimicos' || selectedCategory === 'maquinaria') {
-        const parentCategory = categories.find(c => c.id === selectedCategory);
-        const subcategories = parentCategory?.children?.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()) || [];
+      const category = getCategoryById(selectedCategory, categories);
+
+      if (category && category.children) {
+        // It's a parent category
+        const subcategories = category.children.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase());
         const categoryMatch = subcategories.includes(product.category.toLowerCase());
         return categoryMatch && searchMatch;
+      } else if (category) {
+        // It's a child or standalone category
+        const normalizedCategoryName = category.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const categoryMatch = product.category.toLowerCase() === normalizedCategoryName;
+        return categoryMatch && searchMatch;
       }
-      
-      const categoryName = getCategoryNameById(selectedCategory, categories);
-      const normalizedCategoryName = categoryName?.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-      const categoryMatch = normalizedCategoryName && product.category.toLowerCase().includes(normalizedCategoryName.toLowerCase());
-
-      return categoryMatch && searchMatch;
+      return searchMatch; // Fallback
     });
   }, [searchTerm, selectedCategory, allProducts]);
   
