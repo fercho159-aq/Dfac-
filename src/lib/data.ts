@@ -57,7 +57,6 @@ export const categories: Category[] = [
         { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de volumen', icon: Beaker },
         { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes acrílicos', icon: Shield },
         { id: 'impermeabilizantes-asfalticos', name: 'Impermeabilizantes asfálticos', icon: Shield },
-        { id: 'membranas-de-curado-y-desmoldantes', name: 'Membranas de curado y desmoldantes', icon: SprayCan },
         { id: 'membranas-de-refuerzo', name: 'Membranas de refuerzo', icon: Layers },
         { id: 'membranas-drenantes', name: 'Membranas drenantes', icon: Layers },
         { id: 'repelentes', name: 'Repelentes', icon: Shield },
