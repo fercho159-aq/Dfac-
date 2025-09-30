@@ -32,6 +32,8 @@ function ProductDetailsClient({ product }: { product: Product }) {
   ];
 
   const medidaAttribute = product.attributes?.find(attr => attr.name === 'Medida');
+  const whatsappMessage = `Hola, me interesa el producto *${product.name}* para una entrega urgente.`;
+  const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <>
@@ -113,7 +115,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
                         Solicitar cotización
                     </Link>
                 </Button>
-                <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <Button size="lg" variant="secondary" className="w-full bg-green-500 hover:bg-green-600 text-white">
                         <MessageSquare className="mr-2 h-5 w-5" /> Para entregas urgentes envíanos un WhatsApp
                     </Button>
@@ -189,5 +191,3 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
   // Pass the fetched data to the client component
   return <ProductDetailsClient product={product!} />;
 }
-
-
