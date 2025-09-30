@@ -465,6 +465,11 @@
         "has_variations": true,
         "terms": [
           {
+            "id": 101,
+            "name": "2.5 cm",
+            "slug": "2.5-cm"
+          },
+          {
             "id": 102,
             "name": "4 cm",
             "slug": "4-cm"
@@ -493,6 +498,26 @@
             "id": 50,
             "name": "10 cm",
             "slug": "10-cm"
+          },
+          {
+            "id": 50,
+            "name": "11.5 cm",
+            "slug": "11.5-cm"
+          },
+          {
+            "id": 50,
+            "name": "12.5 cm",
+            "slug": "12.5-cm"
+          },
+          {
+            "id": 50,
+            "name": "14 cm",
+            "slug": "14-cm"
+          },
+          {
+            "id": 50,
+            "name": "15 cm",
+            "slug": "15-cm"
           }
         ]
       }
@@ -1551,7 +1576,7 @@
   },
   {
     "id": 8092,
-    "name": "PUNTAL METALICO EXTENSIBLE ITALIANO",
+    "name": "PUNTAL METALICO EXTENSIBLE CERTIFICACIÓN EUROPEA",
     "slug": "puntal-metalico-extensible-italiano",
     "parent": 0,
     "type": "variable",
@@ -1860,7 +1885,7 @@
   },
   {
     "id": 6128,
-    "name": "LLANTA 8",
+    "name": "Rueda para andamio",
     "slug": "llanta-8",
     "parent": 0,
     "type": "variable",
@@ -1900,8 +1925,8 @@
     "categories": [
       {
         "id": 46,
-        "name": "APUNTALAMIENTO",
-        "slug": "apuntalamiento",
+        "name": "ANDAMIOS",
+        "slug": "andamios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/apuntalamiento/"
       }
     ],
@@ -9631,7 +9656,14 @@
         "alt": ""
       }
     ],
-    "categories": [],
+    "categories": [ 
+      {
+      "id": 233,
+      "name": "Impermeabilizantes asfálticos",
+      "slug": "impermeabilizantes-asfalticos",
+      "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+    }
+  ],
     "tags": [],
     "attributes": [
       {
@@ -12960,7 +12992,7 @@
     "categories": [
       {
         "id": 49,
-        "name": " ACCESORIOS",
+        "name": "ACCESORIOS",
         "slug": "Accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/bandas-de-pvc/"
       }
@@ -13587,8 +13619,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS",
-        "slug": "accesorios",
+        "name": "Silletas",
+        "slug": "silletas",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
     ],
@@ -14137,100 +14169,6 @@
     "extensions": {}
   },
   {
-    "id": 5525,
-    "name": "Cruceta doble armado muro",
-    "slug": "cruceta-doble-armado-muro",
-    "parent": 0,
-    "type": "variable",
-    "variation": "",
-    "permalink": "https://cimbrayaccesorios.com.mx/producto/cruceta-doble-armado-muro/",
-    "sku": "",
-    "short_description": "<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o21\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>",
-    "description": "<p>Separador lateral para muros de concreto de 10 cm con doble malla, para recubrimiento de concreto de 2.5 cm a cada lado de la malla, para una carga maxima de 150 kg.</p>",
-    "on_sale": false,
-    "prices": {
-      "price": "180900",
-      "regular_price": "180900",
-      "sale_price": "180900",
-      "price_range": null,
-      "currency_code": "MXN",
-      "currency_symbol": "$",
-      "currency_minor_unit": 2,
-      "currency_decimal_separator": ".",
-      "currency_thousand_separator": ",",
-      "currency_prefix": "$",
-      "currency_suffix": ""
-    },
-    "price_html": "Solicitar información",
-    "average_rating": "0",
-    "review_count": 0,
-    "images": [
-      {
-        "id": 5527,
-        "src": "/Image/cruceta-doble-armado-murao-DFAC.jpg",
-        "thumbnail": "/Image/cruceta-doble-armado-murao-DFAC-300x300.jpg",
-        "srcset": "/Image/cruceta-doble-armado-murao-DFAC.jpg 640w, /Image/cruceta-doble-armado-murao-DFAC-300x300.jpg 300w, /Image/cruceta-doble-armado-murao-DFAC-150x150.jpg 150w, /Image/cruceta-doble-armado-murao-DFAC-600x600.jpg 600w, /Image/cruceta-doble-armado-murao-DFAC-100x100.jpg 100w",
-        "sizes": "(max-width: 640px) 100vw, 640px",
-        "name": "cruceta-doble-armado-murao-DFAC",
-        "alt": ""
-      }
-    ],
-    "categories": [
-      {
-        "id": 44,
-        "name": "ACCESORIOS",
-        "slug": "accesorios",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
-      }
-    ],
-    "tags": [],
-    "attributes": [
-      {
-        "id": 1,
-        "name": "Medida",
-        "taxonomy": "pa_medida",
-        "has_variations": true,
-        "terms": [
-          {
-            "id": 50,
-            "name": "10 cm",
-            "slug": "10-cm"
-          }
-        ]
-      }
-    ],
-    "variations": [
-      {
-        "id": 5526,
-        "attributes": [
-          {
-            "name": "Medida",
-            "value": "10-cm"
-          }
-        ]
-      }
-    ],
-    "has_options": true,
-    "is_purchasable": true,
-    "is_in_stock": true,
-    "is_on_backorder": false,
-    "low_stock_remaining": null,
-    "stock_availability": {
-      "text": "",
-      "class": ""
-    },
-    "sold_individually": false,
-    "add_to_cart": {
-      "text": "Ver detalles",
-      "description": "Elige las opciones para &ldquo;Cruceta doble armado muro&rdquo;",
-      "url": "https://cimbrayaccesorios.com.mx/producto/cruceta-doble-armado-muro/",
-      "minimum": 1,
-      "maximum": 9999,
-      "multiple_of": 1
-    },
-    "extensions": {}
-  },
-  {
     "id": 5514,
     "name": "Disco separador",
     "slug": "disco-separador",
@@ -14583,7 +14521,7 @@
     "permalink": "https://cimbrayaccesorios.com.mx/producto/silleta-flexible-para-malla/",
     "sku": "",
     "short_description": "<p><a href=\"/Image/FICHA-TECNICA-SILLETA-FLEXIBLE-PARA-MALLA-DFAC-IMAGEN.jpg\"><img class=\"alignleft size-large wp-image-8224\" src=\"/Image/FICHA-TECNICA-SILLETA-FLEXIBLE-PARA-MALLA-DFAC-IMAGEN-725x1024.jpg\" alt=\"\" width=\"725\" height=\"1024\" /></a>\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o24\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>\n</p>",
-    "description": "<p>Silleta para malla de 4 a 10, para recubrimiento de concreto, para utilizarse sobre casetones de poliestireno, para una carga maxima de 300 kg.</p>",
+    "description": "<p>Silleta para malla de 4 a 10, para recubrimiento de concreto, para utilizarse sobre casetones de poliestireno, para una carga maxima de 300 kg.</p><br><p>Distribuidor oficial de FTP</p>",
     "on_sale": false,
     "prices": {
       "price": "62700",
@@ -16420,7 +16358,7 @@
   },
   {
     "id": 5367,
-    "name": "Tirante tipo moño con rondana",
+    "name": "Moño para simbra con rondana de neopreno",
     "slug": "tirante-tipo-mono-con-rondana",
     "parent": 0,
     "type": "variable",
@@ -17108,7 +17046,7 @@
   },
   {
     "id": 5325,
-    "name": "Tirante tipo moño",
+    "name": "Moño para simbra",
     "slug": "tirante-tipo-mono",
     "parent": 0,
     "type": "variable",
