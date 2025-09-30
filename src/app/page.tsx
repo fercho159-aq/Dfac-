@@ -381,7 +381,7 @@ export default function Home() {
             <div className="md:order-2">
               <div className="rounded-lg shadow-2xl overflow-hidden">
                 <Image
-                  src="/Image/Fotos Banner/FOTO-MONO.jpg"
+                  src="/Image/Monos.jpeg"
                   alt="Moños para cimbra"
                   width={600}
                   height={400}
