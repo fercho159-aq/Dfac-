@@ -3995,8 +3995,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Aditivos para concreto",
-        "slug": "Aditivos para concreto",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -4089,8 +4089,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Aditivos para concreto",
-        "slug": "aditivos-para-concreto",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -4183,8 +4183,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Aditivos para concretos",
-        "slug": "aditivos-para-concreto",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -4267,8 +4267,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Aditivos para concreto",
-        "slug": "aditivos-para-concreto",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -4368,8 +4368,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Aditivos para concreto",
-        "slug": "aditivos-para-concreto",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -4479,8 +4479,8 @@
     "categories": [
       {
         "id": 211,
-        "name": "Cintillas de respaldo para sello de juntas",
-        "slug": "Cintillas-de-respaldo-para-sello-de-juntas",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
@@ -5348,8 +5348,8 @@
     "categories": [
       {
         "id": 233,
-        "name": "Impermeabilizantes asfálticos",
-        "slug": "impermeabilizantes-asfalticos",
+        "name": "Water stop",
+        "slug": "water-stop",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
       }
     ],
@@ -7375,10 +7375,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
+        "id": 211,
+        "name": "Cintillas de respaldo para sello de juntas",
+        "slug": "Cintillas-de-respaldo-para-sello-de-juntas",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/varios/"
       }
     ],
     "tags": [],
@@ -7562,7 +7562,7 @@
   },
   {
     "id": 5857,
-    "name": "FOAMTECH 1/2&#8243;",
+    "name": "FOAMTECH 1/2",
     "slug": "foamtech-1-2",
     "parent": 0,
     "type": "variable",
@@ -7632,8 +7632,8 @@
     "categories": [
       {
         "id": 212,
-        "name": "Espuma formadora de juntas de construcción",
-        "slug": "espuma-formadora-de-juntas-de-construccion",
+        "name": "Varios",
+        "slug": "varios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/espuma-formadora-de-juntas-de-construccion/"
       }
     ],
@@ -9145,7 +9145,14 @@
         "alt": ""
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "id": 233,
+        "name": "Impermeabilizantes asfálticos",
+        "slug": "impermeabilizantes-asfalticos",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+      }
+    ],
     "tags": [],
     "attributes": [
       {
@@ -9263,7 +9270,14 @@
         "alt": ""
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "id": 233,
+        "name": "Impermeabilizantes asfálticos",
+        "slug": "impermeabilizantes-asfalticos",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+      }
+    ],
     "tags": [],
     "attributes": [
       {
@@ -9381,7 +9395,14 @@
         "alt": ""
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "id": 233,
+        "name": "Impermeabilizantes asfálticos",
+        "slug": "impermeabilizantes-asfalticos",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+      }
+    ],
     "tags": [],
     "attributes": [
       {
@@ -9485,7 +9506,14 @@
         "alt": ""
       }
     ],
-    "categories": [],
+    "categories": [
+      {
+        "id": 233,
+        "name": "Impermeabilizantes asfálticos",
+        "slug": "impermeabilizantes-asfalticos",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+      }
+    ],
     "tags": [],
     "attributes": [
       {
