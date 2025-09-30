@@ -57,11 +57,12 @@ export const categories: Category[] = [
         { id: 'estabilizadores-de-volumen', name: 'Estabilizadores de volumen', icon: Beaker },
         { id: 'impermeabilizantes-acrilicos', name: 'Impermeabilizantes acrílicos', icon: Shield },
         { id: 'impermeabilizantes-asfalticos', name: 'Impermeabilizantes asfálticos', icon: Shield },
+        { id: 'membranas-de-curado', name: 'Membranas de curado', icon: SprayCan },
         { id: 'membranas-de-refuerzo', name: 'Membranas de refuerzo', icon: Layers },
         { id: 'membranas-drenantes', name: 'Membranas drenantes', icon: Layers },
         { id: 'repelentes', name: 'Repelentes', icon: Shield },
         { id: 'selladores', name: 'Selladores', icon: Wrench },
-        { id: 'varios', name: 'Varios', icon: Package },
+        { id 'varios', name: 'Varios', icon: Package },
         { id: 'water-stop', name: 'Water stop', icon: ShieldBan },
     ]
   },
@@ -70,3 +71,4 @@ export const categories: Category[] = [
 
 // Product data is now loaded from /public/data/products.json
 export const products: Product[] = [];
+

@@ -615,27 +615,9 @@
     "categories": [
       {
         "id": 280,
-        "name": "Chicote para vibrador a gasolina",
-        "slug": "chicote-para-vibrador-a-gasolina",
+        "name": "Chicote",
+        "slug": "Chicote",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/chicote-para-vibrador-a-gasolina/"
-      },
-      {
-        "id": 265,
-        "name": "Vibradores",
-        "slug": "vibradores",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/"
-      },
-      {
-        "id": 276,
-        "name": "Vibradores para concreto a gasolina",
-        "slug": "vibradores-para-concreto-a-gasolina",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/vibradores-para-concreto-a-gasolina/"
-      },
-      {
-        "id": 45,
-        "name": "MAQUINARIA LIGERA",
-        "slug": "maquinaria-ligera",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
       }
     ],
     "tags": [],
@@ -717,27 +699,9 @@
     "categories": [
       {
         "id": 280,
-        "name": "Chicote para vibrador a gasolina",
-        "slug": "chicote-para-vibrador-a-gasolina",
+        "name": "Chicote",
+        "slug": "chicote",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/chicote-para-vibrador-a-gasolina/"
-      },
-      {
-        "id": 265,
-        "name": "Vibradores",
-        "slug": "vibradores",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/"
-      },
-      {
-        "id": 276,
-        "name": "Vibradores para concreto a gasolina",
-        "slug": "vibradores-para-concreto-a-gasolina",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/vibradores/vibradores-para-concreto-a-gasolina/"
-      },
-      {
-        "id": 45,
-        "name": "MAQUINARIA LIGERA",
-        "slug": "maquinaria-ligera",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
       }
     ],
     "tags": [],
@@ -2360,15 +2324,9 @@
     "categories": [
       {
         "id": 266,
-        "name": "Bailarinas",
-        "slug": "bailarinas",
+        "name": "Bailarina",
+        "slug": "bailarina",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/bailarinas/"
-      },
-      {
-        "id": 45,
-        "name": "MAQUINARIA LIGERA",
-        "slug": "maquinaria-ligera",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
       }
     ],
     "tags": [],
@@ -2463,8 +2421,8 @@
     "categories": [
       {
         "id": 45,
-        "name": "MAQUINARIA LIGERA",
-        "slug": "maquinaria-ligera",
+        "name": "Chicote",
+        "slug": "Chicote",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
       }
     ],
@@ -5605,8 +5563,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
     ],
@@ -10242,10 +10200,10 @@
     ],
     "categories": [
       {
-        "id": 200,
-        "name": "Desmoldantes",
-        "slug": "desmoldantes",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/desmoldantes/"
+        "id": 199,
+        "name": "Membranas de curado",
+        "slug": "membranas-de-curado",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/membranas-de-curado/"
       }
     ],
     "tags": [],
@@ -10353,10 +10311,10 @@
     ],
     "categories": [
       {
-        "id": 200,
-        "name": "Desmoldantes",
-        "slug": "desmoldantes",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/desmoldantes/"
+        "id": 199,
+        "name": "Membranas de curado",
+        "slug": "membranas-de-curado",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/membranas-de-curado/"
       }
     ],
     "tags": [],
@@ -10451,10 +10409,10 @@
     "images": [],
     "categories": [
       {
-        "id": 200,
-        "name": "Desmoldantes",
-        "slug": "desmoldantes",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/desmoldantes/"
+        "id": 199,
+        "name": "Membranas de curado",
+        "slug": "membranas-de-curado",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/membranas-de-curado/"
       }
     ],
     "tags": [],
@@ -10548,10 +10506,10 @@
     ],
     "categories": [
       {
-        "id": 200,
-        "name": "Desmoldantes",
-        "slug": "desmoldantes",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/desmoldantes/"
+        "id": 199,
+        "name": "Membranas de curado",
+        "slug": "membranas-de-curado",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/membranas-de-curado/"
       }
     ],
     "tags": [],
@@ -10972,16 +10930,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11075,16 +11027,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11213,16 +11159,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11351,16 +11291,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11465,16 +11399,10 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11567,17 +11495,12 @@
       }
     ],
     "categories": [
+      
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
-        "id": 176,
-        "name": "Aditivos en polvo y fibras",
-        "slug": "aditivos-en-polvo-y-fibras",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-en-polvo-y-fibras/"
+        "id": 198,
+        "name": "Aditivos para concreto",
+        "slug": "aditivos-para-concreto",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/aditivos-para-concreto/"
       }
     ],
     "tags": [],
@@ -11674,13 +11597,7 @@
     "review_count": 0,
     "images": [],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
+            {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -11791,13 +11708,7 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
+            {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -11908,13 +11819,7 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
+            {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -12026,12 +11931,6 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -12142,12 +12041,7 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
+   
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12259,12 +12153,7 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
+    
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12376,12 +12265,6 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12506,13 +12389,7 @@
         "alt": ""
       }
     ],
-    "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
+    "categories": [ 
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12625,12 +12502,6 @@
     ],
     "categories": [
       {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -12741,13 +12612,7 @@
       }
     ],
     "categories": [
-      {
-        "id": 47,
-        "name": "PRODUCTOS QUÍMICOS",
-        "slug": "productos-quimicos",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/"
-      },
-      {
+            {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -13220,8 +13085,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       },
       {
@@ -13694,8 +13559,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
     ],
@@ -14071,8 +13936,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
     ],
@@ -14285,8 +14150,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
     ],
@@ -16472,16 +16337,11 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
-      },
-      {
-        "id": 178,
-        "name": "Cuña de acero",
-        "slug": "cuna-de-acero",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/cuna-de-acero/"
       }
+     
     ],
     "tags": [],
     "attributes": [
@@ -16620,15 +16480,9 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
-      },
-      {
-        "id": 177,
-        "name": "Moños para cimbra",
-        "slug": "monos-para-cimbra",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/monos-para-cimbra/"
       }
     ],
     "tags": [],
@@ -17314,8 +17168,8 @@
     "categories": [
       {
         "id": 44,
-        "name": "ACCESORIOS PARA CIMBRA",
-        "slug": "accesorios-para-cimbra",
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       },
       {
