@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { Product, ProductImage } from '@/lib/data';
+import { Product, ProductImage, Attribute, AttributeTerm } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -30,6 +30,8 @@ function ProductDetailsClient({ product }: { product: Product }) {
     { src: "/Image/Galeria/CARRUSEL-DFAC8-D5.jpg", alt: "Trabajador de construcción", hint: "construction worker" },
     { src: "/Image/Galeria/CARRUSEL-DFAC9-D5.jpg", alt: "Cimbra para construcción", hint: "formwork" },
   ];
+
+  const medidaAttribute = product.attributes?.find(attr => attr.name === 'Medida');
 
   return (
     <>
@@ -94,6 +96,17 @@ function ProductDetailsClient({ product }: { product: Product }) {
             </p>
             <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
             
+            {medidaAttribute && medidaAttribute.terms.length > 0 && (
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-2">Medidas Disponibles:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {medidaAttribute.terms.map((term: AttributeTerm) => (
+                    <Badge key={term.id} variant="outline">{term.name}</Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="mt-8 flex flex-col gap-4">
                 <Button size="lg" asChild>
                     <Link href="/contact">
@@ -167,11 +180,14 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
       description: foundProductData.description,
       image: foundProductData.images?.[0]?.src || 'https://placehold.co/400x300.png',
       images: foundProductData.images,
-      category: foundProductData.categories?.[0]?.name || 'Accesorios'
+      category: foundProductData.categories?.[0]?.name || 'Accesorios',
+      attributes: foundProductData.attributes,
+      variations: foundProductData.variations,
     };
   }
 
   // Pass the fetched data to the client component
   return <ProductDetailsClient product={product!} />;
 }
+
 

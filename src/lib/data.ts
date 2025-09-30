@@ -16,6 +16,31 @@ export interface ProductImage {
   name: string;
   alt: string;
 }
+
+export interface AttributeTerm {
+  id: number;
+  name: string;
+  slug: string;
+}
+
+export interface Attribute {
+  id: number;
+  name: string;
+  taxonomy: string;
+  has_variations: boolean;
+  terms: AttributeTerm[];
+}
+
+export interface VariationAttribute {
+  name: string;
+  value: string;
+}
+
+export interface Variation {
+  id: number;
+  attributes: VariationAttribute[];
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -25,6 +50,8 @@ export interface Product {
   images?: ProductImage[];
   description: string;
   price: number;
+  attributes?: Attribute[];
+  variations?: Variation[];
 }
 
 export const categories: Category[] = [
@@ -71,6 +98,7 @@ export const categories: Category[] = [
 
 // Product data is now loaded from /public/data/products.json
 export const products: Product[] = [];
+
 
 
 
