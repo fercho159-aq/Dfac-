@@ -9,9 +9,34 @@ import { ArrowLeft, MessageSquare } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { ContactSection } from '@/components/contact-section';
+import { ProductCard } from '@/components/product-card';
+
+// New component for related products
+function RelatedProducts({ products }: { products: Product[] }) {
+    if (products.length === 0) {
+        return null;
+    }
+
+    return (
+        <section className="py-20 bg-background">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Productos Relacionados</h2>
+                    <p className="mt-4 text-lg text-muted-foreground">También te podría interesar</p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {products.map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
 
 // This is a new Client Component that will handle the interactive parts.
-function ProductDetailsClient({ product }: { product: Product }) {
+function ProductDetailsClient({ product, relatedProducts }: { product: Product, relatedProducts: Product[] }) {
   if (!product) {
     return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">Producto no encontrado.</div>;
   }
@@ -153,6 +178,7 @@ function ProductDetailsClient({ product }: { product: Product }) {
           </Carousel>
         </div>
       </section>
+    <RelatedProducts products={relatedProducts} />
     <section className="py-16 bg-background">
       <ContactSection />
     </section>
@@ -165,14 +191,16 @@ function ProductDetailsClient({ product }: { product: Product }) {
 export default async function ProductDetailPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   
-  // Fetch data on the server
+  // Fetch all products data on the server
   const jsonDirectory = path.join(process.cwd(), 'public', 'data');
   const fileContents = await fs.readFile(path.join(jsonDirectory, 'products.json'), 'utf8');
-  const products = JSON.parse(fileContents);
-  
+  const products: any[] = JSON.parse(fileContents);
+
   const foundProductData = products.find((p: any) => p.slug === slug);
   
   let product: Product | null = null;
+  let relatedProducts: Product[] = [];
+
   if (foundProductData) {
     product = {
       id: String(foundProductData.id),
@@ -186,8 +214,25 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
       attributes: foundProductData.attributes,
       variations: foundProductData.variations,
     };
+
+    // Find related products (same category, not the same product)
+    if (product) {
+        relatedProducts = products
+            .filter(p => p.categories?.[0]?.name === product?.category && p.slug !== product.slug)
+            .slice(0, 3) // Get up to 3 related products
+            .map(p => ({
+                id: String(p.id),
+                name: p.name,
+                slug: p.slug,
+                price: (Number(p.prices?.price) || 0) / 100,
+                description: p.description,
+                image: p.images?.[0]?.src || 'https://placehold.co/400x300.png',
+                images: p.images,
+                category: p.categories?.[0]?.name || 'Accesorios',
+            }));
+    }
   }
 
   // Pass the fetched data to the client component
-  return <ProductDetailsClient product={product!} />;
+  return <ProductDetailsClient product={product!} relatedProducts={relatedProducts} />;
 }
