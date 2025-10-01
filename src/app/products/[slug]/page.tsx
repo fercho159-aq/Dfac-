@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import { Product, ProductImage, Attribute, AttributeTerm } from '@/lib/data';
 import { Button } from '@/components/ui/button';
@@ -35,6 +36,19 @@ function RelatedProducts({ products, searchParams }: { products: Product[], sear
     );
 }
 
+function cleanSearchParams(params: { [key: string]: string | string[] | undefined }): Record<string, string> {
+    const cleaned: Record<string, string> = {};
+    for (const key in params) {
+        if (Object.prototype.hasOwnProperty.call(params, key)) {
+            const value = params[key];
+            if (typeof value === 'string') {
+                cleaned[key] = value;
+            }
+        }
+    }
+    return cleaned;
+}
+
 
 // This is a new Client Component that will handle the interactive parts.
 function ProductDetailsClient({ product, relatedProducts, searchParams }: { product: Product, relatedProducts: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
@@ -60,7 +74,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
   const medidaAttribute = product.attributes?.find(attr => attr.name === 'Medida');
   const whatsappMessage = `Hola, me interesa el producto *${product.name}* para una entrega urgente.`;
   const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
-  const productsLink = `/products?${new URLSearchParams(searchParams as Record<string, string>)}`;
+  const productsLink = `/products?${new URLSearchParams(cleanSearchParams(searchParams))}`;
 
 
   return (
@@ -243,3 +257,4 @@ export default async function ProductDetailPage({ params, searchParams }: { para
     </Suspense>
   );
 }
+
