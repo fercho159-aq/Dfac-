@@ -8,15 +8,17 @@ import Link from 'next/link';
 
 interface ProductCardProps {
   product: Product;
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, searchParams }: ProductCardProps) {
   const imagePath = product.image || 'https://placehold.co/400x300.png';
+  const productLink = `/products/${product.slug}?${new URLSearchParams(searchParams as Record<string, string>)}`;
   
   return (
     <Card className="flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <CardHeader className="p-0 relative">
-        <Link href={`/products/${product.slug}`}>
+        <Link href={productLink}>
             <Image 
               src={imagePath}
               alt={product.name} 
@@ -30,7 +32,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardHeader>
       <CardContent className="p-6 flex-grow">
         <CardTitle className="text-xl font-semibold mb-2 leading-tight">
-          <Link href={`/products/${product.slug}`} className="hover:text-primary transition-colors">
+          <Link href={productLink} className="hover:text-primary transition-colors">
             {product.name}
           </Link>
         </CardTitle>
@@ -41,10 +43,9 @@ export function ProductCard({ product }: ProductCardProps) {
       <CardFooter className="p-6 pt-0 flex justify-between items-center">
         <p className="text-2xl font-bold text-foreground">Cotizar</p>
         <Button asChild>
-          <Link href={`/products/${product.slug}`}>Detalles</Link>
+          <Link href={productLink}>Detalles</Link>
         </Button>
       </CardFooter>
     </Card>
   );
 }
-

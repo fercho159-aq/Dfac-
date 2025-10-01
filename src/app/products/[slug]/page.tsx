@@ -10,9 +10,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { ContactSection } from '@/components/contact-section';
 import { ProductCard } from '@/components/product-card';
+import { Suspense } from 'react';
 
 // New component for related products
-function RelatedProducts({ products }: { products: Product[] }) {
+function RelatedProducts({ products, searchParams }: { products: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
     if (products.length === 0) {
         return null;
     }
@@ -26,7 +27,7 @@ function RelatedProducts({ products }: { products: Product[] }) {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {products.map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        <ProductCard key={product.id} product={product} searchParams={searchParams} />
                     ))}
                 </div>
             </div>
@@ -36,7 +37,7 @@ function RelatedProducts({ products }: { products: Product[] }) {
 
 
 // This is a new Client Component that will handle the interactive parts.
-function ProductDetailsClient({ product, relatedProducts }: { product: Product, relatedProducts: Product[] }) {
+function ProductDetailsClient({ product, relatedProducts, searchParams }: { product: Product, relatedProducts: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
   if (!product) {
     return <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">Producto no encontrado.</div>;
   }
@@ -59,6 +60,8 @@ function ProductDetailsClient({ product, relatedProducts }: { product: Product, 
   const medidaAttribute = product.attributes?.find(attr => attr.name === 'Medida');
   const whatsappMessage = `Hola, me interesa el producto *${product.name}* para una entrega urgente.`;
   const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
+  const productsLink = `/products?${new URLSearchParams(searchParams as Record<string, string>)}`;
+
 
   return (
     <>
@@ -66,7 +69,7 @@ function ProductDetailsClient({ product, relatedProducts }: { product: Product, 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
             <Button asChild variant="outline">
-                <Link href="/products" className="inline-flex items-center gap-2">
+                <Link href={productsLink} className="inline-flex items-center gap-2">
                     <ArrowLeft className="w-4 h-4"/>
                     Volver al catálogo
                 </Link>
@@ -178,7 +181,7 @@ function ProductDetailsClient({ product, relatedProducts }: { product: Product, 
           </Carousel>
         </div>
       </section>
-    <RelatedProducts products={relatedProducts} />
+    <RelatedProducts products={relatedProducts} searchParams={searchParams} />
     <section className="py-16 bg-background">
       <ContactSection />
     </section>
@@ -188,7 +191,7 @@ function ProductDetailsClient({ product, relatedProducts }: { product: Product, 
 
 
 // This is now a Server Component
-export default async function ProductDetailPage({ params }: { params: { slug: string } }) {
+export default async function ProductDetailPage({ params, searchParams }: { params: { slug: string }, searchParams: { [key: string]: string | string[] | undefined } }) {
   const { slug } = params;
   
   // Fetch all products data on the server
@@ -234,5 +237,9 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
   }
 
   // Pass the fetched data to the client component
-  return <ProductDetailsClient product={product!} relatedProducts={relatedProducts} />;
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <ProductDetailsClient product={product!} relatedProducts={relatedProducts} searchParams={searchParams} />
+    </Suspense>
+  );
 }

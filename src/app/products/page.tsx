@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,11 +14,30 @@ import { ListFilter, Search, ChevronRight } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { cn } from '@/lib/utils';
+import { useDebounce } from 'use-debounce';
 
 export default function ProductsPage() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const searchTerm = searchParams.get('search') || '';
+  const selectedCategory = searchParams.get('category') || 'all';
+
+  const [debouncedSearchTerm] = useDebounce(searchTerm, 300);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('search', e.target.value);
+    router.replace(`${pathname}?${params.toString()}`);
+  };
+
+  const handleCategoryChange = (categoryId: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('category', categoryId);
+    router.replace(`${pathname}?${params.toString()}`);
+  };
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -54,9 +74,9 @@ export default function ProductsPage() {
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter(product => {
-      const searchMatch = !searchTerm || 
-                          product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          (product.description && product.description.toLowerCase().includes(searchTerm.toLowerCase()));
+      const searchMatch = !debouncedSearchTerm || 
+                          product.name.toLowerCase().includes(debouncedSearchTerm.toLowerCase()) ||
+                          (product.description && product.description.toLowerCase().includes(debouncedSearchTerm.toLowerCase()));
 
       if (selectedCategory === 'all') {
         return searchMatch;
@@ -78,7 +98,7 @@ export default function ProductsPage() {
 
       return searchMatch; // Fallback
     });
-  }, [searchTerm, selectedCategory, allProducts]);
+  }, [debouncedSearchTerm, selectedCategory, allProducts]);
   
   const FilterSidebarContent = () => (
     <div className="space-y-6">
@@ -86,7 +106,7 @@ export default function ProductsPage() {
         <Label className="text-base font-semibold">Categoría</Label>
         <RadioGroup
           value={selectedCategory}
-          onValueChange={setSelectedCategory}
+          onValueChange={handleCategoryChange}
           className="mt-2 space-y-1"
         >
           <div className="flex items-center space-x-2">
@@ -162,7 +182,7 @@ export default function ProductsPage() {
                   placeholder="Buscar por nombre o descripción..."
                   className="pl-10 w-full h-12 text-base"
                   value={searchTerm}
-                  onChange={e => setSearchTerm(e.target.value)}
+                  onChange={handleSearchChange}
                 />
               </div>
 
@@ -190,7 +210,7 @@ export default function ProductsPage() {
             {filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
                 {filteredProducts.map(product => (
-                  <ProductCard key={product.id} product={product} />
+                  <ProductCard key={product.id} product={product} searchParams={{search: debouncedSearchTerm, category: selectedCategory}}/>
                 ))}
               </div>
             ) : (
