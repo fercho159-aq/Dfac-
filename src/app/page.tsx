@@ -250,7 +250,7 @@ export default function Home() {
                 <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
                     <Phone className="w-6 h-6 text-primary mt-1" />
                     <div>
-                        <h3 className="text-lg font-semibold text-left">Llámanos</h3>
+                        <h3 className="text-lg font-semibold text-left">Llámanos para una atención directa</h3>
                         <div className="flex flex-col space-y-1 mt-1 text-left">
                             <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
                             <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
