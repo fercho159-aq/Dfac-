@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Truck } from "lucide-react"
+import { Menu, Phone, Truck } from "lucide-react"
 import { useState } from "react"
 import { usePathname } from 'next/navigation'
 import { cn } from "@/lib/utils"
@@ -31,20 +31,29 @@ export function Header() {
               <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
           </div>
-          <nav className="hidden lg:flex lg:items-center lg:space-x-8">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.href} 
-                href={link.href} 
-                className={cn(
-                  "text-[15px] font-medium transition-colors",
-                  (pathname === link.href || (link.href.startsWith("/#") && pathname === "/")) ? "text-primary" : "text-foreground hover:text-primary"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          <div className="hidden lg:flex items-center gap-6">
+            <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-primary" />
+                <div className="text-sm">
+                    <div className="font-bold text-foreground">Contacto</div>
+                    <a href="tel:5525989751" className="text-muted-foreground hover:text-primary">01 (55) 2598-9751</a>, <a href="tel:5541673745" className="text-muted-foreground hover:text-primary">4167-3745</a>, <a href="tel:5555715084" className="text-muted-foreground hover:text-primary">5571-5084</a>
+                </div>
+            </div>
+            <nav className="flex items-center space-x-4">
+              {navLinks.map((link) => (
+                <Link 
+                  key={link.href} 
+                  href={link.href} 
+                  className={cn(
+                    "text-[15px] font-medium transition-colors",
+                    (pathname === link.href || (link.href.startsWith("/#") && pathname === "/")) ? "text-primary" : "text-foreground hover:text-primary"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
           <div className="flex items-center space-x-4">
              <div className="hidden sm:flex items-center space-x-2 bg-secondary px-3 py-2 rounded-full">
                <Truck className="h-6 w-6 text-primary animate-pulse" />
