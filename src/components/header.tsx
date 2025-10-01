@@ -52,9 +52,11 @@ export function Header() {
                 <div className="text-sm">
                     <div className="font-bold text-foreground">Contacto</div>
                     <div className="text-muted-foreground text-xs leading-tight">
-                        <a href="tel:5525989751" className="hover:text-primary">01 (55) 2598-9751</a><br/>
-                        <a href="tel:5541673745" className="hover:text-primary">01 (55) 4167-3745</a><br/>
-                        <a href="tel:5555715084" className="hover:text-primary">01 (55) 5571-5084</a>
+                        <span>
+                            <a href="tel:5525989751" className="hover:text-primary">01 (55) 2598-9751</a><br/>
+                            <a href="tel:5541673745" className="hover:text-primary">01 (55) 4167-3745</a><br/>
+                            <a href="tel:5555715084" className="hover:text-primary">01 (55) 5571-5084</a>
+                        </span>
                     </div>
                 </div>
             </div>
