@@ -1,3 +1,4 @@
+
 "use client"
 
 import Link from "next/link"
@@ -32,13 +33,6 @@ export function Header() {
             </Link>
           </div>
           <div className="hidden lg:flex items-center gap-6">
-            <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-primary" />
-                <div className="text-sm">
-                    <div className="font-bold text-foreground">Contacto</div>
-                    <a href="tel:5525989751" className="text-muted-foreground hover:text-primary">01 (55) 2598-9751</a>, <a href="tel:5541673745" className="text-muted-foreground hover:text-primary">4167-3745</a>, <a href="tel:5555715084" className="text-muted-foreground hover:text-primary">5571-5084</a>
-                </div>
-            </div>
             <nav className="flex items-center space-x-4">
               {navLinks.map((link) => (
                 <Link 
@@ -53,12 +47,15 @@ export function Header() {
                 </Link>
               ))}
             </nav>
+            <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-primary" />
+                <div className="text-sm">
+                    <div className="font-bold text-foreground">Contacto</div>
+                    <a href="tel:5525989751" className="text-muted-foreground hover:text-primary">01 (55) 2598-9751</a>
+                </div>
+            </div>
           </div>
           <div className="flex items-center space-x-4">
-             <div className="hidden sm:flex items-center space-x-2 bg-secondary px-3 py-2 rounded-full">
-               <Truck className="h-6 w-6 text-primary animate-pulse" />
-               <span className="text-sm font-semibold text-primary">Entrega en 24 horas</span>
-             </div>
             <Button asChild className="hidden lg:inline-flex">
               <Link href="/contact">Contáctenos</Link>
             </Button>
