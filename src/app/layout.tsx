@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Script from 'next/script';
+import { FloatingActionButtons } from '@/components/floating-action-buttons';
 
 export const metadata: Metadata = {
   title: 'DFAC - Accesorios para Cimbra',
@@ -53,6 +54,7 @@ export default function RootLayout({
           <main className="flex-grow bg-background">{children}</main>
           <Footer />
         </div>
+        <FloatingActionButtons />
         <Toaster />
       </body>
     </html>
