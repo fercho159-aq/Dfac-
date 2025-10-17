@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager">
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -49,6 +50,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-body antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN6W5G9B"
+        height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe></noscript>
+        {/* End Google Tag Manager (noscript) */}
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow bg-background">{children}</main>
