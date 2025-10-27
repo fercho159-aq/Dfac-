@@ -51,7 +51,7 @@ export default function ProductsPage() {
         description: row.description,
         image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
         images: row.images,
-        category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "") || 'Accesorios'
+        category: row.categories?.[0]?.name.normalize("NFD").replace(/[̀-ͯ]/g, "") || 'Accesorios'
       }));
       setAllProducts(productData);
     };
@@ -86,12 +86,12 @@ export default function ProductsPage() {
 
       if (category && category.children) {
         // It's a parent category
-        const subcategories = category.children.map(child => child.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase());
+        const subcategories = category.children.map(child => child.name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase());
         const categoryMatch = subcategories.includes(product.category.toLowerCase());
         return categoryMatch && searchMatch;
       } else if (category) {
         // It's a child or standalone category
-        const normalizedCategoryName = category.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const normalizedCategoryName = category.name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
         const categoryMatch = product.category.toLowerCase() === normalizedCategoryName;
         return categoryMatch && searchMatch;
       }
