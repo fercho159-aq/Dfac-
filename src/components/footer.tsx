@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/">
-              <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+              <Image src="/Image/Recurso-2png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
             <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
             <div className="flex space-x-4">
@@ -36,9 +36,9 @@ export function Footer() {
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:5525989751" className="hover:text-primary transition-colors">01 (55) 2598-9751</a>
-                  <a href="tel:5541673745" className="hover:text-primary transition-colors">01 (55) 4167-3745</a>
-                  <a href="tel:5555715084" className="hover:text-primary transition-colors">01 (55) 5571-5084</a>
+                  <a href="tel:5525989751" className="hover:text-primary transition-colors text-sm">01 (55) 2598-9751</a>
+                  <a href="tel:5541673745" className="hover:text-primary transition-colors text-sm">01 (55) 4167-3745</a>
+                  <a href="tel:5555715084" className="hover:text-primary transition-colors text-sm">01 (55) 5571-5084</a>
                 </div>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
@@ -62,3 +62,5 @@ export function Footer() {
     </footer>
   )
 }
+
+    

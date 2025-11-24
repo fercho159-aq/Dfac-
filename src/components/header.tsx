@@ -29,7 +29,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link href="/">
-              <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+              <Image src="/Image/Recurso-2png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
             </Link>
           </div>
           <div className="hidden lg:flex items-center gap-6">
@@ -76,7 +76,7 @@ export function Header() {
                 <SheetContent side="right">
                   <div className="flex flex-col space-y-6 p-6">
                     <Link href="/" onClick={() => setIsOpen(false)}>
-                      <Image src="/Image/Recurso-2.png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
+                      <Image src="/Image/Recurso-2png.webp" alt="DFAC Logo" width={120} height={40} data-ai-hint="logo" />
                     </Link>
                     <nav className="flex flex-col space-y-4">
                       {navLinks.map((link) => (
@@ -109,3 +109,5 @@ export function Header() {
     </header>
   )
 }
+
+    

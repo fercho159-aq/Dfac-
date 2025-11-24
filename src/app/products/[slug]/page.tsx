@@ -258,3 +258,4 @@ export default async function ProductDetailPage({ params, searchParams }: { para
   );
 }
 
+    

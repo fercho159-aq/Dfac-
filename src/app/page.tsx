@@ -115,7 +115,7 @@ const promotionImages = [
 
 const heroSlides = [
     {
-        image: "/Image/Fotos Banner/1.jpg",
+        image: "/Image/Fotos-Banner/1.jpg",
         hint: "construction site scaffolding",
         title: "Tu Socio en Cimbra y Andamiaje",
         subtitle: "Calidad y Velocidad Garantizadas",
@@ -635,5 +635,7 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
