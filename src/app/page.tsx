@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, MessageSquare } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, MessageSquare, Truck, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { Product, ProductImage } from '@/lib/data';
@@ -115,7 +115,7 @@ const promotionImages = [
 
 const heroSlides = [
   {
-    image: "/Image/Fotos-Banner/1.jpg",
+    image: "/Image/Fotos%20Banner/1.jpg",
     hint: "construction site scaffolding",
     title: "Tu Socio en Cimbra y Andamiaje",
     subtitle: "Calidad y Velocidad Garantizadas",
@@ -274,14 +274,14 @@ export default function Home() {
       <section className="relative w-full h-screen-hero">
         <Carousel
           plugins={[plugin.current]}
-          className="w-full h-full"
+          className="w-full h-full [&>div]:h-full"
           opts={{ loop: true }}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
         >
-          <CarouselContent className="h-full">
+          <CarouselContent className="h-full ml-0">
             {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-full">
+              <CarouselItem key={index} className="h-full pl-0">
                 <div className="relative w-full h-full">
                   <Image
                     src={slide.image}
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Viga H-20 Promotional Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-slate-800/90 via-slate-700/85 to-slate-800/90 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/Image/Viga-H20/viga-h20-1.png"
@@ -448,14 +448,11 @@ export default function Home() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg font-bold text-sm animate-pulse">
-                🚚 Entrega en 24h CDMX
+              <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg font-bold text-sm animate-pulse flex items-center gap-2">
+                <Truck className="w-5 h-5" /> Entrega en 24h CDMX
               </div>
             </div>
             <div>
-              <div className="inline-block px-4 py-2 bg-primary/20 text-primary text-sm font-bold rounded-full mb-4 uppercase tracking-wider border border-primary/30">
-                ⭐ Nuevo Producto
-              </div>
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 Viga H-20: <span className="text-primary">Potencia y Versatilidad</span> para tus Encofrados
               </h2>
@@ -483,10 +480,10 @@ export default function Home() {
                 </li>
               </ul>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8">
                   <Link href="/viga-h20">Conoce más <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-900">
+                <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 font-semibold px-8 bg-white/10">
                   <Link href="/contact">Cotizar Ahora</Link>
                 </Button>
               </div>
