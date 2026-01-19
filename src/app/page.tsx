@@ -18,8 +18,8 @@ import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
 
 const Flipbook = dynamic(() => import('@/components/flipbook').then(mod => mod.Flipbook), {
-    ssr: false,
-    loading: () => <Skeleton className="w-full max-w-5xl aspect-[2/1.414]" />,
+  ssr: false,
+  loading: () => <Skeleton className="w-full max-w-5xl aspect-[2/1.414]" />,
 });
 
 const categories = [
@@ -37,7 +37,7 @@ const features = [
 ];
 
 const testimonials = [
-    {
+  {
     name: "Constructora XYZ",
     quote: "La calidad de los puntales y la velocidad de entrega de DFAC no tienen comparación. Son nuestro proveedor de confianza para cada obra.",
     rating: 5,
@@ -52,7 +52,7 @@ const testimonials = [
     quote: "Los andamios son robustos y seguros. La plataforma antideslizante es un detalle que marca la diferencia en la seguridad del personal.",
     rating: 5,
   },
-   {
+  {
     name: "Grupo Constructor Alfa",
     quote: "Tuvimos un requerimiento de último minuto y DFAC nos resolvió en tiempo récord. Su servicio al cliente es excepcional.",
     rating: 5,
@@ -62,7 +62,7 @@ const testimonials = [
     quote: "Su catálogo es muy completo. Encontramos todo lo que necesitábamos para el sistema de cimbra de nuestro nuevo edificio en un solo lugar.",
     rating: 5,
   },
-    {
+  {
     name: "Desarrollos Urbanos MX",
     quote: "La asesoría técnica que recibimos fue clave para el éxito de nuestro proyecto más reciente. ¡Totalmente recomendados!",
     rating: 5
@@ -75,101 +75,101 @@ const testimonials = [
 ];
 
 const processSteps = [
-    {
-      icon: <PackageSearch className="w-12 h-12 text-primary" />,
-      title: "1. Elige tu material",
-      description: "Explora nuestro catálogo y selecciona los productos que necesitas."
-    },
-    {
-      icon: <ShoppingCart className="w-12 h-12 text-primary" />,
-      title: "2. Cotiza y Confirma",
-      description: "Recibe tu cotización al instante y confirma tu pedido con un asesor."
-    },
-    {
-      icon: <HardHat className="w-12 h-12 text-primary" />,
-      title: "3. Recibe en tu Obra",
-      description: "Recibe tu material en menos de 24 horas, listo para usarse."
-    }
+  {
+    icon: <PackageSearch className="w-12 h-12 text-primary" />,
+    title: "1. Elige tu material",
+    description: "Explora nuestro catálogo y selecciona los productos que necesitas."
+  },
+  {
+    icon: <ShoppingCart className="w-12 h-12 text-primary" />,
+    title: "2. Cotiza y Confirma",
+    description: "Recibe tu cotización al instante y confirma tu pedido con un asesor."
+  },
+  {
+    icon: <HardHat className="w-12 h-12 text-primary" />,
+    title: "3. Recibe en tu Obra",
+    description: "Recibe tu material en menos de 24 horas, listo para usarse."
+  }
 ];
 
 const clientLogos = [
-    { name: 'BBVA Bancomer', src: 'https://upload.wikimedia.org/wikipedia/commons/1/15/BBVA_Bancomer_logo.svg' , hint: 'BBVA Bancomer logo'},
-    { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/010aeropuerto-felipe-angeles-2.jpg' , hint: 'AIFA airport logo'},
-    { name: 'Secretaría de Marina', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SEMAR_Logo_2019.svg/2560px-SEMAR_Logo_2019.svg.png' , hint: 'Secretaria de Marina logo'},
-    { name: 'UNAM', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1024px-Escudo-UNAM-escalable.svg.png' , hint: 'UNAM university logo'},
+  { name: 'BBVA Bancomer', src: 'https://upload.wikimedia.org/wikipedia/commons/1/15/BBVA_Bancomer_logo.svg', hint: 'BBVA Bancomer logo' },
+  { name: 'Aeropuerto Internacional Felipe Angeles', src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/010aeropuerto-felipe-angeles-2.jpg', hint: 'AIFA airport logo' },
+  { name: 'Secretaría de Marina', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SEMAR_Logo_2019.svg/2560px-SEMAR_Logo_2019.svg.png', hint: 'Secretaria de Marina logo' },
+  { name: 'UNAM', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1024px-Escudo-UNAM-escalable.svg.png', hint: 'UNAM university logo' },
 ];
 
 const promotionImages = [
-    { src: "/Image/Promos/PROMO-CUNAS.png", alt: "Promoción 1", hint: "construction sale" },
-    { src: "/Image/Promos/PROMO-CUNAS1.png", alt: "Promoción 2", hint: "equipment discount" },
-    { src: "/Image/Promos/PROMO-MONOS.png", alt: "Promoción 3", hint: "construction sale" },
-    { src: "/Image/Promos/PROMO-MONOS1.png", alt: "Promoción 4", hint: "equipment discount" },
-    { src: "/Image/Promos/PROMO-MOTORES-5.5HP-REDUCTOR.png", alt: "Promoción 5", hint: "construction sale" },
-    { src: "/Image/Promos/PROMO-MOTORES-7HP-REDUCTOR.png", alt: "Promoción 6", hint: "equipment discount" },
-    { src: "/Image/Promos/PROMO-MOTORES-9HP.png", alt: "Promoción 7", hint: "construction sale" },
-    { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES-13HP.png", alt: "Promoción 8", hint: "equipment discount" },
-    { src: "/Image/Promos/PROMO-MOTORES-15HP.png", alt: "Promoción 9", hint: "construction sale" },
-    { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES.png", alt: "Promoción 10", hint: "equipment discount" }
+  { src: "/Image/Promos/PROMO-CUNAS.png", alt: "Promoción 1", hint: "construction sale" },
+  { src: "/Image/Promos/PROMO-CUNAS1.png", alt: "Promoción 2", hint: "equipment discount" },
+  { src: "/Image/Promos/PROMO-MONOS.png", alt: "Promoción 3", hint: "construction sale" },
+  { src: "/Image/Promos/PROMO-MONOS1.png", alt: "Promoción 4", hint: "equipment discount" },
+  { src: "/Image/Promos/PROMO-MOTORES-5.5HP-REDUCTOR.png", alt: "Promoción 5", hint: "construction sale" },
+  { src: "/Image/Promos/PROMO-MOTORES-7HP-REDUCTOR.png", alt: "Promoción 6", hint: "equipment discount" },
+  { src: "/Image/Promos/PROMO-MOTORES-9HP.png", alt: "Promoción 7", hint: "construction sale" },
+  { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES-13HP.png", alt: "Promoción 8", hint: "equipment discount" },
+  { src: "/Image/Promos/PROMO-MOTORES-15HP.png", alt: "Promoción 9", hint: "construction sale" },
+  { src: "/Image/Promos/public/Image/Promos/PROMO-MOTORES.png", alt: "Promoción 10", hint: "equipment discount" }
 
 ]
 
 const heroSlides = [
-    {
-        image: "/Image/Fotos-Banner/1.jpg",
-        hint: "construction site scaffolding",
-        title: "Tu Socio en Cimbra y Andamiaje",
-        subtitle: "Calidad y Velocidad Garantizadas",
-        description: "En DFAC, te damos la <b class='text-white'>confianza</b> para construir sin límites. Accesorios de alta resistencia con <b class='text-primary'>entrega en tu obra en menos de 24 horas.</b>",
-        cta1_text: "Ver Productos",
-        cta1_href: "/products",
-        cta2_text: "Solicitar Cotización",
-        cta2_href: "/contact"
-    },
-    {
-      image: "/Image/CARRUSEL-DFAC17-D5.jpg",
-        hint: "construction workers logistics",
-        title: "Entrega Inmediata en tu Obra",
-        subtitle: "Material listo en menos de 24H",
-        description: "Sabemos que tu tiempo es oro. Nuestro sistema logístico asegura que tengas lo que necesitas, justo cuando lo necesitas.",
-        cta1_text: "Conoce más",
-        cta1_href: "/about",
-        cta2_text: "Contáctanos",
-        cta2_href: "/contact"
-    },
-    {
-         image: "/Image/CARRUSEL-DFAC23-D5.jpg",
-        hint: "engineer planning construction",
-        title: "Asesoría Experta para tu Proyecto",
-        subtitle: "Maximizamos tu seguridad y eficiencia",
-        description: "No solo vendemos productos, ofrecemos soluciones. Nuestro equipo te acompaña para garantizar el éxito de tu obra.",
-        cta1_text: "Nuestros Servicios",
-        cta1_href: "/faq",
-        cta2_text: "Hablar con un experto",
-        cta2_href: "/contact"
-    }
+  {
+    image: "/Image/Fotos-Banner/1.jpg",
+    hint: "construction site scaffolding",
+    title: "Tu Socio en Cimbra y Andamiaje",
+    subtitle: "Calidad y Velocidad Garantizadas",
+    description: "En DFAC, te damos la <b class='text-white'>confianza</b> para construir sin límites. Accesorios de alta resistencia con <b class='text-primary'>entrega en tu obra en menos de 24 horas.</b>",
+    cta1_text: "Ver Productos",
+    cta1_href: "/products",
+    cta2_text: "Solicitar Cotización",
+    cta2_href: "/contact"
+  },
+  {
+    image: "/Image/CARRUSEL-DFAC17-D5.jpg",
+    hint: "construction workers logistics",
+    title: "Entrega Inmediata en tu Obra",
+    subtitle: "Material listo en menos de 24H",
+    description: "Sabemos que tu tiempo es oro. Nuestro sistema logístico asegura que tengas lo que necesitas, justo cuando lo necesitas.",
+    cta1_text: "Conoce más",
+    cta1_href: "/about",
+    cta2_text: "Contáctanos",
+    cta2_href: "/contact"
+  },
+  {
+    image: "/Image/CARRUSEL-DFAC23-D5.jpg",
+    hint: "engineer planning construction",
+    title: "Asesoría Experta para tu Proyecto",
+    subtitle: "Maximizamos tu seguridad y eficiencia",
+    description: "No solo vendemos productos, ofrecemos soluciones. Nuestro equipo te acompaña para garantizar el éxito de tu obra.",
+    cta1_text: "Nuestros Servicios",
+    cta1_href: "/faq",
+    cta2_text: "Hablar con un experto",
+    cta2_href: "/contact"
+  }
 ];
 
 const solutionsSlides = [
-    {
-        image: "/Image/Galeria/CARRUSEL-DFAC9-D5.jpg",
-        title: "Moños para cimbra",
-        hint: "formwork ties"
-    },
-    {
-        image: "/Image/Galeria/CARRUSEL-DFAC11-D5.jpg",
-        title: "Puntales para cimbra",
-        hint: "shoring props"
-    },
-    {
-        image: "/Image/Galeria/CARRUSEL-DFAC3-D5.jpg",
-        title: "Bandas de PVC",
-        hint: "PVC waterstop"
-    },
-    {
-        image: "/Image/Galeria/CARRUSEL-DFAC-D5.jpg",
-        title: "Cuñas para moño",
-        hint: "formwork wedges"
-    }
+  {
+    image: "/Image/Galeria/CARRUSEL-DFAC9-D5.jpg",
+    title: "Moños para cimbra",
+    hint: "formwork ties"
+  },
+  {
+    image: "/Image/Galeria/CARRUSEL-DFAC11-D5.jpg",
+    title: "Puntales para cimbra",
+    hint: "shoring props"
+  },
+  {
+    image: "/Image/Galeria/CARRUSEL-DFAC3-D5.jpg",
+    title: "Bandas de PVC",
+    hint: "PVC waterstop"
+  },
+  {
+    image: "/Image/Galeria/CARRUSEL-DFAC-D5.jpg",
+    title: "Cuñas para moño",
+    hint: "formwork wedges"
+  }
 ];
 
 export default function Home() {
@@ -183,44 +183,44 @@ export default function Home() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-        const response = await fetch('/data/products.json');
-        const data = await response.json();
-        const productData = data.map((row: any) => ({
-            id: String(row.id),
-            name: row.name,
-            slug: row.slug,
-            price: (Number(row.prices?.price) || 0) / 100,
-            description: row.description,
-            image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
-            images: row.images,
-            category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() || 'accesorios'
-        }));
-        
-        const featuredKeywords = ["puntal", "viga", "moño"];
-        const filtered = productData.filter((product: Product) => {
-          const productName = product.name.toLowerCase();
-          return featuredKeywords.some(keyword => productName.includes(keyword));
-        });
+      const response = await fetch('/data/products.json');
+      const data = await response.json();
+      const productData = data.map((row: any) => ({
+        id: String(row.id),
+        name: row.name,
+        slug: row.slug,
+        price: (Number(row.prices?.price) || 0) / 100,
+        description: row.description,
+        image: row.images?.[0]?.src || 'https://placehold.co/400x300.png',
+        images: row.images,
+        category: row.categories?.[0]?.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() || 'accesorios'
+      }));
 
-        // Prioritize to show one of each if possible, then fill up to 3
-        const prioritized: Product[] = [];
-        const seenKeywords = new Set();
+      const featuredKeywords = ["puntal", "viga", "moño"];
+      const filtered = productData.filter((product: Product) => {
+        const productName = product.name.toLowerCase();
+        return featuredKeywords.some(keyword => productName.includes(keyword));
+      });
 
-        for (const keyword of featuredKeywords) {
-          const product = filtered.find(p => p.name.toLowerCase().includes(keyword) && !prioritized.some(fp => fp.id === p.id));
-          if (product) {
-            prioritized.push(product);
-            seenKeywords.add(keyword);
-          }
+      // Prioritize to show one of each if possible, then fill up to 3
+      const prioritized: Product[] = [];
+      const seenKeywords = new Set();
+
+      for (const keyword of featuredKeywords) {
+        const product = filtered.find(p => p.name.toLowerCase().includes(keyword) && !prioritized.some(fp => fp.id === p.id));
+        if (product) {
+          prioritized.push(product);
+          seenKeywords.add(keyword);
         }
-        
-        // Add remaining products if we still have less than 3
-        if (prioritized.length < 3) {
-            const remaining = filtered.filter(p => !prioritized.some(fp => fp.id === p.id));
-            prioritized.push(...remaining.slice(0, 3 - prioritized.length));
-        }
+      }
 
-        setFeaturedProducts(prioritized.slice(0, 3));
+      // Add remaining products if we still have less than 3
+      if (prioritized.length < 3) {
+        const remaining = filtered.filter(p => !prioritized.some(fp => fp.id === p.id));
+        prioritized.push(...remaining.slice(0, 3 - prioritized.length));
+      }
+
+      setFeaturedProducts(prioritized.slice(0, 3));
     };
 
     fetchProducts();
@@ -235,99 +235,99 @@ export default function Home() {
       {/* Urgent Contact Dialog */}
       <Dialog open={isUrgentDialogOpen} onOpenChange={setIsUrgentDialogOpen}>
         <DialogContent className="sm:max-w-md text-center">
-            <DialogHeader>
+          <DialogHeader>
             <DialogTitle className="text-2xl font-bold font-headline text-primary">¿Necesitas Material de URGENCIA?</DialogTitle>
             <DialogDescription className="mt-2 text-muted-foreground">
-                ¡No te preocupes! Entregamos en tu obra en menos de 24 horas. <br/> Contáctanos ahora mismo.
+              ¡No te preocupes! Entregamos en tu obra en menos de 24 horas. <br /> Contáctanos ahora mismo.
             </DialogDescription>
-            </DialogHeader>
-            <div className="py-4 space-y-4">
-                <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="w-full">
-                    <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
-                        <MessageSquare className="mr-2 h-5 w-5" /> Chatear por WhatsApp
-                    </Button>
-                </a>
-                <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
-                    <Phone className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                        <h3 className="text-lg font-semibold text-left">Llámanos para una atención directa</h3>
-                        <div className="flex flex-col space-y-1 mt-1 text-left">
-                            <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
-                            <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
-                            <a href="tel:5555715084" className="text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
-                        </div>
-                    </div>
+          </DialogHeader>
+          <div className="py-4 space-y-4">
+            <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
+                <MessageSquare className="mr-2 h-5 w-5" /> Chatear por WhatsApp
+              </Button>
+            </a>
+            <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
+              <Phone className="w-6 h-6 text-primary mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold text-left">Llámanos para una atención directa</h3>
+                <div className="flex flex-col space-y-1 mt-1 text-left">
+                  <a href="tel:5525989751" className="text-primary font-semibold hover:underline">01 (55) 2598-9751</a>
+                  <a href="tel:5541673745" className="text-primary font-semibold hover:underline">01 (55) 4167-3745</a>
+                  <a href="tel:5555715084" className="text-primary font-semibold hover:underline">01 (55) 5571-5084</a>
                 </div>
-                 <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
-                    <Mail className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                        <h3 className="text-lg font-semibold text-left">Escríbenos</h3>
-                        <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-primary font-semibold hover:underline text-left block">ventas@cimbrayaccesorios.com.mx</a>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
+              <Mail className="w-6 h-6 text-primary mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold text-left">Escríbenos</h3>
+                <a href="mailto:ventas@cimbrayaccesorios.com.mx" className="text-primary font-semibold hover:underline text-left block">ventas@cimbrayaccesorios.com.mx</a>
+              </div>
+            </div>
+          </div>
         </DialogContent>
       </Dialog>
 
 
       {/* Hero Section */}
-       <section className="relative w-full h-screen-hero">
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full h-full"
-            opts={{ loop: true }}
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
-          >
-            <CarouselContent className="h-full">
-              {heroSlides.map((slide, index) => (
-                <CarouselItem key={index} className="h-full">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={slide.image}
-                      alt={slide.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="brightness-50"
-                      data-ai-hint={slide.hint}
-                      priority={index === 0}
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center text-center text-white">
-                      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-                        <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight" dangerouslySetInnerHTML={{ __html: `${slide.title} <span class="inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg">${slide.subtitle}</span>`}}>
-                        </h1>
-                        <p className="mt-6 text-lg md:text-xl text-slate-200" dangerouslySetInnerHTML={{ __html: slide.description }}>
-                        </p>
-                        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                          <Button asChild size="lg" className="text-lg px-8 py-6">
-                            <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5"/></Link>
-                          </Button>
-                          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-black/30 border-white text-white hover:bg-white hover:text-primary">
-                            <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
-                          </Button>
-                        </div>
+      <section className="relative w-full h-screen-hero">
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-full h-full"
+          opts={{ loop: true }}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent className="h-full">
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index} className="h-full">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="brightness-50"
+                    data-ai-hint={slide.hint}
+                    priority={index === 0}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center text-center text-white">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                      <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight" dangerouslySetInnerHTML={{ __html: `${slide.title} <span class="inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg">${slide.subtitle}</span>` }}>
+                      </h1>
+                      <p className="mt-6 text-lg md:text-xl text-slate-200" dangerouslySetInnerHTML={{ __html: slide.description }}>
+                      </p>
+                      <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button asChild size="lg" className="text-lg px-8 py-6">
+                          <Link href={slide.cta1_href}>{slide.cta1_text} <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                        </Button>
+                        <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-black/30 border-white text-white hover:bg-white hover:text-primary">
+                          <Link href={slide.cta2_href}>{slide.cta2_text}</Link>
+                        </Button>
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-          </Carousel>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+        </Carousel>
       </section>
 
       {/* Client Logos Section */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFIAN EN NOSOTROS</h3>
-            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
-                {clientLogos.map((logo, index) => (
-                    <div key={index} className="flex justify-center">
-                        <Image src={logo.src} alt={logo.name} width={120} height={40} className="grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all" data-ai-hint={logo.hint}/>
-                    </div>
-                ))}
-            </div>
+          <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFIAN EN NOSOTROS</h3>
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
+            {clientLogos.map((logo, index) => (
+              <div key={index} className="flex justify-center">
+                <Image src={logo.src} alt={logo.name} width={120} height={40} className="grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all" data-ai-hint={logo.hint} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -393,31 +393,101 @@ export default function Home() {
             <div className="md:order-1">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">Moños para Cimbra: <span className="text-primary">La clave para un concreto perfecto.</span></h2>
               <p className="mt-4 text-lg text-muted-foreground">
-              Asegura la estabilidad y el espesor de tus muros con nuestros moños y cuñas de alta resistencia. Fabricados para soportar la presión del concreto y garantizar un acabado impecable.
+                Asegura la estabilidad y el espesor de tus muros con nuestros moños y cuñas de alta resistencia. Fabricados para soportar la presión del concreto y garantizar un acabado impecable.
               </p>
               <ul className="mt-8 space-y-4">
                 <li className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
-                    </div>
-                    <p className="ml-3 text-lg text-foreground font-semibold">Máxima resistencia a la tensión</p>
-                  </li>
-                 <li className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
-                    </div>
-                    <p className="ml-3 text-lg text-foreground font-semibold">Fácil y rápido de instalar</p>
-                  </li>
-                   <li className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
-                    </div>
-                    <p className="ml-3 text-lg text-foreground font-semibold">Disponibles en todas las medidas</p>
-                  </li>
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-foreground font-semibold">Máxima resistencia a la tensión</p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-foreground font-semibold">Fácil y rápido de instalar</p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-500 bg-green-100 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-foreground font-semibold">Disponibles en todas las medidas</p>
+                </li>
               </ul>
               <div className="mt-8">
                 <Button asChild size="lg">
                   <Link href="/products">Ver Moños y Accesorios</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Viga H-20 Promotional Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <Image
+            src="/Image/Viga-H20/viga-h20-1.png"
+            alt="Background pattern"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/50 to-yellow-500/50 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+              <div className="relative rounded-2xl shadow-2xl overflow-hidden border-4 border-white/10">
+                <Image
+                  src="/Image/Viga-H20/viga-h20-1.png"
+                  alt="Viga H-20 para cimbra"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg font-bold text-sm animate-pulse">
+                🚚 Entrega en 24h CDMX
+              </div>
+            </div>
+            <div>
+              <div className="inline-block px-4 py-2 bg-primary/20 text-primary text-sm font-bold rounded-full mb-4 uppercase tracking-wider border border-primary/30">
+                ⭐ Nuevo Producto
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">
+                Viga H-20: <span className="text-primary">Potencia y Versatilidad</span> para tus Encofrados
+              </h2>
+              <p className="mt-4 text-lg text-slate-300">
+                Nuestra viga de madera de alta resistencia es la solución ideal para sistemas de encofrado, ofreciendo durabilidad, ligereza y una capacidad de carga excepcional.
+              </p>
+              <ul className="mt-8 space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-400 bg-green-400/20 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-white font-semibold">Alta capacidad de carga</p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-400 bg-green-400/20 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-white font-semibold">Ligereza y fácil manejabilidad</p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Check className="w-6 h-6 text-green-400 bg-green-400/20 rounded-full p-1" />
+                  </div>
+                  <p className="ml-3 text-lg text-white font-semibold">Reutilizable y sostenible</p>
+                </li>
+              </ul>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                  <Link href="/viga-h20">Conoce más <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-900">
+                  <Link href="/contact">Cotizar Ahora</Link>
                 </Button>
               </div>
             </div>
@@ -438,8 +508,8 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-             <Button asChild size="lg">
-                <Link href="/products">Ver Todo el Catálogo</Link>
+            <Button asChild size="lg">
+              <Link href="/products">Ver Todo el Catálogo</Link>
             </Button>
           </div>
         </div>
@@ -447,55 +517,55 @@ export default function Home() {
 
       {/* Catalog Section */}
       <section id="catalog" className="py-20 bg-card">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
-                  <p className="mt-4 text-lg text-muted-foreground">Explora nuestros productos de manera interactiva.</p>
-              </div>
-              <Flipbook pdfUrl={catalogPdfUrl} />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro <span className="text-primary">Catálogo</span></h2>
+            <p className="mt-4 text-lg text-muted-foreground">Explora nuestros productos de manera interactiva.</p>
           </div>
+          <Flipbook pdfUrl={catalogPdfUrl} />
+        </div>
       </section>
 
       {/* Promotions Section */}
       <section id="promociones" className="py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br/> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg'>DESCUENTOS EXCLUSIVOS</span></h2>
-              </div>
-              <Carousel 
-                  opts={{
-                      align: "start",
-                      loop: true,
-                  }}
-                  className="w-full"
-              >
-                  <CarouselContent>
-                      {promotionImages.map((image, index) => (
-                          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                              <div className="p-1">
-                                <Dialog>
-                                  <DialogTrigger asChild>
-                                    <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                                        <Image src={image.src} alt={image.alt} width={400} height={300} className="transition-transform duration-300" data-ai-hint={image.hint} />
-                                    </div>
-                                  </DialogTrigger>
-                                  <DialogContent className="max-w-4xl p-6">
-                                      <ContactSection />
-                                  </DialogContent>
-                                </Dialog>
-                              </div>
-                          </CarouselItem>
-                      ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-                  <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
-              </Carousel>
-               <div className="text-center mt-12">
-                <Button asChild size="lg">
-                    <Link href="/contact">Aprovecha Ahora</Link>
-                </Button>
-            </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black font-headline uppercase text-primary tracking-wider">¡PORQUE TÚ LO PEDISTE! <br /> <span className='inline-block px-4 py-2 mt-2 bg-[#FFC107]/75 text-primary rounded-lg'>DESCUENTOS EXCLUSIVOS</span></h2>
           </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {promotionImages.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                          <Image src={image.src} alt={image.alt} width={400} height={300} className="transition-transform duration-300" data-ai-hint={image.hint} />
+                        </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl p-6">
+                        <ContactSection />
+                      </DialogContent>
+                    </Dialog>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
+          </Carousel>
+          <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <Link href="/contact">Aprovecha Ahora</Link>
+            </Button>
+          </div>
+        </div>
       </section>
 
       {/* Mosaic Gallery Section */}
@@ -505,73 +575,73 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-wider">Queremos que tus proyectos sean tan grandes como tus <span className="text-primary">sueños</span></h2>
           </div>
           <div className="columns-2 md:columns-4 gap-4">
-              <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction architecture" />
-              </div>
-              <div className="mb-4 break-inside-avoid">
-                 <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding detail" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction workers" />
-              </div>
-              <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC14-D5.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                 <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork materials" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site aerial" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="shoring post" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC3-D5.jpg" alt="Proyecto de construcción 3" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC23-D5.jpg" alt="Material de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding material" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC8-D5.jpg" alt="Trabajador de construcción" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction worker" />
-              </div>
-               <div className="mb-4 break-inside-avoid">
-                <Image src="/Image/Galeria/CARRUSEL-DFAC9-D5.jpg" alt="Cimbra para construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork" />
-              </div>
-          </div>
-           <div className="text-center mt-12">
-                <Button asChild size="lg">
-                    <Link href="/about">Inspírate con Nosotros</Link>
-                </Button>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC-D5.jpg" alt="Proyecto de construcción 1" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction architecture" />
             </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/1620841038-3.jpg" alt="Detalle de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding detail" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC2-D5.jpg" alt="Equipo trabajando en obra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction workers" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC14-D5.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC4-D6.jpg" alt="Estructura de edificio" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="building structure" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC7-D5.jpg" alt="Material de cimbra" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork materials" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC12-D5.jpg" alt="Vista aérea de construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site aerial" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC11-D5.jpg" alt="Detalle de puntal" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="shoring post" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC3-D5.jpg" alt="Proyecto de construcción 3" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction site" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC23-D5.jpg" alt="Material de andamio" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="scaffolding material" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC8-D5.jpg" alt="Trabajador de construcción" width={400} height={600} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="construction worker" />
+            </div>
+            <div className="mb-4 break-inside-avoid">
+              <Image src="/Image/Galeria/CARRUSEL-DFAC9-D5.jpg" alt="Cimbra para construcción" width={400} height={400} className="w-full h-auto rounded-lg shadow-lg" data-ai-hint="formwork" />
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <Link href="/about">Inspírate con Nosotros</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* How it Works Section */}
       <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en <span className="text-primary">3 Pasos Simples</span></h2>
-                  <p className="mt-4 text-lg text-muted-foreground">Comienza a construir de forma más <b className="text-foreground">rápida y segura</b>.</p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-8 text-center">
-                  {processSteps.map((step) => (
-                      <div key={step.title} className="flex flex-col items-center p-6 bg-card rounded-lg shadow-md border">
-                          <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">{step.icon}</div>
-                          <h3 className="text-xl font-bold">{step.title}</h3>
-                          <p className="text-muted-foreground mt-2">{step.description}</p>
-                      </div>
-                  ))}
-              </div>
-               <div className="text-center mt-12">
-                <Button asChild size="lg">
-                    <Link href="/contact">Comienza tu Cotización</Link>
-                </Button>
-            </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso en <span className="text-primary">3 Pasos Simples</span></h2>
+            <p className="mt-4 text-lg text-muted-foreground">Comienza a construir de forma más <b className="text-foreground">rápida y segura</b>.</p>
           </div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            {processSteps.map((step) => (
+              <div key={step.title} className="flex flex-col items-center p-6 bg-card rounded-lg shadow-md border">
+                <div className="bg-primary/10 text-primary p-4 rounded-full mb-4">{step.icon}</div>
+                <h3 className="text-xl font-bold">{step.title}</h3>
+                <p className="text-muted-foreground mt-2">{step.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <Link href="/contact">Comienza tu Cotización</Link>
+            </Button>
+          </div>
+        </div>
       </section>
 
       {/* Testimonials Section */}
@@ -593,14 +663,14 @@ export default function Home() {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-4 h-full">
                     <Card className="flex flex-col justify-between h-full text-center p-6 bg-background">
-                       <CardContent className="flex-grow mb-4">
+                      <CardContent className="flex-grow mb-4">
                         <p className="text-foreground text-lg italic">"{testimonial.quote}"</p>
                       </CardContent>
                       <div className="flex items-center justify-center mb-2">
-                          {Array.from({ length: testimonial.rating }).map((_, i) => (
-                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                          ))}
-                        </div>
+                        {Array.from({ length: testimonial.rating }).map((_, i) => (
+                          <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
                       <CardTitle className="text-base font-semibold">- {testimonial.name}</CardTitle>
                     </Card>
                   </div>
@@ -610,24 +680,24 @@ export default function Home() {
             <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
             <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
           </Carousel>
-           <div className="text-center mt-12">
-                <Button asChild size="lg" variant="outline">
-                    <Link href="/contact">Conviértete en Nuestro Próximo Caso de Éxito</Link>
-                </Button>
-            </div>
+          <div className="text-center mt-12">
+            <Button asChild size="lg" variant="outline">
+              <Link href="/contact">Conviértete en Nuestro Próximo Caso de Éxito</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la <br/> <span className="italic">máxima eficiencia</span>?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">¿Listo para construir con la <br /> <span className="italic">máxima eficiencia</span>?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
             Contacta a nuestros expertos para una <b className="text-white">cotización inmediata</b> y sin compromiso. Recibe la mejor asesoría para tu proyecto <b className="text-white">hoy mismo</b>.
           </p>
           <div className="mt-8">
-             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
-                <Link href="/contact">Solicitar Información</Link>
+            <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <Link href="/contact">Solicitar Información</Link>
             </Button>
           </div>
         </div>
@@ -636,6 +706,5 @@ export default function Home() {
   );
 }
 
-    
 
-    
+
