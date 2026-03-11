@@ -138,7 +138,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
             <p className="text-3xl font-bold text-primary mb-4">
               Precio a cotizar
             </p>
-            <div className="product-description" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
+            <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
             
             {medidaAttribute && medidaAttribute.terms.length > 0 && (
               <div className="mt-6">
