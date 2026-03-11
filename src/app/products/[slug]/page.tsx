@@ -140,7 +140,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               </p>
               {product.slug === 'tirante-tipo-mono' ? (
                 <div className="product-description font-sans">
-                  <h2 className="text-center text-2xl md:text-3xl font-light text-slate-700 uppercase mb-6">MOÑOS SEPARADORES PARA CIMBRA</h2>
+                  <h2 className="text-2xl md:text-3xl font-light text-slate-700 uppercase mb-6">MOÑOS SEPARADORES PARA CIMBRA</h2>
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-6 w-full md:w-auto text-center">
                     <h3 className="text-center text-xl md:text-2xl text-white m-0">Moño separador para cimbra de madera</h3>
                   </div>
