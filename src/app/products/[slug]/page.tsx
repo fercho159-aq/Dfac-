@@ -161,7 +161,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </div>
                   </div>
                   <h3 className="text-center text-lg md:text-xl font-medium text-slate-700 mb-4">Tabla de medidas</h3>
-                  <h4 className="text-center md:text-left text-base md:text-lg font-medium text-slate-700 mb-2">Fabricación Express para Medidas Especiales</h4>
+                  <h4 className="text-center md:text-left text-base md:text-lg font-medium text-slate-700 mb-2">Disponibilidad y Tiempos de Entrega</h4>
                   <p className="text-sm md:text-base text-slate-800 mb-8">¿Necesitas medidas mayores a 40 cm? No esperes semanas. Contamos con un servicio de fabricación acelerada con entregas a partir de las 24 a 72 horas. Para medidas estándar (10 a 40 cm), garantizamos entrega inmediata según existencias.</p>
                 </div>
               ) : (
