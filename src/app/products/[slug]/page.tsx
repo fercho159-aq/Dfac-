@@ -163,6 +163,57 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <h3 className="text-center text-lg md:text-xl font-medium text-slate-700 mb-4">Tabla de medidas</h3>
                   <h4 className="text-center md:text-left text-base md:text-lg font-medium text-slate-700 mb-2">Disponibilidad y Tiempos de Entrega</h4>
                   <p className="text-sm md:text-base text-slate-800 mb-8">¿Necesitas medidas mayores a 40 cm? No esperes semanas. Contamos con un servicio de fabricación acelerada con entregas a partir de las 24 a 72 horas. Para medidas estándar (10 a 40 cm), garantizamos entrega inmediata según existencias.</p>
+
+                  {/* Sección técnica: Proceso de instalación */}
+                  <div className="w-full border-t border-slate-300 mt-8 pt-8">
+                    <h3 className="text-center text-lg md:text-xl font-medium text-slate-700 mb-2">Proceso Técnico de Instalación</h3>
+                    <p className="text-center text-sm text-slate-500 mb-8">Así se ven nuestros moños en obra real</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                      <div className="space-y-3">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg border border-slate-200 shadow-sm">
+                          <Image
+                            src="/Image/mono-proceso-muro-concreto.jpeg"
+                            alt="Moños instalados en muro de concreto - vista de acabado final"
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <p className="text-xs md:text-sm text-slate-600 text-center"><strong>Acabado final:</strong> Moños embebidos en muro de concreto después del descimbrado. Se observa la distribución uniforme de los tirantes y las juntas de colado.</p>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg border border-slate-200 shadow-sm">
+                          <Image
+                            src="/Image/mono-proceso-construccion.jpeg"
+                            alt="Proceso de cimbrado con moños en obra de construcción"
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <p className="text-xs md:text-sm text-slate-600 text-center"><strong>En proceso de cimbrado:</strong> Vista de la colocación de moños durante el armado de muros. Los tirantes mantienen la separación precisa entre las caras de la cimbra antes del vaciado.</p>
+                      </div>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 md:p-6">
+                      <h4 className="text-sm md:text-base font-semibold text-slate-700 mb-3">Especificaciones técnicas de instalación</h4>
+                      <ul className="space-y-2 text-xs md:text-sm text-slate-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-600 font-bold mt-0.5">•</span>
+                          <span>Los moños se insertan a través de perforaciones en las caras de la cimbra, asegurando la separación exacta del muro.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-600 font-bold mt-0.5">•</span>
+                          <span>Se fijan en cada extremo con cuñas de acero que impiden el movimiento durante el vaciado.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-600 font-bold mt-0.5">•</span>
+                          <span>Después del fraguado, las patas del moño se rompen al ras del muro gracias a los puntos de quiebre diseñados en la pieza.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-600 font-bold mt-0.5">•</span>
+                          <span>Capacidad de carga: <strong>1,350 kg a la tracción</strong> (3,000 lbs) por tirante.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
