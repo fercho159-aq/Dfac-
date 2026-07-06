@@ -26,6 +26,7 @@ export function Footer() {
               <li><Link href="/products" className="text-muted-foreground hover:text-primary transition-colors">Productos</Link></li>
               <li><Link href="/#catalog" className="text-muted-foreground hover:text-primary transition-colors">Catálogo</Link></li>
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</Link></li>
+              <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
               <li><Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">Preguntas frecuentes</Link></li>
               <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contacto</Link></li>
             </ul>
