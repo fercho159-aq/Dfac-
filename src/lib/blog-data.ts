@@ -1,6 +1,8 @@
 export interface BlogPostSection {
   heading: string;
   paragraphs: string[];
+  image?: string;       // imagen opcional dentro del cuerpo
+  imageAlt?: string;
 }
 
 export interface BlogPost {
@@ -17,6 +19,66 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: 'banda-de-pvc-sello-retenedor-de-agua',
+    title: 'Banda de PVC: el sello retenedor de agua que protege tus estructuras',
+    excerpt:
+      'En proyectos donde el concreto está en contacto constante con el agua, la banda de PVC es el sistema de sellado más confiable para evitar filtraciones en juntas de construcción y expansión.',
+    image: '/Image/blog-imagenes/imagen-portada.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2025-07-14',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué es una banda de PVC?',
+        paragraphs: [
+          'La banda de PVC es un sello retenedor de agua fabricado con cloruro de polivinilo (PVC) de alta resistencia. Se instala durante el colado del concreto para crear una barrera impermeable que impide el paso del agua a través de las juntas.',
+          'Gracias a su flexibilidad y resistencia, se adapta a los movimientos naturales de la estructura sin perder su capacidad de sellado.',
+        ],
+        image: '/Image/blog-imagenes/va-dentro-del-texto.jpeg',
+        imageAlt: 'Banda de PVC instalada en junta de concreto',
+      },
+      {
+        heading: 'Características',
+        paragraphs: [
+          'Fabricada en Cloruro de Polivinilo (PVC). Longitud: 25 metros lineales.',
+          'Diseño con bulbo central, que permite absorber los movimientos de expansión y contracción. Laterales estriados, que mejoran el anclaje al concreto. Ojillos integrados, para una mejor fijación durante la instalación y un sellado más eficiente.',
+          'Alta resistencia al agua y a las condiciones propias de obras hidráulicas y civiles.',
+        ],
+      },
+      {
+        heading: 'Beneficios',
+        paragraphs: [
+          'Evita filtraciones de agua en juntas de concreto e incrementa la vida útil de las estructuras.',
+          'Reduce costos de mantenimiento y reparaciones por humedad. Excelente adherencia gracias a sus laterales estriados.',
+          'Instalación segura con ojillos integrados que facilitan su fijación. Material resistente, flexible y de larga duración.',
+        ],
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'La banda de PVC es ideal para proyectos donde se requiere un sellado confiable contra el paso del agua: cisternas, albercas, plantas de tratamiento, tanques de almacenamiento, canales hidráulicos, muros de contención, sótanos y cimentaciones, túneles, y obras hidráulicas e industriales.',
+        ],
+        image: '/Image/blog-imagenes/va-dentro-del-texto-2.jpeg',
+        imageAlt: 'Aplicaciones de banda de PVC en obras hidráulicas',
+      },
+      {
+        heading: '¿Por qué elegir una banda de PVC de calidad?',
+        paragraphs: [
+          'Utilizar una banda retenedora de agua de alta calidad garantiza un mejor desempeño durante toda la vida útil de la estructura. Su diseño con bulbo central, laterales estriados y ojillos integrados permite un sellado más efectivo, incluso cuando el concreto presenta movimientos por cambios de temperatura o asentamientos naturales.',
+          'Invertir en un sistema de impermeabilización adecuado desde la construcción ayuda a prevenir filtraciones, proteger la estructura y evitar costosas reparaciones futuras.',
+        ],
+      },
+      {
+        heading: 'DFAC: Soluciones confiables para la construcción',
+        paragraphs: [
+          'En DFAC ofrecemos bandas de PVC diseñadas para brindar un sellado eficiente y una excelente resistencia en proyectos de construcción e infraestructura. Nuestros productos cumplen con altos estándares de calidad para ayudarte a proteger tus instalaciones y garantizar estructuras más seguras y duraderas.',
+        ],
+      },
+    ],
+  },
   {
     slug: 'entrega-de-cimbra-y-andamios-en-24-horas-cdmx',
     title: 'Entrega de cimbra y andamios en 24 horas en la CDMX y Zona Metropolitana',

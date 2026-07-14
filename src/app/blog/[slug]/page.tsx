@@ -94,6 +94,17 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     </p>
                   ))}
                 </div>
+                {section.image && (
+                  <div className="mt-6 relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-md">
+                    <Image
+                      src={section.image}
+                      alt={section.imageAlt ?? section.heading}
+                      layout="fill"
+                      objectFit="cover"
+                      data-ai-hint="construction product"
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </article>
