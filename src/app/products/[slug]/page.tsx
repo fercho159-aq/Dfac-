@@ -140,159 +140,12 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               </p>
               {product.slug === 'banda-de-pvc-negra-ojillada' ? (
                 <div className="product-description font-sans">
-                  <h2 className="text-2xl md:text-3xl font-light text-slate-700 uppercase mb-4">BANDA DE PVC OJILLADA</h2>
-                  <div className="bg-blue-600 inline-block px-4 py-2 mb-6 w-full md:w-auto text-center rounded">
-                    <h3 className="text-lg md:text-xl text-white m-0">Cumple con la Norma CRD-C-572</h3>
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Cumple con la Norma CRD-C-572</span>
                   </div>
-                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                  <p className="text-sm md:text-base text-slate-800">
                     Es un sello retenedor de agua color negro, elaborado a base de cloruro de polivinilo en forma de cinta flexible con bulbo central y laterales estriados. Diseñado para garantizar la impermeabilidad en juntas frías de construcción.
                   </p>
-
-                  {/* Usos */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Usos</h3>
-                    <p className="text-sm text-slate-600 mb-4">Para la retención de agua, con o sin presión en la junta fría de la unión de colados en:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-                      {['Canales', 'Cimentaciones', 'Ductos', 'Albercas', 'Sifones', 'Pisos', 'Muros', 'Vertedores'].map((uso) => (
-                        <div key={uso} className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
-                          <span className="text-sm font-medium text-slate-700">{uso}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Cualidades */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Cualidades</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                      <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-blue-800 mb-1">Absorción de movimientos</h4>
-                        <p className="text-xs md:text-sm text-slate-700">Absorbe todos los movimientos tanto horizontales como verticales que las estructuras puedan sufrir sin desgarrarse ni cortarse.</p>
-                      </div>
-                      <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-blue-800 mb-1">Fácil adherencia</h4>
-                        <p className="text-xs md:text-sm text-slate-700">Es fácilmente adherible debido a su naturaleza termoplástica.</p>
-                      </div>
-                      <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-blue-800 mb-1">Alta resistencia</h4>
-                        <p className="text-xs md:text-sm text-slate-700">Tiene alta resistencia al envejecimiento. Conserva sus propiedades permanentemente.</p>
-                      </div>
-                      <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-blue-800 mb-1">Resistencia química</h4>
-                        <p className="text-xs md:text-sm text-slate-700">Rechaza eficazmente la acción agresiva de las soluciones ácidas y alcalinas.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Aplicación */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Aplicación</h3>
-                    <div className="space-y-6 mb-6">
-                      <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 md:p-6">
-                        <h4 className="text-sm md:text-base font-semibold text-slate-700 mb-2">Disposición Vertical</h4>
-                        <p className="text-xs md:text-sm text-slate-700 mb-2">Para canales, cimentaciones, ductos, albercas, muros, etc., que se colarán en dos o más etapas.</p>
-                        <p className="text-xs md:text-sm text-slate-600">La solapa inferior de la banda deberá quedar ahogada a la mitad del espesor del primer colado. Para fijarla, se amarra con alambre recocido a través de los ojillos a la varilla.</p>
-                      </div>
-                      <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 md:p-6">
-                        <h4 className="text-sm md:text-base font-semibold text-slate-700 mb-2">Disposición Horizontal</h4>
-                        <p className="text-xs md:text-sm text-slate-700 mb-2">Se emplea en losas, bases de albercas o en pavimentos de concreto.</p>
-                        <p className="text-xs md:text-sm text-slate-600">Fijar el bulbo central entre dos tramos de la cimbra que contendrá el concreto. Amarrar las solapas (interna y externa) a través de los ojillos al acero y a la cimbra.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Especificaciones Técnicas */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Especificaciones Técnicas</h3>
-                    <div className="overflow-x-auto mb-6">
-                      <table className="w-full text-sm border-collapse">
-                        <thead>
-                          <tr className="bg-blue-600 text-white">
-                            <th className="text-left p-3 rounded-tl-lg">Prueba</th>
-                            <th className="text-left p-3 rounded-tr-lg">Especificación</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr className="border-b border-slate-200">
-                            <td className="p-3 font-medium text-slate-700">Consistencia</td>
-                            <td className="p-3 text-slate-600">Banda Flexible</td>
-                          </tr>
-                          <tr className="border-b border-slate-200 bg-slate-50">
-                            <td className="p-3 font-medium text-slate-700">Color</td>
-                            <td className="p-3 text-slate-600">Negro</td>
-                          </tr>
-                          <tr className="border-b border-slate-200">
-                            <td className="p-3 font-medium text-slate-700">Dureza Shore A</td>
-                            <td className="p-3 text-slate-600">75 – 85</td>
-                          </tr>
-                          <tr className="border-b border-slate-200 bg-slate-50">
-                            <td className="p-3 font-medium text-slate-700">Resistencia a la Tensión</td>
-                            <td className="p-3 text-slate-600">120 kg/cm² mínimo</td>
-                          </tr>
-                          <tr className="border-b border-slate-200">
-                            <td className="p-3 font-medium text-slate-700">Porcentaje de Elongación</td>
-                            <td className="p-3 text-slate-600">280% mínimo</td>
-                          </tr>
-                          <tr>
-                            <td className="p-3 font-medium text-slate-700 rounded-bl-lg">% Absorción de Agua</td>
-                            <td className="p-3 text-slate-600 rounded-br-lg">10.0% máxima</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  {/* Presentación y Rendimiento */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Presentación y Rendimiento</h3>
-                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 md:p-6 mb-6">
-                      <ul className="space-y-2 text-xs md:text-sm text-slate-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-blue-600 font-bold mt-0.5">•</span>
-                          <span>Disponible en medidas de <strong>4", 6", 7.5", 9" y 12"</strong> de ancho.</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-blue-600 font-bold mt-0.5">•</span>
-                          <span>Se vende por rollo de <strong>25 metros lineales</strong>.</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-blue-600 font-bold mt-0.5">•</span>
-                          <span>Rendimiento: <strong>25 mts. lineales por rollo</strong>.</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Recomendaciones y Almacenaje */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-amber-800 mb-2">Recomendaciones</h4>
-                        <p className="text-xs md:text-sm text-slate-700">No debe ser traslapada, debe unirse perfectamente entre sí, mediante fusión por calor.</p>
-                      </div>
-                      <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <h4 className="text-sm font-semibold text-green-800 mb-2">Almacenaje</h4>
-                        <p className="text-xs md:text-sm text-slate-700">Conserva sus propiedades permanentemente. Almacénelo estibado sobre tarima y bajo techo.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Medidas de Seguridad */}
-                  <div className="w-full border-t border-slate-300 mt-6 pt-6">
-                    <h3 className="text-lg md:text-xl font-semibold text-slate-700 mb-4">Medidas de Seguridad</h3>
-                    <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                      <ul className="space-y-2 text-xs md:text-sm text-slate-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-red-600 font-bold mt-0.5">⚠</span>
-                          <span>Al hacer la unión con calor, deberá cuidar de no inhalar los gases de combustión, ni tener contacto con la piel para evitar quemaduras.</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-red-600 font-bold mt-0.5">⚠</span>
-                          <span>No se deje al alcance de los niños.</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               ) : product.slug === 'tirante-tipo-mono' ? (
                 <div className="product-description font-sans">
@@ -400,6 +253,156 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               </div>
             </div>
           </div>
+
+          {/* Banda de PVC - Detailed info sections below the grid */}
+          {product.slug === 'banda-de-pvc-negra-ojillada' && (
+            <div className="mt-16 space-y-12">
+              {/* Usos */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
+                <p className="text-muted-foreground mb-6">Para la retención de agua, con o sin presión en la junta fría de la unión de colados en:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Canales', 'Cimentaciones', 'Ductos', 'Albercas', 'Sifones', 'Pisos', 'Muros', 'Vertedores'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Cualidades */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Cualidades</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Absorción de movimientos</h4>
+                    <p className="text-sm text-slate-700">Absorbe todos los movimientos tanto horizontales como verticales que las estructuras puedan sufrir sin desgarrarse ni cortarse.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Fácil adherencia</h4>
+                    <p className="text-sm text-slate-700">Es fácilmente adherible debido a su naturaleza termoplástica.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Alta resistencia</h4>
+                    <p className="text-sm text-slate-700">Tiene alta resistencia al envejecimiento. Conserva sus propiedades permanentemente.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Resistencia química</h4>
+                    <p className="text-sm text-slate-700">Rechaza eficazmente la acción agresiva de las soluciones ácidas y alcalinas.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Aplicación */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Aplicación</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-lg font-bold text-slate-700 mb-3">Disposición Vertical</h4>
+                    <p className="text-sm text-slate-700 mb-2">Para canales, cimentaciones, ductos, albercas, muros, etc., que se colarán en dos o más etapas.</p>
+                    <p className="text-sm text-slate-600">La solapa inferior de la banda deberá quedar ahogada a la mitad del espesor del primer colado. Para fijarla, se amarra con alambre recocido a través de los ojillos a la varilla.</p>
+                  </div>
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-lg font-bold text-slate-700 mb-3">Disposición Horizontal</h4>
+                    <p className="text-sm text-slate-700 mb-2">Se emplea en losas, bases de albercas o en pavimentos de concreto.</p>
+                    <p className="text-sm text-slate-600">Fijar el bulbo central entre dos tramos de la cimbra que contendrá el concreto. Amarrar las solapas (interna y externa) a través de los ojillos al acero y a la cimbra.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Especificaciones Técnicas + Presentación side by side */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-blue-600 text-white">
+                          <th className="text-left p-4">Prueba</th>
+                          <th className="text-left p-4">Especificación</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b border-slate-200">
+                          <td className="p-4 font-medium text-slate-700">Consistencia</td>
+                          <td className="p-4 text-slate-600">Banda Flexible</td>
+                        </tr>
+                        <tr className="border-b border-slate-200 bg-slate-50">
+                          <td className="p-4 font-medium text-slate-700">Color</td>
+                          <td className="p-4 text-slate-600">Negro</td>
+                        </tr>
+                        <tr className="border-b border-slate-200">
+                          <td className="p-4 font-medium text-slate-700">Dureza Shore A</td>
+                          <td className="p-4 text-slate-600">75 – 85</td>
+                        </tr>
+                        <tr className="border-b border-slate-200 bg-slate-50">
+                          <td className="p-4 font-medium text-slate-700">Resistencia a la Tensión</td>
+                          <td className="p-4 text-slate-600">120 kg/cm² mínimo</td>
+                        </tr>
+                        <tr className="border-b border-slate-200">
+                          <td className="p-4 font-medium text-slate-700">Porcentaje de Elongación</td>
+                          <td className="p-4 text-slate-600">280% mínimo</td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-slate-700">% Absorción de Agua</td>
+                          <td className="p-4 text-slate-600">10.0% máxima</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Presentación y Rendimiento</h3>
+                    <div className="bg-card border rounded-xl p-6 shadow-sm">
+                      <ul className="space-y-3 text-sm text-slate-700">
+                        <li className="flex items-start gap-3">
+                          <span className="text-blue-600 font-bold text-lg leading-none mt-0.5">•</span>
+                          <span>Disponible en medidas de <strong>4", 6", 7.5", 9" y 12"</strong> de ancho.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-blue-600 font-bold text-lg leading-none mt-0.5">•</span>
+                          <span>Se vende por rollo de <strong>25 metros lineales</strong>.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-blue-600 font-bold text-lg leading-none mt-0.5">•</span>
+                          <span>Rendimiento: <strong>25 mts. lineales por rollo</strong>.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                      <h4 className="text-base font-bold text-amber-800 mb-2">Recomendaciones</h4>
+                      <p className="text-sm text-slate-700">No debe ser traslapada, debe unirse perfectamente entre sí, mediante fusión por calor.</p>
+                    </div>
+                    <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                      <h4 className="text-base font-bold text-green-800 mb-2">Almacenaje</h4>
+                      <p className="text-sm text-slate-700">Conserva sus propiedades permanentemente. Almacénelo estibado sobre tarima y bajo techo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Medidas de Seguridad */}
+              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-red-800 mb-3">Medidas de Seguridad</h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold mt-0.5">⚠</span>
+                    <span>Al hacer la unión con calor, deberá cuidar de no inhalar los gases de combustión, ni tener contacto con la piel para evitar quemaduras.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold mt-0.5">⚠</span>
+                    <span>No se deje al alcance de los niños.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
       <section className="py-20 bg-card">
