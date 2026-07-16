@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Productos',
     location: 'México',
     author: 'Equipo DFAC',
-    date: '2025-07-14',
+    date: '2026-07-14',
     readTime: '4 min',
     content: [
       {
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Logística',
     location: 'Ciudad de México',
     author: 'Equipo DFAC',
-    date: '2025-06-02',
+    date: '2026-06-02',
     readTime: '4 min',
     content: [
       {
@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Productos',
     location: 'Valle de México',
     author: 'Equipo DFAC',
-    date: '2025-05-20',
+    date: '2026-05-20',
     readTime: '5 min',
     content: [
       {
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Productos químicos',
     location: 'Estado de México',
     author: 'Equipo DFAC',
-    date: '2025-05-08',
+    date: '2026-05-08',
     readTime: '4 min',
     content: [
       {
@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Apuntalamiento',
     location: 'Zona Metropolitana',
     author: 'Equipo DFAC',
-    date: '2025-04-22',
+    date: '2026-04-22',
     readTime: '5 min',
     content: [
       {
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Productos químicos',
     location: 'Ciudad de México',
     author: 'Equipo DFAC',
-    date: '2025-04-05',
+    date: '2026-04-05',
     readTime: '4 min',
     content: [
       {
@@ -263,7 +263,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Andamios',
     location: 'México',
     author: 'Equipo DFAC',
-    date: '2025-03-18',
+    date: '2026-03-18',
     readTime: '5 min',
     content: [
       {
