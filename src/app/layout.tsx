@@ -48,6 +48,24 @@ export default function RootLayout({
             gtag('config', 'G-T74VLVQB70');
           `}
         </Script>
+
+        {/* Google Ads WhatsApp Conversion Tracking */}
+        <Script id="gtag-conversion-whatsapp" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-987044751/EqbqCPHnpdEcEI-31NYD',
+                'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
       </head>
       <body className="font-body antialiased">
         {/* Google Tag Manager (noscript) */}
