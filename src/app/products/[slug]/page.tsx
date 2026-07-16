@@ -245,7 +245,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     Solicitar cotización
                   </Link>
                 </Button>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion(whatsappUrl); } }}>
                   <Button size="lg" variant="secondary" className="w-full bg-green-500 hover:bg-green-600 text-white">
                     <MessageSquare className="mr-2 h-5 w-5" /> Para entregas urgentes envíanos un WhatsApp
                   </Button>

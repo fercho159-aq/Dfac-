@@ -84,7 +84,7 @@ export function ContactSection() {
                         <div>
                             <h3 className="text-base md:text-lg font-semibold">WhatsApp</h3>
                             <p className="text-sm text-muted-foreground">El canal <b className="text-foreground">más rápido</b> para resolver dudas.</p>
-                            <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="text-sm text-primary font-semibold hover:underline">Chatea con nosotros</a>
+                            <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="text-sm text-primary font-semibold hover:underline" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>Chatea con nosotros</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">

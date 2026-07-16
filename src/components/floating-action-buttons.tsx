@@ -16,7 +16,7 @@ export function FloatingActionButtons() {
         <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
             <Tooltip>
                 <TooltipTrigger asChild>
-                    <Link href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
                         <Button
                         size="icon"
                         className="rounded-full h-14 w-14 bg-green-500 hover:bg-green-600 text-white shadow-lg"

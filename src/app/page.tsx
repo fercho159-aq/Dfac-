@@ -242,7 +242,7 @@ export default function Home() {
             </DialogDescription>
           </DialogHeader>
           <div className="py-4 space-y-4">
-            <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="w-full">
+            <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
               <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
                 <MessageSquare className="mr-2 h-5 w-5" /> Chatear por WhatsApp
               </Button>

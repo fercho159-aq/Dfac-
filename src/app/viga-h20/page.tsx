@@ -106,7 +106,7 @@ export default function VigaH20Page() {
                           <Link href="/contact">Solicitar Cotización <ArrowRight className="ml-2 h-5 w-5"/></Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm">
-                          <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer">
+                          <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
                             <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp
                           </a>
                         </Button>
@@ -333,7 +333,7 @@ export default function VigaH20Page() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">WhatsApp</h3>
-                    <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold hover:underline">
+                    <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold hover:underline" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
                       +52 55 6422 0884
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Respuesta inmediata</p>
@@ -412,7 +412,7 @@ export default function VigaH20Page() {
               <Link href="/contact">Solicitar Cotización</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-primary">
-              <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
                 <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp Directo
               </a>
             </Button>
