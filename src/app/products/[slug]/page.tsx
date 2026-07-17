@@ -6,12 +6,13 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft, MessageSquare } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { ContactSection } from '@/components/contact-section';
 import { ProductCard } from '@/components/product-card';
 import { Suspense } from 'react';
+import { WhatsAppButton } from './WhatsAppButton';
 
 // New component for related products
 function RelatedProducts({ products, searchParams }: { products: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
@@ -245,11 +246,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     Solicitar cotización
                   </Link>
                 </Button>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion(whatsappUrl); } }}>
-                  <Button size="lg" variant="secondary" className="w-full bg-green-500 hover:bg-green-600 text-white">
-                    <MessageSquare className="mr-2 h-5 w-5" /> Para entregas urgentes envíanos un WhatsApp
-                  </Button>
-                </a>
+                <WhatsAppButton url={whatsappUrl} />
               </div>
             </div>
           </div>
