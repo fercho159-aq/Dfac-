@@ -20,6 +20,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'disco-separador-muro-de-concreto-silleta-lateral',
+    title: 'Disco separador para muro de concreto: la silleta que garantiza recubrimientos precisos',
+    excerpt:
+      'En la construcción de muros de concreto reforzado, el disco separador —también conocido como silleta lateral— es el accesorio clave para mantener el acero centrado y lograr recubrimientos uniformes.',
+    image: '/Image/blog-imagenes/portada-dos.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-07-20',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué es un disco separador para muro de concreto?',
+        paragraphs: [
+          'El disco separador es un distanciador vertical diseñado para mantener el acero de refuerzo exactamente al centro del muro durante el colado del concreto. Gracias a su diseño con clip interno, proporciona una sujeción firme de la varilla, evitando desplazamientos que puedan afectar el recubrimiento del concreto.',
+          'Su uso permite cumplir con las especificaciones estructurales y obtener acabados aparentes de alta calidad.',
+        ],
+        image: '/Image/blog-imagenes/dentro-del-texto-dos.jpeg',
+        imageAlt: 'Disco separador instalado en muro de concreto',
+      },
+      {
+        heading: 'Beneficios de utilizar discos separadores',
+        paragraphs: [
+          'Mantienen el acero de refuerzo perfectamente centrado y garantizan recubrimientos uniformes de concreto en ambos lados del muro. Proporcionan acabados limpios, sin marcas visibles en el concreto aparente.',
+          'Facilitan la colocación del acero durante el armado y ayudan a proteger la varilla contra la corrosión al asegurar el espesor adecuado del recubrimiento. Reducen errores durante el proceso de colado.',
+        ],
+      },
+      {
+        heading: 'Características técnicas',
+        paragraphs: [
+          'Los discos separadores para muro de concreto de DFAC ofrecen resistencia de carga de hasta 100 kg, diseño ligero y de alta resistencia, y clip interno para una sujeción segura del acero.',
+          'Son ideales para muros de concreto con acero de refuerzo al centro, con excelente desempeño en proyectos residenciales, comerciales e industriales.',
+        ],
+      },
+      {
+        heading: 'Medidas disponibles',
+        paragraphs: [
+          'Para adaptarse a los requerimientos de cada proyecto, el disco separador está disponible en las siguientes medidas: 2 cm, 2.5 cm, 3 cm, 4 cm, 4.5 cm, 5 cm, 6.5 cm y 7.5 cm.',
+          'Estas opciones permiten cumplir con diferentes especificaciones de recubrimiento según el diseño estructural de la obra.',
+        ],
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'Los discos separadores son ideales para muros estructurales, muros de concreto aparente, muros de contención, cisternas, edificios habitacionales, naves industriales y obras civiles y de infraestructura.',
+        ],
+      },
+      {
+        heading: 'DFAC, tu aliado en accesorios para cimbra',
+        paragraphs: [
+          'En DFAC sabemos que cada detalle cuenta para lograr una construcción segura y eficiente. Por ello, ofrecemos una amplia gama de accesorios para cimbra y concreto que cumplen con altos estándares de calidad, brindando soluciones confiables para cada etapa de tu proyecto.',
+          'Si buscas discos separadores para muro de concreto, nuestro equipo puede asesorarte para elegir la medida adecuada y ayudarte a optimizar el desempeño de tu obra.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'banda-de-pvc-sello-retenedor-de-agua',
     title: 'Banda de PVC: el sello retenedor de agua que protege tus estructuras',
     excerpt:
