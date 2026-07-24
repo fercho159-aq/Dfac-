@@ -1,6 +1,7 @@
 
 "use client"
-import { Phone, MessageSquare } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import {
@@ -22,7 +23,7 @@ export function FloatingActionButtons() {
                         className="rounded-full h-14 w-14 bg-green-500 hover:bg-green-600 text-white shadow-lg"
                         aria-label="Chatear por WhatsApp"
                         >
-                        <MessageSquare className="h-7 w-7" />
+                        <WhatsAppIcon className="h-7 w-7" />
                         </Button>
                     </Link>
                 </TooltipTrigger>

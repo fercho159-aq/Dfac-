@@ -1,7 +1,8 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MessageSquare } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Link from "next/link";
 
 const faqCategories = [
@@ -106,7 +107,7 @@ export default function FaqPage() {
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" variant="secondary">
                     <Link href="/contact">
-                        <MessageSquare className="mr-2 h-5 w-5" /> <b className="font-bold">Hablemos de tu proyecto</b>
+                        <WhatsAppIcon className="mr-2 h-5 w-5" /> <b className="font-bold">Hablemos de tu proyecto</b>
                     </Link>
                 </Button>
             </div>

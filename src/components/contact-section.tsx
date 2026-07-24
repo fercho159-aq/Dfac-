@@ -6,7 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -79,7 +80,7 @@ export function ContactSection() {
                     </div>
                     <div className="flex items-start gap-4">
                         <div className="bg-primary/10 text-primary p-3 rounded-full">
-                            <MessageSquare className="w-5 h-5 md:w-6 md:h-6" />
+                            <WhatsAppIcon className="w-5 h-5 md:w-6 md:h-6" />
                         </div>
                         <div>
                             <h3 className="text-base md:text-lg font-semibold">WhatsApp</h3>

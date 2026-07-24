@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay";
-import { Check, Truck, Shield, Leaf, Weight, Clock, ArrowRight, Phone, Mail, MapPin, MessageSquare } from 'lucide-react';
+import { Check, Truck, Shield, Leaf, Weight, Clock, ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import { ContactSection } from '@/components/contact-section';
 
 const heroSlides = [
@@ -107,7 +108,7 @@ export default function VigaH20Page() {
                         </Button>
                         <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-primary backdrop-blur-sm">
                           <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
-                            <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp
+                            <WhatsAppIcon className="mr-2 h-5 w-5" /> WhatsApp
                           </a>
                         </Button>
                       </div>
@@ -329,7 +330,7 @@ export default function VigaH20Page() {
               <Card className="p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="w-6 h-6 text-green-500" />
+                    <WhatsAppIcon className="w-6 h-6 text-green-500" />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">WhatsApp</h3>
@@ -413,7 +414,7 @@ export default function VigaH20Page() {
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-primary">
               <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
-                <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp Directo
+                <WhatsAppIcon className="mr-2 h-5 w-5" /> WhatsApp Directo
               </a>
             </Button>
           </div>

@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, MessageSquare, Truck, Sparkles } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, Truck, Sparkles } from 'lucide-react';
+import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
 import { Product, ProductImage } from '@/lib/data';
@@ -244,7 +245,7 @@ export default function Home() {
           <div className="py-4 space-y-4">
             <a href="https://wa.me/525564220884" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => { if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) { (window as any).gtag_report_conversion('https://wa.me/525564220884'); } }}>
               <Button size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
-                <MessageSquare className="mr-2 h-5 w-5" /> Chatear por WhatsApp
+                <WhatsAppIcon className="mr-2 h-5 w-5" /> Chatear por WhatsApp
               </Button>
             </a>
             <div className="flex items-start gap-4 p-4 bg-secondary rounded-md">
