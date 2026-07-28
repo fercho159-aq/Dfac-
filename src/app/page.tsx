@@ -179,7 +179,7 @@ export default function Home() {
   const plugin = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
-  const catalogPdfUrl = "/archivos/CATALOGO-DFAC_compressed.pdf";
+  const catalogPdfUrl = "/archivos/CATALOGO-2026.pdf";
 
 
   useEffect(() => {
