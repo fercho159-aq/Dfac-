@@ -18,6 +18,17 @@ export function Footer() {
                 <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram /></Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary"><Linkedin /></Link>
             </div>
+            <div className="rounded-lg overflow-hidden border h-[180px]">
+              <iframe
+                title="Ubicación de DFAC en Google Maps"
+                src="https://maps.google.com/maps?q=Cuauht%C3%A9moc%20105%2C%20San%20Pedro%20Iztacalco%2C%20Iztacalco%2C%2008220%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-foreground">Navegación</h3>
