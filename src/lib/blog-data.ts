@@ -20,6 +20,65 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'mono-para-cimbra-con-rondana-de-neopreno',
+    title: 'Moño para cimbra con rondana de neopreno: resistencia y sellado para obras de concreto',
+    excerpt:
+      'En los sistemas de cimbra para muros y elementos de concreto, utilizar accesorios de alta calidad es fundamental para garantizar la estabilidad durante el colado y obtener acabados profesionales.',
+    image: '/Image/blog-imagenes/portada-mono-rondana.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-07-27',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un moño para cimbra con rondana de neopreno?',
+        paragraphs: [
+          'El moño para cimbra es un elemento metálico diseñado para mantener la separación correcta entre las caras de la cimbra durante el colado del concreto. Incorpora una rondana de neopreno, la cual funciona como sello para reducir el paso de la lechada de cemento y mejorar el acabado final del muro.',
+          'Su fabricación con acero de alto carbón le permite soportar grandes cargas sin deformarse, brindando mayor seguridad durante la ejecución de la obra.',
+        ],
+        image: '/Image/blog-imagenes/mono-rondana-azul.jpeg',
+        imageAlt: 'Moños para cimbra con rondana de neopreno azul en atados',
+      },
+      {
+        heading: 'Beneficios del moño para cimbra',
+        paragraphs: [
+          'Utilizar moños para cimbra de calidad ofrece importantes ventajas: mantienen la separación exacta entre las cimbras, proporcionan una excelente resistencia durante el colado del concreto y la rondana de neopreno ayuda a minimizar filtraciones de lechada.',
+          'Además, mejoran la calidad del acabado final del muro, facilitan una instalación rápida y eficiente, y contribuyen a una mayor seguridad en el proceso constructivo.',
+        ],
+      },
+      {
+        heading: 'Características técnicas',
+        paragraphs: [
+          'Los moños para cimbra con rondana de neopreno de DFAC están fabricados con acero de alto carbón, con un diámetro de 5.8 mm. Tienen una capacidad de carga de hasta 1,350 kg y una resistencia máxima de 2,200 kg.',
+          'Incluyen rondana de neopreno integrada para un mejor sellado y se venden por atado.',
+        ],
+        image: '/Image/blog-imagenes/mono-rondana-rojo.jpeg',
+        imageAlt: 'Moños para cimbra con rondana de neopreno rojo apilados',
+      },
+      {
+        heading: 'Medidas disponibles',
+        paragraphs: [
+          'El producto está disponible en una amplia variedad de medidas para adaptarse a diferentes espesores de muro: 10 cm, 12 cm, 15 cm, 20 cm, 25 cm, 30 cm, 35 cm, 40 cm, 45 cm, 50 cm, 55 cm, 60 cm, 65 cm, 70 cm, 75 cm, 80 cm, 85 cm, 90 cm, 95 cm y 100 cm.',
+          'También disponible en medidas especiales: 105 cm, 110 cm, 115 cm, 120 cm, 125 cm, 130 cm, 135 cm, 140 cm, 145 cm, 150 cm, 155 cm, 160 cm, 165 cm, 170 cm, 175 cm, 180 cm, 185 cm, 190 cm, 195 cm y 200 cm.',
+        ],
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'El moño para cimbra con rondana de neopreno es ideal para muros de concreto, cisternas, muros de contención, columnas y elementos estructurales, edificios habitacionales, naves industriales, plazas comerciales y obras de infraestructura y construcción en general.',
+        ],
+      },
+      {
+        heading: '¿Por qué elegir DFAC?',
+        paragraphs: [
+          'En DFAC nos especializamos en la fabricación y distribución de accesorios para cimbra que cumplen con altos estándares de calidad. Nuestros productos están diseñados para ofrecer resistencia, durabilidad y un excelente desempeño en obra, ayudando a optimizar los procesos constructivos y garantizando resultados profesionales.',
+          'Si buscas un moño para cimbra con rondana de neopreno de alta resistencia, en DFAC encontrarás la solución ideal para mantener la estabilidad de tu cimbra y obtener estructuras seguras y acabados de calidad.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'disco-separador-muro-de-concreto-silleta-lateral',
     title: 'Disco separador para muro de concreto: la silleta que garantiza recubrimientos precisos',
     excerpt:
