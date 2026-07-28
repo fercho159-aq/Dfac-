@@ -41,11 +41,11 @@ const beneficios = [
 
 const modelos = [
   {
-    nombre: 'Puntal Ligero 1.80 – 3.20 m',
+    nombre: 'Puntal Ligero 1.80 – 3.00 m',
     imagen: '/images/puntales/ligero-180-320.jpg',
     specs: [
-      'Altura: 1.80 a 3.20 m',
-      'Carga máxima: 2,800 kg',
+      'Altura: 1.80 a 3.00 m',
+      'Carga máxima: 2,639 kg',
       'Tubos: Ø 60 / Ø 48 mm',
       'Placas: 120 × 120 × 4.5 mm',
       'Acero S235 JR · UNE-EN 1065',
@@ -56,7 +56,7 @@ const modelos = [
     imagen: '/images/puntales/ligero-220-400.jpg',
     specs: [
       'Altura: 2.20 a 4.00 m',
-      'Carga máxima: 2,200 kg',
+      'Carga máxima: 2,313 kg',
       'Tubos: Ø 60 / Ø 56 mm',
       'Placas: 120 × 120 × 4.5 mm',
       'Acero S235 JR · UNE-EN 1065',
@@ -67,7 +67,7 @@ const modelos = [
     imagen: '/images/puntales/b40-231-400.jpg',
     specs: [
       'Altura: 2.31 a 4.00 m',
-      'Carga máxima: 3,500 kg',
+      'Carga máxima: 3,059 kg',
       'Tubos: Ø 56 / Ø 48.3 mm',
       'Placas: 120 × 120 × 4.5 mm',
       'Acero S235 JR · UNE-EN 1065',
@@ -78,7 +78,7 @@ const modelos = [
     imagen: '/images/puntales/b50-281-500.jpg',
     specs: [
       'Altura: 2.81 a 5.00 m',
-      'Carga máxima: 4,000 kg',
+      'Carga máxima: 2,518 kg',
       'Tubos: Ø 60 / Ø 48 mm',
       'Placas: 120 × 120 × 6 mm',
       'Acero S355 JR · UNE-EN 1065',
@@ -224,7 +224,7 @@ export default function ConstruccionConPuntalesPage() {
               </div>
               <div className="p-4 rounded-lg bg-secondary/40">
                 <Weight className="w-6 h-6 text-primary mx-auto" />
-                <p className="mt-2 font-bold">Hasta 4,000 kg</p>
+                <p className="mt-2 font-bold">Hasta 3,059 kg</p>
                 <p className="text-xs text-muted-foreground">de carga</p>
               </div>
               <div className="p-4 rounded-lg bg-secondary/40">
