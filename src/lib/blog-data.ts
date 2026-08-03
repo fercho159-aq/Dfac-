@@ -20,6 +20,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'separador-para-habilitar-viguetas',
+    title: 'Separador para habilitar viguetas: precisión y resistencia en la prefabricación',
+    excerpt:
+      'En la construcción de elementos estructurales, mantener una correcta alineación del acero de refuerzo es fundamental para garantizar la resistencia y durabilidad de cada pieza.',
+    image: '/Image/blog-imagenes/portada-separador-viguetas.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-08-03',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un separador para habilitar viguetas?',
+        paragraphs: [
+          'El separador para habilitar viguetas es un distanciador utilizado principalmente en la prefabricación de viguetas de alma abierta, aunque también puede emplearse durante el colado de viguetas para losas.',
+          'Su diseño permite mantener correctamente alineados los aceros de refuerzo, asegurando una distribución uniforme y favoreciendo el desempeño estructural de la vigueta.',
+        ],
+        image: '/Image/blog-imagenes/separador-viguetas-aplicacion.jpeg',
+        imageAlt: 'Separador para habilitar viguetas en estructura de acero de refuerzo',
+      },
+      {
+        heading: 'Beneficios del separador para habilitar viguetas',
+        paragraphs: [
+          'Utilizar este accesorio ofrece importantes ventajas durante el proceso constructivo: mantiene la correcta alineación del acero de refuerzo, contribuye a una mayor resistencia estructural de las viguetas y facilita la prefabricación y el colado de elementos de concreto.',
+          'Además, reduce errores de colocación del acero, proporciona mayor precisión durante el armado y está fabricado con materiales resistentes para soportar las condiciones de obra.',
+        ],
+      },
+      {
+        heading: 'Características',
+        paragraphs: [
+          'El separador para habilitar viguetas está diseñado para viguetas de alma abierta y colado de losas. Permite colocar acero de refuerzo de hasta 1/2 pulgada y cuenta con tres posiciones diferentes para el acero de refuerzo sobre el eje de carga.',
+          'Es compatible con acero adicional de 1/8" hasta 1/2" y ayuda a obtener el máximo desempeño estructural de las viguetas. Distribuidor oficial de FTP.',
+        ],
+      },
+      {
+        heading: 'Medidas disponibles',
+        paragraphs: [
+          'El separador está disponible en las siguientes medidas: 4 cm, 5 cm, 6.5 cm, 7.5 cm, 9 cm y 10 cm.',
+          'Estas opciones permiten adaptarse a distintos requerimientos de separación según el diseño estructural de cada proyecto.',
+        ],
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'Este producto es ideal para prefabricación de viguetas, sistemas de losas, vivienda residencial, edificios habitacionales, construcción comercial, naves industriales, obras de infraestructura y proyectos donde se requiere una correcta colocación del acero de refuerzo.',
+        ],
+      },
+      {
+        heading: '¿Por qué elegir DFAC?',
+        paragraphs: [
+          'En DFAC nos especializamos en la fabricación y distribución de accesorios para cimbra y construcción que cumplen con altos estándares de calidad. Nuestros productos están diseñados para ofrecer precisión, resistencia y durabilidad, ayudando a optimizar los procesos constructivos y garantizando un mejor desempeño estructural en cada proyecto.',
+          'Si buscas un separador para habilitar viguetas confiable y de alto rendimiento, en DFAC encontrarás la solución ideal para lograr una correcta alineación del acero de refuerzo y maximizar la resistencia de tus viguetas.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'mono-para-cimbra-con-rondana-de-neopreno',
     title: 'Moño para cimbra con rondana de neopreno: resistencia y sellado para obras de concreto',
     excerpt:
