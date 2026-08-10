@@ -20,6 +20,57 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'base-estabilizadora-pie-derecho-tripie',
+    title: 'Base estabilizadora para pie derecho (tripié): estabilidad y seguridad para tus estructuras de cimbra',
+    excerpt:
+      'La base estabilizadora para pie derecho (tripié) es un accesorio diseñado para proporcionar mayor estabilidad y soporte a los pies derechos utilizados en sistemas de cimbra.',
+    image: '/Image/blog-imagenes/portada-base-estabilizadora-tripie.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-08-10',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué es una base estabilizadora para pie derecho?',
+        paragraphs: [
+          'La base estabilizadora para pie derecho (tripié) es un accesorio diseñado para proporcionar mayor estabilidad y soporte a los pies derechos utilizados en sistemas de cimbra. Su función principal es ayudar a mantener los elementos verticales correctamente posicionados durante el montaje, instalación y colado.',
+          'Gracias a su diseño, facilita el armado de estructuras de soporte y contribuye a reducir movimientos o desplazamientos del pie derecho, permitiendo trabajar con una estructura más estable.',
+        ],
+        image: '/Image/blog-imagenes/tripie-en-obra.jpeg',
+        imageAlt: 'Base estabilizadora tripié instalada en pie derecho en obra',
+      },
+      {
+        heading: '¿Para qué sirve?',
+        paragraphs: [
+          'La base estabilizadora se utiliza principalmente para mantener el pie derecho en posición vertical, brindar mayor estabilidad durante el montaje de la cimbra y facilitar el armado y colocación de sistemas de soporte.',
+          'También ayuda a mantener una distribución adecuada de las cargas y mejora las condiciones de trabajo durante el proceso de construcción.',
+        ],
+      },
+      {
+        heading: 'Ventajas de utilizar una base estabilizadora',
+        paragraphs: [
+          'Mayor estabilidad: ayuda a mantener firme el pie derecho durante la instalación. Fácil colocación: su diseño permite integrarla de manera práctica al sistema de soporte.',
+          'Mejor organización del sistema de cimbra: contribuye a mantener los elementos correctamente posicionados. Es reutilizable y puede utilizarse en diferentes proyectos, dependiendo de las condiciones y especificaciones del sistema.',
+          'Funciona como un complemento importante para optimizar el montaje de pies derechos.',
+        ],
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'La base estabilizadora para pie derecho puede utilizarse en diferentes trabajos de construcción donde se requiera instalar sistemas de soporte para cimbra, especialmente en losas, estructuras de concreto y trabajos de construcción que requieren elementos verticales de soporte.',
+        ],
+      },
+      {
+        heading: '¿Por qué utilizar accesorios adecuados para cimbra?',
+        paragraphs: [
+          'Contar con accesorios diseñados específicamente para los sistemas de cimbra permite realizar el montaje de manera más organizada y eficiente. La selección correcta de cada componente debe considerar las características de la obra, cargas, alturas, distribución de los elementos y especificaciones técnicas del sistema.',
+          'En DFAC contamos con soluciones y accesorios para cimbra y construcción, diseñados para apoyar las diferentes necesidades de los proyectos.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'separador-para-habilitar-viguetas',
     title: 'Separador para habilitar viguetas: precisión y resistencia en la prefabricación',
     excerpt:
