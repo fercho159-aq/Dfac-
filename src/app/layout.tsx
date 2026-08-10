@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'DFAC - Accesorios para Cimbra',
   description: 'Soluciones y accesorios para cimbra con entrega en 24 horas.',
   keywords: ['cimbra', 'andamios', 'construccion', 'accesorios para cimbra', 'apuntalamiento'],
+  verification: {
+    google: 'jkMx5np0vlwBrwGvt51jqLcHkS1jNTh83-yBdKYfpRQ',
+  },
 };
 
 export default function RootLayout({
