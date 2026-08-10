@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import { Mail, Phone, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Mail, Phone, Facebook, Instagram } from "lucide-react"
 import Image from "next/image"
 
 export function Footer() {
@@ -14,10 +14,9 @@ export function Footer() {
             </Link>
             <p className="text-muted-foreground">Accesorios para cimbra de alta calidad. Tu socio en construcción.</p>
             <div className="flex space-x-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook /></Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Instagram /></Link>
-                <Link href="https://www.tiktok.com/@accesorios.dfac" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary"><Linkedin /></Link>
+                <Link href="https://www.facebook.com/share/1GYpQ8pWLK/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Facebook /></Link>
+                <Link href="https://www.instagram.com/dfac_cimbra?igsh=a3k4NWJhNDVnMXM2" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><Instagram /></Link>
+                <Link href="https://www.tiktok.com/@accesorios.dfac?_r=1&_t=ZS-98lzRiNzjXQ" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></Link>
             </div>
             <div className="rounded-lg overflow-hidden border h-[180px]">
               <iframe

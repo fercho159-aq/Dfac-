@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -103,13 +103,13 @@ export function ContactSection() {
                     <h3 className="text-base md:text-lg font-semibold">Síguenos en <span className="text-primary">redes</span></h3>
                     <div className="flex space-x-4">
                         <Button asChild variant="outline" size="icon" className="text-muted-foreground hover:text-primary hover:border-primary">
-                            <Link href="#"><Facebook /></Link>
+                            <Link href="https://www.facebook.com/share/1GYpQ8pWLK/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><Facebook /></Link>
                         </Button>
                         <Button asChild variant="outline" size="icon" className="text-muted-foreground hover:text-primary hover:border-primary">
-                            <Link href="#"><Instagram /></Link>
+                            <Link href="https://www.instagram.com/dfac_cimbra?igsh=a3k4NWJhNDVnMXM2" target="_blank" rel="noopener noreferrer"><Instagram /></Link>
                         </Button>
                         <Button asChild variant="outline" size="icon" className="text-muted-foreground hover:text-primary hover:border-primary">
-                            <Link href="#"><Linkedin /></Link>
+                            <Link href="https://www.tiktok.com/@accesorios.dfac?_r=1&_t=ZS-98lzRiNzjXQ" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></Link>
                         </Button>
                     </div>
                 </div>
