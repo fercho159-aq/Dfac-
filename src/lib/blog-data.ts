@@ -20,6 +20,62 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'vibrador-para-concreto-a-gasolina-mpower',
+    title: 'Vibrador para Concreto a Gasolina MPOWER: potencia y eficiencia para trabajos de construcción',
+    excerpt:
+      'El vibrador para concreto a gasolina MPOWER de 5 HP es una herramienta diseñada para facilitar la compactación del concreto durante trabajos de construcción, ayudando a obtener una mezcla más uniforme y con un mejor acabado.',
+    image: '/Image/blog-imagenes/portada-vibrador-concreto-mpower.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-08-24',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un vibrador para concreto?',
+        paragraphs: [
+          'Un vibrador para concreto es un equipo utilizado para compactar el concreto fresco mediante vibraciones. Estas vibraciones ayudan a reducir los espacios de aire y permiten que la mezcla se acomode correctamente alrededor de las varillas, esquinas y diferentes zonas de la cimbra.',
+          'Los modelos a gasolina son una alternativa práctica para trabajos en lugares donde no se dispone fácilmente de una conexión eléctrica.',
+        ],
+        image: '/Image/blog-imagenes/portada-vibrador-concreto-mpower.jpeg',
+        imageAlt: 'Vibrador para concreto a gasolina MPOWER 5.5HP 168F-B',
+      },
+      {
+        heading: 'Vibrador para concreto a gasolina MPOWER de 5 HP',
+        paragraphs: [
+          'El MPOWER de 5 HP está pensado para trabajos de construcción que requieren movilidad y potencia. Su motor a gasolina permite utilizarlo en diferentes áreas de trabajo sin depender directamente de una fuente de energía eléctrica.',
+          'Una de sus principales características es que cuenta con un chicote de 7 metros, proporcionando un amplio rango de trabajo y facilitando el acceso a diferentes zonas durante el proceso de colado.',
+        ],
+      },
+      {
+        heading: 'Características principales',
+        paragraphs: [
+          'Marca: MPOWER. Tipo: Vibrador para concreto a gasolina. Potencia: 5 HP. Chicote: 7 metros. Combustible: Gasolina. Uso: Compactación de concreto fresco. Precio: A cotizar.',
+        ],
+      },
+      {
+        heading: '¿Para qué se utiliza?',
+        paragraphs: [
+          'Este equipo puede utilizarse en diferentes trabajos donde sea necesario compactar concreto fresco: construcción de cimentaciones, columnas y trabes, losas de concreto, muros, pisos y pavimentos, obras de infraestructura, y trabajos de construcción residencial, comercial e industrial.',
+        ],
+      },
+      {
+        heading: 'Ventajas de utilizar un vibrador para concreto',
+        paragraphs: [
+          'La vibración adecuada del concreto puede ayudar a reducir la presencia de huecos y burbujas de aire, mejorar la compactación de la mezcla y favorecer un acabado más uniforme.',
+          'Además, al contar con un motor a gasolina y un chicote de 7 metros, el modelo MPOWER ofrece una solución práctica para trabajos donde se requiere movilidad y un buen alcance operativo.',
+        ],
+      },
+      {
+        heading: 'Una herramienta para trabajos de construcción exigentes',
+        paragraphs: [
+          'Elegir el equipo adecuado durante el colado puede hacer una diferencia importante en la calidad del trabajo. El vibrador para concreto a gasolina MPOWER de 5 HP con chicote de 7 metros combina potencia y movilidad para facilitar las labores de compactación en diferentes proyectos de construcción.',
+          '¿Buscas un vibrador para concreto MPOWER? Solicita información y cotización para conocer disponibilidad, precio y condiciones de compra.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'base-estabilizadora-pie-derecho-tripie',
     title: 'Base estabilizadora para pie derecho (tripié): estabilidad y seguridad para tus estructuras de cimbra',
     excerpt:
