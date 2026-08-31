@@ -20,6 +20,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'cuerpo-de-andamio',
+    title: 'Cuerpo de andamio: modelos disponibles para cada tipo de obra',
+    excerpt:
+      'El cuerpo de andamio es un elemento modular utilizado para formar estructuras de trabajo en altura, facilitando el acceso y la realización de actividades de construcción, mantenimiento, instalación, pintura y remodelación.',
+    image: '/Image/blog-imagenes/portada-cuerpo-andamio.jpeg',
+    category: 'Andamios',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-08-31',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un cuerpo de andamio?',
+        paragraphs: [
+          'El cuerpo de andamio es un elemento modular utilizado para formar estructuras de trabajo en altura, facilitando el acceso y la realización de actividades de construcción, mantenimiento, instalación, pintura y remodelación.',
+          'Su diseño modular permite configurar diferentes alturas y adaptarse a las necesidades y condiciones de cada obra. Dependiendo del espacio disponible, se pueden elegir diferentes anchos de cuerpo de andamio para trabajar de manera más práctica y eficiente.',
+        ],
+        image: '/Image/blog-imagenes/portada-cuerpo-andamio.jpeg',
+        imageAlt: 'Cuerpo de andamio modular para construcción',
+      },
+      {
+        heading: 'Modelos disponibles',
+        paragraphs: [
+          'Cuerpo de andamio Pasillo: medidas de 2.00 m de alto x 0.80 m de ancho. Ideal para espacios donde se requiere un andamio más estrecho y práctico. Cuerpo de andamio Servicio: medidas de 2.00 m de alto x 1.22 m de ancho. Una opción versátil para diferentes trabajos de construcción, mantenimiento y acabados.',
+          'Cuerpo de andamio Amplio: medidas de 2.00 m de alto x 1.52 m de ancho. Su mayor amplitud proporciona un espacio de trabajo más cómodo para diferentes actividades en obra. Estas tres configuraciones permiten elegir el cuerpo de andamio de acuerdo con el espacio de trabajo.',
+        ],
+      },
+      {
+        heading: '¿Para qué se utiliza?',
+        paragraphs: [
+          'Los cuerpos de andamio son ideales para trabajos de construcción, pintura y acabados, instalaciones y mantenimiento, remodelaciones, trabajos en fachadas y edificios, y cualquier actividad que requiera acceso temporal a diferentes alturas.',
+        ],
+      },
+      {
+        heading: '¿Qué modelo de cuerpo de andamio elegir?',
+        paragraphs: [
+          'Cuerpo de andamio Pasillo (2.00 x 0.80 m): una alternativa práctica para espacios reducidos, corredores, laterales de edificios y zonas donde se requiere conservar mayor área de circulación.',
+          'Cuerpo de andamio Servicio (2.00 x 1.22 m): ofrece un equilibrio entre espacio de trabajo y aprovechamiento del área disponible, siendo una opción versátil para diferentes actividades de obra.',
+          'Cuerpo de andamio Amplio (2.00 x 1.52 m): su mayor ancho proporciona una superficie de trabajo más amplia, adecuada para proyectos donde se dispone de mayor espacio y se requiere comodidad para realizar las actividades.',
+        ],
+      },
+      {
+        heading: 'Componentes del sistema',
+        paragraphs: [
+          'Dependiendo de la configuración, un módulo de andamio puede complementarse con elementos como marcos, crucetas, coples, plataformas, ruedas y niveladores. Estos accesorios permiten adaptar el sistema a las condiciones específicas de cada proyecto.',
+        ],
+      },
+      {
+        heading: 'Cotiza tu cuerpo de andamio',
+        paragraphs: [
+          'En DFAC contamos con diferentes medidas de cuerpos de andamio para ayudarte a encontrar la opción adecuada para tu proyecto.',
+          'Solicita una cotización y recibe asesoría para seleccionar el modelo que mejor se adapte a las necesidades de tu obra.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'vibrador-para-concreto-a-gasolina-mpower',
     title: 'Vibrador para Concreto a Gasolina MPOWER: potencia y eficiencia para trabajos de construcción',
     excerpt:
