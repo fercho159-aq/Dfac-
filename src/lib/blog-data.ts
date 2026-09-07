@@ -20,6 +20,55 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'curabau-ql-membrana-de-curado-base-agua',
+    title: 'CURABAU QL: Membrana de curado base agua para concreto',
+    excerpt:
+      'CURABAU QL es una membrana de curado base agua, libre de grasas, diseñada para utilizarse sobre diferentes tipos de superficies de concreto, ayudando a reducir la pérdida de agua por evaporación durante el proceso de curado.',
+    image: '/Image/blog-imagenes/portada-curabau-ql.jpeg',
+    category: 'Productos químicos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-09-07',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué es una membrana de curado?',
+        paragraphs: [
+          'Durante el proceso de fraguado y endurecimiento, el concreto necesita conservar una cantidad adecuada de humedad. Una evaporación demasiado rápida del agua puede afectar el proceso de hidratación del cemento y favorecer problemas como fisuración superficial, pérdida de resistencia y un acabado deficiente.',
+          'Las membranas de curado forman una película sobre la superficie del concreto que ayuda a disminuir la evaporación del agua, permitiendo que el proceso de curado se desarrolle de manera más controlada.',
+        ],
+        image: '/Image/blog-imagenes/portada-curabau-ql.jpeg',
+        imageAlt: 'CURABAU QL membrana de curado base agua de Bautech',
+      },
+      {
+        heading: 'Principales características de CURABAU QL',
+        paragraphs: [
+          'Base agua, lo que facilita su aplicación. Libre de grasas. Puede utilizarse en todo tipo de superficies de concreto. Ayuda a reducir la pérdida de agua por evaporación.',
+          'Contribuye a mantener condiciones adecuadas de humedad durante el curado. Es una alternativa práctica para proyectos donde se requiere un adecuado control del proceso de curado del concreto.',
+        ],
+      },
+      {
+        heading: '¿Dónde puede utilizarse?',
+        paragraphs: [
+          'CURABAU QL puede emplearse en diferentes trabajos y elementos fabricados con concreto, dependiendo de las características y necesidades de cada proyecto: pisos y losas de concreto, pavimentos, banquetas y andadores, elementos prefabricados, superficies y estructuras de concreto, obras de construcción y proyectos de infraestructura.',
+        ],
+      },
+      {
+        heading: 'Beneficios de utilizar una membrana de curado',
+        paragraphs: [
+          'Un adecuado proceso de curado es fundamental para obtener un concreto con mejores condiciones de desempeño. El uso de una membrana como CURABAU QL ayuda a controlar la evaporación del agua, reduciendo uno de los factores que pueden afectar el desarrollo adecuado del concreto.',
+          'Además, facilita las labores de curado en proyectos donde mantener húmeda continuamente la superficie puede resultar complicado.',
+        ],
+      },
+      {
+        heading: 'CURABAU QL en proyectos de construcción',
+        paragraphs: [
+          'Elegir correctamente los productos para el tratamiento y curado del concreto puede marcar una diferencia importante en la calidad final de una obra. CURABAU QL ofrece una solución práctica mediante una membrana de curado base agua, adecuada para diferentes superficies de concreto.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'cuerpo-de-andamio',
     title: 'Cuerpo de andamio: modelos disponibles para cada tipo de obra',
     excerpt:
