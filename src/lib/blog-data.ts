@@ -20,6 +20,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'vibrador-para-concreto-electrico-makita',
+    title: 'Vibrador para Concreto Eléctrico Makita: compactación eficiente y acabados de calidad',
+    excerpt:
+      'En los trabajos de construcción, lograr una correcta compactación del concreto es fundamental para obtener estructuras resistentes, uniformes y duraderas. El Vibrador para Concreto Eléctrico Makita facilita este proceso.',
+    image: '/Image/blog-imagenes/portada-vibrador-makita.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-09-14',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un vibrador para concreto?',
+        paragraphs: [
+          'Un vibrador para concreto es un equipo que genera vibraciones mecánicas que se transmiten a la mezcla fresca. Estas vibraciones ayudan a que el concreto se distribuya de manera más uniforme, reduciendo la presencia de huecos y bolsas de aire.',
+          'La correcta vibración del concreto puede contribuir a obtener una mejor compactación alrededor de elementos como varillas, esquinas y zonas de difícil acceso.',
+        ],
+        image: '/Image/blog-imagenes/vibrador-makita-en-obra.jpeg',
+        imageAlt: 'Vibrador para concreto eléctrico Makita en uso durante colado en obra',
+      },
+      {
+        heading: 'Vibrador para Concreto Eléctrico Makita',
+        paragraphs: [
+          'El Vibrador para Concreto Eléctrico Makita es una alternativa práctica para trabajos de construcción que requieren un equipo eléctrico para la compactación del concreto.',
+          'Su funcionamiento mediante energía eléctrica permite utilizarlo en diferentes proyectos donde se cuenta con una fuente de alimentación adecuada, ofreciendo una solución práctica para trabajos de colado y construcción.',
+        ],
+      },
+      {
+        heading: 'Principales aplicaciones',
+        paragraphs: [
+          'El vibrador puede utilizarse en diferentes trabajos donde sea necesario compactar concreto fresco: columnas y castillos, trabes y losas, cimentaciones, muros de concreto, elementos prefabricados, trabajos de colado en obra, y construcción residencial, comercial e industrial.',
+        ],
+      },
+      {
+        heading: '¿Por qué es importante vibrar el concreto?',
+        paragraphs: [
+          'Durante el proceso de colocación, el concreto puede contener pequeñas bolsas de aire. Si estas permanecen en la mezcla, pueden generar huecos y afectar la uniformidad del elemento terminado. La vibración permite que las partículas del concreto se acomoden y que la mezcla pueda ocupar mejor los espacios dentro de la cimbra.',
+          'Entre sus principales beneficios se encuentran: mejor compactación, reducción de vacíos, mejor acabado en superficies más uniformes, y mayor aprovechamiento del colado al facilitar la distribución del concreto en zonas de difícil acceso.',
+        ],
+      },
+      {
+        heading: 'Recomendaciones para utilizar un vibrador de concreto',
+        paragraphs: [
+          'Para obtener buenos resultados, es importante utilizar el equipo de acuerdo con las recomendaciones del fabricante y las características específicas de cada trabajo. Antes de comenzar, verifica que el equipo y sus conexiones eléctricas se encuentren en buenas condiciones.',
+          'Durante el proceso de vibrado, evita utilizar el equipo de manera excesiva o innecesaria y procura distribuir la vibración de forma adecuada en el elemento que se está colando. También es importante considerar las condiciones de seguridad del área de trabajo y utilizar el equipo de protección personal correspondiente.',
+        ],
+      },
+      {
+        heading: 'Cotiza tu Vibrador para Concreto Eléctrico Makita',
+        paragraphs: [
+          'En DFAC contamos con soluciones y equipos para diferentes necesidades dentro de la construcción. El Vibrador para Concreto Eléctrico Makita representa una opción práctica para profesionales que buscan facilitar el proceso de compactación en diferentes tipos de proyectos. Precio: A cotizar.',
+          'Si necesitas conocer disponibilidad, precio y características del equipo, contáctanos y solicita una cotización para tu proyecto.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'curabau-ql-membrana-de-curado-base-agua',
     title: 'CURABAU QL: Membrana de curado base agua para concreto',
     excerpt:
