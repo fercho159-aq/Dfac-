@@ -6,13 +6,19 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, FileText } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { ContactSection } from '@/components/contact-section';
 import { ProductCard } from '@/components/product-card';
 import { Suspense } from 'react';
 import { WhatsAppButton } from './WhatsAppButton';
+
+// Fichas técnicas en PDF disponibles por producto.
+// Agregar aquí el slug y la ruta del PDF para que aparezca el botón en la ficha del producto.
+const FICHAS_TECNICAS: Record<string, string> = {
+  'barra-roscada-2': '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-5-8.pdf',
+};
 
 // New component for related products
 function RelatedProducts({ products, searchParams }: { products: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
@@ -76,6 +82,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
   const whatsappMessage = `Hola, me interesa el producto *${product.name}* para una entrega urgente.`;
   const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
   const productsLink = `/products?${new URLSearchParams(cleanSearchParams(searchParams))}`;
+  const fichaTecnicaUrl = FICHAS_TECNICAS[product.slug];
 
 
   return (
@@ -225,6 +232,43 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </div>
                   </div>
                 </div>
+              ) : product.slug === 'barra-roscada-2' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Cold Rolled · Diámetro 5/8&quot; · Tramos de 6 m</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Barra cold roll de alta resistencia, fabricada por rolado en frío (COLD ROLLED) en diámetro de 5/8&quot; con hilo de alta resistencia, para usarse como separador y soporte de cimbra de muros y columnas. Se utiliza para fijar moldes o cimbras de elementos de concreto de gran volumen.
+                  </p>
+
+                  {/* Datos tecnicos rapidos */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Diámetro</p>
+                      <p className="text-base font-bold text-slate-800">5/8&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Longitud</p>
+                      <p className="text-base font-bold text-slate-800">6 m</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">14,950 kgf</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Esfuerzo máximo</p>
+                      <p className="text-base font-bold text-slate-800">7,550 kgf/cm²</p>
+                    </div>
+                  </div>
+
+                  {/* Cortes a la medida */}
+                  <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 md:p-5">
+                    <h4 className="text-base md:text-lg font-bold text-blue-800 mb-2">Cortes a cualquier medida</h4>
+                    <p className="text-sm md:text-base text-slate-700">
+                      En DFAC cortamos la barra roscada <strong>a la medida que necesites</strong>. El tramo estándar es de 6 m, pero lo modulamos según los requerimientos de tu obra, sin costo de desperdicio por tramos que no vas a usar. Solicita tu medida al cotizar.
+                    </p>
+                  </div>
+                </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
@@ -247,6 +291,19 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </Link>
                 </Button>
                 <WhatsAppButton url={whatsappUrl} />
+                {fichaTecnicaUrl && (
+                  <Button size="lg" variant="outline" asChild>
+                    <a
+                      href={fichaTecnicaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <FileText className="w-5 h-5" />
+                      Ver ficha técnica (PDF)
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           </div>
@@ -397,6 +454,89 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </li>
                 </ul>
               </div>
+            </div>
+          )}
+
+          {/* Barra Roscada - Detailed info sections below the grid */}
+          {product.slug === 'barra-roscada-2' && (
+            <div className="mt-16 space-y-12">
+              {/* Usos */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
+                <p className="text-muted-foreground mb-6">Se emplea para la colocación y aseguramiento de las cimbras de madera utilizadas en la construcción de:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Muros', 'Trabes', 'Columnas', 'Colados de gran espesor'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Cualidades */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Cualidades</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Cimbrado más rápido</h4>
+                    <p className="text-sm text-slate-700">Permite una mayor rapidez en el cimbrado y descimbrado de muros y columnas.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Alta resistencia</h4>
+                    <p className="text-sm text-slate-700">Está rolada en frío, por lo que tiene una resistencia mayor a 20,000 lb con un factor de seguridad de 2.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Espesores uniformes</h4>
+                    <p className="text-sm text-slate-700">Se obtienen espesores más uniformes en las piezas coladas y prolonga la vida útil de la cimbra evitando abocardamientos.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Modulable y reutilizable</h4>
+                    <p className="text-sm text-slate-700">Disponible en longitudes de 6 m, se corta fácilmente para modularla a la necesidad de la obra y es reutilizable.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Recomendaciones */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Recomendaciones de uso</h3>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                  <ul className="space-y-3 text-sm md:text-base text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">•</span>
+                      <span>El corte de la barra debe hacerse con disco de acero para no lastimar la cuerda.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">•</span>
+                      <span>El aseguramiento debe hacerse con <strong>tuerca mariposa con base</strong>, para garantizar el posicionamiento adecuado de la cimbra.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">•</span>
+                      <span>La longitud de la barra roscada debe ser suficiente para colocarle una tuerca mariposa con base en cada extremo, dejando <strong>5 cm libres de barra como mínimo</strong>.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Ficha tecnica */}
+              {fichaTecnicaUrl && (
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada de 5/8&quot;.</p>
+                  </div>
+                  <Button size="lg" asChild>
+                    <a
+                      href={fichaTecnicaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <FileText className="w-5 h-5" />
+                      Ver ficha técnica
+                    </a>
+                  </Button>
+                </div>
+              )}
             </div>
           )}
 
