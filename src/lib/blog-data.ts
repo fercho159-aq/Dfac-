@@ -20,6 +20,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'puntal-metalico-extensible-certificacion-europea',
+    title: 'Puntal Metálico Extensible con Certificación Europea: resistencia y ajuste para tu obra',
+    excerpt:
+      'En los proyectos de construcción, contar con sistemas de apuntalamiento adecuados es fundamental. El Puntal Metálico Extensible Italiano con Certificación Europea ofrece soporte temporal con altura ajustable de 2.20 a 4.00 metros.',
+    image: '/Image/blog-imagenes/21-sep-blog-cimbra/portada-puntal-metalico.jpeg',
+    category: 'Apuntalamiento',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-09-21',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué es un puntal metálico extensible?',
+        paragraphs: [
+          'El puntal metálico extensible es un elemento de soporte temporal utilizado en la construcción para sostener sistemas de cimbra y otros componentes durante determinadas etapas de una obra.',
+          'Gracias a su mecanismo de extensión, permite adaptar su longitud a diferentes alturas, facilitando su instalación y ajuste en el área de trabajo. El modelo italiano que ofrecemos cuenta con un rango de extensión de 2.20 a 4.00 metros, lo que permite utilizarlo en proyectos que requieren distintas alturas de apuntalamiento.',
+        ],
+        image: '/Image/blog-imagenes/21-sep-blog-cimbra/puntal-metalico-en-obra.jpeg',
+        imageAlt: 'Puntales metálicos extensibles italianos instalados en obra sosteniendo sistema de cimbra',
+      },
+      {
+        heading: 'Características del Puntal Metálico Extensible Italiano',
+        paragraphs: [
+          'Tipo: Puntal metálico extensible italiano. Certificación: Certificación Europea. Altura ajustable: De 2.20 a 4.00 metros. Precio: A cotizar.',
+          'Su sistema extensible permite adaptar la altura del puntal según los requerimientos de la obra, mientras que su diseño metálico está pensado para aplicaciones de apuntalamiento temporal. Es importante seleccionar el puntal de acuerdo con las cargas, la altura de trabajo y las condiciones específicas del proyecto.',
+        ],
+      },
+      {
+        heading: '¿Para qué se utiliza un puntal metálico extensible?',
+        paragraphs: [
+          'Los puntales metálicos extensibles pueden emplearse en trabajos de cimbra como elementos de soporte temporal, apuntalamiento de losas de acuerdo con el diseño y los requerimientos técnicos de la obra, y soporte temporal en construcción gracias a su altura ajustable.',
+          'Su rango de extensión de 2.20 a 4.00 metros ofrece flexibilidad para adaptarse a distintas necesidades de altura. La selección, distribución e instalación de los puntales debe realizarse considerando las cargas previstas, la estabilidad del sistema y las recomendaciones técnicas correspondientes.',
+        ],
+        image: '/Image/blog-imagenes/21-sep-blog-cimbra/puntal-metalico-detalle.jpeg',
+        imageAlt: 'Detalle de puntales metálicos extensibles sosteniendo vigas de cimbra en construcción',
+      },
+      {
+        heading: '¿Por qué considerar un puntal con Certificación Europea?',
+        paragraphs: [
+          'La certificación de un producto puede aportar información relevante sobre su conformidad con determinados requisitos técnicos o normativos. En el caso de los puntales metálicos, es importante verificar la documentación correspondiente al modelo específico, así como sus capacidades de carga, condiciones de uso y recomendaciones de instalación.',
+          'En DFAC ponemos a tu disposición este puntal metálico extensible italiano para que puedas consultar sus características y solicitar información de acuerdo con las necesidades de tu proyecto.',
+        ],
+      },
+      {
+        heading: 'Cotiza tu Puntal Metálico Extensible en DFAC',
+        paragraphs: [
+          'En DFAC | Cimbra y Accesorios te ayudamos a encontrar materiales y accesorios para tus proyectos de construcción.',
+          'Si buscas un puntal metálico extensible italiano con Certificación Europea, con una altura ajustable de 2.20 a 4.00 metros, ponte en contacto con nuestro equipo para consultar disponibilidad y solicitar una cotización.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'vibrador-para-concreto-electrico-makita',
     title: 'Vibrador para Concreto Eléctrico Makita: compactación eficiente y acabados de calidad',
     excerpt:
