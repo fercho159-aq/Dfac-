@@ -1698,6 +1698,15 @@
     "review_count": 0,
     "images": [
       {
+        "id": 8255,
+        "src": "/Image/barra-roscada-estiba-almacen.jpg",
+        "thumbnail": "/Image/barra-roscada-estiba-almacen.jpg",
+        "srcset": "/Image/barra-roscada-estiba-almacen.jpg 1272w",
+        "sizes": "(max-width: 1272px) 100vw, 1272px",
+        "name": "barra-roscada-estiba-almacen",
+        "alt": "Estiba de barras roscadas de 5/8\" en almacén DFAC"
+      },
+      {
         "id": 6473,
         "src": "/Image/BRS-58-3-IMAGEN-1.jpg",
         "thumbnail": "/Image/BRS-58-3-IMAGEN-1-300x300.jpg",
@@ -1732,15 +1741,6 @@
         "sizes": "(max-width: 1280px) 100vw, 1280px",
         "name": "BRS-58-6-IMAGEN",
         "alt": ""
-      },
-      {
-        "id": 8255,
-        "src": "/Image/barra-roscada-estiba-almacen.jpg",
-        "thumbnail": "/Image/barra-roscada-estiba-almacen.jpg",
-        "srcset": "/Image/barra-roscada-estiba-almacen.jpg 1272w",
-        "sizes": "(max-width: 1272px) 100vw, 1272px",
-        "name": "barra-roscada-estiba-almacen",
-        "alt": "Estiba de barras roscadas de 5/8\" en almacén DFAC"
       }
     ],
     "categories": [

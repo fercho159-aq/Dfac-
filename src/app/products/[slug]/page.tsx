@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft, FileText } from 'lucide-react';
+import { ArrowLeft, Download, FileText } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { ContactSection } from '@/components/contact-section';
@@ -292,15 +292,23 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </Button>
                 <WhatsAppButton url={whatsappUrl} />
                 {fichaTecnicaUrl && (
-                  <Button size="lg" variant="outline" asChild>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 ring-2 ring-amber-300 ring-offset-2 transition-transform hover:scale-[1.02]"
+                  >
                     <a
                       href={fichaTecnicaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
+                      className="inline-flex items-center justify-center gap-3"
                     >
-                      <FileText className="w-5 h-5" />
-                      Ver ficha técnica (PDF)
+                      <FileText className="w-6 h-6 shrink-0" />
+                      <span className="flex flex-col items-start leading-tight">
+                        <span className="text-base">Descargar ficha técnica</span>
+                        <span className="text-xs font-medium text-amber-50">PDF con medidas y especificaciones</span>
+                      </span>
+                      <Download className="w-5 h-5 shrink-0" />
                     </a>
                   </Button>
                 )}
@@ -524,15 +532,20 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
                     <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada de 5/8&quot;.</p>
                   </div>
-                  <Button size="lg" asChild>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                  >
                     <a
                       href={fichaTecnicaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
+                      className="inline-flex items-center gap-3 whitespace-nowrap"
                     >
-                      <FileText className="w-5 h-5" />
-                      Ver ficha técnica
+                      <FileText className="w-6 h-6 shrink-0" />
+                      Descargar ficha técnica
+                      <Download className="w-5 h-5 shrink-0" />
                     </a>
                   </Button>
                 </div>
