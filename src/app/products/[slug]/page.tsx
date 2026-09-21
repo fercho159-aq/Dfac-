@@ -471,7 +471,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               {/* Usos */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
-                <p className="text-muted-foreground mb-6">Se emplea para la colocación y aseguramiento de las cimbras de madera utilizadas en la construcción de:</p>
+                <p className="text-muted-foreground mb-6">La barra roscada de 5/8&quot; se emplea principalmente para la colocación y aseguramiento de cimbras de madera en la construcción de muros, trabes y columnas, especialmente en proyectos donde los espesores de colado son grandes y se requiere una sujeción robusta y precisa.</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   {['Muros', 'Trabes', 'Columnas', 'Colados de gran espesor'].map((uso) => (
                     <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
@@ -501,6 +501,40 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <h4 className="text-base font-bold text-blue-800 mb-2">Modulable y reutilizable</h4>
                     <p className="text-sm text-slate-700">Disponible en longitudes de 6 m, se corta fácilmente para modularla a la necesidad de la obra y es reutilizable.</p>
                   </div>
+                </div>
+              </div>
+
+              {/* Especificaciones tecnicas */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Diámetro', '5/8”'],
+                        ['Fabricación', 'Rolado en frío (cold rolled)'],
+                        ['Resistencia', 'Mayor a 20,000 lb (factor de seguridad 2)'],
+                        ['Longitud', '6.00 metros'],
+                        ['Material', 'Acero de alta resistencia'],
+                        ['Compatibilidad', 'Tuerca mariposa con base + tubo plástico + cono separador'],
+                        ['Aplicación', 'Para cimbras en muros, trabes y columnas'],
+                        ['Reutilizable', 'Sí'],
+                        ['Corte recomendado', 'Con disco de acero para no dañar la cuerda'],
+                        ['Condiciones de almacenaje', 'Bajo techo, en lugar seco y ventilado, entarimado y en posición horizontal'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700 align-top whitespace-nowrap">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
 

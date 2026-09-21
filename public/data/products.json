@@ -1707,6 +1707,15 @@
         "alt": "Estiba de barras roscadas de 5/8\" en almacén DFAC"
       },
       {
+        "id": 8256,
+        "src": "/Image/barra-roscada-medidas-5-8.jpg",
+        "thumbnail": "/Image/barra-roscada-medidas-5-8.jpg",
+        "srcset": "/Image/barra-roscada-medidas-5-8.jpg 1448w",
+        "sizes": "(max-width: 1448px) 100vw, 1448px",
+        "name": "barra-roscada-medidas-5-8",
+        "alt": "Barra roscada de 5/8\" de 6 m con tuerca mariposa con base, mostrando largo y diámetro"
+      },
+      {
         "id": 6473,
         "src": "/Image/BRS-58-3-IMAGEN-1.jpg",
         "thumbnail": "/Image/BRS-58-3-IMAGEN-1-300x300.jpg",
