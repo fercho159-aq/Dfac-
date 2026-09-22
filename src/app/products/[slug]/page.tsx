@@ -14,10 +14,14 @@ import { ProductCard } from '@/components/product-card';
 import { Suspense } from 'react';
 import { WhatsAppButton } from './WhatsAppButton';
 
-// Fichas técnicas en PDF disponibles por producto.
-// Agregar aquí el slug y la ruta del PDF para que aparezca el botón en la ficha del producto.
-const FICHAS_TECNICAS: Record<string, string> = {
-  'barra-roscada-2': '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-5-8.pdf',
+const FICHAS_TECNICAS: Record<string, string[]> = {
+  'barra-roscada-2': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-descripcion.pdf',
+    '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-aplicacion.pdf',
+  ],
+  'tuerca-mariposa-con-base': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-tuerca-mariposa-con-base-5-8.pdf',
+  ],
 };
 
 // New component for related products
@@ -82,7 +86,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
   const whatsappMessage = `Hola, me interesa el producto *${product.name}* para una entrega urgente.`;
   const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
   const productsLink = `/products?${new URLSearchParams(cleanSearchParams(searchParams))}`;
-  const fichaTecnicaUrl = FICHAS_TECNICAS[product.slug];
+  const fichaTecnicaUrls = FICHAS_TECNICAS[product.slug];
 
 
   return (
@@ -232,6 +236,34 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </div>
                   </div>
                 </div>
+              ) : product.slug === 'tuerca-mariposa-con-base' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Acero forjado · Para barra de 5/8&quot; · 22,000 lb</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Tuerca mariposa con base para barra roscada de 5/8&quot;, fabricada en acero de alta resistencia, forjado en una sola pieza. Diseñada para facilitar la instalación y el ajuste de sistemas de cimbra.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Compatibilidad</p>
+                      <p className="text-base font-bold text-slate-800">5/8&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Acero forjado</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Resistencia</p>
+                      <p className="text-base font-bold text-slate-800">22,000 lb</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Tipo</p>
+                      <p className="text-base font-bold text-slate-800">Reutilizable</p>
+                    </div>
+                  </div>
+                </div>
               ) : product.slug === 'barra-roscada-2' ? (
                 <div className="product-description font-sans">
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
@@ -291,27 +323,28 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </Link>
                 </Button>
                 <WhatsAppButton url={whatsappUrl} />
-                {fichaTecnicaUrl && (
+                {fichaTecnicaUrls && fichaTecnicaUrls.map((url, i) => (
                   <Button
+                    key={url}
                     size="lg"
                     asChild
                     className="h-auto py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 ring-2 ring-amber-300 ring-offset-2 transition-transform hover:scale-[1.02]"
                   >
                     <a
-                      href={fichaTecnicaUrl}
+                      href={url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-3"
                     >
                       <FileText className="w-6 h-6 shrink-0" />
                       <span className="flex flex-col items-start leading-tight">
-                        <span className="text-base">Descargar ficha técnica</span>
+                        <span className="text-base">Descargar ficha técnica{fichaTecnicaUrls.length > 1 ? ` ${i + 1}` : ''}</span>
                         <span className="text-xs font-medium text-amber-50">PDF con medidas y especificaciones</span>
                       </span>
                       <Download className="w-5 h-5 shrink-0" />
                     </a>
                   </Button>
-                )}
+                ))}
               </div>
             </div>
           </div>
@@ -465,6 +498,115 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
             </div>
           )}
 
+          {/* Tuerca Mariposa con Base - Detailed info sections below the grid */}
+          {product.slug === 'tuerca-mariposa-con-base' && (
+            <div className="mt-16 space-y-12">
+              {/* Descripción extendida */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para barra roscada de 5/8&quot;</h3>
+                <p className="text-sm md:text-base text-slate-800 mb-4">
+                  La <strong>tuerca mariposa con base para barra roscada de 5/8&quot;</strong> es un accesorio diseñado para facilitar la instalación y el ajuste de sistemas de cimbra. Está fabricada en acero de alta resistencia, forjado en una sola pieza, lo que proporciona mayor durabilidad y confiabilidad durante su uso.
+                </p>
+                <p className="text-sm md:text-base text-slate-800">
+                  Su base integrada permite una mejor distribución de la carga sobre la cimbra, proporcionando un ajuste firme y seguro. Además, es reutilizable, resistente a cargas superiores a 22,000 lb y de fácil instalación y desmontaje, convirtiéndola en una opción práctica para proyectos que requieren seguridad, rapidez y resistencia.
+                </p>
+              </div>
+
+              {/* Cualidades */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Cualidades</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Instalación rápida y segura</h4>
+                    <p className="text-sm text-slate-700">El diseño de mariposa permite un ajuste eficiente sin herramientas especializadas.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Reutilizable y rentable</h4>
+                    <p className="text-sm text-slate-700">Ideal para múltiples usos sin comprometer la resistencia ni el rendimiento.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Especificaciones tecnicas */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Compatibilidad', 'Diseñada para usar con barra roscada de 5/8"'],
+                        ['Material', 'Acero de alta resistencia, forjado en una sola pieza'],
+                        ['Resistencia', 'Hasta 22,000 libras de carga'],
+                        ['Función', 'Complemento de fijación para sistemas de cimbra'],
+                        ['Usos recomendados', 'Construcción de muros, columnas, trabes y elementos de gran espesor'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700 align-top whitespace-nowrap">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* ¿Cómo se instala? */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">¿Cómo se instala?</h3>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                  <p className="text-sm md:text-base text-slate-700">
+                    La barra roscada se introduce atravesando la cimbra de madera y se fija con <strong>tuercas mariposa con base</strong> en ambos extremos para regular la separación entre las caras de la cimbra. Este sistema permite un ajuste preciso y seguro del espesor del elemento a colar.
+                  </p>
+                </div>
+              </div>
+
+              {/* Usos */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
+                <p className="text-muted-foreground mb-6">Construcción de elementos de concreto que requieren cimbra con separación precisa:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Muros', 'Columnas', 'Trabes', 'Elementos de gran espesor'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Ficha tecnica */}
+              {fichaTecnicaUrls && (
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones de la tuerca mariposa con base de 5/8&quot;.</p>
+                  </div>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                  >
+                    <a
+                      href={fichaTecnicaUrls[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 whitespace-nowrap"
+                    >
+                      <FileText className="w-6 h-6 shrink-0" />
+                      Descargar ficha técnica
+                      <Download className="w-5 h-5 shrink-0" />
+                    </a>
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Barra Roscada - Detailed info sections below the grid */}
           {product.slug === 'barra-roscada-2' && (
             <div className="mt-16 space-y-12">
@@ -560,28 +702,33 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               </div>
 
               {/* Ficha tecnica */}
-              {fichaTecnicaUrl && (
+              {fichaTecnicaUrls && (
                 <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                   <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
-                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada para cimbra de 5/8&quot;.</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Fichas técnicas en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga las fichas completas con descripción, usos, cualidades y recomendaciones de la barra roscada para cimbra de 5/8&quot;.</p>
                   </div>
-                  <Button
-                    size="lg"
-                    asChild
-                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
-                  >
-                    <a
-                      href={fichaTecnicaUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3 whitespace-nowrap"
-                    >
-                      <FileText className="w-6 h-6 shrink-0" />
-                      Descargar ficha técnica
-                      <Download className="w-5 h-5 shrink-0" />
-                    </a>
-                  </Button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    {fichaTecnicaUrls.map((url, i) => (
+                      <Button
+                        key={url}
+                        size="lg"
+                        asChild
+                        className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                      >
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-3 whitespace-nowrap"
+                        >
+                          <FileText className="w-6 h-6 shrink-0" />
+                          Descargar ficha {fichaTecnicaUrls.length > 1 ? i + 1 : 'técnica'}
+                          <Download className="w-5 h-5 shrink-0" />
+                        </a>
+                      </Button>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
