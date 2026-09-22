@@ -1750,6 +1750,33 @@
         "sizes": "(max-width: 1280px) 100vw, 1280px",
         "name": "BRS-58-6-IMAGEN",
         "alt": ""
+      },
+      {
+        "id": 9001,
+        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg",
+        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg",
+        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg 1080w",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "barra-roscada-detalle-roscas",
+        "alt": "Detalle de roscas en barras roscadas de 5/8\" DFAC"
+      },
+      {
+        "id": 9002,
+        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg",
+        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg",
+        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg 1080w",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "barra-roscada-con-tuerca-mariposa",
+        "alt": "Barras roscadas con tuercas mariposa con base DFAC"
+      },
+      {
+        "id": 9003,
+        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg",
+        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg",
+        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg 1080w",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "barra-roscada-galvanizada",
+        "alt": "Barras roscadas galvanizadas de 5/8\" DFAC"
       }
     ],
     "categories": [
