@@ -265,7 +265,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 md:p-5">
                     <h4 className="text-base md:text-lg font-bold text-blue-800 mb-2">Cortes a cualquier medida</h4>
                     <p className="text-sm md:text-base text-slate-700">
-                      En DFAC cortamos la barra roscada <strong>a la medida que necesites</strong>. El tramo estándar es de 6 m, pero lo modulamos según los requerimientos de tu obra, sin costo de desperdicio por tramos que no vas a usar. Solicita tu medida al cotizar.
+                      En DFAC cortamos la barra roscada para cimbra <strong>a la medida que necesites</strong>. El tramo estándar es de 6 m, pero lo modulamos según los requerimientos de tu obra, sin costo de desperdicio por tramos que no vas a usar. Solicita tu medida al cotizar.
                     </p>
                   </div>
                 </div>
@@ -471,7 +471,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               {/* Usos */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
-                <p className="text-muted-foreground mb-6">La barra roscada de 5/8&quot; se emplea principalmente para la colocación y aseguramiento de cimbras de madera en la construcción de muros, trabes y columnas, especialmente en proyectos donde los espesores de colado son grandes y se requiere una sujeción robusta y precisa.</p>
+                <p className="text-muted-foreground mb-6">La barra roscada para cimbra de 5/8&quot; se emplea principalmente para la colocación y aseguramiento de cimbras de madera en la construcción de muros, trabes y columnas, especialmente en proyectos donde los espesores de colado son grandes y se requiere una sujeción robusta y precisa.</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   {['Muros', 'Trabes', 'Columnas', 'Colados de gran espesor'].map((uso) => (
                     <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
@@ -553,7 +553,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 font-bold mt-0.5">•</span>
-                      <span>La longitud de la barra roscada debe ser suficiente para colocarle una tuerca mariposa con base en cada extremo, dejando <strong>5 cm libres de barra como mínimo</strong>.</span>
+                      <span>La longitud de la barra roscada para cimbra debe ser suficiente para colocarle una tuerca mariposa con base en cada extremo, dejando <strong>5 cm libres de barra como mínimo</strong>.</span>
                     </li>
                   </ul>
                 </div>
@@ -564,7 +564,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
-                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada de 5/8&quot;.</p>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada para cimbra de 5/8&quot;.</p>
                   </div>
                   <Button
                     size="lg"
