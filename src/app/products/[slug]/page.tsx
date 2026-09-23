@@ -279,7 +279,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <span className="text-sm md:text-base text-white font-medium">Diámetro 22 mm · Para barra de 5/8&quot; · 2 m y 3 m</span>
                   </div>
                   <p className="text-sm md:text-base text-slate-800 mb-4">
-                    El tubo para barra roscada está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
+                    Está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
                   </p>
 
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -594,7 +594,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Protección para barra roscada de 5/8&quot;</h3>
                 <p className="text-sm md:text-base text-slate-800 mb-4">
-                  El tubo para barra roscada está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
+                  Está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
                 </p>
                 <p className="text-sm md:text-base text-slate-800">
                   Con un diámetro interior de 22 mm, facilita la correcta alineación y separación de la cimbra, garantizando precisión en los espesores. Se corta fácilmente a la medida del elemento a colar y se instala entre conos de cimbra en cada extremo, quedando integrada en el concreto tras el descimbrado.
