@@ -593,9 +593,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               {/* Descripción extendida */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Protección para barra roscada de 5/8&quot;</h3>
-                <p className="text-sm md:text-base text-slate-800 mb-4">
-                  Está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
-                </p>
                 <p className="text-sm md:text-base text-slate-800">
                   Con un diámetro interior de 22 mm, facilita la correcta alineación y separación de la cimbra, garantizando precisión en los espesores. Se corta fácilmente a la medida del elemento a colar y se instala entre conos de cimbra en cada extremo, quedando integrada en el concreto tras el descimbrado.
                 </p>
