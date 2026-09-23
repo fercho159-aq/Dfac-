@@ -22,6 +22,12 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'tuerca-mariposa-con-base': [
     '/archivos/fichas-tecnicas/ficha-tecnica-tuerca-mariposa-con-base-5-8.pdf',
   ],
+  'tubo-para-barra-roscada': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-tubo-para-barra-roscada.pdf',
+  ],
+  'cono-para-cimbra': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-cono-para-cimbra.pdf',
+  ],
 };
 
 // New component for related products
@@ -141,6 +147,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </>
                 )}
               </Carousel>
+              {product.slug === 'barra-roscada-2' && (
+                <p className="text-xs text-slate-500 text-center italic mt-2">* La compra de la barra roscada no incluye la tuerca mariposa. Consulta nuestros productos complementarios.</p>
+              )}
             </div>
 
             {/* Product Info */}
@@ -236,6 +245,58 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </div>
                   </div>
                 </div>
+              ) : product.slug === 'tubo-para-barra-roscada' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Diámetro 22 mm · Para barra de 5/8&quot; · 2 m y 3 m</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El tubo para barra roscada está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Diámetro interior</p>
+                      <p className="text-base font-bold text-slate-800">22 mm</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Compatibilidad</p>
+                      <p className="text-base font-bold text-slate-800">Barra 5/8&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Presentación</p>
+                      <p className="text-base font-bold text-slate-800">2 m y 3 m</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Función</p>
+                      <p className="text-base font-bold text-slate-800">Protección</p>
+                    </div>
+                  </div>
+                </div>
+              ) : product.slug === 'cono-para-cimbra' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Polipropileno · Compatible con barra 5/8&quot; · Reutilizable</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en poliestireno rígido de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Polipropileno</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Compatibilidad</p>
+                      <p className="text-base font-bold text-slate-800">Barra 5/8&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Reutilizable</p>
+                      <p className="text-base font-bold text-slate-800">Sí</p>
+                    </div>
+                  </div>
+                </div>
               ) : product.slug === 'tuerca-mariposa-con-base' ? (
                 <div className="product-description font-sans">
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
@@ -270,7 +331,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <span className="text-sm md:text-base text-white font-medium">Cold Rolled · Diámetro 5/8&quot; · Tramos de 6 m</span>
                   </div>
                   <p className="text-sm md:text-base text-slate-800 mb-4">
-                    Barra cold roll de alta resistencia, fabricada por rolado en frío (COLD ROLLED) en diámetro de 5/8&quot; con hilo de alta resistencia, para usarse como separador y soporte de cimbra de muros y columnas. Se utiliza para fijar moldes o cimbras de elementos de concreto de gran volumen.
+                    Barra cold roll de alta resistencia, fabricada por rolado en frío (COLD ROLLED) en diámetro de 5/8&quot; con hilo de alta resistencia (cuerda rápida), para usarse como separador y soporte de cimbra de muros y columnas. Se utiliza para fijar moldes o cimbras de elementos de concreto de gran volumen.
                   </p>
 
                   {/* Datos tecnicos rapidos */}
@@ -498,6 +559,132 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
             </div>
           )}
 
+          {/* Tubo para Barra Roscada - Detailed info sections below the grid */}
+          {product.slug === 'tubo-para-barra-roscada' && (
+            <div className="mt-16 space-y-12">
+              {/* Descripción extendida */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Protección para barra roscada de 5/8&quot;</h3>
+                <p className="text-sm md:text-base text-slate-800 mb-4">
+                  El tubo para barra roscada está diseñado para proteger la barra roscada durante el colado de muros y columnas, evitando que el concreto se adhiera a la barra y permitiendo su recuperación para usos posteriores.
+                </p>
+                <p className="text-sm md:text-base text-slate-800">
+                  Con un diámetro interior de 22 mm, facilita la correcta alineación y separación de la cimbra, garantizando precisión en los espesores. Se corta fácilmente a la medida del elemento a colar y se instala entre conos de cimbra en cada extremo, quedando integrada en el concreto tras el descimbrado.
+                </p>
+              </div>
+
+              {/* Especificaciones tecnicas */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Diámetro interior', '22 mm'],
+                        ['Compatibilidad', 'Barra roscada de 5/8"'],
+                        ['Función', 'Proteger la barra roscada durante el colado'],
+                        ['Instalación', 'Se coloca entre conos de cimbra en cada extremo'],
+                        ['Presentaciones', 'Tubo de 2 M. de 5/8" y Tubo de 3 M. de 5/8"'],
+                        ['Corte', 'Se corta fácilmente a la medida del elemento a colar'],
+                        ['Reutilizable', 'Permite la recuperación de la barra para usos posteriores'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700 align-top whitespace-nowrap">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* ¿Cómo se instala? */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">¿Cómo se instala?</h3>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                  <ul className="space-y-3 text-sm md:text-base text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">1.</span>
+                      <span>Se corta el tubo a la medida del espesor del elemento de concreto a colar.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">2.</span>
+                      <span>Se coloca sobre la barra roscada, entre los <strong>conos de cimbra</strong> en cada extremo.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">3.</span>
+                      <span>Se fija el sistema con <strong>tuercas mariposa con base</strong> para asegurar la separación.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 font-bold mt-0.5">4.</span>
+                      <span>Tras el descimbrado, el tubo queda integrado en el concreto y la barra roscada se recupera limpia para reutilizar.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Usos */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
+                <p className="text-muted-foreground mb-6">Protección de la barra roscada en el colado de:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Muros', 'Columnas', 'Trabes', 'Elementos de gran espesor'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Presentación */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Presentación</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Tubo de 2 M. de 5/8&quot;</h4>
+                    <p className="text-sm text-slate-700">Tubo de 2 metros de largo con diámetro interior de 22 mm, compatible con barra roscada de 5/8&quot;.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Tubo de 3 M. de 5/8&quot;</h4>
+                    <p className="text-sm text-slate-700">Tubo de 3 metros de largo con diámetro interior de 22 mm, compatible con barra roscada de 5/8&quot;.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ficha tecnica */}
+              {fichaTecnicaUrls && (
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones del tubo para barra roscada.</p>
+                  </div>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                  >
+                    <a
+                      href={fichaTecnicaUrls[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 whitespace-nowrap"
+                    >
+                      <FileText className="w-6 h-6 shrink-0" />
+                      Descargar ficha técnica
+                      <Download className="w-5 h-5 shrink-0" />
+                    </a>
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Tuerca Mariposa con Base - Detailed info sections below the grid */}
           {product.slug === 'tuerca-mariposa-con-base' && (
             <div className="mt-16 space-y-12">
@@ -585,6 +772,115 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
                     <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones de la tuerca mariposa con base de 5/8&quot;.</p>
+                  </div>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                  >
+                    <a
+                      href={fichaTecnicaUrls[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 whitespace-nowrap"
+                    >
+                      <FileText className="w-6 h-6 shrink-0" />
+                      Descargar ficha técnica
+                      <Download className="w-5 h-5 shrink-0" />
+                    </a>
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Cono para Cimbra - Detailed info sections below the grid */}
+          {product.slug === 'cono-para-cimbra' && (
+            <div className="mt-16 space-y-12">
+              {/* Descripción extendida */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para sistema de cimbra</h3>
+                <p className="text-sm md:text-base text-slate-800 mb-4">
+                  El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en poliestireno rígido de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
+                </p>
+                <p className="text-sm md:text-base text-slate-800 mb-4">
+                  Su diseño contribuye a reducir filtraciones y favorecer la impermeabilidad de la estructura, por lo que es especialmente útil en aplicaciones como cisternas, albercas y muros de contención.
+                </p>
+                <p className="text-sm md:text-base text-slate-800">
+                  Además, facilita las labores de instalación, retiro y resane, optimizando los tiempos de trabajo y contribuyendo a obtener acabados más limpios y precisos en los elementos de concreto.
+                </p>
+              </div>
+
+              {/* Ventajas */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Ventajas</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Control preciso del espesor del muro</h4>
+                    <p className="text-sm text-slate-700">Mantiene la separación adecuada entre las placas de cimbra, permitiendo obtener espesores uniformes y colados de alta calidad.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Ayuda a prevenir filtraciones</h4>
+                    <p className="text-sm text-slate-700">Su diseño contribuye a proteger los orificios generados por la barra roscada, siendo una solución adecuada para estructuras con contacto con agua, como albercas, cisternas y muros de contención.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Instalación y retiro sencillos</h4>
+                    <p className="text-sm text-slate-700">Se coloca fácilmente sobre la barra roscada y permite un retiro práctico durante el proceso de descimbrado.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Protección de la barra roscada</h4>
+                    <p className="text-sm text-slate-700">Reduce el contacto directo de la barra con el concreto, facilitando su recuperación y reutilización en diferentes proyectos.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 md:col-span-2">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Resistencia y durabilidad</h4>
+                    <p className="text-sm text-slate-700">Fabricado con materiales de alta resistencia, soporta las condiciones generadas por el concreto fresco, manteniendo su integridad durante el proceso de colado.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Especificaciones técnicas */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones técnicas</h3>
+                <div className="overflow-hidden rounded-xl border bg-card shadow-sm">
+                  <table className="w-full text-sm">
+                    <tbody className="divide-y">
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700 w-1/2">Material</td><td className="px-4 py-3 text-slate-600">Polipropileno o plástico de alta resistencia</td></tr>
+                      <tr><td className="px-4 py-3 font-medium text-slate-700">Diámetro interior</td><td className="px-4 py-3 text-slate-600">Compatible con barra roscada de 5/8&quot;</td></tr>
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700">Reutilizable</td><td className="px-4 py-3 text-slate-600">Sí, siempre que no presente daños visibles</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* ¿Cómo se instala? */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">¿Cómo se instala el cono para cimbra?</h3>
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm">
+                  <p className="text-sm md:text-base text-slate-700">
+                    Se coloca entre la cimbra y la tuerca mariposa con base, cubriendo el extremo del tubo para barra roscada.
+                  </p>
+                </div>
+              </div>
+
+              {/* Usos */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Usos</h3>
+                <p className="text-muted-foreground mb-6">Es especialmente útil en estructuras que requieren impermeabilidad y acabados uniformes.</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Muros', 'Columnas', 'Cisternas', 'Albercas'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Ficha tecnica */}
+              {fichaTecnicaUrls && (
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones del cono para cimbra.</p>
                   </div>
                   <Button
                     size="lg"
@@ -698,6 +994,35 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <span>La longitud de la barra roscada para cimbra debe ser suficiente para colocarle una tuerca mariposa con base en cada extremo, dejando <strong>5 cm libres de barra como mínimo</strong>.</span>
                     </li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Productos complementarios */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Productos complementarios que te harían falta!</h3>
+                <p className="text-muted-foreground mb-6">Al comprar la barra roscada para cimbra, estos accesorios son indispensables para su correcta instalación:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                  <Link href="/products/tuerca-mariposa-con-base" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg" alt="Tuerca Mariposa con Base" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tuerca Mariposa con Base</h4>
+                    <p className="text-xs text-slate-500 mt-1">Fijación segura para la barra roscada</p>
+                  </Link>
+                  <Link href="/products/tubo-para-barra-roscada" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg" alt="Tubo para Barra Roscada" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tubo para Barra Roscada</h4>
+                    <p className="text-xs text-slate-500 mt-1">Protección durante el colado</p>
+                  </Link>
+                  <Link href="/products/cono-para-cimbra" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/C0020-2-IMAGEN-1.jpg" alt="Cono para Cimbra" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Cono para Cimbra</h4>
+                    <p className="text-xs text-slate-500 mt-1">Separación precisa entre cimbras</p>
+                  </Link>
                 </div>
               </div>
 
