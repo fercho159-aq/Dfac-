@@ -242,7 +242,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <span className="text-sm md:text-base text-white font-medium">Acero forjado · Para barra de 5/8&quot; · 22,000 lb</span>
                   </div>
                   <p className="text-sm md:text-base text-slate-800 mb-4">
-                    Tuerca mariposa con base para barra roscada de 5/8&quot;, fabricada en acero de alta resistencia, forjado en una sola pieza. Diseñada para facilitar la instalación y el ajuste de sistemas de cimbra.
+                    Tuerca mariposa con base para barra roscada de 5/8&quot;, fabricada en acero de alta resistencia y forjada en una sola pieza. Su base integrada proporciona una mayor superficie de apoyo para ayudar a distribuir las cargas sobre la cimbra, permitiendo un ajuste firme y seguro durante la instalación.
                   </p>
 
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -505,10 +505,10 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para barra roscada de 5/8&quot;</h3>
                 <p className="text-sm md:text-base text-slate-800 mb-4">
-                  La <strong>tuerca mariposa con base para barra roscada de 5/8&quot;</strong> es un accesorio diseñado para facilitar la instalación y el ajuste de sistemas de cimbra. Está fabricada en acero de alta resistencia, forjado en una sola pieza, lo que proporciona mayor durabilidad y confiabilidad durante su uso.
+                  Tuerca mariposa con base para barra roscada de 5/8&quot;, fabricada en acero de alta resistencia y forjada en una sola pieza. Su base integrada proporciona una mayor superficie de apoyo para ayudar a distribuir las cargas sobre la cimbra, permitiendo un ajuste firme y seguro durante la instalación.
                 </p>
                 <p className="text-sm md:text-base text-slate-800">
-                  Su base integrada permite una mejor distribución de la carga sobre la cimbra, proporcionando un ajuste firme y seguro. Además, es reutilizable, resistente a cargas superiores a 22,000 lb y de fácil instalación y desmontaje, convirtiéndola en una opción práctica para proyectos que requieren seguridad, rapidez y resistencia.
+                  Es un accesorio complementario de la barra roscada, utilizado para el aseguramiento de sistemas de cimbra en elementos de concreto como muros, columnas y trabes. Además, es reutilizable, resistente a cargas superiores a 22,000 lb y de fácil instalación y desmontaje.
                 </p>
               </div>
 
