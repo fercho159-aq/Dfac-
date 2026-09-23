@@ -919,6 +919,35 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               </div>
 
+              {/* Productos complementarios */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Productos complementarios que te harían falta!</h3>
+                <p className="text-muted-foreground mb-6">Al comprar la barra roscada para cimbra, estos accesorios son indispensables para su correcta instalación:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                  <Link href="/products/tuerca-mariposa-con-base" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg" alt="Tuerca Mariposa con Base" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tuerca Mariposa con Base</h4>
+                    <p className="text-xs text-slate-500 mt-1">Fijación segura para la barra roscada</p>
+                  </Link>
+                  <Link href="/products/tubo-para-barra-roscada" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg" alt="Tubo para Barra Roscada" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tubo para Barra Roscada</h4>
+                    <p className="text-xs text-slate-500 mt-1">Protección durante el colado</p>
+                  </Link>
+                  <Link href="/products/cono-para-cimbra" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                      <Image src="/Image/C0020-2-IMAGEN-1.jpg" alt="Cono para Cimbra" fill className="object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Cono para Cimbra</h4>
+                    <p className="text-xs text-slate-500 mt-1">Separación precisa entre cimbras</p>
+                  </Link>
+                </div>
+              </div>
+
               {/* Cualidades */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Cualidades</h3>
@@ -994,35 +1023,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <span>La longitud de la barra roscada para cimbra debe ser suficiente para colocarle una tuerca mariposa con base en cada extremo, dejando <strong>5 cm libres de barra como mínimo</strong>.</span>
                     </li>
                   </ul>
-                </div>
-              </div>
-
-              {/* Productos complementarios */}
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Productos complementarios que te harían falta!</h3>
-                <p className="text-muted-foreground mb-6">Al comprar la barra roscada para cimbra, estos accesorios son indispensables para su correcta instalación:</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                  <Link href="/products/tuerca-mariposa-con-base" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
-                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
-                      <Image src="/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg" alt="Tuerca Mariposa con Base" fill className="object-contain group-hover:scale-105 transition-transform" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tuerca Mariposa con Base</h4>
-                    <p className="text-xs text-slate-500 mt-1">Fijación segura para la barra roscada</p>
-                  </Link>
-                  <Link href="/products/tubo-para-barra-roscada" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
-                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
-                      <Image src="/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg" alt="Tubo para Barra Roscada" fill className="object-contain group-hover:scale-105 transition-transform" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Tubo para Barra Roscada</h4>
-                    <p className="text-xs text-slate-500 mt-1">Protección durante el colado</p>
-                  </Link>
-                  <Link href="/products/cono-para-cimbra" className="group bg-card border rounded-xl p-5 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
-                    <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
-                      <Image src="/Image/C0020-2-IMAGEN-1.jpg" alt="Cono para Cimbra" fill className="object-contain group-hover:scale-105 transition-transform" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors">Cono para Cimbra</h4>
-                    <p className="text-xs text-slate-500 mt-1">Separación precisa entre cimbras</p>
-                  </Link>
                 </div>
               </div>
 
