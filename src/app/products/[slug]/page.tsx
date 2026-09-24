@@ -17,7 +17,6 @@ import { WhatsAppButton } from './WhatsAppButton';
 const FICHAS_TECNICAS: Record<string, string[]> = {
   'barra-roscada-2': [
     '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-descripcion.pdf',
-    '/archivos/fichas-tecnicas/ficha-tecnica-barra-roscada-aplicacion.pdf',
   ],
   'tuerca-mariposa-con-base': [
     '/archivos/fichas-tecnicas/ficha-tecnica-tuerca-mariposa-con-base-5-8.pdf',
@@ -1026,8 +1025,8 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               {fichaTecnicaUrls && (
                 <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                   <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Fichas técnicas en PDF</h3>
-                    <p className="text-sm md:text-base text-muted-foreground">Descarga las fichas completas con descripción, usos, cualidades y recomendaciones de la barra roscada para cimbra de 5/8&quot;.</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con descripción, usos, cualidades y recomendaciones de la barra roscada para cimbra de 5/8&quot;.</p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
                     {fichaTecnicaUrls.map((url, i) => (
