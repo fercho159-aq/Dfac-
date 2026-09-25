@@ -151,16 +151,17 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               )}
 
               {/* Productos complementarios - carrusel debajo de imágenes */}
-              {product.slug === 'barra-roscada-2' && (
+              {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base') && (
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
                   <Carousel opts={{ align: "start", loop: true }} className="w-full">
                     <CarouselContent className="-ml-3">
                       {[
+                        { href: "/products/barra-roscada-2", img: "/Image/BRS-58-3-IMAGEN-1.jpg", name: "Barra Roscada para Cimbra", desc: "Barra de acero cold rolled de 5/8\"" },
                         { href: "/products/tuerca-mariposa-con-base", img: "/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg", name: "Tuerca Mariposa con Base", desc: "Fijación segura para la barra roscada" },
                         { href: "/products/tubo-para-barra-roscada", img: "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg", name: "Tubo para Barra Roscada", desc: "Protección durante el colado" },
                         { href: "/products/cono-para-cimbra", img: "/Image/C0020-2-IMAGEN-1.jpg", name: "Cono para Cimbra", desc: "Acabado uniforme en muros" },
-                      ].map((item) => (
+                      ].filter((item) => item.href !== `/products/${product.slug}`).map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
                             <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
