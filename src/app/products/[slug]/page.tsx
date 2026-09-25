@@ -151,7 +151,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               )}
 
               {/* Productos complementarios - carrusel debajo de imágenes */}
-              {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base') && (
+              {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base' || product.slug === 'tubo-para-barra-roscada' || product.slug === 'cono-para-cimbra') && (
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
                   <Carousel opts={{ align: "start", loop: true }} className="w-full">
