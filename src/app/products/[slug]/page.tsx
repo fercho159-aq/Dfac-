@@ -716,9 +716,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               {/* Descripción extendida */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para barra roscada de 5/8&quot;</h3>
-                <p className="text-sm md:text-base text-slate-800 mb-4">
-                  Tuerca mariposa con base para barra roscada de 5/8&quot;, fabricada en acero de alta resistencia y forjada en una sola pieza. Su base integrada proporciona una mayor superficie de apoyo para ayudar a distribuir las cargas sobre la cimbra, permitiendo un ajuste firme y seguro durante la instalación.
-                </p>
                 <p className="text-sm md:text-base text-slate-800">
                   Es un accesorio complementario de la barra roscada, utilizado para el aseguramiento de sistemas de cimbra en elementos de concreto como muros, columnas y trabes. Además, es reutilizable, resistente a cargas superiores a 22,000 lb y de fácil instalación y desmontaje.
                 </p>
