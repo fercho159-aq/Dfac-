@@ -823,9 +823,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para sistema de cimbra</h3>
                 <p className="text-sm md:text-base text-slate-800 mb-4">
-                  El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en poliestireno rígido de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
-                </p>
-                <p className="text-sm md:text-base text-slate-800 mb-4">
                   Su diseño contribuye a reducir filtraciones y favorecer la impermeabilidad de la estructura, por lo que es especialmente útil en aplicaciones como cisternas, albercas y muros de contención.
                 </p>
                 <p className="text-sm md:text-base text-slate-800">
