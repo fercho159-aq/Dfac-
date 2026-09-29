@@ -433,7 +433,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
 
-              {medidaAttribute && medidaAttribute.terms.length > 0 && (
+              {medidaAttribute && medidaAttribute.terms.length > 0 && product.slug !== 'puntal-metalico-extensible-italiano' && (
                 <div className="mt-6">
                   <h3 className="text-lg font-semibold mb-2">Medidas Disponibles:</h3>
                   <div className="flex flex-wrap gap-2">
