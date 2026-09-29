@@ -151,6 +151,28 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 <p className="text-xs text-slate-500 text-center italic mt-2">* La compra de la barra roscada no incluye la tuerca mariposa. Consulta nuestros productos complementarios.</p>
               )}
 
+              {/* Accesorios para puntales - debajo de imagen */}
+              {product.slug === 'puntal-metalico-extensible-italiano' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Accesorios para puntales</h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {[
+                      { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
+                      { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                      { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal.jpg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
+                    ].map((item) => (
+                      <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                        <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                          <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                        </div>
+                        <h4 className="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                        <p className="text-xs text-slate-500 mt-1 hidden sm:block">{item.desc}</p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Productos complementarios - carrusel debajo de imágenes */}
               {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base' || product.slug === 'tubo-para-barra-roscada' || product.slug === 'cono-para-cimbra') && (
                 <div className="mt-6">
@@ -1121,25 +1143,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               </div>
 
-              {/* Accesorios para puntales */}
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Accesorios para puntales</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                  {[
-                    { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
-                    { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
-                    { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal.jpg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
-                  ].map((item) => (
-                    <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-4 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
-                      <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
-                        <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
-                      </div>
-                      <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
-                      <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
             </div>
           )}
 
