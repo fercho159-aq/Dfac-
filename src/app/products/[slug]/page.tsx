@@ -1120,7 +1120,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                   {[
                     { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
-                    { href: "/products/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                    { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
                     { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal.jpg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                   ].map((item) => (
                     <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-4 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
