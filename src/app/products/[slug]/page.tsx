@@ -13,6 +13,7 @@ import { ContactSection } from '@/components/contact-section';
 import { ProductCard } from '@/components/product-card';
 import { Suspense } from 'react';
 import { WhatsAppButton } from './WhatsAppButton';
+import { CertificacionDIN } from './CertificacionDIN';
 
 const FICHAS_TECNICAS: Record<string, string[]> = {
   'barra-roscada-2': [
@@ -395,6 +396,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
                     <span className="text-sm md:text-base text-white font-medium">Acero S235JRH · Certificación Europea · Anti-Cizallamiento</span>
                   </div>
+                  <CertificacionDIN />
                   <p className="text-sm md:text-base text-slate-800 mb-6">
                     Puntal metálico extensible italiano fabricado con acero de alta resistencia S235JRH, con certificación europea UNI EN 729-2: 1996. Diseñado con sistema anti-cizallamiento y placas de distribución reforzadas para una óptima distribución de la carga.
                   </p>
