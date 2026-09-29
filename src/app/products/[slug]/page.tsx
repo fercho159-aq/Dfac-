@@ -159,11 +159,11 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     {[
                       { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
                       { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
-                      { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal.jpg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
+                      { href: "/products/cabezal-para-puntal", img: "/Image/Recurso-2.png.webp", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                     ].map((item) => (
                       <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
-                        <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
-                          <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                        <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2 flex items-center justify-center bg-slate-50">
+                          <Image src={item.img} alt={item.name} fill className="object-contain p-2 group-hover:scale-105 transition-transform" />
                         </div>
                         <h4 className="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
                         <p className="text-xs text-slate-500 mt-1 hidden sm:block">{item.desc}</p>
