@@ -420,10 +420,15 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           <td className="p-3">400 cm</td>
                           <td className="p-3">2,312.68 kg</td>
                         </tr>
-                        <tr>
+                        <tr className="border-b">
                           <td className="p-3 font-medium">B40 2.31–4.00 (Reforzado)</td>
                           <td className="p-3">400 cm</td>
                           <td className="p-3">3,059.15 kg</td>
+                        </tr>
+                        <tr className="bg-slate-50">
+                          <td className="p-3 font-medium">B50 2.80–5.00 (Extra Fuerte)</td>
+                          <td className="p-3">500 cm</td>
+                          <td className="p-3">2,518 kg</td>
                         </tr>
                       </tbody>
                     </table>
