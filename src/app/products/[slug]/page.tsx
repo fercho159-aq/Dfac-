@@ -390,6 +390,45 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </p>
                   </div>
                 </div>
+              ) : product.slug === 'puntal-metalico-extensible-italiano' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Acero S235JRH · Certificación Europea · Anti-Cizallamiento</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                    Puntal metálico extensible italiano fabricado con acero de alta resistencia S235JRH, con certificación europea UNI EN 729-2: 1996. Diseñado con sistema anti-cizallamiento y placas de distribución reforzadas para una óptima distribución de la carga.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Medidas Disponibles:</h4>
+                  <div className="overflow-hidden rounded-xl border shadow-sm mb-6">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-blue-600 text-white">
+                          <th className="text-left p-3">Modelo</th>
+                          <th className="text-left p-3">Altura Máx.</th>
+                          <th className="text-left p-3">Carga Máx.</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="p-3 font-medium">Ligero 1.80–3.00</td>
+                          <td className="p-3">300 cm</td>
+                          <td className="p-3">2,638.98 kg</td>
+                        </tr>
+                        <tr className="border-b bg-slate-50">
+                          <td className="p-3 font-medium">Ligero 2.20–4.00</td>
+                          <td className="p-3">400 cm</td>
+                          <td className="p-3">2,312.68 kg</td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 font-medium">B40 2.31–4.00 (Reforzado)</td>
+                          <td className="p-3">400 cm</td>
+                          <td className="p-3">3,059.15 kg</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
@@ -1046,6 +1085,54 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </div>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Puntal - Detailed info sections below the grid */}
+          {product.slug === 'puntal-metalico-extensible-italiano' && (
+            <div className="mt-16 space-y-12">
+              {/* Características del Producto */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Características del Producto</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Acero de Alta Resistencia</h4>
+                    <p className="text-sm text-slate-700">Fabricado con acero S235JRH para máxima durabilidad.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Normas de Producción</h4>
+                    <p className="text-sm text-slate-700">Cumple con la estricta norma europea UNI EN 729-2: 1996.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Sistema Anti-Cizallamiento</h4>
+                    <p className="text-sm text-slate-700">Diseño de mano segura para prevenir accidentes durante el ajuste.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Placas de Distribución</h4>
+                    <p className="text-sm text-slate-700">Bases planas y reforzadas para una óptima distribución de la carga.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accesorios para puntales */}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Accesorios para puntales</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                  {[
+                    { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
+                    { href: "/products/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                    { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal.jpg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
+                  ].map((item) => (
+                    <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-4 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                      <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-3">
+                        <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                      </div>
+                      <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                      <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 
