@@ -416,6 +416,31 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </p>
                   </div>
                 </div>
+              ) : product.slug === 'base-estabilizadora' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                    La base estabilizadora para pie derecho (tripié) es un accesorio diseñado para proporcionar mayor estabilidad y soporte a los pies derechos (puntales) utilizados en sistemas de cimbra. Gracias a su diseño, facilita el armado de estructuras de soporte y contribuye a reducir movimientos o desplazamientos del pie derecho, permitiendo trabajar con una estructura más estable.
+                  </p>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Ventajas</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span>
+                      <p className="text-sm text-slate-700"><strong>Mayor estabilidad:</strong> ayuda a mantener firme el pie derecho durante la instalación.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span>
+                      <p className="text-sm text-slate-700"><strong>Fácil colocación:</strong> su diseño permite integrarla de manera práctica al sistema de soporte.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span>
+                      <p className="text-sm text-slate-700"><strong>Mejor organización del sistema de cimbra:</strong> contribuye a mantener los elementos correctamente posicionados.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span>
+                      <p className="text-sm text-slate-700"><strong>Reutilizable:</strong> puede utilizarse en diferentes proyectos, dependiendo de las condiciones y especificaciones del sistema.</p>
+                    </div>
+                  </div>
+                </div>
               ) : product.slug === 'puntal-metalico-extensible-italiano' ? (
                 <div className="product-description font-sans">
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
