@@ -60,7 +60,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -273,7 +273,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -449,7 +449,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -1871,6 +1871,33 @@
         "sizes": "(max-width: 590px) 100vw, 590px",
         "name": "imagen_2023-06-16_151824678",
         "alt": ""
+      },
+      {
+        "id": 9014,
+        "src": "/Image/base-estabilizadora-tripie.webp",
+        "thumbnail": "/Image/base-estabilizadora-tripie.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "name": "base-estabilizadora-tripie.webp",
+        "alt": "Base estabilizadora (trípie) para pie derecho"
+      },
+      {
+        "id": 9015,
+        "src": "/Image/base-estabilizadora-obra-vigas.webp",
+        "thumbnail": "/Image/base-estabilizadora-obra-vigas.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "name": "base-estabilizadora-obra-vigas.webp",
+        "alt": "Base estabilizadora en obra, apuntalando vigas"
+      },
+      {
+        "id": 9016,
+        "src": "/Image/base-estabilizadora-obra-puntales.webp",
+        "thumbnail": "/Image/base-estabilizadora-obra-puntales.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1200px) 100vw, 1200px",
+        "name": "base-estabilizadora-obra-puntales.webp",
+        "alt": "Base estabilizadora instalada en puntales"
       }
     ],
     "categories": [
@@ -9836,14 +9863,14 @@
         "alt": ""
       }
     ],
-    "categories": [ 
+    "categories": [
       {
-      "id": 233,
-      "name": "Impermeabilizantes asfálticos",
-      "slug": "impermeabilizantes-asfalticos",
-      "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
-    }
-  ],
+        "id": 233,
+        "name": "Impermeabilizantes asfálticos",
+        "slug": "impermeabilizantes-asfalticos",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/productos-quimicos/water-stop/"
+      }
+    ],
     "tags": [],
     "attributes": [
       {
@@ -11735,7 +11762,6 @@
       }
     ],
     "categories": [
-      
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -11837,7 +11863,7 @@
     "review_count": 0,
     "images": [],
     "categories": [
-            {
+      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -11948,7 +11974,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -12059,7 +12085,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -12281,7 +12307,6 @@
       }
     ],
     "categories": [
-   
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12393,7 +12418,6 @@
       }
     ],
     "categories": [
-    
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12629,7 +12653,7 @@
         "alt": ""
       }
     ],
-    "categories": [ 
+    "categories": [
       {
         "id": 198,
         "name": "Aditivos para concreto",
@@ -12852,7 +12876,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 198,
         "name": "Aditivos para concreto",
         "slug": "aditivos-para-concreto",
@@ -13589,7 +13613,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -13978,7 +14002,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -14280,7 +14304,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -14418,7 +14442,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -14637,7 +14661,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -14761,7 +14785,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -14899,7 +14923,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -15203,7 +15227,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -15439,7 +15463,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -15619,7 +15643,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -15813,7 +15837,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -16035,7 +16059,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -16229,7 +16253,7 @@
       }
     ],
     "categories": [
-            {
+      {
         "id": 179,
         "name": "Silletas",
         "slug": "silletas",
@@ -16487,7 +16511,6 @@
         "slug": "accesorios",
         "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
       }
-     
     ],
     "tags": [],
     "attributes": [
