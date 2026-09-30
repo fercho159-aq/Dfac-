@@ -28,6 +28,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'cono-para-cimbra': [
     '/archivos/fichas-tecnicas/ficha-tecnica-cono-para-cimbra.pdf',
   ],
+  'puntal-metalico-extensible-italiano': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-puntal-telescopico.pdf',
+  ],
 };
 
 // New component for related products
