@@ -20,6 +20,88 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'tuerca-mariposa-con-base-sistemas-de-cimbra',
+    title: 'Tuerca Mariposa con Base: seguridad y eficiencia para sistemas de cimbra',
+    excerpt:
+      'La tuerca mariposa con base es un accesorio utilizado en sistemas de cimbra para complementar la instalación de la barra roscada, proporcionando mayor seguridad, estabilidad y uniformidad durante los trabajos de construcción.',
+    image: '/Image/blog-imagenes/30-sep-tuerca-mariposa/portada-tuerca-mariposa-con-base.webp',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-09-30',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué es una tuerca mariposa con base?',
+        paragraphs: [
+          'Fabricada en acero de alta resistencia y forjada en una sola pieza, este elemento está diseñado para ofrecer un soporte seguro y facilitar el proceso de colocación y retiro de la cimbra.',
+          'La tuerca mariposa con base es un accesorio para cimbra que se utiliza junto con la barra roscada. Su diseño incorpora una base que permite distribuir el soporte y proporcionar mayor estabilidad al sistema una vez instalado.',
+          'Al estar fabricada en una sola pieza de acero forjado, ofrece una estructura resistente para soportar las condiciones propias de los trabajos de construcción.',
+        ],
+        image: '/Image/blog-imagenes/30-sep-tuerca-mariposa/tuerca-mariposa-con-base-perfil.webp',
+        imageAlt: 'Tuerca mariposa con base vista de perfil, con sus dos aletas y la base plana',
+      },
+      {
+        heading: '¿Para qué se utiliza?',
+        paragraphs: [
+          'Este accesorio se emplea como complemento de la barra roscada una vez que esta ha sido instalada en la cimbra.',
+          'Su función principal es proporcionar un sistema de sujeción más seguro y uniforme, ayudando a mantener la estabilidad de la cimbra durante el proceso de trabajo.',
+          'Además, su diseño facilita tanto la instalación como el desmontaje de la cimbra.',
+        ],
+        image: '/Image/blog-imagenes/30-sep-tuerca-mariposa/tuerca-mariposa-con-base-frontal.webp',
+        imageAlt: 'Vista frontal de la tuerca mariposa con base, con la cuerda al centro',
+      },
+      {
+        heading: 'Principales características',
+        paragraphs: [
+          'Entre las características de la tuerca mariposa con base se encuentran:',
+          '• Fabricación en acero de alta resistencia.',
+          '• Forjada en una sola pieza, lo que proporciona mayor resistencia estructural.',
+          '• Facilita una colocación más rápida de la cimbra y su posterior desmontaje.',
+          '• Permite una instalación más eficiente y segura de la barra roscada.',
+          '• Cuenta con una resistencia superior a 22,000 lb.',
+          '• Es un accesorio reutilizable, siempre que se encuentre en condiciones adecuadas para su uso.',
+        ],
+      },
+      {
+        heading: 'Ventajas de utilizar una tuerca mariposa con base',
+        paragraphs: [
+          'La utilización de este accesorio puede facilitar diferentes etapas del proceso de cimbra.',
+          'Su diseño permite realizar la instalación de manera más práctica, mientras que su fabricación en acero forjado proporciona la resistencia necesaria para los trabajos en los que se requiere una sujeción firme.',
+          'Entre sus principales ventajas destacan:',
+          '• Mayor rapidez: facilita la colocación y el desmontaje de la cimbra.',
+          '• Mayor eficiencia: complementa la barra roscada y permite realizar una instalación más práctica.',
+          '• Resistencia: su fabricación en una sola pieza y su capacidad de resistencia permiten utilizarla en aplicaciones de construcción.',
+          '• Reutilización: puede utilizarse nuevamente cuando conserva las condiciones adecuadas para su funcionamiento.',
+        ],
+        image: '/Image/blog-imagenes/30-sep-tuerca-mariposa/tuerca-mariposa-con-base-rosca.webp',
+        imageAlt: 'Base de la tuerca mariposa vista por el reverso, con el orificio roscado al centro',
+      },
+      {
+        heading: 'Recomendaciones para su uso',
+        paragraphs: [
+          'Para conservar correctamente la tuerca mariposa con base, es importante mantenerla limpia y evitar la acumulación de residuos que puedan afectar la cuerda.',
+          'Una limpieza adecuada ayuda a reducir el desgaste de la rosca y contribuye a proteger el hilo de la barra roscada durante su utilización.',
+          'También es recomendable revisar el estado del accesorio antes de cada uso y evitar utilizar piezas que presenten daños que puedan comprometer su funcionamiento.',
+        ],
+      },
+      {
+        heading: 'Aplicación en sistemas de cimbra',
+        paragraphs: [
+          'Una vez instalada la barra roscada, la tuerca mariposa con base se coloca para asegurar el sistema. Al ajustarla, proporciona el apriete necesario para mantener la cimbra en su posición durante el trabajo.',
+          'Después del proceso de colado y una vez que el concreto ha alcanzado las condiciones necesarias para retirar la cimbra, la tuerca puede ser desatornillada para facilitar el desmontaje del sistema.',
+        ],
+      },
+      {
+        heading: 'Tuerca mariposa con base para construcción',
+        paragraphs: [
+          'Contar con accesorios adecuados es fundamental para realizar trabajos de cimbra de manera eficiente. La tuerca mariposa con base ofrece una solución práctica para complementar la barra roscada y facilitar la instalación y desmontaje de sistemas de cimbra.',
+          'Si buscas tuercas mariposa con base para trabajos de construcción y cimbra, consulta disponibilidad, medidas y condiciones de entrega con DFAC Cimbra y Accesorios.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'puntal-metalico-extensible-certificacion-europea',
     title: 'Puntal Metálico Extensible con Certificación Europea: resistencia y ajuste para tu obra',
     excerpt:
