@@ -1611,6 +1611,51 @@
         "sizes": "(max-width: 1280px) 100vw, 1280px",
         "name": "PUNTAL METALICO CONTAMOS CON STOCK PRODUCTO CON CERTIFICACION EUROPEA_DFAC",
         "alt": ""
+      },
+      {
+        "id": 9001,
+        "thumbnail": "/Image/puntal-metalico-bodega-puntales-vigas.png",
+        "src": "/Image/puntal-metalico-bodega-puntales-vigas.png",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "srcset": "",
+        "name": "Puntales metálicos y vigas H20 en bodega DFAC",
+        "alt": "Puntales metálicos extensibles y vigas H20 almacenados en bodega DFAC"
+      },
+      {
+        "id": 9002,
+        "thumbnail": "/Image/puntal-metalico-220-400-apilados.png",
+        "src": "/Image/puntal-metalico-220-400-apilados.png",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "srcset": "",
+        "name": "Puntales metálicos 220/400 apilados",
+        "alt": "Puntales metálicos extensibles modelo 220/400 apilados en bodega DFAC"
+      },
+      {
+        "id": 9003,
+        "thumbnail": "/Image/puntal-metalico-bases-detalle.png",
+        "src": "/Image/puntal-metalico-bases-detalle.png",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "srcset": "",
+        "name": "Detalle de bases de puntales metálicos",
+        "alt": "Detalle de puntales metálicos extensibles mostrando bases de acero en bodega DFAC"
+      },
+      {
+        "id": 9004,
+        "thumbnail": "/Image/puntal-metalico-bodega-panoramica.png",
+        "src": "/Image/puntal-metalico-bodega-panoramica.png",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "srcset": "",
+        "name": "Vista panorámica bodega DFAC puntales",
+        "alt": "Vista panorámica de puntales metálicos extensibles almacenados en bodega DFAC"
+      },
+      {
+        "id": 9005,
+        "thumbnail": "/Image/puntal-metalico-bases-apiladas.png",
+        "src": "/Image/puntal-metalico-bases-apiladas.png",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "srcset": "",
+        "name": "Bases de acero para puntales apiladas",
+        "alt": "Bases de acero para puntales metálicos extensibles apiladas en bodega DFAC"
       }
     ],
     "categories": [
@@ -1871,33 +1916,6 @@
         "sizes": "(max-width: 590px) 100vw, 590px",
         "name": "imagen_2023-06-16_151824678",
         "alt": ""
-      },
-      {
-        "id": 9014,
-        "src": "/Image/base-estabilizadora-tripie.webp",
-        "thumbnail": "/Image/base-estabilizadora-tripie.webp",
-        "srcset": "",
-        "sizes": "(max-width: 1200px) 100vw, 1200px",
-        "name": "base-estabilizadora-tripie.webp",
-        "alt": "Base estabilizadora (trípie) para pie derecho"
-      },
-      {
-        "id": 9015,
-        "src": "/Image/base-estabilizadora-obra-vigas.webp",
-        "thumbnail": "/Image/base-estabilizadora-obra-vigas.webp",
-        "srcset": "",
-        "sizes": "(max-width: 1200px) 100vw, 1200px",
-        "name": "base-estabilizadora-obra-vigas.webp",
-        "alt": "Base estabilizadora en obra, apuntalando vigas"
-      },
-      {
-        "id": 9016,
-        "src": "/Image/base-estabilizadora-obra-puntales.webp",
-        "thumbnail": "/Image/base-estabilizadora-obra-puntales.webp",
-        "srcset": "",
-        "sizes": "(max-width: 1200px) 100vw, 1200px",
-        "name": "base-estabilizadora-obra-puntales.webp",
-        "alt": "Base estabilizadora instalada en puntales"
       }
     ],
     "categories": [
