@@ -1911,11 +1911,38 @@
       {
         "id": 6142,
         "src": "/Image/imagen_2023-06-16_151824678.png",
-        "thumbnail": "/Image/imagen_2023-06-16_151824678-300x300.png",
-        "srcset": "/Image/imagen_2023-06-16_151824678.png 590w, /Image/imagen_2023-06-16_151824678-253x300.png 253w",
+        "thumbnail": "/Image/imagen_2023-06-16_151824678.png",
+        "srcset": "",
         "sizes": "(max-width: 590px) 100vw, 590px",
-        "name": "imagen_2023-06-16_151824678",
-        "alt": ""
+        "name": "Base Estabilizadora Trípie",
+        "alt": "Base estabilizadora trípie para pie derecho"
+      },
+      {
+        "id": 6143,
+        "src": "/Image/base-estabilizadora-tripie.webp",
+        "thumbnail": "/Image/base-estabilizadora-tripie.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "Base Estabilizadora Trípie DFAC",
+        "alt": "Base estabilizadora trípie con logo DFAC"
+      },
+      {
+        "id": 6144,
+        "src": "/Image/base-estabilizadora-obra-puntales.webp",
+        "thumbnail": "/Image/base-estabilizadora-obra-puntales.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "Base estabilizadora en obra con puntales",
+        "alt": "Base estabilizadora trípie instalada en obra con puntales metálicos"
+      },
+      {
+        "id": 6145,
+        "src": "/Image/base-estabilizadora-obra-vigas.webp",
+        "thumbnail": "/Image/base-estabilizadora-obra-vigas.webp",
+        "srcset": "",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "Base estabilizadora en obra con vigas H20",
+        "alt": "Puntales con base estabilizadora sosteniendo vigas H20 en obra"
       }
     ],
     "categories": [
