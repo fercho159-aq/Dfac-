@@ -486,6 +486,83 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'torre-iluminacion-lux-s11' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">6 LED de 80W c/u · 3,600 m² · Altura máx. 4.5 m</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Torre de iluminación compacta y potente, equipada con 6 lámparas LED de 80W cada una. Diseñada para iluminar grandes áreas de trabajo en obras de construcción, mantenimiento vial y eventos, con una cobertura de hasta 3,600 m² y una altura máxima de 4.5 metros.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Lámparas</p>
+                      <p className="text-base font-bold text-slate-800">6 LED × 80W</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Cobertura</p>
+                      <p className="text-base font-bold text-slate-800">3,600 m²</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Altura máx.</p>
+                      <p className="text-base font-bold text-slate-800">4.5 m</p>
+                    </div>
+                  </div>
+                </div>
+              ) : product.slug === 'torre-iluminacion-luxm11' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">4 LED 240W · 176,000 lm · Generador diésel 5.5 kVA</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Torre de iluminación de máxima potencia con generador diésel integrado de 5.5 kVA. Equipada con 4 lámparas LED de 240W que producen 176,000 lúmenes, cubriendo hasta 9,300 m² con una altura de mástil de 8.5 metros. Remolcable y con rotación de 360°.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Lámparas</p>
+                      <p className="text-base font-bold text-slate-800">4 LED × 240W</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Lúmenes</p>
+                      <p className="text-base font-bold text-slate-800">176,000 lm</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Cobertura</p>
+                      <p className="text-base font-bold text-slate-800">9,300 m²</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Altura máx.</p>
+                      <p className="text-base font-bold text-slate-800">8.5 m</p>
+                    </div>
+                  </div>
+                </div>
+              ) : product.slug === 'torre-iluminacion-bone' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-green-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">100% Baterías de Litio · Cero Emisiones · Plug &amp; Play</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Torre de iluminación 100% eléctrica con baterías de litio LiFePO4. Equipada con 4 lámparas LED de 160W que producen 88,000 lúmenes, cubriendo hasta 2,650 m² con una altura de mástil de 7 metros. Cero emisiones, silenciosa y con sistema Plug &amp; Play.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Lámparas</p>
+                      <p className="text-base font-bold text-slate-800">4 LED × 160W</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Lúmenes</p>
+                      <p className="text-base font-bold text-slate-800">88,000 lm</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Cobertura</p>
+                      <p className="text-base font-bold text-slate-800">2,650 m²</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Autonomía</p>
+                      <p className="text-base font-bold text-slate-800">36 horas</p>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
@@ -1171,6 +1248,188 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               </div>
 
+            </div>
+          )}
+
+          {/* Torre LUX S11 - Detailed info */}
+          {product.slug === 'torre-iluminacion-lux-s11' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Tipo de iluminación', '6 lámparas LED de 80W cada una'],
+                        ['Cobertura', '3,600 m²'],
+                        ['Altura máxima del mástil', '4.5 metros'],
+                        ['Disponibilidad', 'Bajo pedido'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Aplicaciones</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Obras de construcción', 'Mantenimiento vial', 'Eventos', 'Iluminación industrial'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Torre LUXM11 - Detailed info */}
+          {product.slug === 'torre-iluminacion-luxm11' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Tipo de iluminación', '4 lámparas LED de 240W'],
+                        ['Flujo luminoso', '176,000 lúmenes'],
+                        ['Cobertura', '9,300 m²'],
+                        ['Altura máxima del mástil', '8.5 metros'],
+                        ['Generador', 'Diésel 5.5 kVA'],
+                        ['Autonomía', '80 horas'],
+                        ['Consumo', '0.35 L/h'],
+                        ['Nivel de ruido', '65 dB'],
+                        ['Rotación', '360°'],
+                        ['Protección', 'IP65'],
+                        ['Remolcable', 'Sí'],
+                        ['Origen', 'Italia'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Ventajas</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Generador diésel integrado</h4>
+                    <p className="text-sm text-slate-700">Motor diésel de 5.5 kVA con autonomía de 80 horas y consumo ultra bajo de 0.35 L/h.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Remolcable</h4>
+                    <p className="text-sm text-slate-700">Diseñada para transportarse fácilmente a cualquier sitio de trabajo.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Rotación 360°</h4>
+                    <p className="text-sm text-slate-700">Las lámparas giran 360° para dirigir la luz exactamente donde se necesita.</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-blue-800 mb-2">Protección IP65</h4>
+                    <p className="text-sm text-slate-700">Resistente al polvo y a chorros de agua, ideal para condiciones de obra.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Aplicaciones</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Obras de construcción', 'Mantenimiento vial', 'Minería', 'Eventos y rescate'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Torre B.ONE - Detailed info */}
+          {product.slug === 'torre-iluminacion-bone' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones Técnicas</h3>
+                <div className="overflow-hidden rounded-xl border shadow-sm">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-green-600 text-white">
+                        <th className="text-left p-4">Característica</th>
+                        <th className="text-left p-4">Especificación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ['Tipo de iluminación', '4 lámparas LED de 160W'],
+                        ['Flujo luminoso', '88,000 lúmenes'],
+                        ['Cobertura', '2,650 m²'],
+                        ['Altura máxima del mástil', '7 metros'],
+                        ['Fuente de energía', 'Baterías de litio LiFePO4'],
+                        ['Autonomía', '36 horas'],
+                        ['Emisiones', 'Cero emisiones'],
+                        ['Sistema', 'Plug & Play'],
+                        ['Protección', 'IP65'],
+                        ['Origen', 'Italia'],
+                      ].map(([caracteristica, especificacion], index) => (
+                        <tr key={caracteristica} className={`border-b border-slate-200 ${index % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                          <td className="p-4 font-medium text-slate-700">{caracteristica}</td>
+                          <td className="p-4 text-slate-600">{especificacion}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Ventajas</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div className="bg-green-50 border border-green-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-green-800 mb-2">Cero emisiones</h4>
+                    <p className="text-sm text-slate-700">Funciona 100% con baterías de litio LiFePO4. Sin combustibles fósiles, sin emisiones contaminantes.</p>
+                  </div>
+                  <div className="bg-green-50 border border-green-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-green-800 mb-2">Silenciosa</h4>
+                    <p className="text-sm text-slate-700">Sin motor de combustión, opera de forma silenciosa. Ideal para zonas urbanas y eventos.</p>
+                  </div>
+                  <div className="bg-green-50 border border-green-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-green-800 mb-2">Plug &amp; Play</h4>
+                    <p className="text-sm text-slate-700">Lista para usar. Se conecta y enciende sin configuración adicional.</p>
+                  </div>
+                  <div className="bg-green-50 border border-green-100 rounded-xl p-5">
+                    <h4 className="text-base font-bold text-green-800 mb-2">36 horas de autonomía</h4>
+                    <p className="text-sm text-slate-700">Baterías LiFePO4 de larga duración para jornadas completas sin recarga.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Aplicaciones</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Obras de construcción', 'Zonas urbanas', 'Eventos', 'Áreas protegidas'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 

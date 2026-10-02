@@ -17958,5 +17958,185 @@
       "multiple_of": 1
     },
     "extensions": {}
+  },
+  {
+    "id": 8244,
+    "name": "TORRE DE ILUMINACIÓN LUX S11",
+    "slug": "torre-iluminacion-lux-s11",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesorios.com.mx/producto/torre-iluminacion-lux-s11/",
+    "sku": "",
+    "short_description": "<h5><span style=\"color: #339966\"><strong>DISPONIBLE BAJO PEDIDO</strong></span></h5><h5><span style=\"color: #3366ff\"><strong>ILUMINACIÓN LED DE ALTA POTENCIA</strong></span></h5>",
+    "description": "<p>Torre de Iluminación LUX S11 – Iluminación LED potente y compacta para obras y mantenimiento.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "images": [
+      {
+        "id": 10001,
+        "src": "/Image/torres-iluminacion/torre-lux-s11.jpg",
+        "thumbnail": "/Image/torres-iluminacion/torre-lux-s11.jpg",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Torre de Iluminación LUX S11 DFAC",
+        "alt": "Torre de Iluminación LUX S11 con 6 lámparas LED de 80W"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Iluminación",
+        "slug": "iluminacion"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "low_stock_remaining": null,
+    "add_to_cart": {
+      "text": "Cotizar",
+      "description": ""
+    },
+    "average_rating": "0",
+    "review_count": 0
+  },
+  {
+    "id": 8245,
+    "name": "TORRE DE ILUMINACIÓN LUXM11 – LUXTOWER",
+    "slug": "torre-iluminacion-luxm11",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesorios.com.mx/producto/torre-iluminacion-luxm11/",
+    "sku": "",
+    "short_description": "<h5><span style=\"color: #339966\"><strong>DISPONIBLE BAJO PEDIDO</strong></span></h5><h5><span style=\"color: #3366ff\"><strong>GENERADOR DIÉSEL INTEGRADO</strong></span></h5>",
+    "description": "<p>Torre de Iluminación LUXM11 – Máxima potencia con generador diésel integrado.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "images": [
+      {
+        "id": 10002,
+        "src": "/Image/torres-iluminacion/torre-luxm11.jpg",
+        "thumbnail": "/Image/torres-iluminacion/torre-luxm11.jpg",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Torre de Iluminación LUXM11 DFAC",
+        "alt": "Torre de Iluminación LUXM11 Luxtower con generador diésel"
+      },
+      {
+        "id": 10003,
+        "src": "/Image/torres-iluminacion/torre-bone.jpg",
+        "thumbnail": "/Image/torres-iluminacion/torre-bone.jpg",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Torres de Iluminación Luxtower en bodega",
+        "alt": "Torres de Iluminación Luxtower con 4 lámparas LED"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Iluminación",
+        "slug": "iluminacion"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "low_stock_remaining": null,
+    "add_to_cart": {
+      "text": "Cotizar",
+      "description": ""
+    },
+    "average_rating": "0",
+    "review_count": 0
+  },
+  {
+    "id": 8246,
+    "name": "TORRE DE ILUMINACIÓN B.ONE – LUXTOWER",
+    "slug": "torre-iluminacion-bone",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesorios.com.mx/producto/torre-iluminacion-bone/",
+    "sku": "",
+    "short_description": "<h5><span style=\"color: #339966\"><strong>DISPONIBLE BAJO PEDIDO</strong></span></h5><h5><span style=\"color: #3366ff\"><strong>100% BATERÍAS DE LITIO · CERO EMISIONES</strong></span></h5>",
+    "description": "<p>Torre de Iluminación B.ONE – Iluminación 100% a baterías de litio, cero emisiones.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "images": [
+      {
+        "id": 10004,
+        "src": "/Image/torres-iluminacion/torre-bone.jpg",
+        "thumbnail": "/Image/torres-iluminacion/torre-bone.jpg",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Torre de Iluminación B.ONE DFAC",
+        "alt": "Torres de Iluminación B.ONE Luxtower a baterías de litio"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Iluminación",
+        "slug": "iluminacion"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "low_stock_remaining": null,
+    "add_to_cart": {
+      "text": "Cotizar",
+      "description": ""
+    },
+    "average_rating": "0",
+    "review_count": 0
   }
 ]
