@@ -20,6 +20,115 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "barra-roscada-5-8-cimbra",
+    title: "Barra roscada de 5/8\": para qué sirve y cómo se usa en la cimbra",
+    excerpt: "Un elemento clave para asegurar la cimbra en muros, columnas y trabes durante el colado. Revisamos sus características, el paso a paso de instalación, su capacidad de carga y los cuidados para reutilizarla obra tras obra.",
+    image: "/Image/blog-imagenes/30-sep-tuerca-mariposa/portada-barra-roscada-5-8-cimbra.webp",
+    category: "Cimbra",
+    location: "México",
+    author: "Equipo DFAC",
+    date: "2026-10-04",
+    readTime: "5 min",
+    content: [
+      {
+        heading: "¿Qué es una barra roscada de 5/8\"?",
+        paragraphs: [
+          "La barra roscada de 5/8\" es un elemento utilizado principalmente en trabajos de construcción para el aseguramiento y soporte de cimbras en muros, columnas y trabes. Su función es ayudar a mantener la cimbra en la posición adecuada durante el proceso de colado, especialmente cuando se trabaja con elementos de gran espesor.",
+          "Se trata de una barra fabricada mediante un proceso de rolado en frío (Cold Rolled), lo que permite obtener una pieza con alta resistencia y una cuerda adecuada para su utilización en sistemas de cimbra.",
+          "Por sus características, puede utilizarse como separador y soporte de cimbra, ayudando a mantener una separación uniforme entre los elementos de la cimbra durante el colado del concreto.",
+          "La barra cuenta con un diámetro de 5/8\" y puede encontrarse en longitudes de hasta 6 metros, lo que permite cortarla y adaptarla a las necesidades específicas de cada proyecto.",
+        ],
+      },
+      {
+        heading: "¿Para qué se utiliza?",
+        paragraphs: [
+          "La barra roscada se emplea principalmente para la colocación y aseguramiento de cimbras de madera, particularmente en:",
+          "• Muros de concreto.",
+          "• Columnas.",
+          "• Trabes.",
+          "• Elementos con grandes espesores de colado.",
+          "• Sistemas de cimbra que requieren una sujeción firme y uniforme.",
+          "Durante el proceso de instalación, la barra atraviesa la cimbra y se utiliza junto con tuercas mariposa con base para asegurar su posición.",
+        ],
+      },
+      {
+        heading: "¿Cómo se utiliza en la cimbra?",
+        paragraphs: [
+          "Una de las ventajas de este sistema es que la barra puede protegerse mediante un tubo de plástico, evitando que quede directamente ahogada en el concreto.",
+          "Esto permite retirar la barra después del colado y reutilizarla en trabajos posteriores, ayudando a optimizar el material utilizado en obra.",
+          "De manera general, el proceso consiste en:",
+          "• Colocar y modular la cimbra de acuerdo con las dimensiones del elemento.",
+          "• Instalar la barra roscada de 5/8\".",
+          "• Colocar el tubo de plástico como protección.",
+          "• Asegurar ambos extremos mediante tuercas mariposa con base.",
+          "• Verificar que la cimbra conserve la separación y posición necesarias.",
+          "• Realizar el colado del concreto.",
+          "• Una vez que corresponda, retirar la barra para poder reutilizarla.",
+        ],
+      },
+      {
+        heading: "Principales ventajas de la barra roscada",
+        paragraphs: [
+          "El uso de barras roscadas puede facilitar diferentes etapas del proceso de cimbrado. Entre sus principales cualidades se encuentran:",
+          "• Mayor rapidez en el cimbrado: permite realizar el armado y aseguramiento de la cimbra de manera más práctica.",
+          "• Mayor resistencia: su fabricación mediante rolado en frío proporciona características de resistencia adecuadas para su aplicación en sistemas de cimbra.",
+          "• Espesores más uniformes: al ayudar a mantener la posición de la cimbra, contribuye a obtener elementos de concreto con dimensiones más uniformes.",
+          "• Reutilización: al utilizar un tubo de plástico como protección, la barra puede retirarse después del colado y emplearse nuevamente.",
+          "• Adaptabilidad: las presentaciones de 6 metros permiten realizar cortes de acuerdo con las dimensiones requeridas en cada obra.",
+          "• Fácil corte: puede cortarse para adaptar su longitud a las necesidades específicas del proyecto.",
+          "• Mayor vida útil de la cimbra: su utilización adecuada ayuda a evitar abocardamientos y deformaciones ocasionadas por sistemas de sujeción inadecuados.",
+        ],
+      },
+      {
+        heading: "Capacidad y resistencia",
+        paragraphs: [
+          "De acuerdo con las especificaciones proporcionadas, la barra roscada de 5/8\" cuenta con una carga máxima de 14,950 kgf y un esfuerzo máximo de 7,550 kgf/cm².",
+          "Además, se especifica una resistencia superior a 20,000 lb, considerando un factor de seguridad de 2.",
+          "Estos valores son importantes para seleccionar correctamente el sistema de sujeción de acuerdo con las características de cada proyecto. La cantidad y distribución de barras no debe determinarse únicamente por una cifra general, ya que depende de factores como la modulación de la cimbra, el espesor del elemento y las condiciones específicas del colado.",
+        ],
+      },
+      {
+        heading: "Recomendaciones para su instalación",
+        paragraphs: [
+          "Para aprovechar correctamente la barra roscada de 5/8\", es importante considerar algunas recomendaciones:",
+          "• Realizar los cortes utilizando disco para acero, procurando no dañar la cuerda de la barra.",
+          "• Utilizar tuercas mariposa con base para asegurar correctamente la cimbra.",
+          "• Verificar que la longitud de la barra permita colocar una tuerca en cada extremo.",
+          "• Dejar como mínimo 5 cm de barra libre después de la zona de aseguramiento.",
+          "• Utilizar tubo de plástico cuando se requiera retirar y reutilizar la barra después del colado.",
+          "• Revisar que la barra y sus accesorios estén correctamente colocados antes de realizar el vaciado del concreto.",
+        ],
+      },
+      {
+        heading: "¿De qué depende el rendimiento?",
+        paragraphs: [
+          "El rendimiento de una barra roscada no es fijo, ya que depende directamente de la modulación de la cimbra y del espesor de diseño del colado.",
+          "Por esta razón, la cantidad de barras necesarias debe determinarse de acuerdo con las dimensiones del elemento que se va a cimbrar y con el sistema de cimbra utilizado.",
+        ],
+      },
+      {
+        heading: "Almacenamiento y conservación",
+        paragraphs: [
+          "Aunque la barra roscada no tiene una fecha de caducidad específica, se recomienda mantener un adecuado control del inventario y rotarlo cada seis meses.",
+          "Para conservarla correctamente se recomienda:",
+          "• Almacenarla en posición horizontal.",
+          "• Mantenerla en un lugar seco y ventilado.",
+          "• Colocarla sobre tarimas.",
+          "• Mantenerla bajo techo.",
+          "• Evitar condiciones que puedan favorecer la acumulación de humedad.",
+        ],
+      },
+      {
+        heading: "Una solución práctica para trabajos de cimbra",
+        paragraphs: [
+          "La barra roscada de 5/8\" es una alternativa práctica para los sistemas de cimbra que requieren sujeción, estabilidad y reutilización del material. Su capacidad de adaptación, posibilidad de corte y disponibilidad en longitudes de hasta 6 metros permiten utilizarla en diferentes configuraciones de obra.",
+          "Además, cuando se instala correctamente y se utiliza junto con los accesorios adecuados, puede contribuir a agilizar el proceso de cimbrado y a mantener dimensiones más uniformes durante el colado.",
+          "Importante: las capacidades de carga indicadas corresponden a las especificaciones proporcionadas del producto. Para determinar la cantidad, separación y configuración de las barras en una obra específica, deben considerarse las condiciones del proyecto y, cuando corresponda, las indicaciones del responsable estructural o de obra.",
+        ],
+      },
+    ],
+  },
+  {
     slug: 'tuerca-mariposa-con-base-sistemas-de-cimbra',
     title: 'Tuerca Mariposa con Base: seguridad y eficiencia para sistemas de cimbra',
     excerpt:
