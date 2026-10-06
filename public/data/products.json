@@ -18229,5 +18229,69 @@
       "maximum": 9999,
       "multiple_of": 1
     }
+  },
+  {
+    "id": 8248,
+    "name": "Viga H20",
+    "slug": "viga-h20",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesoriosdfac.com.mx/viga-h20",
+    "sku": "",
+    "short_description": "<p>Viga H20 de madera laminada de 3.90 m de largo, 0.20 m de alto y 0.08 m de ancho. Ideal para sistemas de cimbra en losas, muros y columnas. Compatible con cabezales y puntales metálicos.</p>",
+    "description": "<p>La Viga H20 es un elemento estructural de madera laminada utilizado en sistemas de cimbra para la construcción. Con medidas de 3.90 x 0.20 x 0.08 metros, ofrece alta resistencia y versatilidad para el soporte de losas, muros y columnas de concreto.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Precio a cotizar",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 8260,
+        "src": "/Image/Viga-H20/viga-h20-1.png",
+        "thumbnail": "/Image/Viga-H20/viga-h20-1.png",
+        "srcset": "/Image/Viga-H20/viga-h20-1.png",
+        "sizes": "(max-width: 450px) 100vw, 450px",
+        "name": "viga-h20-1",
+        "alt": "Viga H20 de madera laminada"
+      }
+    ],
+    "categories": [
+      {
+        "id": 46,
+        "name": "APUNTALAMIENTO",
+        "slug": "apuntalamiento"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Ver detalles de \"Viga H20\"",
+      "url": "https://cimbrayaccesoriosdfac.com.mx/viga-h20",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    }
   }
 ]

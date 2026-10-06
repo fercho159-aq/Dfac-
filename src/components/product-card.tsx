@@ -27,7 +27,9 @@ function cleanSearchParams(params: { [key: string]: string | string[] | undefine
 
 export function ProductCard({ product, searchParams }: ProductCardProps) {
   const imagePath = product.image || 'https://placehold.co/400x300.png';
-  const productLink = `/products/${product.slug}?${new URLSearchParams(cleanSearchParams(searchParams))}`;
+  const productLink = product.slug === 'viga-h20'
+    ? `/viga-h20`
+    : `/products/${product.slug}?${new URLSearchParams(cleanSearchParams(searchParams))}`;
   
   return (
     <Card className="flex flex-col h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
