@@ -207,6 +207,31 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               )}
 
+              {/* Productos complementarios para cabezal */}
+              {product.slug === 'cabezal-para-puntal' && (
+                <>
+                  <p className="text-xs text-slate-500 text-center italic mt-2">* La compra del cabezal no incluye la viga, puntal ni base estabilizadora. Consulta nuestros productos complementarios.</p>
+                  <div className="mt-4">
+                    <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                      {[
+                        { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                        { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-metalico-bodega-panoramica.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
+                        { href: "/products/base-estabilizadora", img: "/Image/base-estabilizadora-tripie.webp", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
+                      ].map((item) => (
+                        <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                          <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2 flex items-center justify-center bg-slate-50">
+                            <Image src={item.img} alt={item.name} fill className="object-contain p-2 group-hover:scale-105 transition-transform" />
+                          </div>
+                          <h4 className="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                          <p className="text-xs text-slate-500 mt-1 hidden sm:block">{item.desc}</p>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Productos complementarios - carrusel debajo de imágenes */}
               {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base' || product.slug === 'tubo-para-barra-roscada' || product.slug === 'cono-para-cimbra') && (
                 <div className="mt-6">
