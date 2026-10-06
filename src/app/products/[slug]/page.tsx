@@ -31,6 +31,7 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   ],
   'puntal-metalico-extensible-italiano': [
     '/archivos/fichas-tecnicas/ficha-tecnica-puntal-telescopico.pdf',
+    '/archivos/fichas-tecnicas/ficha2-tecnica-puntal-telescopico.pdf',
   ],
 };
 
@@ -116,6 +117,21 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
             <div className="space-y-4">
               <Carousel className="w-full">
                 <CarouselContent>
+                  {product.slug === 'puntal-metalico-extensible-italiano' && (
+                    <CarouselItem key="puntal-video">
+                      <div className="aspect-square relative w-full overflow-hidden rounded-lg border bg-black flex items-center justify-center">
+                        <video
+                          src="/Video/VIDEO-2025-08-05-12-37-33.mp4"
+                          className="w-full h-full object-contain"
+                          controls
+                          muted
+                          autoPlay
+                          loop
+                          playsInline
+                        />
+                      </div>
+                    </CarouselItem>
+                  )}
                   {product.images && product.images.length > 0 ? (
                     product.images.map((img: ProductImage) => (
                       <CarouselItem key={img.id}>
