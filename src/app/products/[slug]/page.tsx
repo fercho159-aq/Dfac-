@@ -13,6 +13,7 @@ import { ContactSection } from '@/components/contact-section';
 import { ProductCard } from '@/components/product-card';
 import { Suspense } from 'react';
 import { WhatsAppButton } from './WhatsAppButton';
+import { ZoomableImage } from './ImageZoom';
 import { CertificacionDIN } from './CertificacionDIN';
 
 const FICHAS_TECNICAS: Record<string, string[]> = {
@@ -118,15 +119,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   {product.images && product.images.length > 0 ? (
                     product.images.map((img: ProductImage) => (
                       <CarouselItem key={img.id}>
-                        <div className="aspect-square relative w-full overflow-hidden rounded-lg border">
-                          <Image
-                            src={img.src || 'https://placehold.co/600x600.png'}
-                            alt={product.name}
-                            fill
-                            className="object-contain"
-                            data-ai-hint="product image"
-                          />
-                        </div>
+                        <ZoomableImage src={img.src || 'https://placehold.co/600x600.png'} alt={product.name} />
                       </CarouselItem>
                     ))
                   ) : (
@@ -160,9 +153,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <h3 className="text-lg font-bold text-slate-800 mb-3">Accesorios para puntales</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[
-                      { href: "/products/base-estabilizadora", img: "/Image/imagen_2023-06-16_151824678.png", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
+                      { href: "/products/base-estabilizadora", img: "/Image/base-estabilizadora-tripie.webp", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
                       { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
-                      { href: "/products/cabezal-para-puntal", img: "/Image/Recurso-2.png.webp", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
+                      { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal/cabezal-producto.jpeg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                     ].map((item) => (
                       <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
                         <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2 flex items-center justify-center bg-slate-50">
@@ -182,9 +175,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <h3 className="text-lg font-bold text-slate-800 mb-3">Complementa con puntales</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[
-                      { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-metalico-bodega.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
+                      { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-metalico-bodega-panoramica.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
                       { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
-                      { href: "/products/cabezal-para-puntal", img: "/Image/Recurso-2.png.webp", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
+                      { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal/cabezal-producto.jpeg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                     ].map((item) => (
                       <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
                         <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2 flex items-center justify-center bg-slate-50">
@@ -371,6 +364,25 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <p className="text-xs text-slate-500 mb-1">Reutilizable</p>
                       <p className="text-base font-bold text-slate-800">Sí</p>
                     </div>
+                  </div>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Piezas por empaque</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso pieza (grs)</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso empaque (kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="px-4 py-2 font-bold text-slate-800">1,500</td>
+                          <td className="px-4 py-2 font-bold text-slate-800">8.1</td>
+                          <td className="px-4 py-2 font-bold text-slate-800">12.3</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               ) : product.slug === 'tuerca-mariposa-con-base' ? (
@@ -582,6 +594,30 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
                       <p className="text-xs text-slate-500 mb-1">Autonomía</p>
                       <p className="text-base font-bold text-slate-800">36 horas</p>
+                    </div>
+                  </div>
+                </div>
+              ) : product.slug === 'cabezal-para-puntal' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Acero galvanizado · 4 vías · Compatible con vigas H20</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El cabezal para puntal es un accesorio fabricado en acero galvanizado, diseñado para facilitar el apoyo, posicionamiento y estabilización de vigas de madera H20 sobre puntales metálicos telescópicos. Su diseño permite colocar una o dos vigas, facilitando diferentes configuraciones de apoyo de acuerdo con las necesidades del sistema de cimbrado.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Acero Galvanizado</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Configuración</p>
+                      <p className="text-base font-bold text-slate-800">4 Vías</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Compatible</p>
+                      <p className="text-base font-bold text-slate-800">Vigas H20</p>
                     </div>
                   </div>
                 </div>
@@ -1451,6 +1487,52 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+          )}
+
+          {product.slug === 'cabezal-para-puntal' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                  <span className="w-8 h-1 bg-blue-600 rounded-full"></span>
+                  Principales Ventajas
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    { title: 'Acero Galvanizado', desc: 'Resistencia y durabilidad para uso en obra' },
+                    { title: '4 Vías', desc: 'Orientar las vigas en diferentes direcciones' },
+                    { title: 'Compatible con H20', desc: 'Apoyo de una o dos vigas según configuración' },
+                    { title: 'Sin Clavos', desc: 'Reducción de perforaciones o daños en las vigas' },
+                    { title: 'Montaje Rápido', desc: 'Optimiza tiempos y mano de obra en el armado' },
+                    { title: 'Apoyo Simple o Solape', desc: 'Diferentes configuraciones según necesidad' },
+                    { title: 'Estabilización', desc: 'Mantiene vigas correctamente posicionadas' },
+                    { title: 'Versátil', desc: 'Para diferentes configuraciones de encofrado' },
+                  ].map((item) => (
+                    <div key={item.title} className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                      <h3 className="text-sm font-bold text-blue-800 mb-1">{item.title}</h3>
+                      <p className="text-xs text-slate-600">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                  <span className="w-8 h-1 bg-blue-600 rounded-full"></span>
+                  Aplicaciones
+                </h2>
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
+                  <p className="text-sm md:text-base text-slate-700">
+                    Ideal para sistemas de cimbrado y encofrado con puntales metálicos telescópicos, especialmente en configuraciones que requieren apoyar y estabilizar una o dos vigas H20.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                <p className="text-xs md:text-sm text-amber-800">
+                  <strong>Nota:</strong> El cabezal es un elemento de apoyo y posicionamiento; la capacidad de carga del sistema depende de factores como el puntal utilizado, separación entre apoyos, configuración de las vigas, geometría de la cimbra y condiciones específicas de la obra.
+                </p>
               </div>
             </div>
           )}

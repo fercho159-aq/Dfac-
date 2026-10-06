@@ -222,7 +222,7 @@ export default function VigaH20Page() {
             {/* Specifications Card */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
               <h3 className="text-2xl font-bold mb-2 text-primary">
-                VIGA H20 3.90x0.20x0.04 METROS CON TAPÓN
+                VIGA H20 3.90x0.20x0.08 METROS CON TAPÓN
               </h3>
               <p className="text-slate-300 mb-6">
                 Fabricada con madera de alta calidad y un diseño robusto, nuestra viga H-20 garantiza la máxima eficiencia y seguridad en sus proyectos de construcción. El tapón protector integrado aumenta su durabilidad.
@@ -253,7 +253,7 @@ export default function VigaH20Page() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400">Ancho</p>
-                    <p className="text-xl font-bold">0.04 metros (4 cm)</p>
+                    <p className="text-xl font-bold">0.08 metros (8 cm)</p>
                   </div>
                 </div>
               </div>

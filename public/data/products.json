@@ -18156,5 +18156,78 @@
     },
     "average_rating": "0",
     "review_count": 0
+  },
+  {
+    "id": 8247,
+    "name": "CABEZAL PARA PUNTAL",
+    "slug": "cabezal-para-puntal",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesorios.com.mx/producto/cabezal-para-puntal/",
+    "sku": "",
+    "short_description": "<p>Cabezal para puntal en acero galvanizado, configuración de 4 vías para vigas H20</p>",
+    "description": "<p>El cabezal para puntal es un accesorio fabricado en acero galvanizado, diseñado para facilitar el apoyo, posicionamiento y estabilización de vigas de madera H20 sobre puntales metálicos telescópicos.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "",
+      "regular_price": "",
+      "sale_price": "",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 8248,
+        "src": "/Image/cabezal-para-puntal/cabezal-producto.jpeg",
+        "thumbnail": "/Image/cabezal-para-puntal/cabezal-producto.jpeg",
+        "srcset": "",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "Cabezal para Puntal DFAC",
+        "alt": "Cabezal para puntal acero galvanizado 4 vías DFAC"
+      },
+      {
+        "id": 8249,
+        "src": "/Image/cabezal-para-puntal/cabezal-en-uso.jpeg",
+        "thumbnail": "/Image/cabezal-para-puntal/cabezal-en-uso.jpeg",
+        "srcset": "",
+        "sizes": "(max-width: 1080px) 100vw, 1080px",
+        "name": "Cabezal para puntal en uso con vigas H20",
+        "alt": "Cabezal para puntal instalado con vigas H20 sobre puntal metálico"
+      }
+    ],
+    "categories": [
+      {
+        "id": 46,
+        "name": "APUNTALAMIENTO",
+        "slug": "apuntalamiento",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/apuntalamiento/"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Ver detalles de \"CABEZAL PARA PUNTAL\"",
+      "url": "https://cimbrayaccesorios.com.mx/producto/cabezal-para-puntal/",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    }
   }
 ]
