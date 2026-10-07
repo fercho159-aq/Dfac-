@@ -15,17 +15,17 @@ const heroSlides = [
   {
     title: "Viga H-20: Potencia y Versatilidad para sus Encofrados",
     description: "Nuestra viga de madera de alta resistencia es la solución ideal para sistemas de encofrado, ofreciendo durabilidad, ligereza y una capacidad de carga excepcional. ¡Entregamos en menos de 24 horas en CDMX y Zona Metropolitana!",
-    image: "/Image/Viga-H20/viga-h20-1.png"
+    image: "/Image/Viga-H20/viga-h20-portada.jpeg"
   },
   {
     title: "Innovación y Calidad en Cada Proyecto",
     description: "Comprometidos con la excelencia, ofrecemos productos que superan los estándares de la industria para garantizar la seguridad y eficiencia en su obra.",
-    image: "/Image/Viga-H20/viga-h20-2.png"
+    image: "/Image/Viga-H20/viga-h20-panoramica.jpeg"
   },
   {
     title: "Soluciones a la Medida de sus Necesidades",
     description: "Nuestro equipo de expertos está listo para asesorarle y proveerle las mejores soluciones de encofrado para optimizar sus resultados.",
-    image: "/Image/Viga-H20/viga-h20-3.png"
+    image: "/Image/Viga-H20/viga-h20-puntales-1.jpeg"
   }
 ];
 
@@ -58,9 +58,14 @@ const advantages = [
 ];
 
 const productImages = [
-  { src: "/Image/Viga-H20/viga-h20-1.png", alt: "Viga H-20 vista lateral" },
-  { src: "/Image/Viga-H20/viga-h20-2.png", alt: "Vigas H-20 apiladas en almacén" },
-  { src: "/Image/Viga-H20/viga-h20-3.png", alt: "Vigas H-20 en uso" }
+  { src: "/Image/Viga-H20/viga-h20-portada.jpeg", alt: "Vigas H20 apiladas en bodega DFAC" },
+  { src: "/Image/Viga-H20/viga-h20-panoramica.jpeg", alt: "Vigas H20 vista panorámica" },
+  { src: "/Image/Viga-H20/viga-h20-frente.jpeg", alt: "Vigas H20 vista frontal" },
+  { src: "/Image/Viga-H20/viga-h20-lateral.jpeg", alt: "Vigas H20 vista lateral" },
+  { src: "/Image/Viga-H20/viga-h20-extremos.jpeg", alt: "Vigas H20 extremos rojos" },
+  { src: "/Image/Viga-H20/viga-h20-bodega.jpeg", alt: "Vigas H20 en bodega" },
+  { src: "/Image/Viga-H20/viga-h20-puntales-1.jpeg", alt: "Vigas H20 sobre puntales metálicos" },
+  { src: "/Image/Viga-H20/viga-h20-puntales-2.jpeg", alt: "Vigas H20 sobre puntales vista lateral" },
 ];
 
 export default function VigaH20Page() {
@@ -190,7 +195,7 @@ export default function VigaH20Page() {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                 <Image
-                  src="/Image/Viga-H20/viga-h20-1.png"
+                  src="/Image/Viga-H20/viga-h20-portada.jpeg"
                   alt="Viga H-20"
                   width={600}
                   height={400}
@@ -200,8 +205,8 @@ export default function VigaH20Page() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-xl overflow-hidden shadow-lg border border-white/10">
                   <Image
-                    src="/Image/Viga-H20/viga-h20-2.png"
-                    alt="Vigas H-20 apiladas"
+                    src="/Image/Viga-H20/viga-h20-panoramica.jpeg"
+                    alt="Vigas H-20 panorámica"
                     width={300}
                     height={200}
                     className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
@@ -209,7 +214,7 @@ export default function VigaH20Page() {
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg border border-white/10">
                   <Image
-                    src="/Image/Viga-H20/viga-h20-3.png"
+                    src="/Image/Viga-H20/viga-h20-puntales-1.jpeg"
                     alt="Vigas H-20 en uso"
                     width={300}
                     height={200}
@@ -393,7 +398,7 @@ export default function VigaH20Page() {
       <section className="py-20 bg-gradient-to-r from-primary via-primary to-yellow-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/Image/Viga-H20/viga-h20-1.png"
+            src="/Image/Viga-H20/viga-h20-portada.jpeg"
             alt="Background"
             fill
             className="object-cover"

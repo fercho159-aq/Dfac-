@@ -18261,12 +18261,75 @@
     "images": [
       {
         "id": 8260,
-        "src": "/Image/Viga-H20/viga-h20-1.png",
-        "thumbnail": "/Image/Viga-H20/viga-h20-1.png",
-        "srcset": "/Image/Viga-H20/viga-h20-1.png",
-        "sizes": "(max-width: 450px) 100vw, 450px",
-        "name": "viga-h20-1",
-        "alt": "Viga H20 de madera laminada"
+        "src": "/Image/Viga-H20/viga-h20-portada.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-portada.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-portada",
+        "alt": "Viga H20 apiladas en bodega DFAC"
+      },
+      {
+        "id": 8261,
+        "src": "/Image/Viga-H20/viga-h20-panoramica.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-panoramica.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-panoramica",
+        "alt": "Viga H20 vista panorámica"
+      },
+      {
+        "id": 8262,
+        "src": "/Image/Viga-H20/viga-h20-frente.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-frente.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-frente",
+        "alt": "Vigas H20 vista frontal"
+      },
+      {
+        "id": 8263,
+        "src": "/Image/Viga-H20/viga-h20-lateral.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-lateral.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-lateral",
+        "alt": "Vigas H20 vista lateral"
+      },
+      {
+        "id": 8264,
+        "src": "/Image/Viga-H20/viga-h20-extremos.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-extremos.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-extremos",
+        "alt": "Vigas H20 extremos rojos"
+      },
+      {
+        "id": 8265,
+        "src": "/Image/Viga-H20/viga-h20-bodega.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-bodega.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-bodega",
+        "alt": "Vigas H20 en bodega"
+      },
+      {
+        "id": 8266,
+        "src": "/Image/Viga-H20/viga-h20-puntales-1.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-puntales-1.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-puntales-1",
+        "alt": "Vigas H20 sobre puntales metálicos"
+      },
+      {
+        "id": 8267,
+        "src": "/Image/Viga-H20/viga-h20-puntales-2.jpeg",
+        "thumbnail": "/Image/Viga-H20/viga-h20-puntales-2.jpeg",
+        "srcset": "",
+        "sizes": "",
+        "name": "viga-h20-puntales-2",
+        "alt": "Vigas H20 sobre puntales vista lateral"
       }
     ],
     "categories": [
