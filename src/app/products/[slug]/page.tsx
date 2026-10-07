@@ -36,6 +36,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'cabezal-para-puntal': [
     '/archivos/fichas-tecnicas/ficha-tecnica-cabezal-para-puntal.pdf',
   ],
+  'base-estabilizadora': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-base-estabilizadora.pdf',
+  ],
 };
 
 // New component for related products
