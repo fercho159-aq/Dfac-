@@ -39,6 +39,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'base-estabilizadora': [
     '/archivos/fichas-tecnicas/ficha-tecnica-base-estabilizadora.pdf',
   ],
+  'tirante-tipo-mono-con-rondana': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-mono-con-rondana-neopreno.pdf',
+  ],
 };
 
 // New component for related products
@@ -666,6 +669,49 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <p className="text-xs text-slate-500 mb-1">Compatible</p>
                       <p className="text-base font-bold text-slate-800">Vigas H20</p>
                     </div>
+                  </div>
+                </div>
+              ) : product.slug === 'tirante-tipo-mono-con-rondana' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Acero F11 · Rondana de neopreno · 2,200 kg de resistencia</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Moños (tirantes) para cimbra con rondana de neopreno con la más confiable calidad en fabricación. Los moños están elaborados con acero F11 de alto carbón, con una rondana plástica (rondana de neopreno) que sirve como <strong>sellador en muros expuestos a la humedad como albercas, cisternas, tanques, etc.</strong>
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                    Cuentan con una resistencia de 2,200 kg/m², además de conos de poliestireno anti-adherente al concreto y un par de muescas de quiebre inmediato para eliminar el material sobrante al momento de retirar la cimbra. Su cavidad permite su fácil extracción después de haber retirado las formas.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Especificaciones técnicas</h4>
+                  <div className="overflow-hidden rounded-xl border shadow-sm mb-4">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        <tr className="border-b bg-slate-50">
+                          <td className="p-3 font-semibold text-slate-700 w-1/3">Material</td>
+                          <td className="p-3 text-slate-800">Fabricados con acero de alto carbón 5.8 mm de diámetro</td>
+                        </tr>
+                        <tr className="border-b">
+                          <td className="p-3 font-semibold text-slate-700">Tipo de muesca</td>
+                          <td className="p-3 text-slate-800">Para quiebre inmediato a 25 mm del extremo angosto del cono</td>
+                        </tr>
+                        <tr className="border-b bg-slate-50">
+                          <td className="p-3 font-semibold text-slate-700">Material del cono</td>
+                          <td className="p-3 text-slate-800">Poliestireno rígido (paredes pulidas)</td>
+                        </tr>
+                        <tr className="border-b">
+                          <td className="p-3 font-semibold text-slate-700">Capacidad de carga</td>
+                          <td className="p-3 text-slate-800">Recomendada de 1,350 kg. Se recomienda utilizar 8 piezas por hoja de triplay como mínimo</td>
+                        </tr>
+                        <tr className="bg-slate-50">
+                          <td className="p-3 font-semibold text-slate-700">Resistencia máxima</td>
+                          <td className="p-3 text-slate-800">2,200 kg</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4">
+                    <p className="text-sm md:text-base text-slate-800"><strong>NOTA:</strong> SOMOS FABRICANTES. Fabricamos medidas específicas.</p>
                   </div>
                 </div>
               ) : (
