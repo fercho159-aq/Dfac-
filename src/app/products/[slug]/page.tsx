@@ -240,6 +240,34 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </>
               )}
 
+              {/* Productos complementarios para moño con rondana */}
+              {product.slug === 'tirante-tipo-mono-con-rondana' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/cuna-de-acero", img: "/Image/CA01-IMAGEN-1.jpg", name: "Cuñas de acero", desc: "Para fijar y asegurar el moño en la cimbra" },
+                        { href: "/products/disco-separador", img: "/Image/DS200-IMAGEN-1.jpg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/C0020-2-IMAGEN-1.jpg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente al concreto" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                            <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                              <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                            <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                  </Carousel>
+                </div>
+              )}
+
               {/* Productos complementarios - carrusel debajo de imágenes */}
               {(product.slug === 'barra-roscada-2' || product.slug === 'tuerca-mariposa-con-base' || product.slug === 'tubo-para-barra-roscada' || product.slug === 'cono-para-cimbra') && (
                 <div className="mt-6">
