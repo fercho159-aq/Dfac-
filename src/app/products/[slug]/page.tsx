@@ -31,7 +31,6 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   ],
   'puntal-metalico-extensible-italiano': [
     '/archivos/fichas-tecnicas/ficha-tecnica-puntal-telescopico.pdf',
-    '/archivos/fichas-tecnicas/ficha2-tecnica-puntal-telescopico.pdf',
   ],
   'cabezal-para-puntal': [
     '/archivos/fichas-tecnicas/ficha-tecnica-cabezal-para-puntal.pdf',
