@@ -16629,48 +16629,52 @@
     "images": [
       {
         "id": 7614,
-        "src": "/Image/MONO-DE-20CM-CON-NEOPRENO.png",
-        "thumbnail": "/Image/MONO-DE-20CM-CON-NEOPRENO-300x300.png",
-        "srcset": "/Image/MONO-DE-20CM-CON-NEOPRENO.png 1280w, /Image/MONO-DE-20CM-CON-NEOPRENO-300x300.png 300w, /Image/MONO-DE-20CM-CON-NEOPRENO-1024x1024.png 1024w, /Image/MONO-DE-20CM-CON-NEOPRENO-150x150.png 150w, /Image/MONO-DE-20CM-CON-NEOPRENO-768x768.png 768w, /Image/MONO-DE-20CM-CON-NEOPRENO-720x720.png 720w, /Image/MONO-DE-20CM-CON-NEOPRENO-600x600.png 600w, /Image/MONO-DE-20CM-CON-NEOPRENO-100x100.png 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "MOÑO DE 20CM CON NEOPRENO",
-        "alt": ""
+        "src": "/Image/MONO-NEOPRENO-portada.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-portada.jpg",
+        "name": "MONO-NEOPRENO-portada",
+        "alt": "Moños para cimbra con rondana de neopreno - vista frontal"
       },
       {
         "id": 7613,
-        "src": "/Image/MONO-DE-20CM-CON-NEOPRENO-COTA.png",
-        "thumbnail": "/Image/MONO-DE-20CM-CON-NEOPRENO-COTA-300x300.png",
-        "srcset": "/Image/MONO-DE-20CM-CON-NEOPRENO-COTA.png 1280w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-300x300.png 300w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-1024x1024.png 1024w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-150x150.png 150w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-768x768.png 768w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-720x720.png 720w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-600x600.png 600w, /Image/MONO-DE-20CM-CON-NEOPRENO-COTA-100x100.png 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "MOÑO DE 20CM CON NEOPRENO COTA",
-        "alt": ""
+        "src": "/Image/MONO-NEOPRENO-monos-diagonal.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-monos-diagonal.jpg",
+        "name": "MONO-NEOPRENO-monos-diagonal",
+        "alt": "Moños con rondana de neopreno - vista en diagonal"
       },
       {
         "id": 7609,
-        "src": "/Image/1MONO-DE-20CM-CON-NEOPRENO.png",
-        "thumbnail": "/Image/1MONO-DE-20CM-CON-NEOPRENO-300x300.png",
-        "srcset": "/Image/1MONO-DE-20CM-CON-NEOPRENO.png 1280w, /Image/1MONO-DE-20CM-CON-NEOPRENO-300x300.png 300w, /Image/1MONO-DE-20CM-CON-NEOPRENO-1024x1024.png 1024w, /Image/1MONO-DE-20CM-CON-NEOPRENO-150x150.png 150w, /Image/1MONO-DE-20CM-CON-NEOPRENO-768x768.png 768w, /Image/1MONO-DE-20CM-CON-NEOPRENO-720x720.png 720w, /Image/1MONO-DE-20CM-CON-NEOPRENO-600x600.png 600w, /Image/1MONO-DE-20CM-CON-NEOPRENO-100x100.png 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "1MOÑO DE 20CM CON NEOPRENO",
-        "alt": ""
+        "src": "/Image/MONO-NEOPRENO-detalle-cono.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-detalle-cono.jpg",
+        "name": "MONO-NEOPRENO-detalle-cono",
+        "alt": "Detalle del cono y rondana de neopreno del moño"
       },
       {
         "id": 7610,
-        "src": "/Image/2MONO-DE-20CM-CON-NEOPRENO.png",
-        "thumbnail": "/Image/2MONO-DE-20CM-CON-NEOPRENO-300x300.png",
-        "srcset": "/Image/2MONO-DE-20CM-CON-NEOPRENO.png 1280w, /Image/2MONO-DE-20CM-CON-NEOPRENO-300x300.png 300w, /Image/2MONO-DE-20CM-CON-NEOPRENO-1024x1024.png 1024w, /Image/2MONO-DE-20CM-CON-NEOPRENO-150x150.png 150w, /Image/2MONO-DE-20CM-CON-NEOPRENO-768x768.png 768w, /Image/2MONO-DE-20CM-CON-NEOPRENO-720x720.png 720w, /Image/2MONO-DE-20CM-CON-NEOPRENO-600x600.png 600w, /Image/2MONO-DE-20CM-CON-NEOPRENO-100x100.png 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "2MOÑO DE 20CM CON NEOPRENO",
-        "alt": ""
+        "src": "/Image/MONO-NEOPRENO-detalle-mono.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-detalle-mono.jpg",
+        "name": "MONO-NEOPRENO-detalle-mono",
+        "alt": "Detalle del moño con dos conos y rondana central"
       },
       {
         "id": 7611,
-        "src": "/Image/3MONO-DE-20CM-CON-NEOPRENO.png",
-        "thumbnail": "/Image/3MONO-DE-20CM-CON-NEOPRENO-300x300.png",
-        "srcset": "/Image/3MONO-DE-20CM-CON-NEOPRENO.png 1280w, /Image/3MONO-DE-20CM-CON-NEOPRENO-300x300.png 300w, /Image/3MONO-DE-20CM-CON-NEOPRENO-1024x1024.png 1024w, /Image/3MONO-DE-20CM-CON-NEOPRENO-150x150.png 150w, /Image/3MONO-DE-20CM-CON-NEOPRENO-768x768.png 768w, /Image/3MONO-DE-20CM-CON-NEOPRENO-720x720.png 720w, /Image/3MONO-DE-20CM-CON-NEOPRENO-600x600.png 600w, /Image/3MONO-DE-20CM-CON-NEOPRENO-100x100.png 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "3MOÑO DE 20CM CON NEOPRENO",
-        "alt": ""
+        "src": "/Image/MONO-NEOPRENO-atado-vertical.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-atado-vertical.jpg",
+        "name": "MONO-NEOPRENO-atado-vertical",
+        "alt": "Atado de moños con rondana de neopreno - presentación vertical"
+      },
+      {
+        "id": 90005,
+        "src": "/Image/MONO-NEOPRENO-atado-horizontal.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-atado-horizontal.jpg",
+        "name": "MONO-NEOPRENO-atado-horizontal",
+        "alt": "Atado de moños con rondana de neopreno - presentación horizontal"
+      },
+      {
+        "id": 90006,
+        "src": "/Image/MONO-NEOPRENO-medidas-20cm.jpg",
+        "thumbnail": "/Image/MONO-NEOPRENO-medidas-20cm.jpg",
+        "name": "MONO-NEOPRENO-medidas-20cm",
+        "alt": "Ficha de medidas del moño con neopreno de 20 cm"
       }
     ],
     "categories": [
