@@ -178,7 +178,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[
                       { href: "/products/base-estabilizadora", img: "/Image/base-estabilizadora-tripie.webp", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
-                      { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                      { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-fondo-blanco.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
                       { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal/cabezal-producto.jpeg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                     ].map((item) => (
                       <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -199,8 +199,8 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <h3 className="text-lg font-bold text-slate-800 mb-3">Complementa con puntales</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {[
-                      { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-metalico-bodega-panoramica.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
-                      { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                      { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-italiano-fondo-blanco.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
+                      { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-fondo-blanco.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
                       { href: "/products/cabezal-para-puntal", img: "/Image/cabezal-para-puntal/cabezal-producto.jpeg", name: "Cabezal para Puntal", desc: "Cabezal de soporte para vigas y sistemas de apuntalamiento" },
                     ].map((item) => (
                       <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -223,8 +223,8 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                       {[
-                        { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-1.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
-                        { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-metalico-bodega-panoramica.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
+                        { href: "https://www.cimbrayaccesoriosdfac.com.mx/viga-h20", img: "/Image/Viga-H20/viga-h20-fondo-blanco.png", name: "Viga H20", desc: "Viga de madera laminada para sistemas de cimbra" },
+                        { href: "/products/puntal-metalico-extensible-italiano", img: "/Image/puntal-italiano-fondo-blanco.png", name: "Puntal Metálico Extensible", desc: "Puntal italiano con certificación europea" },
                         { href: "/products/base-estabilizadora", img: "/Image/base-estabilizadora-tripie.webp", name: "Base Estabilizadora Trípie", desc: "Base estabilizadora para pie derecho (trípie)" },
                       ].map((item) => (
                         <Link key={item.href} href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
