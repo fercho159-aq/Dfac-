@@ -17310,49 +17310,39 @@
     "review_count": 0,
     "images": [
       {
-        "id": 7591,
+        "id": 9001,
+        "src": "/Image/mono-portada.jpeg",
+        "thumbnail": "/Image/mono-portada.jpeg",
+        "name": "mono-portada",
+        "alt": "Moño para cimbra - vista individual vertical"
+      },
+      {
+        "id": 9002,
         "src": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg",
-        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-300x300.jpeg",
-        "srcset": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg 1280w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-300x300.jpeg 300w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1024x1024.jpeg 1024w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-150x150.jpeg 150w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-768x768.jpeg 768w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-720x720.jpeg 720w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-600x600.jpeg 600w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-100x100.jpeg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "WhatsApp Image 2023-12-29 at 11.23.16 AM",
-        "alt": ""
+        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg",
+        "name": "mono-medidas",
+        "alt": "Moño para cimbra - medidas 10cm"
       },
       {
-        "id": 7592,
-        "src": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4.jpeg",
-        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-300x300.jpeg",
-        "srcset": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4.jpeg 1280w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-300x300.jpeg 300w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-1024x1024.jpeg 1024w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-150x150.jpeg 150w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-768x768.jpeg 768w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-720x720.jpeg 720w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-600x600.jpeg 600w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-4-100x100.jpeg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "WhatsApp Image 2023-12-29 at 11.23.16 AM (4)",
-        "alt": ""
+        "id": 9003,
+        "src": "/Image/mono-dos-monos.jpeg",
+        "thumbnail": "/Image/mono-dos-monos.jpeg",
+        "name": "mono-dos-monos",
+        "alt": "Moños para cimbra - vista de dos moños en diagonal"
       },
       {
-        "id": 7595,
-        "src": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1.jpeg",
-        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-300x300.jpeg",
-        "srcset": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1.jpeg 1280w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-300x300.jpeg 300w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-1024x1024.jpeg 1024w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-150x150.jpeg 150w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-768x768.jpeg 768w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-720x720.jpeg 720w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-600x600.jpeg 600w, /Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM-1-100x100.jpeg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "WhatsApp Image 2023-12-29 at 11.23.16 AM (1)",
-        "alt": ""
+        "id": 9004,
+        "src": "/Image/mono-detalle.jpeg",
+        "thumbnail": "/Image/mono-detalle.jpeg",
+        "name": "mono-detalle",
+        "alt": "Moño para cimbra - detalle de conos"
       },
       {
-        "id": 7590,
-        "src": "/Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM.jpeg",
-        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-300x300.jpeg",
-        "srcset": "/Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM.jpeg 1280w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-300x300.jpeg 300w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-1024x1024.jpeg 1024w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-150x150.jpeg 150w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-768x768.jpeg 768w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-720x720.jpeg 720w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-600x600.jpeg 600w, /Image/WhatsApp-Image-2023-12-29-at-11.23.15-AM-100x100.jpeg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "WhatsApp Image 2023-12-29 at 11.23.15 AM",
-        "alt": ""
-      },
-      {
-        "id": 6739,
-        "src": "/Image/codigo-de-colores2-scaled.jpg",
-        "thumbnail": "/Image/codigo-de-colores2-300x300.jpg",
-        "srcset": "/Image/codigo-de-colores2-scaled.jpg 2560w, /Image/codigo-de-colores2-300x300.jpg 300w, /Image/codigo-de-colores2-1024x1024.jpg 1024w, /Image/codigo-de-colores2-150x150.jpg 150w, /Image/codigo-de-colores2-768x768.jpg 768w, /Image/codigo-de-colores2-1536x1536.jpg 1536w, /Image/codigo-de-colores2-2048x2048.jpg 2048w, /Image/codigo-de-colores2-720x720.jpg 720w, /Image/codigo-de-colores2-600x600.jpg 600w, /Image/codigo-de-colores2-100x100.jpg 100w",
-        "sizes": "(max-width: 2560px) 100vw, 2560px",
-        "name": "codigo-de-colores2",
-        "alt": ""
+        "id": 9005,
+        "src": "/Image/mono-codigo-colores.jpeg",
+        "thumbnail": "/Image/mono-codigo-colores.jpeg",
+        "name": "mono-codigo-colores",
+        "alt": "Código de colores de moños para cimbra"
       }
     ],
     "categories": [
@@ -17961,7 +17951,7 @@
       "multiple_of": 1
     },
     "extensions": {},
-    "image": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg"
+    "image": "/Image/mono-portada.jpeg"
   },
   {
     "id": 8244,
