@@ -20,6 +20,60 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'monos-para-cimbra-dfac-sujecion-muros-y-trabes',
+    title: 'Moños para cimbra DFAC: sujeción firme y espesores constantes en muros y trabes',
+    excerpt:
+      'Los moños para cimbra, también conocidos como separadores, sujetan la cimbra en muros y trabes para mantener espesores estrictos y lograr un acabado uniforme y de calidad durante el colado.',
+    image: '/Image/mono-bodega-panoramica.jpeg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-10-13',
+    readTime: '4 min',
+    content: [
+      {
+        heading: '¿Qué son los moños para cimbra DFAC?',
+        paragraphs: [
+          'Los moños para cimbra DFAC se utilizan para la sujeción de cimbras en muros y trabes, permitiendo obtener un acabado uniforme y de calidad.',
+          'Son ideales para trabajos en los que se requiere mantener espesores estrictos y asegurar que los grosores totales del cimbrado permanezcan constantes durante el proceso de construcción.',
+        ],
+      },
+      {
+        heading: 'Usos de los moños para cimbra',
+        paragraphs: [
+          'Los moños para cimbra, también conocidos como separadores para cimbra, se instalan perforando la cara del molde para introducir el separador. Una vez colocado, se posicionan las cuñas en los extremos para lograr una sujeción adecuada de la cimbra.',
+          'Cada separador requiere dos cuñas para completar la sujeción. El estándar de fabricación está diseñado para grosores de cimbrado de 23 cm; sin embargo, se pueden fabricar en medidas especiales según los requerimientos de cada proyecto.',
+          'También se pueden utilizar con triplay de 16 piezas de 10 cm de grueso nominal.',
+          'Somos fabricantes de moños para cimbra y fabricamos medidas específicas de acuerdo con las necesidades de cada obra.',
+        ],
+        image: '/Image/mono-detalle.jpeg',
+        imageAlt: 'Detalle del moño para cimbra DFAC con conos de poliestireno',
+      },
+      {
+        heading: 'Especificaciones técnicas',
+        paragraphs: [
+          '• Marca: DFAC.',
+          '• Material: acero de alto carbón de 5.8 mm de diámetro.',
+          '• Tipo de muesca: para quiebre inmediato a 25 mm del extremo angosto del cono.',
+          '• Material del cono: poliestireno rígido con paredes pulidas.',
+          '• Capacidad de carga recomendada: 1,350 kg. Se recomienda utilizar un mínimo de 8 piezas por hoja de triplay.',
+          '• Resistencia máxima: 2,200 kg.',
+          '• Medidas: fabricación estándar y medidas especiales bajo requerimiento.',
+        ],
+      },
+      {
+        heading: 'Fabricación de moños para cimbra a medida',
+        paragraphs: [
+          'En DFAC somos fabricantes de moños para cimbra y ofrecemos la posibilidad de fabricar medidas específicas para adaptarnos a las necesidades de cada proyecto de construcción.',
+          'Nuestros productos están diseñados para facilitar la sujeción de cimbras, mantener la separación requerida y contribuir a obtener resultados uniformes durante el colado de muros y trabes.',
+          'Si buscas moños para cimbra resistentes y fabricados de acuerdo con las especificaciones de tu obra, DFAC cuenta con opciones que se adaptan a tus necesidades.',
+        ],
+        image: '/Image/mono-bodega-tarima.jpeg',
+        imageAlt: 'Atados de moños para cimbra DFAC sobre tarima en bodega',
+      },
+    ],
+  },
+  {
     slug: "barra-roscada-5-8-cimbra",
     title: "Barra roscada de 5/8\": para qué sirve y cómo se usa en la cimbra",
     excerpt: "Un elemento clave para asegurar la cimbra en muros, columnas y trabes durante el colado. Revisamos sus características, el paso a paso de instalación, su capacidad de carga y los cuidados para reutilizarla obra tras obra.",
