@@ -47,6 +47,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'disco-separador-para-muro-de-concreto': [
     '/archivos/fichas-tecnicas/ficha-tecnica-disco-separador.pdf',
   ],
+  'cuna-de-acero': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-cuna-de-acero.pdf',
+  ],
 };
 
 // New component for related products
