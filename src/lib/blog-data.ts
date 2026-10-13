@@ -20,6 +20,88 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'monos-para-cimbra-con-rondana-de-neopreno-sellado-humedad',
+    title: 'Moños para cimbra con rondana de neopreno: sujeción y sellado contra la humedad',
+    excerpt:
+      'Elementos para sujetar y mantener la separación de la cimbra durante el colado, con rondana de neopreno que ayuda a reducir el paso de humedad en albercas, cisternas y tanques de almacenamiento.',
+    image: '/Image/MONO-NEOPRENO-atado-horizontal.jpg',
+    category: 'Productos',
+    location: 'México',
+    author: 'Equipo DFAC',
+    date: '2026-10-13',
+    readTime: '5 min',
+    content: [
+      {
+        heading: '¿Qué son los moños para cimbra con rondana de neopreno?',
+        paragraphs: [
+          'Los moños o tirantes para cimbra con rondana de neopreno son elementos utilizados en la construcción para sujetar y mantener la separación de las cimbras durante el colado de concreto. Están diseñados para ofrecer resistencia, estabilidad y un sellado adecuado en estructuras expuestas a la humedad, como albercas, cisternas y tanques de almacenamiento.',
+          'Fabricados con acero F11 de alto carbón y equipados con una rondana de neopreno, estos elementos ayudan a reducir el paso de humedad a través del muro. Además, incorporan conos de poliestireno rígido con paredes pulidas y muescas de quiebre que facilitan el retiro de los extremos sobrantes después de desmontar la cimbra.',
+        ],
+      },
+      {
+        heading: 'Diseñados para sujeción y sellado',
+        paragraphs: [
+          'Los moños para cimbra con rondana de neopreno están diseñados para brindar una sujeción confiable durante el proceso de construcción de muros de concreto. Su fabricación combina materiales resistentes con características que facilitan la instalación, el desmontaje y el acabado de la estructura.',
+          'La rondana de neopreno funciona como elemento de sellado para ayudar a evitar filtraciones de humedad a través del muro, por lo que son una alternativa para proyectos que requieren mayor atención a la impermeabilidad, como albercas, cisternas y tanques.',
+          'Su diseño incluye conos de poliestireno rígido antiadherentes al concreto, que permiten una extracción más sencilla después de retirar las formas. Asimismo, cuentan con muescas de quiebre ubicadas a 25 mm del extremo angosto del cono, lo que facilita eliminar el material sobrante y obtener un acabado más limpio.',
+        ],
+        image: '/Image/MONO-NEOPRENO-detalle-cono.jpg',
+        imageAlt: 'Detalle del moño para cimbra con rondana de neopreno y cono de poliestireno',
+      },
+      {
+        heading: 'Características técnicas',
+        paragraphs: [
+          '• Material del tirante: acero de alto carbón F11.',
+          '• Diámetro del material: 5.8 mm.',
+          '• Tipo de muesca: muesca de quiebre inmediato, ubicada a 25 mm del extremo angosto del cono.',
+          '• Material del cono: poliestireno rígido con paredes pulidas.',
+          '• Capacidad de carga recomendada: 1,350 kg por pieza.',
+          '• Resistencia máxima indicada: 2,200 kg.',
+          '• Uso recomendado: sujeción de cimbras en muros de concreto que requieren atención especial al sellado contra la humedad.',
+          '• Fabricación: medidas específicas bajo solicitud.',
+        ],
+      },
+      {
+        heading: 'Recomendación de uso',
+        paragraphs: [
+          'Se recomienda utilizar 8 piezas por hoja de triplay como mínimo, de acuerdo con las especificaciones proporcionadas. La distribución definitiva debe considerar las dimensiones de la cimbra, la presión del concreto fresco y las condiciones de la obra.',
+        ],
+      },
+      {
+        heading: 'Principales ventajas',
+        paragraphs: [
+          '• Ayuda al sellado contra la humedad: la rondana de neopreno contribuye a reducir el paso de humedad en muros de concreto, una característica importante en estructuras como albercas, cisternas y tanques.',
+          '• Material resistente: su fabricación con acero de alto carbón está orientada a proporcionar la resistencia necesaria para la sujeción de las cimbras durante el colado.',
+          '• Fácil retiro del material sobrante: las muescas de quiebre permiten romper los extremos expuestos del tirante después de retirar la cimbra, facilitando el proceso de acabado.',
+          '• Conos diseñados para facilitar la extracción: los conos de poliestireno rígido con paredes pulidas ayudan a desprender y retirar el material con mayor facilidad una vez que se desmontan las formas.',
+          '• Fabricación a medidas específicas: como fabricantes, ofrecemos la posibilidad de elaborar piezas en medidas específicas para adaptarse a los requerimientos de cada proyecto.',
+        ],
+        image: '/Image/MONO-NEOPRENO-detalle-mono.jpg',
+        imageAlt: 'Moño para cimbra con rondana de neopreno fabricado en acero de alto carbón',
+      },
+      {
+        heading: 'Aplicaciones',
+        paragraphs: [
+          'Los moños para cimbra con rondana de neopreno pueden utilizarse en proyectos de construcción que requieren sujetar cimbras y prestar especial atención al control de la humedad, por ejemplo:',
+          '• Construcción de albercas.',
+          '• Muros de cisternas.',
+          '• Tanques de almacenamiento.',
+          '• Muros de concreto en espacios expuestos a la humedad.',
+          '• Obras que requieren soluciones de sujeción para cimbra con características de sellado.',
+          'La selección del sistema debe realizarse de acuerdo con las características estructurales y los requerimientos de impermeabilización de cada obra.',
+        ],
+      },
+      {
+        heading: 'Somos fabricantes',
+        paragraphs: [
+          'Fabricamos moños para cimbra con rondana de neopreno en medidas específicas, buscando ofrecer soluciones que se adapten a las necesidades de cada proyecto de construcción.',
+          'Si necesitas información sobre medidas, capacidades o fabricación especial, solicita una cotización y consulta las opciones disponibles para tu obra.',
+          'Moños para cimbra con rondana de neopreno: resistencia, facilidad de instalación y una solución diseñada para proyectos que requieren atención al sellado contra la humedad.',
+        ],
+      },
+    ],
+  },
+  {
     slug: "barra-roscada-5-8-cimbra",
     title: "Barra roscada de 5/8\": para qué sirve y cómo se usa en la cimbra",
     excerpt: "Un elemento clave para asegurar la cimbra en muros, columnas y trabes durante el colado. Revisamos sus características, el paso a paso de instalación, su capacidad de carga y los cuidados para reutilizarla obra tras obra.",
