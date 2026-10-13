@@ -330,6 +330,63 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </Carousel>
                 </div>
               )}
+
+              {/* Productos complementarios para disco separador */}
+              {product.slug === 'disco-separador-para-muro-de-concreto' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
+                        { href: "/products/banda-de-pvc-negra-ojillada", img: "/Image/banda-portada.jpeg", name: "Banda de PVC", desc: "Impermeabilidad en juntas frías" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                            <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                              <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                            <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                  </Carousel>
+                </div>
+              )}
+
+              {/* Productos complementarios para cuñas de acero */}
+              {product.slug === 'cuna-de-acero' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                            <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                              <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                            <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                  </Carousel>
+                </div>
+              )}
             </div>
 
             {/* Product Info */}
@@ -911,61 +968,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
-                </div>
-              )}
-
-              {/* Productos complementarios para disco separador */}
-              {product.slug === 'disco-separador-para-muro-de-concreto' && (
-                <div className="mt-6">
-                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
-                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                    <CarouselContent className="-ml-3">
-                      {[
-                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
-                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
-                        { href: "/products/banda-de-pvc-negra-ojillada", img: "/Image/banda-portada.jpeg", name: "Banda de PVC", desc: "Impermeabilidad en juntas frías" },
-                      ].map((item) => (
-                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
-                          <Link href={item.href} className="block group">
-                            <div className="overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-lg">
-                              <div className="relative aspect-square"><Image src={item.img} alt={item.name} fill className="object-cover transition-transform group-hover:scale-105" /></div>
-                              <div className="p-3"><p className="text-sm font-bold text-slate-800">{item.name}</p><p className="text-xs text-muted-foreground mt-1">{item.desc}</p></div>
-                            </div>
-                          </Link>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex -left-4 bg-white/90 backdrop-blur border shadow-md" />
-                    <CarouselNext className="hidden md:flex -right-4 bg-white/90 backdrop-blur border shadow-md" />
-                  </Carousel>
-                </div>
-              )}
-
-              {/* Productos complementarios para cuñas de acero */}
-              {product.slug === 'cuna-de-acero' && (
-                <div className="mt-6">
-                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
-                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                    <CarouselContent className="-ml-3">
-                      {[
-                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
-                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente" },
-                      ].map((item) => (
-                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
-                          <Link href={item.href} className="block group">
-                            <div className="overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-lg">
-                              <div className="relative aspect-square"><Image src={item.img} alt={item.name} fill className="object-cover transition-transform group-hover:scale-105" /></div>
-                              <div className="p-3"><p className="text-sm font-bold text-slate-800">{item.name}</p><p className="text-xs text-muted-foreground mt-1">{item.desc}</p></div>
-                            </div>
-                          </Link>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex -left-4 bg-white/90 backdrop-blur border shadow-md" />
-                    <CarouselNext className="hidden md:flex -right-4 bg-white/90 backdrop-blur border shadow-md" />
-                  </Carousel>
                 </div>
               )}
 
