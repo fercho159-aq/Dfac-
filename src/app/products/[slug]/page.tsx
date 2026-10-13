@@ -44,6 +44,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'tirante-tipo-mono': [
     '/archivos/fichas-tecnicas/ficha-tecnica-mono-para-cimbra.pdf',
   ],
+  'disco-separador-para-muro-de-concreto': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-disco-separador.pdf',
+  ],
 };
 
 // New component for related products
@@ -250,9 +253,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <Carousel opts={{ align: "start", loop: true }} className="w-full">
                     <CarouselContent className="-ml-3">
                       {[
-                        { href: "/products/cuna-de-acero", img: "/Image/CA01-IMAGEN-1.jpg", name: "Cuñas de acero", desc: "Para fijar y asegurar el moño en la cimbra" },
-                        { href: "/products/disco-separador", img: "/Image/DS200-IMAGEN-1.jpg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
-                        { href: "/products/cono-para-cimbra", img: "/Image/C0020-2-IMAGEN-1.jpg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente al concreto" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Para fijar y asegurar el moño en la cimbra" },
+                        { href: "/products/disco-separador-para-muro-de-concreto", img: "/Image/disco-portada.jpeg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente al concreto" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -278,9 +281,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <Carousel opts={{ align: "start", loop: true }} className="w-full">
                     <CarouselContent className="-ml-3">
                       {[
-                        { href: "/products/cuna-de-acero", img: "/Image/CA01-IMAGEN-1.jpg", name: "Cuñas de acero", desc: "Para fijar y asegurar el moño en la cimbra" },
-                        { href: "/products/disco-separador", img: "/Image/DS200-IMAGEN-1.jpg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
-                        { href: "/products/cono-para-cimbra", img: "/Image/C0020-2-IMAGEN-1.jpg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente al concreto" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Para fijar y asegurar el moño en la cimbra" },
+                        { href: "/products/disco-separador-para-muro-de-concreto", img: "/Image/disco-portada.jpeg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente al concreto" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -309,7 +312,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         { href: "/products/barra-roscada-2", img: "/Image/BRS-58-3-IMAGEN-1.jpg", name: "Barra Roscada para Cimbra", desc: "Barra de acero cold rolled de 5/8\"" },
                         { href: "/products/tuerca-mariposa-con-base", img: "/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg", name: "Tuerca Mariposa con Base", desc: "Fijación segura para la barra roscada" },
                         { href: "/products/tubo-para-barra-roscada", img: "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg", name: "Tubo para Barra Roscada", desc: "Protección durante el colado" },
-                        { href: "/products/cono-para-cimbra", img: "/Image/C0020-2-IMAGEN-1.jpg", name: "Cono para Cimbra", desc: "Acabado uniforme en muros" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Cono para Cimbra", desc: "Acabado uniforme en muros" },
                       ].filter((item) => item.href !== `/products/${product.slug}`).map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -341,9 +344,113 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
                     <span className="text-sm md:text-base text-white font-medium">Cumple con la Norma CRD-C-572</span>
                   </div>
-                  <p className="text-sm md:text-base text-slate-800">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
                     Es un sello retenedor de agua color negro, elaborado a base de cloruro de polivinilo en forma de cinta flexible con bulbo central y laterales estriados. Diseñado para garantizar la impermeabilidad en juntas frías de construcción.
                   </p>
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 md:p-4">
+                    <p className="text-sm md:text-base text-slate-800 font-bold">Se vende por rollo de 25 metros lineales.</p>
+                  </div>
+                </div>
+              ) : product.slug === 'cuna-de-acero' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Acero de alta resistencia · 1,350 kg de carga · Reutilizables</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Las cuñas para moño de cimbra están fabricadas en lámina de acero de alta resistencia. Están diseñadas para mantener la presión necesaria durante el colado y garantizar la separación adecuada entre las placas de cimbra.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                    Proporcionan una sujeción firme sin necesidad de clavos, lo que permite realizar un trabajo más rápido, seguro y limpio. Además, son reutilizables, fáciles de instalar y compatibles con todos nuestros moños para cimbra.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Características y beneficios</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Fijación firme y segura:</strong> Mantienen el moño perfectamente en su lugar, evitando que la cimbra se deforme o se abra durante el colado.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Acabado de alta calidad:</strong> Permiten obtener columnas, muros y trabes rectos, con acabados lisos y precisos.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Instalación rápida y sin clavos:</strong> Se colocan fácilmente con un golpe de martillo, sin necesidad de herramientas adicionales ni clavos.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Alta resistencia:</strong> Fabricadas en acero resistente, soportan caídas, cargas pesadas y condiciones de trabajo rudo en obra.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Reutilizables:</strong> Pueden recuperarse y utilizarse en múltiples colados sin perder su funcionalidad ni su forma.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span><strong>Versátiles:</strong> Compatibles con sistemas de cimbra de madera, metálica y encofrados tradicionales.</span></li>
+                  </ul>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Especificaciones técnicas</h4>
+                  <div className="overflow-hidden rounded-xl border shadow-sm mb-6">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-semibold text-slate-700 w-1/3">Material</td><td className="p-3 text-slate-800">Placa de acero de alta resistencia</td></tr>
+                        <tr className="border-b"><td className="p-3 font-semibold text-slate-700">Troquelado</td><td className="p-3 text-slate-800">En frío</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-semibold text-slate-700">Grosor</td><td className="p-3 text-slate-800">Estándar de 3/16&quot;</td></tr>
+                        <tr className="border-b"><td className="p-3 font-semibold text-slate-700">Capacidad de acuñe</td><td className="p-3 text-slate-800">25 mm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-semibold text-slate-700">Medidas (LxAxA)</td><td className="p-3 text-slate-800">7 cm x 2 cm x 15 cm</td></tr>
+                        <tr className="border-b"><td className="p-3 font-semibold text-slate-700">Peso aproximado</td><td className="p-3 text-slate-800">400 gr</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-semibold text-slate-700">Piezas por atado</td><td className="p-3 text-slate-800">25 pz</td></tr>
+                        <tr className="border-b"><td className="p-3 font-semibold text-slate-700">Capacidad de carga</td><td className="p-3 text-slate-800">1,350 kg (3,000 Lb)</td></tr>
+                        <tr className="bg-slate-50"><td className="p-3 font-semibold text-slate-700">Factor de seguridad</td><td className="p-3 text-slate-800">800 kg</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">¿Cómo se colocan?</h4>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Las cuñas se instalan a presión. Para ajustarlas, solo se necesita un golpe ligero de martillo. No requieren clavos ni fijaciones adicionales.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">¿Cómo se retiran?</h4>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Una vez fraguado el concreto, se puede romper o doblar el moño para retirar el tramo interno y recuperar las cuñas, lo que permite reutilizarlas en futuros colados.
+                  </p>
+
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4">
+                    <p className="text-sm md:text-base text-slate-800"><strong>NOTA:</strong> Se requieren 2 cuñas por cada moño o tirante.</p>
+                  </div>
+                </div>
+              ) : product.slug === 'disco-separador-para-muro-de-concreto' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador lateral, fuerte y ligero. Diseñado para mantener el acero al centro y lograr recubrimientos de concreto uniformes en ambos lados. Ideal para acabados aparentes.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Resistencia de Carga: 100 Kg. Muros de concreto con acero de refuerzo al centro. Distanciador vertical, cuenta con un clip interno que aseguran la óptima sujeción del acero. Garantizan recubrimientos exactos, y proporcionan acabados estéticos sin marcas aparentes.
+                  </p>
+                </div>
+              ) : product.slug === 'cono-para-cimbra' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Accesorio auxiliar de geometría cónica, utilizado con sistemas compatibles de moños o tirantes para cimbra. Su diseño está pensado para formar una cavidad alrededor de la zona de salida del tirante y facilitar el retiro del accesorio o el tratamiento del acabado después del descimbrado.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Polipropileno</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Compatibilidad</p>
+                      <p className="text-base font-bold text-slate-800">Barra 5/8&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Reutilizable</p>
+                      <p className="text-base font-bold text-slate-800">Sí</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Piezas por empaque</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso pieza (grs)</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso empaque (kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="px-4 py-2 font-bold text-slate-800">1,500</td>
+                          <td className="px-4 py-2 font-bold text-slate-800">8.1</td>
+                          <td className="px-4 py-2 font-bold text-slate-800">12.3</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'tirante-tipo-mono' ? (
                 <div className="product-description font-sans">
@@ -780,6 +887,88 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               )}
 
+              {product.slug === 'disco-separador-para-muro-de-concreto' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-semibold mb-3">Especificaciones por modelo</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-blue-600 text-white">
+                          <th className="p-3 text-left">Clave</th>
+                          <th className="p-3 text-left">Muros de Concreto con Acero al Centro</th>
+                          <th className="p-3 text-left">Calibre de Acero</th>
+                          <th className="p-3 text-left">Empaque</th>
+                          <th className="p-3 text-left">(grs)</th>
+                          <th className="p-3 text-left">Empaque (kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="p-3 font-bold">DS125</td><td className="p-3">8 cm</td><td className="p-3">1/8&quot; hasta ½&quot;</td><td className="p-3">700</td><td className="p-3">18.0</td><td className="p-3">12.8</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-bold">DS150</td><td className="p-3">10 cm</td><td className="p-3">¼&quot; hasta ½&quot;</td><td className="p-3">500</td><td className="p-3">19.0</td><td className="p-3">9.7</td></tr>
+                        <tr className="border-b"><td className="p-3 font-bold">DS175</td><td className="p-3">10 cm</td><td className="p-3">1/8&quot; hasta 5/16&quot;</td><td className="p-3">450</td><td className="p-3">16.0</td><td className="p-3">7.4</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="p-3 font-bold">DS200</td><td className="p-3">12 cm</td><td className="p-3">¼&quot; hasta 5/8&quot;</td><td className="p-3">250</td><td className="p-3">24.0</td><td className="p-3">6.2</td></tr>
+                        <tr><td className="p-3 font-bold">DS250</td><td className="p-3">15 cm</td><td className="p-3">3/8&quot; hasta 1&quot;</td><td className="p-3">150</td><td className="p-3">57.0</td><td className="p-3">8.7</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {/* Productos complementarios para disco separador */}
+              {product.slug === 'disco-separador-para-muro-de-concreto' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
+                        { href: "/products/banda-de-pvc-negra-ojillada", img: "/Image/banda-portada.jpeg", name: "Banda de PVC", desc: "Impermeabilidad en juntas frías" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="block group">
+                            <div className="overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-lg">
+                              <div className="relative aspect-square"><Image src={item.img} alt={item.name} fill className="object-cover transition-transform group-hover:scale-105" /></div>
+                              <div className="p-3"><p className="text-sm font-bold text-slate-800">{item.name}</p><p className="text-xs text-muted-foreground mt-1">{item.desc}</p></div>
+                            </div>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden md:flex -left-4 bg-white/90 backdrop-blur border shadow-md" />
+                    <CarouselNext className="hidden md:flex -right-4 bg-white/90 backdrop-blur border shadow-md" />
+                  </Carousel>
+                </div>
+              )}
+
+              {/* Productos complementarios para cuñas de acero */}
+              {product.slug === 'cuna-de-acero' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada.jpeg", name: "Moños normales", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moños con neopreno", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="block group">
+                            <div className="overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-lg">
+                              <div className="relative aspect-square"><Image src={item.img} alt={item.name} fill className="object-cover transition-transform group-hover:scale-105" /></div>
+                              <div className="p-3"><p className="text-sm font-bold text-slate-800">{item.name}</p><p className="text-xs text-muted-foreground mt-1">{item.desc}</p></div>
+                            </div>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden md:flex -left-4 bg-white/90 backdrop-blur border shadow-md" />
+                    <CarouselNext className="hidden md:flex -right-4 bg-white/90 backdrop-blur border shadow-md" />
+                  </Carousel>
+                </div>
+              )}
+
               <div className="mt-8 flex flex-col gap-4">
                 <Button size="lg" asChild>
                   <Link href="/contact">
@@ -1196,12 +1385,9 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
             <div className="mt-16 space-y-12">
               {/* Descripción extendida */}
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Accesorio para sistema de cimbra</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">¿Dónde se utiliza?</h3>
                 <p className="text-sm md:text-base text-slate-800 mb-4">
-                  Su diseño contribuye a reducir filtraciones y favorecer la impermeabilidad de la estructura, por lo que es especialmente útil en aplicaciones como cisternas, albercas y muros de contención.
-                </p>
-                <p className="text-sm md:text-base text-slate-800">
-                  Además, facilita las labores de instalación, retiro y resane, optimizando los tiempos de trabajo y contribuyendo a obtener acabados más limpios y precisos en los elementos de concreto.
+                  Principalmente en sistemas de cimbra para elementos de concreto, como muros, trabes y columnas. El cono debe corresponder al tipo de tirante, a sus dimensiones y al procedimiento de montaje del sistema.
                 </p>
               </div>
 
