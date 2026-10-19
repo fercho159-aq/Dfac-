@@ -16629,51 +16629,37 @@
     "images": [
       {
         "id": 7614,
-        "src": "/Image/mono-neopreno-portada.jpeg",
-        "thumbnail": "/Image/mono-neopreno-portada.jpeg",
-        "name": "mono-neopreno-portada",
-        "alt": "Moños para cimbra con rondana de neopreno - vista frontal"
+        "src": "/Image/neopreno-portada.jpeg",
+        "thumbnail": "/Image/neopreno-portada.jpeg",
+        "name": "neopreno-portada",
+        "alt": "Moños para cimbra con rondana de neopreno - vista diagonal grupal"
       },
       {
         "id": 7613,
-        "src": "/Image/mono-neopreno-diagonal.jpeg",
-        "thumbnail": "/Image/mono-neopreno-diagonal.jpeg",
-        "name": "mono-neopreno-diagonal",
+        "src": "/Image/neopreno-individual.jpeg",
+        "thumbnail": "/Image/neopreno-individual.jpeg",
+        "name": "neopreno-individual",
         "alt": "Moño con rondana de neopreno - vista diagonal individual"
       },
       {
         "id": 7609,
-        "src": "/Image/mono-neopreno-detalle.jpeg",
-        "thumbnail": "/Image/mono-neopreno-detalle.jpeg",
-        "name": "mono-neopreno-detalle",
-        "alt": "Detalle del cono y rondana de neopreno del moño"
+        "src": "/Image/neopreno-detalle.png",
+        "thumbnail": "/Image/neopreno-detalle.png",
+        "name": "neopreno-detalle",
+        "alt": "Detalle close-up del cono y rondana de neopreno del moño"
       },
       {
         "id": 7610,
-        "src": "/Image/mono-neopreno-tres.jpeg",
-        "thumbnail": "/Image/mono-neopreno-tres.jpeg",
-        "name": "mono-neopreno-tres",
+        "src": "/Image/neopreno-tres.png",
+        "thumbnail": "/Image/neopreno-tres.png",
+        "name": "neopreno-tres",
         "alt": "Tres moños con rondana de neopreno en presentación horizontal"
       },
       {
-        "id": 7611,
-        "src": "/Image/mono-neopreno-atado-diagonal.jpeg",
-        "thumbnail": "/Image/mono-neopreno-atado-diagonal.jpeg",
-        "name": "mono-neopreno-atado-diagonal",
-        "alt": "Atado de moños con rondana de neopreno - vista diagonal"
-      },
-      {
-        "id": 90005,
-        "src": "/Image/mono-neopreno-atado-lateral.jpeg",
-        "thumbnail": "/Image/mono-neopreno-atado-lateral.jpeg",
-        "name": "mono-neopreno-atado-lateral",
-        "alt": "Atado de moños con rondana de neopreno - vista lateral"
-      },
-      {
         "id": 90006,
-        "src": "/Image/mono-neopreno-medidas.jpeg",
-        "thumbnail": "/Image/mono-neopreno-medidas.jpeg",
-        "name": "mono-neopreno-medidas",
+        "src": "/Image/neopreno-medidas.jpeg",
+        "thumbnail": "/Image/neopreno-medidas.jpeg",
+        "name": "neopreno-medidas",
         "alt": "Ficha de medidas del moño con neopreno de 20 cm"
       }
     ],
@@ -17277,7 +17263,7 @@
       "multiple_of": 1
     },
     "extensions": {},
-    "image": "/Image/mono-neopreno-portada.jpeg"
+    "image": "/Image/neopreno-portada.jpeg"
   },
   {
     "id": 5325,

@@ -345,7 +345,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <CarouselContent className="-ml-3">
                       {[
                         { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
                         { href: "/products/banda-de-pvc-negra-ojillada", img: "/Image/banda-portada.jpeg", name: "Banda de PVC", desc: "Impermeabilidad en juntas frías" },
                       ].map((item) => (
@@ -374,7 +374,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <CarouselContent className="-ml-3">
                       {[
                         { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/cono-para-cimbra", img: "/Image/cono-portada.jpeg", name: "Conos para moño", desc: "Acabado uniforme y anti-adherente" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
@@ -405,7 +405,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         { href: "/products/barra-roscada-2", img: "/Image/barra-portada.jpeg", name: "Barra Roscada", desc: "Barra de acero cold rolled de 5/8\"" },
                         { href: "/products/tuerca-mariposa-con-base", img: "/Image/tuerca-portada.jpeg", name: "Tuerca Mariposa con Base", desc: "Fijación segura para la barra roscada" },
                         { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
@@ -432,7 +432,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <Carousel opts={{ align: "start", loop: true }} className="w-full">
                     <CarouselContent className="-ml-3">
                       {[
-                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/mono-neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/disco-separador-para-muro-de-concreto", img: "/Image/disco-portada.jpeg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
                         { href: "/products/cimbrabau", img: "/Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN.jpg", name: "Desmoldante de concreto", desc: "Desmoldante para cimbra CIMBRABAU" },
                       ].map((item) => (
@@ -538,7 +538,10 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               ) : product.slug === 'cono-para-cimbra' ? (
                 <div className="product-description font-sans">
                   <p className="text-sm md:text-base text-slate-800 mb-4">
-                    Accesorio auxiliar de geometría cónica, utilizado con sistemas compatibles de moños o tirantes para cimbra. Su diseño está pensado para formar una cavidad alrededor de la zona de salida del tirante y facilitar el retiro del accesorio o el tratamiento del acabado después del descimbrado.
+                    El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en polipropileno de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Se coloca entre la cimbra y la tuerca mariposa con base, cubriendo el extremo del tubo para barra roscada. Gracias a su forma cónica, facilita el desmolde y deja una cavidad limpia y uniforme en la superficie del concreto.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
                     <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
@@ -663,7 +666,10 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <span className="text-sm md:text-base text-white font-medium">Polipropileno · Compatible con barra 5/8&quot; · Reutilizable</span>
                   </div>
                   <p className="text-sm md:text-base text-slate-800 mb-4">
-                    El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en poliestireno rígido de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
+                    El cono para cimbra es un accesorio diseñado para garantizar un acabado uniforme y de alta calidad en muros y columnas de concreto. Fabricado en polipropileno de alta resistencia, permite mantener el espesor adecuado de la cimbra y proteger la barra durante el proceso de colado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Se coloca entre la cimbra y la tuerca mariposa con base, cubriendo el extremo del tubo para barra roscada. Gracias a su forma cónica, facilita el desmolde y deja una cavidad limpia y uniforme en la superficie del concreto.
                   </p>
 
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
