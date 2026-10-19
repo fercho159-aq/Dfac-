@@ -17312,60 +17312,46 @@
     "review_count": 0,
     "images": [
       {
-        "id": 9001,
-        "src": "/Image/mono-portada.jpeg",
-        "thumbnail": "/Image/mono-portada.jpeg",
+        "id": 11001,
+        "src": "/Image/mono-portada-new.jpeg",
+        "thumbnail": "/Image/mono-portada-new.jpeg",
         "name": "mono-portada",
-        "alt": "Moño para cimbra - vista individual vertical"
+        "alt": "Moño para cimbra completo fondo blanco DFAC"
       },
       {
-        "id": 9002,
-        "src": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg",
-        "thumbnail": "/Image/WhatsApp-Image-2023-12-29-at-11.23.16-AM.jpeg",
+        "id": 11002,
+        "src": "/Image/mono-medidas-new.jpeg",
+        "thumbnail": "/Image/mono-medidas-new.jpeg",
         "name": "mono-medidas",
-        "alt": "Moño para cimbra - medidas 10cm"
+        "alt": "Moño para cimbra de 10cm - ficha técnica con medidas DFAC"
       },
       {
-        "id": 9003,
-        "src": "/Image/mono-dos-monos.jpeg",
-        "thumbnail": "/Image/mono-dos-monos.jpeg",
+        "id": 11003,
+        "src": "/Image/mono-dos-monos-new.jpeg",
+        "thumbnail": "/Image/mono-dos-monos-new.jpeg",
         "name": "mono-dos-monos",
-        "alt": "Moños para cimbra - vista de dos moños en diagonal"
+        "alt": "Dos moños para cimbra en diagonal fondo blanco DFAC"
       },
       {
-        "id": 9004,
-        "src": "/Image/mono-detalle.jpeg",
-        "thumbnail": "/Image/mono-detalle.jpeg",
+        "id": 11004,
+        "src": "/Image/mono-detalle-new.jpeg",
+        "thumbnail": "/Image/mono-detalle-new.jpeg",
         "name": "mono-detalle",
-        "alt": "Moño para cimbra - detalle de conos"
+        "alt": "Detalle close-up de conos del moño para cimbra DFAC"
       },
       {
-        "id": 9005,
-        "src": "/Image/mono-codigo-colores.jpeg",
-        "thumbnail": "/Image/mono-codigo-colores.jpeg",
-        "name": "mono-codigo-colores",
-        "alt": "Código de colores de moños para cimbra"
+        "id": 11005,
+        "src": "/Image/mono-fabrica.jpeg",
+        "thumbnail": "/Image/mono-fabrica.jpeg",
+        "name": "mono-fabrica",
+        "alt": "Moños para cimbra en fábrica - estibas de diferentes medidas DFAC"
       },
       {
-        "id": 9006,
-        "src": "/Image/mono-bodega-tarima.jpeg",
-        "thumbnail": "/Image/mono-bodega-tarima.jpeg",
-        "name": "mono-bodega-tarima",
-        "alt": "Moños para cimbra en tarima - presentación de producto"
-      },
-      {
-        "id": 9007,
-        "src": "/Image/mono-bodega-vertical.jpeg",
-        "thumbnail": "/Image/mono-bodega-vertical.jpeg",
-        "name": "mono-bodega-vertical",
-        "alt": "Moños para cimbra apilados en bodega - diferentes medidas"
-      },
-      {
-        "id": 9008,
-        "src": "/Image/mono-bodega-panoramica.jpeg",
-        "thumbnail": "/Image/mono-bodega-panoramica.jpeg",
-        "name": "mono-bodega-panoramica",
-        "alt": "Bodega DFAC - moños para cimbra y accesorios en existencia"
+        "id": 11006,
+        "src": "/Image/mono-tarima-new.jpeg",
+        "thumbnail": "/Image/mono-tarima-new.jpeg",
+        "name": "mono-tarima",
+        "alt": "Moños para cimbra en tarima listos para envío DFAC"
       }
     ],
     "categories": [
