@@ -74,9 +74,12 @@ export default function ProductsClient() {
 
   const filteredProducts = useMemo(() => {
     return allProducts.filter(product => {
-      const searchMatch = !debouncedSearchTerm || 
-                          product.name.toLowerCase().includes(debouncedSearchTerm.toLowerCase()) ||
-                          (product.description && product.description.toLowerCase().includes(debouncedSearchTerm.toLowerCase()));
+      const searchMatch = !debouncedSearchTerm || (() => {
+        const words = debouncedSearchTerm.toLowerCase().split(/\s+/).filter(Boolean);
+        const name = product.name.toLowerCase();
+        const desc = product.description ? product.description.toLowerCase() : '';
+        return words.every(w => name.includes(w) || desc.includes(w));
+      })();
 
       if (selectedCategory === 'all') {
         return searchMatch;
