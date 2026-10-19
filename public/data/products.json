@@ -5828,40 +5828,24 @@
     "review_count": 0,
     "images": [
       {
-        "id": 6541,
-        "src": "/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg",
-        "thumbnail": "/Image/TUERCA-MARIPOSA-3-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/TUERCA-MARIPOSA-3-IMAGEN-1.jpg 1280w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-300x300.jpg 300w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-1024x1024.jpg 1024w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-150x150.jpg 150w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-768x768.jpg 768w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-720x720.jpg 720w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-600x600.jpg 600w, /Image/TUERCA-MARIPOSA-3-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "TUERCA-MARIPOSA-3-IMAGEN",
-        "alt": ""
+        "src": "/Image/tuerca-portada.jpeg",
+        "name": "Tuerca Mariposa con Base - Portada",
+        "alt": "Tuerca mariposa con base vista lateral"
       },
       {
-        "id": 6540,
-        "src": "/Image/TUERCA-MARIPOSA-2-IMAGEN-1.jpg",
-        "thumbnail": "/Image/TUERCA-MARIPOSA-2-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/TUERCA-MARIPOSA-2-IMAGEN-1.jpg 1280w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-300x300.jpg 300w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-1024x1024.jpg 1024w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-150x150.jpg 150w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-768x768.jpg 768w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-720x720.jpg 720w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-600x600.jpg 600w, /Image/TUERCA-MARIPOSA-2-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "TUERCA-MARIPOSA-2-IMAGEN",
-        "alt": ""
+        "src": "/Image/tuerca-frontal.jpeg",
+        "name": "Tuerca Mariposa con Base - Frontal",
+        "alt": "Tuerca mariposa con base vista frontal"
       },
       {
-        "id": 6539,
-        "src": "/Image/TUERCA-MARIPOSA-1-IMAGEN-1.jpg",
-        "thumbnail": "/Image/TUERCA-MARIPOSA-1-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/TUERCA-MARIPOSA-1-IMAGEN-1.jpg 1280w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-300x300.jpg 300w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-1024x1024.jpg 1024w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-150x150.jpg 150w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-768x768.jpg 768w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-720x720.jpg 720w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-600x600.jpg 600w, /Image/TUERCA-MARIPOSA-1-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "TUERCA-MARIPOSA-1-IMAGEN",
-        "alt": ""
+        "src": "/Image/tuerca-trasera.jpeg",
+        "name": "Tuerca Mariposa con Base - Trasera",
+        "alt": "Tuerca mariposa con base vista trasera"
       },
       {
-        "id": 6543,
-        "src": "/Image/TUERCA-MARIPOSA-IMAGEN-1.jpg",
-        "thumbnail": "/Image/TUERCA-MARIPOSA-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/TUERCA-MARIPOSA-IMAGEN-1.jpg 1280w, /Image/TUERCA-MARIPOSA-IMAGEN-1-300x300.jpg 300w, /Image/TUERCA-MARIPOSA-IMAGEN-1-1024x1024.jpg 1024w, /Image/TUERCA-MARIPOSA-IMAGEN-1-150x150.jpg 150w, /Image/TUERCA-MARIPOSA-IMAGEN-1-768x768.jpg 768w, /Image/TUERCA-MARIPOSA-IMAGEN-1-720x720.jpg 720w, /Image/TUERCA-MARIPOSA-IMAGEN-1-600x600.jpg 600w, /Image/TUERCA-MARIPOSA-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "TUERCA-MARIPOSA-IMAGEN",
-        "alt": ""
+        "src": "/Image/tuerca-superior.jpeg",
+        "name": "Tuerca Mariposa con Base - Superior",
+        "alt": "Tuerca mariposa con base vista superior"
       }
     ],
     "categories": [
