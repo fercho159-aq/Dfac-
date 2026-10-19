@@ -1751,85 +1751,58 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8255,
-        "src": "/Image/barra-roscada-estiba-almacen.jpg",
-        "thumbnail": "/Image/barra-roscada-estiba-almacen.jpg",
-        "srcset": "/Image/barra-roscada-estiba-almacen.jpg 1272w",
-        "sizes": "(max-width: 1272px) 100vw, 1272px",
-        "name": "barra-roscada-estiba-almacen",
-        "alt": "Estiba de barras roscadas de 5/8\" en almacén DFAC"
+        "id": 10001,
+        "src": "/Image/barra-portada.jpeg",
+        "thumbnail": "/Image/barra-portada.jpeg",
+        "srcset": "/Image/barra-portada.jpeg 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-portada",
+        "alt": "Barra roscada de 5/8\" fondo blanco DFAC"
       },
       {
-        "id": 8256,
-        "src": "/Image/barra-roscada-medidas-5-8.jpg",
-        "thumbnail": "/Image/barra-roscada-medidas-5-8.jpg",
-        "srcset": "/Image/barra-roscada-medidas-5-8.jpg 1448w",
-        "sizes": "(max-width: 1448px) 100vw, 1448px",
-        "name": "barra-roscada-medidas-5-8",
-        "alt": "Barra roscada de 5/8\" de 6 m con tuerca mariposa con base, mostrando largo y diámetro"
+        "id": 10002,
+        "src": "/Image/barra-fondo-blanco.jpeg",
+        "thumbnail": "/Image/barra-fondo-blanco.jpeg",
+        "srcset": "/Image/barra-fondo-blanco.jpeg 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-fondo-blanco",
+        "alt": "Barra roscada de 5/8\" vista lateral fondo blanco DFAC"
       },
       {
-        "id": 6473,
-        "src": "/Image/BRS-58-3-IMAGEN-1.jpg",
-        "thumbnail": "/Image/BRS-58-3-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/BRS-58-3-IMAGEN-1.jpg 1280w, /Image/BRS-58-3-IMAGEN-1-300x300.jpg 300w, /Image/BRS-58-3-IMAGEN-1-1024x1024.jpg 1024w, /Image/BRS-58-3-IMAGEN-1-150x150.jpg 150w, /Image/BRS-58-3-IMAGEN-1-768x768.jpg 768w, /Image/BRS-58-3-IMAGEN-1-720x720.jpg 720w, /Image/BRS-58-3-IMAGEN-1-600x600.jpg 600w, /Image/BRS-58-3-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "BRS-58-3-IMAGEN",
-        "alt": ""
+        "id": 10003,
+        "src": "/Image/barra-con-tuercas.jpeg",
+        "thumbnail": "/Image/barra-con-tuercas.jpeg",
+        "srcset": "/Image/barra-con-tuercas.jpeg 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-con-tuercas",
+        "alt": "Barra roscada con tuercas mariposa doradas en bodega DFAC"
       },
       {
-        "id": 6471,
-        "src": "/Image/BRS-58-1-IMAGEN-1.jpg",
-        "thumbnail": "/Image/BRS-58-1-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/BRS-58-1-IMAGEN-1.jpg 1280w, /Image/BRS-58-1-IMAGEN-1-300x300.jpg 300w, /Image/BRS-58-1-IMAGEN-1-1024x1024.jpg 1024w, /Image/BRS-58-1-IMAGEN-1-150x150.jpg 150w, /Image/BRS-58-1-IMAGEN-1-768x768.jpg 768w, /Image/BRS-58-1-IMAGEN-1-720x720.jpg 720w, /Image/BRS-58-1-IMAGEN-1-600x600.jpg 600w, /Image/BRS-58-1-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "BRS-58-1-IMAGEN",
-        "alt": ""
+        "id": 10004,
+        "src": "/Image/barra-bodega.jpeg",
+        "thumbnail": "/Image/barra-bodega.jpeg",
+        "srcset": "/Image/barra-bodega.jpeg 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-bodega",
+        "alt": "Barras roscadas apiladas en rack de almacén DFAC"
       },
       {
-        "id": 6475,
-        "src": "/Image/BRS-58-5-IMAGEN-1.jpg",
-        "thumbnail": "/Image/BRS-58-5-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/BRS-58-5-IMAGEN-1.jpg 1280w, /Image/BRS-58-5-IMAGEN-1-300x300.jpg 300w, /Image/BRS-58-5-IMAGEN-1-1024x1024.jpg 1024w, /Image/BRS-58-5-IMAGEN-1-150x150.jpg 150w, /Image/BRS-58-5-IMAGEN-1-768x768.jpg 768w, /Image/BRS-58-5-IMAGEN-1-720x720.jpg 720w, /Image/BRS-58-5-IMAGEN-1-600x600.jpg 600w, /Image/BRS-58-5-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "BRS-58-5-IMAGEN",
-        "alt": ""
+        "id": 10005,
+        "src": "/Image/barra-closeup.jpeg",
+        "thumbnail": "/Image/barra-closeup.jpeg",
+        "srcset": "/Image/barra-closeup.jpeg 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-closeup",
+        "alt": "Detalle close-up de barras roscadas negras DFAC"
       },
       {
-        "id": 6738,
-        "src": "/Image/BRS-58-6-IMAGEN-2.jpg",
-        "thumbnail": "/Image/BRS-58-6-IMAGEN-2-300x300.jpg",
-        "srcset": "/Image/BRS-58-6-IMAGEN-2.jpg 1280w, /Image/BRS-58-6-IMAGEN-2-300x300.jpg 300w, /Image/BRS-58-6-IMAGEN-2-1024x1024.jpg 1024w, /Image/BRS-58-6-IMAGEN-2-150x150.jpg 150w, /Image/BRS-58-6-IMAGEN-2-768x768.jpg 768w, /Image/BRS-58-6-IMAGEN-2-720x720.jpg 720w, /Image/BRS-58-6-IMAGEN-2-600x600.jpg 600w, /Image/BRS-58-6-IMAGEN-2-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "BRS-58-6-IMAGEN",
-        "alt": ""
-      },
-      {
-        "id": 9001,
-        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-detalle-roscas.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "barra-roscada-detalle-roscas",
-        "alt": "Detalle de roscas en barras roscadas de 5/8\" DFAC"
-      },
-      {
-        "id": 9002,
-        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-con-tuerca-mariposa.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "barra-roscada-con-tuerca-mariposa",
-        "alt": "Barras roscadas con tuercas mariposa con base DFAC"
-      },
-      {
-        "id": 9003,
-        "src": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/barra-roscada-galvanizada.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "barra-roscada-galvanizada",
-        "alt": "Barras roscadas galvanizadas de 5/8\" DFAC"
+        "id": 10006,
+        "src": "/Image/barra-doradas.png",
+        "thumbnail": "/Image/barra-doradas.png",
+        "srcset": "/Image/barra-doradas.png 2048w",
+        "sizes": "(max-width: 2048px) 100vw, 2048px",
+        "name": "barra-doradas",
+        "alt": "Barras roscadas doradas galvanizadas close-up DFAC"
       }
     ],
     "categories": [
