@@ -53,6 +53,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'banda-de-pvc-negra-ojillada': [
     '/archivos/fichas-tecnicas/ficha-tecnica-banda-de-pvc.pdf',
   ],
+  'capuchon-de-seguridad': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-capuchon-de-seguridad.pdf',
+  ],
 };
 
 // New component for related products
@@ -577,6 +580,66 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'capuchon-de-seguridad' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los capuchones para varilla son accesorios de seguridad diseñados para cubrir las terminaciones laterales de las varillas de acero expuestas, ayudando a reducir el riesgo de golpes, raspones y lesiones ocasionadas por sus salientes en zonas de tránsito de trabajadores.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Fabricados en polietileno con protección contra los rayos UV, cuentan con un diseño interior que favorece una fijación firme al acero y un color de alta visibilidad que permite identificar fácilmente las varillas protegidas.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Polietileno</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Protección</p>
+                      <p className="text-base font-bold text-slate-800">UV</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Temperatura</p>
+                      <p className="text-base font-bold text-slate-800">-5°C a 55°C</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Calibre de acero</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Pzas por empaque</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso pieza (grs)</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso empaque (kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="px-4 py-2 font-bold text-slate-800">RD075</td>
+                          <td className="px-4 py-2 text-slate-800">3/8&quot; a 3/4&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">1000</td>
+                          <td className="px-4 py-2 text-slate-800">13.2</td>
+                          <td className="px-4 py-2 text-slate-800">13.200</td>
+                        </tr>
+                        <tr className="border-b">
+                          <td className="px-4 py-2 font-bold text-slate-800">RD100</td>
+                          <td className="px-4 py-2 text-slate-800">3/8&quot; a 1&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">500</td>
+                          <td className="px-4 py-2 text-slate-800">27.6</td>
+                          <td className="px-4 py-2 text-slate-800">13.800</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2 font-bold text-slate-800">RD150</td>
+                          <td className="px-4 py-2 text-slate-800">1&quot; a 1 1/2&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">300</td>
+                          <td className="px-4 py-2 text-slate-800">34.0</td>
+                          <td className="px-4 py-2 text-slate-800">10.200</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               ) : product.slug === 'tirante-tipo-mono' ? (
                 <div className="product-description font-sans">
                   <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
@@ -704,6 +767,69 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              ) : product.slug === 'capuchon-de-seguridad' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Polietileno · Protección UV · -5°C a 55°C</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los capuchones para varilla son accesorios de seguridad diseñados para cubrir las terminaciones laterales de las varillas de acero expuestas, ayudando a reducir el riesgo de golpes, raspones y lesiones ocasionadas por sus salientes en zonas de tránsito de trabajadores.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Fabricados en polietileno con protección contra los rayos UV, cuentan con un diseño interior que favorece una fijación firme al acero y un color de alta visibilidad que permite identificar fácilmente las varillas protegidas. Son una solución práctica y durable para reforzar las medidas de seguridad en obras de construcción.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Características y beneficios</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Mayor seguridad en obra: ayudan a reducir el riesgo de golpes y raspones.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Alta visibilidad: su color llamativo facilita la identificación de las varillas protegidas.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Fijación firme: su diseño con venas internas favorece el ajuste al acero.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Material resistente: fabricados en polietileno con protección UV.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Resistencia a condiciones climáticas: de -5°C a 55°C.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Reutilizables siempre que conserven su forma y ajuste adecuado.</span></li>
+                  </ul>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Calibre de acero</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Pzas por empaque</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso pieza (grs)</th>
+                          <th className="px-4 py-2 text-left font-semibold text-slate-700">Peso empaque (kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="px-4 py-2 font-bold text-slate-800">RD075</td>
+                          <td className="px-4 py-2 text-slate-800">3/8&quot; a 3/4&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">1000</td>
+                          <td className="px-4 py-2 text-slate-800">13.2</td>
+                          <td className="px-4 py-2 text-slate-800">13.200</td>
+                        </tr>
+                        <tr className="border-b">
+                          <td className="px-4 py-2 font-bold text-slate-800">RD100</td>
+                          <td className="px-4 py-2 text-slate-800">3/8&quot; a 1&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">500</td>
+                          <td className="px-4 py-2 text-slate-800">27.6</td>
+                          <td className="px-4 py-2 text-slate-800">13.800</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2 font-bold text-slate-800">RD150</td>
+                          <td className="px-4 py-2 text-slate-800">1&quot; a 1 1/2&quot;</td>
+                          <td className="px-4 py-2 text-slate-800">300</td>
+                          <td className="px-4 py-2 text-slate-800">34.0</td>
+                          <td className="px-4 py-2 text-slate-800">10.200</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4 mt-4">
+                    <p className="text-sm md:text-base text-slate-800"><strong>NOTA:</strong> No están diseñados para protección contra impactos severos ni para las salientes verticales de las varillas expuestas. Su uso no sustituye otras medidas de seguridad en obra.</p>
                   </div>
                 </div>
               ) : product.slug === 'tuerca-mariposa-con-base' ? (
@@ -1431,6 +1557,94 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
                     <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones de la tuerca mariposa con base de 5/8&quot;.</p>
+                  </div>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="h-auto py-4 px-6 bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-lg shadow-amber-500/40 transition-transform hover:scale-[1.02]"
+                  >
+                    <a
+                      href={fichaTecnicaUrls[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 whitespace-nowrap"
+                    >
+                      <FileText className="w-6 h-6 shrink-0" />
+                      Descargar ficha técnica
+                      <Download className="w-5 h-5 shrink-0" />
+                    </a>
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Capuchones para Varilla - Detailed info sections below the grid */}
+          {product.slug === 'capuchon-de-seguridad' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Aplicaciones</h3>
+                <p className="text-sm md:text-base text-slate-800 mb-4">
+                  Ideales para cubrir las terminaciones laterales de las varillas expuestas en zonas de tránsito de trabajadores, contribuyendo a mantener espacios de trabajo más seguros y ordenados.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Precauciones de uso</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-amber-50 border border-amber-100 rounded-xl p-5">
+                    <p className="text-sm text-slate-700">No están diseñados para brindar protección contra impactos severos ni para detener lesiones por empalamiento.</p>
+                  </div>
+                  <div className="bg-amber-50 border border-amber-100 rounded-xl p-5">
+                    <p className="text-sm text-slate-700">No deben utilizarse como protección en las salientes verticales de las varillas expuestas.</p>
+                  </div>
+                  <div className="bg-amber-50 border border-amber-100 rounded-xl p-5 md:col-span-2">
+                    <p className="text-sm text-slate-700">Su uso no sustituye otras medidas de seguridad, señalización ni los sistemas de protección requeridos en obra.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Especificaciones técnicas</h3>
+                <div className="overflow-hidden rounded-xl border bg-card shadow-sm">
+                  <table className="w-full text-sm">
+                    <tbody className="divide-y">
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700 w-1/2">Material</td><td className="px-4 py-3 text-slate-600">Polietileno con protección UV</td></tr>
+                      <tr><td className="px-4 py-3 font-medium text-slate-700">Rango de temperatura</td><td className="px-4 py-3 text-slate-600">-5°C a 55°C</td></tr>
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700">Reutilizable</td><td className="px-4 py-3 text-slate-600">Sí, siempre que conserven su forma y ajuste</td></tr>
+                      <tr><td className="px-4 py-3 font-medium text-slate-700">Color</td><td className="px-4 py-3 text-slate-600">Alta visibilidad (naranja)</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Preguntas frecuentes</h3>
+                <div className="space-y-4">
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-base font-bold text-slate-800 mb-2">¿Los capuchones para varilla son reutilizables?</h4>
+                    <p className="text-sm text-slate-700">Sí, pueden reutilizarse siempre que conserven su forma, mantengan un ajuste adecuado y no presenten daños visibles. Se recomienda inspeccionarlos antes de cada uso.</p>
+                  </div>
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-base font-bold text-slate-800 mb-2">¿Cuántas piezas se necesitan por obra?</h4>
+                    <p className="text-sm text-slate-700">La cantidad depende del número de varillas expuestas que requieran protección. Se recomienda considerar una pieza por cada terminación lateral que se deba cubrir.</p>
+                  </div>
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-base font-bold text-slate-800 mb-2">¿De qué material están fabricados?</h4>
+                    <p className="text-sm text-slate-700">Están fabricados en polietileno con protección UV, diseñado para ofrecer resistencia y durabilidad en condiciones habituales de obra.</p>
+                  </div>
+                  <div className="bg-card border rounded-xl p-6 shadow-sm">
+                    <h4 className="text-base font-bold text-slate-800 mb-2">¿En qué rango de temperatura pueden utilizarse?</h4>
+                    <p className="text-sm text-slate-700">Su rango de resistencia térmica indicado es de -5°C a 55°C.</p>
+                  </div>
+                </div>
+              </div>
+
+              {fichaTecnicaUrls && (
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">Ficha técnica en PDF</h3>
+                    <p className="text-sm md:text-base text-muted-foreground">Descarga la ficha completa con especificaciones de los capuchones para varilla.</p>
                   </div>
                   <Button
                     size="lg"
