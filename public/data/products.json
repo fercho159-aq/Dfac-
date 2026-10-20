@@ -14187,48 +14187,31 @@
     "images": [
       {
         "id": 0,
-        "src": "/Image/cono-portada.jpeg",
-        "thumbnail": "/Image/cono-portada.jpeg",
-        "srcset": "/Image/cono-portada.jpeg",
-        "sizes": "100vw",
-        "name": "cono-portada",
-        "alt": ""
+        "src": "/Image/cono-portada-new.png",
+        "thumbnail": "/Image/cono-portada-new.png",
+        "name": "cono-portada-new",
+        "alt": "Cono para cimbra DFAC - vista lateral individual"
       },
       {
-        "id": 0,
-        "src": "/Image/cono-colores.jpeg",
-        "thumbnail": "/Image/cono-colores.jpeg",
-        "srcset": "/Image/cono-colores.jpeg",
-        "sizes": "100vw",
-        "name": "cono-colores",
-        "alt": ""
+        "id": 1,
+        "src": "/Image/cono-varios.png",
+        "thumbnail": "/Image/cono-varios.png",
+        "name": "cono-varios",
+        "alt": "Varios conos para cimbra DFAC - fondo blanco"
       },
       {
-        "id": 0,
-        "src": "/Image/cono-atados.jpeg",
-        "thumbnail": "/Image/cono-atados.jpeg",
-        "srcset": "/Image/cono-atados.jpeg",
-        "sizes": "100vw",
-        "name": "cono-atados",
-        "alt": ""
+        "id": 2,
+        "src": "/Image/cono-dos-vistas.png",
+        "thumbnail": "/Image/cono-dos-vistas.png",
+        "name": "cono-dos-vistas",
+        "alt": "Dos conos para cimbra - vista frontal y trasera"
       },
       {
-        "id": 0,
-        "src": "/Image/cono-bodega.jpeg",
-        "thumbnail": "/Image/cono-bodega.jpeg",
-        "srcset": "/Image/cono-bodega.jpeg",
-        "sizes": "100vw",
-        "name": "cono-bodega",
-        "alt": ""
-      },
-      {
-        "id": 0,
-        "src": "/Image/cono-diagrama.jpeg",
-        "thumbnail": "/Image/cono-diagrama.jpeg",
-        "srcset": "/Image/cono-diagrama.jpeg",
-        "sizes": "100vw",
-        "name": "cono-diagrama",
-        "alt": ""
+        "id": 3,
+        "src": "/Image/cono-usado.png",
+        "thumbnail": "/Image/cono-usado.png",
+        "name": "cono-usado",
+        "alt": "Cono para cimbra después de uso - reutilizable"
       }
     ],
     "categories": [
@@ -14285,7 +14268,7 @@
       "multiple_of": 1
     },
     "extensions": {},
-    "image": "/Image/cono-portada.jpeg"
+    "image": "/Image/cono-portada-new.png"
   },
   {
     "id": 5528,
