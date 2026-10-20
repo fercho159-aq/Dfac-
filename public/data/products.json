@@ -7487,12 +7487,10 @@
     "images": [
       {
         "id": 6497,
-        "src": "/Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN.jpg",
-        "thumbnail": "/Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-300x300.jpg",
-        "srcset": "/Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN.jpg 1280w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-300x300.jpg 300w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-1024x1024.jpg 1024w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-150x150.jpg 150w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-768x768.jpg 768w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-720x720.jpg 720w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-600x600.jpg 600w, /Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN",
-        "alt": ""
+        "src": "/Image/cimbrabau-portada.png",
+        "thumbnail": "/Image/cimbrabau-portada.png",
+        "name": "cimbrabau-portada",
+        "alt": "Cimbrabau - cubetas de producto químico para cimbra DFAC"
       }
     ],
     "categories": [
