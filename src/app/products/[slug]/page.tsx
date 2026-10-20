@@ -56,6 +56,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'capuchon-de-seguridad': [
     '/archivos/fichas-tecnicas/ficha-tecnica-capuchon-de-seguridad.pdf',
   ],
+  'tubo-cimbra3-mts-redondo': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-tubo-cimbra-sonotubo.pdf',
+  ],
 };
 
 // New component for related products
