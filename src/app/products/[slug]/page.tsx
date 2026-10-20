@@ -434,7 +434,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       {[
                         { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/disco-separador-para-muro-de-concreto", img: "/Image/disco-portada.jpeg", name: "Disco separador", desc: "Mantiene la separación entre caras de la cimbra" },
-                        { href: "/products/cimbrabau", img: "/Image/CUBETA-19LTS-PRODUCTOS-QUIMICOS-1-IMAGEN.jpg", name: "Desmoldante de concreto", desc: "Desmoldante para cimbra CIMBRABAU" },
+                        { href: "/products/cimbrabau", img: "/Image/cimbrabau-portada.png", name: "Desmoldante de concreto", desc: "Desmoldante para cimbra CIMBRABAU" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
