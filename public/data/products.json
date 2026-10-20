@@ -13312,7 +13312,7 @@
   },
   {
     "id": 5560,
-    "name": "Tubo cimbra 3 mts redondo",
+    "name": "Tubo para cimbra (Sonotubo)",
     "slug": "tubo-cimbra3-mts-redondo",
     "parent": 0,
     "type": "variable",
@@ -13320,7 +13320,7 @@
     "permalink": "https://cimbrayaccesorios.com.mx/producto/tubo-cimbra3-mts-redondo/",
     "sku": "",
     "short_description": "<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o15\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>",
-    "description": "<p>Tubo cimbra de construcción, fabricado en carton de un solo uso de 3 metros de altura.</p>",
+    "description": "<p>Sonotubo para cimbra. Molde cilíndrico fabricado con capas de cartón laminado para el colado de columnas circulares de concreto. Todos nuestros sonotubos miden 3 metros de alto. Disponible en diámetros de 15 a 100 cm.</p>",
     "on_sale": false,
     "prices": {
       "price": "14000",
@@ -13344,12 +13344,30 @@
     "images": [
       {
         "id": 5561,
-        "src": "/Image/Tubo-cimbra3-mts-redondo-DFAC.jpg",
-        "thumbnail": "/Image/Tubo-cimbra3-mts-redondo-DFAC-300x300.jpg",
-        "srcset": "/Image/Tubo-cimbra3-mts-redondo-DFAC.jpg 640w, /Image/Tubo-cimbra3-mts-redondo-DFAC-300x300.jpg 300w, /Image/Tubo-cimbra3-mts-redondo-DFAC-150x150.jpg 150w, /Image/Tubo-cimbra3-mts-redondo-DFAC-600x600.jpg 600w, /Image/Tubo-cimbra3-mts-redondo-DFAC-100x100.jpg 100w",
-        "sizes": "(max-width: 640px) 100vw, 640px",
-        "name": "Tubo-cimbra3-mts-redondo-DFAC",
-        "alt": ""
+        "src": "/Image/sonotubo-portada.png",
+        "thumbnail": "/Image/sonotubo-portada.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "sonotubo-portada",
+        "alt": "Sonotubo para cimbra DFAC"
+      },
+      {
+        "id": 5562,
+        "src": "/Image/sonotubo-detalle.png",
+        "thumbnail": "/Image/sonotubo-detalle.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "sonotubo-detalle",
+        "alt": "Sonotubos detalle interior"
+      },
+      {
+        "id": 5563,
+        "src": "/Image/sonotubo-fila.png",
+        "thumbnail": "/Image/sonotubo-fila.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "sonotubo-fila",
+        "alt": "Sonotubos en fila diferentes diámetros"
       }
     ],
     "categories": [
@@ -13565,7 +13583,8 @@
       "maximum": 9999,
       "multiple_of": 1
     },
-    "extensions": {}
+    "extensions": {},
+    "image": "/Image/sonotubo-portada.png"
   },
   {
     "id": 5551,

@@ -580,6 +580,59 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El sonotubo para cimbra es un molde cilíndrico fabricado con capas de cartón laminado, diseñado para facilitar el colado de columnas circulares de concreto u hormigón armado. Es una alternativa práctica y eficiente a los sistemas tradicionales de cimbra de madera o metal.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4 font-semibold">
+                    Todos nuestros sonotubos disponibles miden 3 metros de alto.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Disponible en diferentes diámetros y espesores, el sonotubo se adapta a los requerimientos de cada proyecto, ofreciendo una solución funcional para obtener columnas con un acabado uniforme y una geometría definida.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Cartón laminado</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Largo</p>
+                      <p className="text-base font-bold text-slate-800">3 metros</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Diámetros</p>
+                      <p className="text-base font-bold text-slate-800">15 a 100 cm</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Largo (Mts)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Diámetro (Cms)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Grosor (Mm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso (Kg)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">15</td><td className="px-3 py-2 text-slate-800">3.8</td><td className="px-3 py-2 text-slate-800">2.66</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">20</td><td className="px-3 py-2 text-slate-800">3.8</td><td className="px-3 py-2 text-slate-800">3.58</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">25</td><td className="px-3 py-2 text-slate-800">4.4</td><td className="px-3 py-2 text-slate-800">5.60</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">30</td><td className="px-3 py-2 text-slate-800">4.4</td><td className="px-3 py-2 text-slate-800">6.68</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">35</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">9.35</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">40</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">10.51</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">45</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">15.71</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">50</td><td className="px-3 py-2 text-slate-800">5.7</td><td className="px-3 py-2 text-slate-800">18.47</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">60</td><td className="px-3 py-2 text-slate-800">6.3</td><td className="px-3 py-2 text-slate-800">26.37</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">70</td><td className="px-3 py-2 text-slate-800">8.2</td><td className="px-3 py-2 text-slate-800">36.96</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">80</td><td className="px-3 py-2 text-slate-800">8.2</td><td className="px-3 py-2 text-slate-800">46.99</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">100</td><td className="px-3 py-2 text-slate-800">11</td><td className="px-3 py-2 text-slate-800">58.63</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               ) : product.slug === 'capuchon-de-seguridad' ? (
                 <div className="product-description font-sans">
                   <p className="text-sm md:text-base text-slate-800 mb-4">
@@ -765,6 +818,55 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           <td className="px-4 py-2 font-bold text-slate-800">8.1</td>
                           <td className="px-4 py-2 font-bold text-slate-800">12.3</td>
                         </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Cartón laminado · 3 metros de alto · 15 a 100 cm de diámetro</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El sonotubo para cimbra es un molde cilíndrico fabricado con capas de cartón laminado, diseñado para facilitar el colado de columnas circulares de concreto u hormigón armado. Es una alternativa práctica y eficiente a los sistemas tradicionales de cimbra de madera o metal, ya que simplifica la instalación, optimiza los tiempos de trabajo y contribuye a reducir los costos de construcción.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4 font-semibold">
+                    Todos nuestros sonotubos disponibles miden 3 metros de alto.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Ventajas del sonotubo</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Ahorro en costos: reduce gastos de fabricación, instalación y retiro de cimbras tradicionales.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Mayor eficiencia en obra: agiliza la preparación de columnas circulares.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Fácil instalación: su diseño facilita la colocación y preparación del molde.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Acabado uniforme: superficies circulares regulares sin trabajos correctivos.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Diseño ligero y práctico: fácil manipulación y traslado en obra.</span></li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Variedad de medidas: diámetros de 15 a 100 cm.</span></li>
+                  </ul>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Largo (Mts)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Diámetro (Cms)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Grosor (Mm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso (Kg)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">15</td><td className="px-3 py-2 text-slate-800">3.8</td><td className="px-3 py-2 text-slate-800">2.66</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">20</td><td className="px-3 py-2 text-slate-800">3.8</td><td className="px-3 py-2 text-slate-800">3.58</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">25</td><td className="px-3 py-2 text-slate-800">4.4</td><td className="px-3 py-2 text-slate-800">5.60</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">30</td><td className="px-3 py-2 text-slate-800">4.4</td><td className="px-3 py-2 text-slate-800">6.68</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">35</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">9.35</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">40</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">10.51</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">45</td><td className="px-3 py-2 text-slate-800">5</td><td className="px-3 py-2 text-slate-800">15.71</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">50</td><td className="px-3 py-2 text-slate-800">5.7</td><td className="px-3 py-2 text-slate-800">18.47</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">60</td><td className="px-3 py-2 text-slate-800">6.3</td><td className="px-3 py-2 text-slate-800">26.37</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">70</td><td className="px-3 py-2 text-slate-800">8.2</td><td className="px-3 py-2 text-slate-800">36.96</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">80</td><td className="px-3 py-2 text-slate-800">8.2</td><td className="px-3 py-2 text-slate-800">46.99</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800">3</td><td className="px-3 py-2 text-slate-800">100</td><td className="px-3 py-2 text-slate-800">11</td><td className="px-3 py-2 text-slate-800">58.63</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -1576,6 +1678,47 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   </Button>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Tubo para cimbra (Sonotubo) - Detailed info sections below the grid */}
+          {product.slug === 'tubo-cimbra3-mts-redondo' && (
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">¿Cómo está fabricado el sonotubo?</h3>
+                <div className="bg-card border rounded-xl p-6 md:p-8 shadow-sm">
+                  <p className="text-sm md:text-base text-slate-700">
+                    El sonotubo se fabrica mediante el enrollado en espiral de múltiples capas de papel y cartón, unidas con adhesivos especiales mediante un proceso de laminado que proporciona rigidez y resistencia. Su estructura está diseñada para soportar las condiciones de uso durante el colado del concreto.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">Aplicaciones</h3>
+                <p className="text-muted-foreground mb-6">El sonotubo se utiliza principalmente en la construcción de columnas circulares de concreto:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {['Obras residenciales', 'Edificaciones comerciales', 'Columnas arquitectónicas', 'Infraestructura'].map((uso) => (
+                    <div key={uso} className="bg-card border rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                      <span className="text-sm font-semibold text-slate-700">{uso}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Información técnica</h3>
+                <div className="overflow-hidden rounded-xl border bg-card shadow-sm">
+                  <table className="w-full text-sm">
+                    <tbody className="divide-y">
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700 w-1/2">Material</td><td className="px-4 py-3 text-slate-600">Capas de papel y cartón laminadas</td></tr>
+                      <tr><td className="px-4 py-3 font-medium text-slate-700">Proceso de fabricación</td><td className="px-4 py-3 text-slate-600">Enrollado en espiral y unión mediante adhesivos</td></tr>
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700">Función principal</td><td className="px-4 py-3 text-slate-600">Molde para colado de columnas circulares</td></tr>
+                      <tr><td className="px-4 py-3 font-medium text-slate-700">Presentación</td><td className="px-4 py-3 text-slate-600">Pieza individual</td></tr>
+                      <tr className="bg-slate-50"><td className="px-4 py-3 font-medium text-slate-700">Medidas disponibles</td><td className="px-4 py-3 text-slate-600">Diámetros de 15 a 100 cm, todos de 3 metros de alto</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           )}
 
