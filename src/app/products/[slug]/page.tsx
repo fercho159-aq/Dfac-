@@ -588,9 +588,11 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     El sonotubo para cimbra es un molde cilíndrico fabricado con capas de cartón laminado, diseñado para facilitar el colado de columnas circulares de concreto u hormigón armado. Es una alternativa práctica y eficiente a los sistemas tradicionales de cimbra de madera o metal.
                   </p>
-                  <p className="text-sm md:text-base text-slate-800 mb-4 font-semibold">
-                    Todos nuestros sonotubos disponibles miden 3 metros de alto.
-                  </p>
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-lg">
+                    <p className="text-sm md:text-base text-amber-900 font-bold">
+                      Todos nuestros sonotubos disponibles miden 3 metros de alto.
+                    </p>
+                  </div>
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     Disponible en diferentes diámetros y espesores, el sonotubo se adapta a los requerimientos de cada proyecto, ofreciendo una solución funcional para obtener columnas con un acabado uniforme y una geometría definida.
                   </p>
@@ -833,9 +835,11 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     El sonotubo para cimbra es un molde cilíndrico fabricado con capas de cartón laminado, diseñado para facilitar el colado de columnas circulares de concreto u hormigón armado. Es una alternativa práctica y eficiente a los sistemas tradicionales de cimbra de madera o metal, ya que simplifica la instalación, optimiza los tiempos de trabajo y contribuye a reducir los costos de construcción.
                   </p>
-                  <p className="text-sm md:text-base text-slate-800 mb-4 font-semibold">
-                    Todos nuestros sonotubos disponibles miden 3 metros de alto.
-                  </p>
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4 rounded-r-lg">
+                    <p className="text-sm md:text-base text-amber-900 font-bold">
+                      Todos nuestros sonotubos disponibles miden 3 metros de alto.
+                    </p>
+                  </div>
 
                   <h4 className="text-base font-bold text-slate-800 mb-3">Ventajas del sonotubo</h4>
                   <ul className="space-y-2 mb-6">
