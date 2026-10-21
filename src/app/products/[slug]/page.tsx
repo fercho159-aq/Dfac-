@@ -59,6 +59,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'tubo-cimbra3-mts-redondo': [
     '/archivos/fichas-tecnicas/ficha-tecnica-tubo-cimbra-sonotubo.pdf',
   ],
+  'silleta-h-para-varilla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-h-para-varilla.pdf',
+  ],
 };
 
 // New component for related products
@@ -583,6 +586,67 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'silleta-h-para-varilla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gran capacidad de carga y mayor estabilidad, ya que sobre un eje tiene dos puntos de soporte para el acero. Muy poca superficie de contacto, funciona para acabados aparentes.
+                  </p>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span>Fabricados con 100% polipropileno o polietileno y pigmento</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span>Fabricados bajo proceso de inyección de plástico</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span>Producto 100% impermeable e inerte, no reacciona con el concreto</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span>Se utiliza en todo tipo de losas, trabes y contra trabes, prefabricados, tilt-ups y post-tensados (se puede aplicar para piso)</span>
+                    </li>
+                  </ul>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">275 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Calibre de acero</p>
+                      <p className="text-base font-bold text-slate-800">Varilla hasta 1 1/2&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Polipropileno / Polietileno</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Medida de recubrimiento</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">2.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">4 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">6.5 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">7.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">9 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">10 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">11.5 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">12.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">14 cm</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800">15 cm</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
                 <div className="product-description font-sans">
                   <p className="text-sm md:text-base text-slate-800 mb-4">
@@ -823,6 +887,55 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           <td className="px-4 py-2 font-bold text-slate-800">8.1</td>
                           <td className="px-4 py-2 font-bold text-slate-800">12.3</td>
                         </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'silleta-h-para-varilla' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Polipropileno / Polietileno · Carga máx. 275 Kg · Varilla hasta 1 1/2&quot;</span>
+                  </div>
+
+                  <h3 className="text-base md:text-lg font-bold text-slate-800 mt-4 mb-3">Características de la Silleta H</h3>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span><b>Doble punto de soporte:</b> sobre un eje tiene dos puntos de apoyo para el acero, brindando mayor estabilidad.</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span><b>Acabados aparentes:</b> muy poca superficie de contacto, ideal para acabados visibles de concreto.</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span><b>100% impermeable e inerte:</b> no reacciona con el concreto, garantizando la integridad de la estructura.</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">●</span>
+                      <span><b>Inyección de plástico:</b> fabricado bajo proceso de inyección con polipropileno o polietileno y pigmento.</span>
+                    </li>
+                  </ul>
+
+                  <div className="mt-6 border border-slate-200 rounded-lg overflow-hidden">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Medida de recubrimiento</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">2.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">4 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">6.5 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">7.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">9 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">10 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">11.5 cm</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800">12.5 cm</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800">14 cm</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800">15 cm</td></tr>
                       </tbody>
                     </table>
                   </div>
