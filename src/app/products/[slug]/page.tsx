@@ -647,6 +647,29 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'silleta-h-de-4-puntos' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gran diseño y estabilidad, sobre un eje tiene dos puntos de soporte para el acero. Excelente rendimiento en el concreto y agregados gruesos. Superficie de contacto mínima, ideal para acabados aparentes.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">275 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Calibre de acero</p>
+                      <p className="text-base font-bold text-slate-800">Varilla hasta 1 1/2&quot;</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Aplicaciones</p>
+                      <p className="text-base font-bold text-slate-800">Losas, trabes, prefabricados</p>
+                    </div>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-700">
+                    Se utiliza en todo tipo de losas, trabes y contratrabes, prefabricados, tilt-ups y post-tensados.
+                  </p>
+                </div>
               ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
                 <div className="product-description font-sans">
                   <p className="text-sm md:text-base text-slate-800 mb-4">
@@ -939,6 +962,15 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'silleta-h-de-4-puntos' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Carga máx. 275 Kg · Varilla hasta 1 1/2&quot; · 4 puntos de apoyo</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gran diseño y estabilidad, sobre un eje tiene dos puntos de soporte para el acero. Excelente rendimiento en el concreto y agregados gruesos. Superficie de contacto mínima, ideal para acabados aparentes. Se utiliza en todo tipo de losas, trabes y contratrabes, prefabricados, tilt-ups y post-tensados.
+                  </p>
                 </div>
               ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
                 <div className="product-description font-sans">

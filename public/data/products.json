@@ -16060,39 +16060,30 @@
     "images": [
       {
         "id": 6581,
-        "src": "/Image/SH200-4-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SH200-4-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SH200-4-IMAGEN-1.jpg 1280w, /Image/SH200-4-IMAGEN-1-300x300.jpg 300w, /Image/SH200-4-IMAGEN-1-1024x1024.jpg 1024w, /Image/SH200-4-IMAGEN-1-150x150.jpg 150w, /Image/SH200-4-IMAGEN-1-768x768.jpg 768w, /Image/SH200-4-IMAGEN-1-720x720.jpg 720w, /Image/SH200-4-IMAGEN-1-600x600.jpg 600w, /Image/SH200-4-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SH200-4-IMAGEN",
-        "alt": ""
+        "src": "/Image/silleta-h-4puntos-portada.png",
+        "thumbnail": "/Image/silleta-h-4puntos-portada.png",
+        "srcset": "/Image/silleta-h-4puntos-portada.png 800w",
+        "sizes": "(max-width: 800px) 100vw, 800px",
+        "name": "silleta-h-4puntos-portada",
+        "alt": "Silleta H para varilla 4 puntos de apoyo DFAC"
       },
       {
         "id": 6584,
-        "src": "/Image/SH300-4-1-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SH300-4-1-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SH300-4-1-IMAGEN-1.jpg 1280w, /Image/SH300-4-1-IMAGEN-1-300x300.jpg 300w, /Image/SH300-4-1-IMAGEN-1-1024x1024.jpg 1024w, /Image/SH300-4-1-IMAGEN-1-150x150.jpg 150w, /Image/SH300-4-1-IMAGEN-1-768x768.jpg 768w, /Image/SH300-4-1-IMAGEN-1-720x720.jpg 720w, /Image/SH300-4-1-IMAGEN-1-600x600.jpg 600w, /Image/SH300-4-1-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SH300-4-1-IMAGEN",
-        "alt": ""
+        "src": "/Image/silleta-h-4puntos-detalle.png",
+        "thumbnail": "/Image/silleta-h-4puntos-detalle.png",
+        "srcset": "/Image/silleta-h-4puntos-detalle.png 800w",
+        "sizes": "(max-width: 800px) 100vw, 800px",
+        "name": "silleta-h-4puntos-detalle",
+        "alt": "Silleta H para varilla 4 puntos detalle"
       },
       {
         "id": 6582,
-        "src": "/Image/SH150-4-3-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SH150-4-3-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SH150-4-3-IMAGEN-1.jpg 1280w, /Image/SH150-4-3-IMAGEN-1-300x300.jpg 300w, /Image/SH150-4-3-IMAGEN-1-1024x1024.jpg 1024w, /Image/SH150-4-3-IMAGEN-1-150x150.jpg 150w, /Image/SH150-4-3-IMAGEN-1-768x768.jpg 768w, /Image/SH150-4-3-IMAGEN-1-720x720.jpg 720w, /Image/SH150-4-3-IMAGEN-1-600x600.jpg 600w, /Image/SH150-4-3-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SH150-4-3-IMAGEN",
-        "alt": ""
-      },
-      {
-        "id": 6583,
-        "src": "/Image/SH150-4-4-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SH150-4-4-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SH150-4-4-IMAGEN-1.jpg 1280w, /Image/SH150-4-4-IMAGEN-1-300x300.jpg 300w, /Image/SH150-4-4-IMAGEN-1-1024x1024.jpg 1024w, /Image/SH150-4-4-IMAGEN-1-150x150.jpg 150w, /Image/SH150-4-4-IMAGEN-1-768x768.jpg 768w, /Image/SH150-4-4-IMAGEN-1-720x720.jpg 720w, /Image/SH150-4-4-IMAGEN-1-600x600.jpg 600w, /Image/SH150-4-4-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SH150-4-4-IMAGEN",
-        "alt": ""
+        "src": "/Image/silleta-h-4puntos-uso.png",
+        "thumbnail": "/Image/silleta-h-4puntos-uso.png",
+        "srcset": "/Image/silleta-h-4puntos-uso.png 800w",
+        "sizes": "(max-width: 800px) 100vw, 800px",
+        "name": "silleta-h-4puntos-uso",
+        "alt": "Silleta H para varilla 4 puntos en uso"
       }
     ],
     "categories": [
@@ -16218,7 +16209,8 @@
       "maximum": 9999,
       "multiple_of": 1
     },
-    "extensions": {}
+    "extensions": {},
+    "image": "/Image/silleta-h-4puntos-portada.png"
   },
   {
     "id": 5412,
