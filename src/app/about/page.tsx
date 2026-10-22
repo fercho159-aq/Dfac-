@@ -1,7 +1,13 @@
 
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+
+export const metadata: Metadata = {
+  title: 'Nosotros — DFAC Accesorios para Cimbra',
+  description: 'Desde 2010 distribuyendo accesorios para cimbra, andamios y apuntalamiento en México. Entrega en 24 horas, más de 1,000 proyectos exitosos.',
+};
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Eye, Gem, Handshake, ShieldCheck, Star, Target, Users, Zap } from 'lucide-react';
 

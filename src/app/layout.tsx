@@ -8,11 +8,24 @@ import Script from 'next/script';
 import { FloatingActionButtons } from '@/components/floating-action-buttons';
 
 export const metadata: Metadata = {
-  title: 'DFAC - Accesorios para Cimbra',
-  description: 'Soluciones y accesorios para cimbra con entrega en 24 horas.',
-  keywords: ['cimbra', 'andamios', 'construccion', 'accesorios para cimbra', 'apuntalamiento'],
+  metadataBase: new URL('https://cimbrayaccesorios.com.mx'),
+  title: {
+    default: 'DFAC - Accesorios para Cimbra | Venta en CDMX con Entrega en 24h',
+    template: '%s | DFAC Accesorios para Cimbra',
+  },
+  description: 'Venta de accesorios para cimbra, andamios, puntales, silletas, cuñas y productos para concreto en CDMX y Zona Metropolitana. Entrega en 24 horas.',
+  keywords: ['cimbra', 'andamios', 'construccion', 'accesorios para cimbra', 'apuntalamiento', 'puntales', 'silletas', 'CDMX'],
   verification: {
-    google: 'jkMx5np0vlwBrwGvt51jqLcHkS1jNTh83-yBdKYfpRQ',
+    google: [
+      'jkMx5np0vlwBrwGvt51jqLcHkS1jNTh83-yBdKYfpRQ',
+      '7P_GYcW51SlnE2dIlYHZpcRiLFkUQzxozntPfDwIYGM',
+    ],
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'es_MX',
+    siteName: 'DFAC - Accesorios para Cimbra',
+    description: 'Venta de accesorios para cimbra, andamios, puntales, silletas y productos para concreto en CDMX. Entrega en 24 horas.',
   },
 };
 
@@ -24,6 +37,39 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              name: 'DFAC - Accesorios para Cimbra',
+              description: 'Venta de accesorios para cimbra, andamios, puntales, silletas, cuñas y productos para concreto en CDMX y Zona Metropolitana.',
+              url: 'https://cimbrayaccesorios.com.mx',
+              telephone: ['+525525989751', '+525541673745', '+525555715084'],
+              email: 'ventas@cimbrayaccesorios.com.mx',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Cuauhtémoc 105, San Pedro Iztacalco',
+                addressLocality: 'Iztacalco',
+                addressRegion: 'Ciudad de México',
+                postalCode: '08220',
+                addressCountry: 'MX',
+              },
+              openingHoursSpecification: {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                opens: '09:00',
+                closes: '18:00',
+              },
+              sameAs: [
+                'https://www.facebook.com/share/1GYpQ8pWLK/',
+                'https://www.instagram.com/dfac_cimbra',
+                'https://www.tiktok.com/@accesorios.dfac',
+              ],
+            }),
+          }}
+        />
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`

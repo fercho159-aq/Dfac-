@@ -1,6 +1,12 @@
 
+import type { Metadata } from 'next';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: 'Preguntas Frecuentes',
+  description: 'Respuestas sobre productos para cimbra, entregas, formas de pago, certificaciones y pedidos al mayoreo. DFAC — accesorios para cimbra en CDMX.',
+};
 import { Mail, Phone } from "lucide-react";
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Link from "next/link";
