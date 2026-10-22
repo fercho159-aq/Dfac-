@@ -62,6 +62,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-h-para-varilla': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-h-para-varilla.pdf',
   ],
+  'silleta-h-de-4-puntos': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-h-4-puntos.pdf',
+  ],
 };
 
 // New component for related products
