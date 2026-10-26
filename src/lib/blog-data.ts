@@ -20,6 +20,70 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "silleta-h-para-varilla-acero-refuerzo",
+    title: "Silleta H para varilla – 4 puntos de apoyo",
+    excerpt: "Conoce las características, aplicaciones y beneficios de las silletas para acero de refuerzo: soporte con contacto mínimo, control del recubrimiento y desempeño en concreto con agregados gruesos. Incluye recomendaciones para elegir el modelo adecuado para tu obra.",
+    image: "/Image/portada-silleta-h-para-varilla-acero-refuerzo.png",
+    category: "Accesorios",
+    location: "México",
+    author: "Equipo DFAC",
+    date: "2026-10-25",
+    readTime: "2 min",
+    content: [
+      {
+        heading: "Descripción del producto",
+        paragraphs: [
+          "Las silletas para acero de refuerzo están diseñadas para brindar soporte y mantener la posición adecuada del armado de acero durante el proceso de construcción. Su diseño permite una instalación práctica y eficiente, ofreciendo un excelente desempeño en elementos de concreto y agregados gruesos.",
+          "Gracias a su configuración de dos puntos de apoyo para el acero, proporcionan una superficie de contacto mínima, ideal para proyectos donde se requieren acabados aparentes y una correcta colocación del refuerzo.",
+        ],
+      },
+      {
+        heading: "Características principales",
+        paragraphs: [
+          "• Carga máxima: 275 kg.",
+          "• Calibre de acero: varilla de hasta 1 1/2 pulgadas.",
+          "• Diseño: dos puntos de apoyo para el acero de refuerzo.",
+          "• Desempeño: adecuadas para concreto y agregados gruesos.",
+          "• Acabados: su superficie de contacto mínima favorece los acabados aparentes.",
+        ],
+      },
+      {
+        heading: "Aplicaciones",
+        paragraphs: [
+          "Las silletas para acero de refuerzo se utilizan en diferentes sistemas y elementos constructivos, entre ellos:",
+          "• Losas de concreto.",
+          "• Trabes y contratrabes.",
+          "• Elementos prefabricados.",
+          "• Sistemas tilt-up.",
+          "• Estructuras postensadas.",
+          "Se recomienda distribuir las silletas a una distancia aproximada de 60 a 90 cm entre sí, traslapándolas cuando sea necesario, de acuerdo con el peso y la configuración del armado de acero de refuerzo. La separación definitiva debe verificarse según las condiciones del proyecto y las especificaciones técnicas aplicables.",
+        ],
+      },
+      {
+        heading: "Beneficios para tus proyectos de construcción",
+        paragraphs: [
+          "• Control del recubrimiento: ayudan a mantener la separación requerida entre el acero de refuerzo y la superficie del concreto.",
+          "• Facilidad de instalación: su diseño permite colocar los apoyos de manera práctica.",
+          "• Versatilidad: cuentan con diferentes modelos para adaptarse a distintos requerimientos de recubrimiento.",
+          "• Calidad en los acabados: su diseño de contacto mínimo resulta conveniente en aplicaciones con concreto aparente, sujeto a las condiciones de instalación.",
+        ],
+      },
+      {
+        heading: "Elige la silleta adecuada para tu obra",
+        paragraphs: [
+          "Seleccionar el modelo correcto permite mantener el acero de refuerzo en la posición requerida y contribuir a una ejecución adecuada de los elementos de concreto. Considera el recubrimiento especificado, el peso del armado y las condiciones particulares de tu proyecto antes de elegir el modelo.",
+          "En DFAC, contar con los accesorios adecuados para la construcción es parte fundamental de lograr instalaciones eficientes y resultados de calidad.",
+        ],
+      },
+      {
+        heading: "¿Necesitas más información?",
+        paragraphs: [
+          "Consulta las especificaciones de cada modelo y elige la opción que mejor se adapte a los requerimientos de tu obra.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "disco-separador-para-muro-de-concreto",
     title: "Disco separador para muro de concreto: precisión y resistencia en cada instalación",
     excerpt: "Mantener el acero de refuerzo centrado es clave para lograr el recubrimiento especificado. Revisa las características, medidas y modelos disponibles de este separador con clip interno para muros de concreto reforzado.",
