@@ -61,6 +61,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'cono-para-cimbra': [
     '/archivos/fichas-tecnicas/ficha-tecnica-cono-para-cimbra.pdf',
   ],
+  'cono-para-mono-de-cimbra': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-cono-para-mono-de-cimbra.pdf',
+  ],
   'puntal-metalico-extensible-italiano': [
     '/archivos/fichas-tecnicas/ficha-tecnica-puntal-telescopico.pdf',
   ],
@@ -624,6 +627,41 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'cono-para-mono-de-cimbra' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los conos para moño son accesorios que complementan determinados sistemas de sujeción empleados durante el armado y colado de elementos de concreto. Se colocan únicamente de acuerdo con la configuración del tirante y las instrucciones del fabricante. La geometría cónica puede ayudar a definir el espacio alrededor del tirante y, cuando el diseño lo contempla, facilitar el resane o sellado posterior.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-base font-bold text-slate-800">Poliestireno rígido</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Configuración</p>
+                      <p className="text-base font-bold text-slate-800">Pieza cónica</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Uso principal</p>
+                      <p className="text-base font-bold text-slate-800">Tirantes/moños</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">✓</span>
+                      <span>Cimbra para muros de concreto colado en sitio</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">✓</span>
+                      <span>Sistemas de cimbra para trabes y columnas, cuando el sistema sea compatible</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-sm md:text-base text-slate-700">
+                      <span className="text-blue-600 mt-1">✓</span>
+                      <span>Obras que utilizan moños o tirantes con dimensiones de acoplamiento correspondientes</span>
+                    </li>
+                  </ul>
+                </div>
               ) : product.slug === 'silleta-h-para-varilla' ? (
                 <div className="product-description font-sans">
                   <p className="text-sm md:text-base text-slate-800 mb-4">
@@ -981,6 +1019,15 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'cono-para-mono-de-cimbra' ? (
+                <div className="product-description font-sans">
+                  <div className="bg-blue-600 inline-block px-4 py-2 mb-4 text-center rounded">
+                    <span className="text-sm md:text-base text-white font-medium">Poliestireno rígido · Complemento de tirantes/moños · Pieza cónica</span>
+                  </div>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los conos para moño son accesorios auxiliares de geometría cónica utilizados con sistemas compatibles de moños o tirantes para cimbra. Su diseño permite alojar el tirante o accesorio correspondiente y, cuando el diseño lo contempla, facilitar el resane o sellado posterior al descimbrado.
+                  </p>
                 </div>
               ) : product.slug === 'silleta-h-para-varilla' ? (
                 <div className="product-description font-sans">

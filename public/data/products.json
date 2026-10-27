@@ -14177,7 +14177,7 @@
   },
   {
     "id": 5532,
-    "name": "Cono para moño de cimbra",
+    "name": "Cono para cimbra",
     "slug": "cono-para-cimbra",
     "parent": 0,
     "type": "variable",
@@ -18278,5 +18278,112 @@
       "multiple_of": 1
     },
     "image": "/Image/Viga-H20-new/viga-h20-portada.png"
+  },
+  {
+    "id": 99901,
+    "name": "Cono para moño de cimbra",
+    "slug": "cono-para-mono-de-cimbra",
+    "parent": 0,
+    "type": "variable",
+    "variation": "",
+    "permalink": "https://cimbrayaccesoriosdfac.com.mx/products/cono-para-mono-de-cimbra",
+    "sku": "",
+    "short_description": "",
+    "description": "<p>Accesorio auxiliar de geometría cónica utilizado con sistemas compatibles de moños o tirantes para cimbra. Los conos para moño complementan determinados sistemas de sujeción empleados durante el armado y colado de elementos de concreto. Su geometría cónica permite alojar el tirante o accesorio correspondiente según el diseño y facilitar el resane o sellado posterior.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "",
+      "regular_price": "",
+      "sale_price": "",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar información",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 0,
+        "src": "/Image/cono-colores.jpeg",
+        "thumbnail": "/Image/cono-colores.jpeg",
+        "name": "cono-mono-colores",
+        "alt": "Conos para moño de cimbra DFAC - varios colores"
+      },
+      {
+        "id": 1,
+        "src": "/Image/cono-atados.jpeg",
+        "thumbnail": "/Image/cono-atados.jpeg",
+        "name": "cono-mono-atados",
+        "alt": "Conos para moño de cimbra DFAC - atados para distribución"
+      },
+      {
+        "id": 2,
+        "src": "/Image/cono-bodega.jpeg",
+        "thumbnail": "/Image/cono-bodega.jpeg",
+        "name": "cono-mono-bodega",
+        "alt": "Conos para moño de cimbra DFAC en bodega"
+      }
+    ],
+    "categories": [
+      {
+        "id": 44,
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
+        "link": "https://cimbrayaccesoriosdfac.com.mx/categoria-producto/accesorios-para-cimbra/"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Medida",
+        "taxonomy": "pa_medida",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 200,
+            "name": "Universal",
+            "slug": "universal"
+          }
+        ]
+      }
+    ],
+    "variations": [
+      {
+        "id": 99902,
+        "attributes": [
+          {
+            "name": "Medida",
+            "value": "universal"
+          }
+        ]
+      }
+    ],
+    "has_options": true,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Elige las opciones para &ldquo;Cono para moño de cimbra&rdquo;",
+      "url": "https://cimbrayaccesoriosdfac.com.mx/products/cono-para-mono-de-cimbra",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {},
+    "image": "/Image/cono-colores.jpeg"
   }
 ]
