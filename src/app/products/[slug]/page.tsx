@@ -475,6 +475,37 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                 </div>
               )}
 
+              {/* Productos complementarios para cono para moño */}
+              {product.slug === 'cono-para-mono-de-cimbra' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
+                        { href: "/products/cunas-para-mono-de-cimbra", img: "/Image/cuna-portada.jpeg", name: "Cuñas para moño", desc: "Complemento para sistema de moño" },
+                        { href: "/products/barra-roscada-2", img: "/Image/barra-portada.jpeg", name: "Barra Roscada", desc: "Barra de acero cold rolled de 5/8\"" },
+                        { href: "/products/tuerca-mariposa-con-base", img: "/Image/tuerca-portada.jpeg", name: "Tuerca Mariposa con Base", desc: "Fijación segura para la barra roscada" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                            <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                              <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                            <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                  </Carousel>
+                </div>
+              )}
+
               {/* Productos complementarios para banda de PVC */}
               {product.slug === 'banda-de-pvc-negra-ojillada' && (
                 <div className="mt-6">
