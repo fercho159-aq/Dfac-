@@ -485,7 +485,6 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
                         { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
-                        { href: "/products/cunas-para-mono-de-cimbra", img: "/Image/cuna-portada.jpeg", name: "Cuñas para moño", desc: "Complemento para sistema de moño" },
                         { href: "/products/barra-roscada-2", img: "/Image/barra-portada.jpeg", name: "Barra Roscada", desc: "Barra de acero cold rolled de 5/8\"" },
                         { href: "/products/tuerca-mariposa-con-base", img: "/Image/tuerca-portada.jpeg", name: "Tuerca Mariposa con Base", desc: "Fijación segura para la barra roscada" },
                       ].map((item) => (
