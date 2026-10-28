@@ -39,39 +39,29 @@ const features = [
 
 const testimonials = [
   {
-    name: "Constructora XYZ",
-    quote: "La calidad de los puntales y la velocidad de entrega de DFAC no tienen comparación. Son nuestro proveedor de confianza para cada obra.",
+    name: "Luis Mario Reyes",
+    quote: "Excelente atención y servicio. En DFAC encontrarás accesorios para cimbra de alta calidad, entregas rápidas y asesoría profesional para cada proyecto. Su equipo siempre está dispuesto a resolver dudas y ofrecer la mejor solución para la obra.",
     rating: 5,
   },
   {
-    name: "Ing. Roberto Morales",
-    quote: "El equipo de DFAC siempre está dispuesto a asesorarte. Gracias a ellos, optimizamos nuestros costos de apuntalamiento en un 15%.",
+    name: "Facturación Cuatro Cuartos",
+    quote: "Muy buena atención y servicio, respuesta y entregas rápidas lo cual es muy eficiente para nuestra forma de trabajo, ya llevo 1 año trabajando con ellos y los recomiendo ampliamente.",
     rating: 5,
   },
   {
-    name: "ARQ. Sofia Castillo",
-    quote: "Los andamios son robustos y seguros. La plataforma antideslizante es un detalle que marca la diferencia en la seguridad del personal.",
+    name: "Alexis Garcia Vazquez",
+    quote: "Excelente servicio y atención en DFAC. Tienen una gran variedad de accesorios para cimbra, puntales y maquinaria de muy buena calidad. Además, cuentan con excelentes promociones y precios competitivos.",
     rating: 5,
   },
   {
-    name: "Grupo Constructor Alfa",
-    quote: "Tuvimos un requerimiento de último minuto y DFAC nos resolvió en tiempo récord. Su servicio al cliente es excepcional.",
+    name: "Rosalba Hernandez Alcantara",
+    quote: "¡Excelente servicio, atención oportuna y buenos precios!",
     rating: 5,
   },
   {
-    name: "Proyectos Verticales S.A.",
-    quote: "Su catálogo es muy completo. Encontramos todo lo que necesitábamos para el sistema de cimbra de nuestro nuevo edificio en un solo lugar.",
+    name: "Adorian Campos",
+    quote: "Una gran empresa, con atención personalizada de primera que maneja productos de excelente calidad y precio.",
     rating: 5,
-  },
-  {
-    name: "Desarrollos Urbanos MX",
-    quote: "La asesoría técnica que recibimos fue clave para el éxito de nuestro proyecto más reciente. ¡Totalmente recomendados!",
-    rating: 5
-  },
-  {
-    name: "Edifica Corp.",
-    quote: "Los precios son muy competitivos y la calidad del material es de primera. No hemos tenido un solo problema.",
-    rating: 5
   },
 ];
 
