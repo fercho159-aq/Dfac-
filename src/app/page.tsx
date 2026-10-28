@@ -642,6 +642,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Videos Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Videos <span className="text-primary">Explicativos</span></h2>
+            <p className="mt-4 text-lg text-muted-foreground">Conoce nuestros productos en acción</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { src: "/videos/silletas.mp4", title: "Silletas para construcción", description: "Tipos y usos de silletas" },
+              { src: "/videos/monos-1.mp4", title: "Moños para cimbra", description: "Características de moños para cimbra" },
+              { src: "/videos/puntal-1.mp4", title: "Puntal para cimbra", description: "Uso del puntal estándar" },
+            ].map((video) => (
+              <div key={video.src} className="group">
+                <div className="relative rounded-lg overflow-hidden shadow-lg bg-black">
+                  <video controls preload="metadata" className="w-full aspect-video">
+                    <source src={video.src} type="video/mp4" />
+                  </video>
+                </div>
+                <h3 className="mt-3 text-lg font-semibold">{video.title}</h3>
+                <p className="text-muted-foreground text-sm">{video.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button asChild size="lg" variant="outline">
+              <Link href="/videos">Ver Todos los Videos <ArrowRight className="ml-2 w-4 h-4" /></Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

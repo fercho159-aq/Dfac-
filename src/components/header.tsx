@@ -16,6 +16,7 @@ const navLinks = [
   { href: "/#catalog", label: "Catálogo" },
   { href: "/about", label: "Nosotros" },
   { href: "/#promociones", label: "Promociones" },
+  { href: "/videos", label: "Videos" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "Preguntas frecuentes" },
 ];
