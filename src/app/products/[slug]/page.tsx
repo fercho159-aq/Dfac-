@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft, Download, FileText } from 'lucide-react';
+import { ArrowLeft, Download, FileText, Play } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -105,6 +105,95 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   ],
 };
 
+const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
+  'puntal-metalico-extensible-italiano': [
+    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
+    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
+    { src: '/videos/puntal-4.mp4', title: 'Puntal — Instalación' },
+    { src: '/videos/puntal-5.mp4', title: 'Puntal — Especificaciones' },
+  ],
+  'tirante-tipo-mono-con-rondana': [
+    { src: '/videos/mono-rondana.mp4', title: 'Moño con rondana' },
+    { src: '/videos/monos-1.mp4', title: 'Moños para cimbra' },
+    { src: '/videos/mono-3.mp4', title: 'Moño — Demostración' },
+    { src: '/videos/mono-medidas.mp4', title: 'Moño — Medidas' },
+  ],
+  'tirante-tipo-mono': [
+    { src: '/videos/monos-1.mp4', title: 'Moños para cimbra' },
+    { src: '/videos/mono-3.mp4', title: 'Moño — Demostración' },
+    { src: '/videos/mono-rondana.mp4', title: 'Moño con rondana' },
+    { src: '/videos/mono-medidas.mp4', title: 'Moño — Medidas' },
+  ],
+  'silleta-h-para-varilla': [
+    { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
+    { src: '/videos/silletas-2.mp4', title: 'Silletas — Aplicación' },
+    { src: '/videos/silleta-1.mp4', title: 'Silleta individual' },
+    { src: '/videos/silleta-2.mp4', title: 'Silleta — Instalación' },
+  ],
+  'silleta-h-de-4-puntos': [
+    { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
+    { src: '/videos/silletas-2.mp4', title: 'Silletas — Aplicación' },
+    { src: '/videos/silleta-1.mp4', title: 'Silleta individual' },
+  ],
+  'silleta-f': [
+    { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
+    { src: '/videos/silletas-2.mp4', title: 'Silletas — Aplicación' },
+  ],
+  'silleta-de-entrepiso': [
+    { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
+    { src: '/videos/silletas-2.mp4', title: 'Silletas — Aplicación' },
+  ],
+  'silleta-de-entrepiso-para-malla': [
+    { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
+    { src: '/videos/silletas-2.mp4', title: 'Silletas — Aplicación' },
+  ],
+  'banda-de-pvc-negra-ojillada': [
+    { src: '/videos/banda-pvc.mp4', title: 'Banda de PVC' },
+  ],
+  'capuchon-de-seguridad': [
+    { src: '/videos/capuchones.mp4', title: 'Capuchones de seguridad' },
+  ],
+  'chicote': [
+    { src: '/videos/chicotes.mp4', title: 'Chicotes' },
+  ],
+  'chicote-para-vibrador-a-gasolina-mpower': [
+    { src: '/videos/chicotes.mp4', title: 'Chicotes para vibrador' },
+  ],
+  'chicote-para-vibrador-a-gasolina-enar': [
+    { src: '/videos/chicotes.mp4', title: 'Chicotes para vibrador' },
+  ],
+  'vibrador-para-concreto': [
+    { src: '/videos/vibrador-para-concreto.mp4', title: 'Vibrador para concreto' },
+    { src: '/videos/vibradores-electrico-y-gasolina.mp4', title: 'Vibradores eléctrico y a gasolina' },
+  ],
+  'vibrador-de-concreto-electrico': [
+    { src: '/videos/vibrador-para-concreto.mp4', title: 'Vibrador para concreto' },
+    { src: '/videos/vibradores-electrico-y-gasolina.mp4', title: 'Vibradores eléctrico y a gasolina' },
+  ],
+  'vibrador-para-concreto-a-gasolina-mpower': [
+    { src: '/videos/vibrador-para-concreto.mp4', title: 'Vibrador para concreto' },
+    { src: '/videos/vibradores-electrico-y-gasolina.mp4', title: 'Vibradores eléctrico y a gasolina' },
+  ],
+  'vibrador-para-concreto-a-gasolina-enar': [
+    { src: '/videos/vibrador-para-concreto.mp4', title: 'Vibrador para concreto' },
+    { src: '/videos/vibradores-electrico-y-gasolina.mp4', title: 'Vibradores eléctrico y a gasolina' },
+  ],
+  'cabezal-para-puntal': [
+    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
+    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
+  ],
+  'base-estabilizadora': [
+    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
+    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
+  ],
+  'malacate': [
+    { src: '/videos/malacate.mp4', title: 'Malacate' },
+  ],
+  'flota-de-magnesio': [
+    { src: '/videos/flota-de-magnesio.mp4', title: 'Flota de magnesio' },
+  ],
+};
+
 // New component for related products
 function RelatedProducts({ products, searchParams }: { products: Product[], searchParams: { [key: string]: string | string[] | undefined } }) {
   if (products.length === 0) {
@@ -168,6 +257,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
   const whatsappUrl = `https://wa.me/525564220884?text=${encodeURIComponent(whatsappMessage)}`;
   const productsLink = `/products?${new URLSearchParams(cleanSearchParams(searchParams))}`;
   const fichaTecnicaUrls = FICHAS_TECNICAS[product.slug];
+  const productVideos = PRODUCT_VIDEOS[product.slug];
 
 
   return (
@@ -2605,6 +2695,38 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
 
         </div>
       </div>
+      {productVideos && productVideos.length > 0 && (
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4">
+                <Play className="w-5 h-5" />
+                <span className="font-semibold text-sm">Videos del producto</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Mira el producto en acción</h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">Videos demostrativos de uso, instalación y características técnicas</p>
+            </div>
+            <div className={`grid gap-6 ${productVideos.length === 1 ? 'max-w-2xl mx-auto' : 'grid-cols-1 md:grid-cols-2'}`}>
+              {productVideos.map((video) => (
+                <div key={video.src} className="group">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg bg-black">
+                    <video
+                      controls
+                      preload="metadata"
+                      className="w-full aspect-video"
+                    >
+                      <source src={video.src} type="video/mp4" />
+                      Tu navegador no soporta la reproducción de video.
+                    </video>
+                  </div>
+                  <h3 className="mt-3 text-base font-semibold text-center">{video.title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
