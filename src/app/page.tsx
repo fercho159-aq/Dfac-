@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { Check, DraftingCompass, HardHat, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, Truck, Sparkles } from 'lucide-react';
+import { Check, DraftingCompass, HardHat, MessageSquare, PackageSearch, Scaling, ShoppingCart, Star, Wrench, ArrowRight, Phone, Mail, Truck, Sparkles } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
 import Image from 'next/image';
 import { ProductCard } from '@/components/product-card';
@@ -321,7 +321,7 @@ export default function Home() {
       {/* Client Logos Section */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFIAN EN NOSOTROS</h3>
+          <h3 className="text-center text-sm font-bold text-muted-foreground tracking-widest uppercase">CONFÍAN EN NOSOTROS</h3>
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
             {clientLogos.map((logo, index) => (
               <div key={index} className="flex justify-center">
@@ -678,10 +678,22 @@ export default function Home() {
             <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
             <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-white hover:text-primary border-none" />
           </Carousel>
-          <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline">
-              <Link href="/contact">Conviértete en Nuestro Próximo Caso de Éxito</Link>
-            </Button>
+          <div className="text-center mt-12 space-y-4">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full">
+              <MessageSquare className="w-5 h-5" />
+              <span className="font-semibold">¿Ya has comprado con nosotros? Déjanos una reseña en nuestro sitio web</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
+              <Button asChild size="lg" variant="outline">
+                <Link href="/contact">Conviértete en Nuestro Próximo Caso de Éxito</Link>
+              </Button>
+              <Button asChild size="lg" variant="default">
+                <a href="https://g.page/r/CfGBV8-oDBtxEBM/review" target="_blank" rel="noopener noreferrer">
+                  <Star className="w-4 h-4 mr-2" />
+                  Dejar Reseña en Google
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
