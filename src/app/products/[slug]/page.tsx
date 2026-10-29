@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = await getProductBySlug(slug);
   if (!product) return { title: 'Producto no encontrado' };
 
+  const siteUrl = 'https://www.cimbrayaccesoriosdfac.com.mx';
+
   const cleanDesc = (product.description || '')
     .replace(/<[^>]+>/g, '')
     .replace(/\s+/g, ' ')
@@ -30,14 +32,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     .slice(0, 155);
 
   const fallbackDesc = `${product.name} — venta y distribución en CDMX con entrega en 24 horas. Cotiza en línea.`;
+  const description = cleanDesc || fallbackDesc;
+
+  const ogImage = product.images?.[0]?.src
+    ? `${siteUrl}${product.images[0].src}`
+    : `${siteUrl}/Image/og-default.png`;
 
   return {
-    title: product.name,
-    description: cleanDesc || fallbackDesc,
+    title: `${product.name} | DFAC Accesorios para Cimbra`,
+    description,
     openGraph: {
+      title: `${product.name} | DFAC Accesorios para Cimbra`,
+      description,
+      url: `${siteUrl}/products/${slug}`,
+      siteName: 'DFAC Accesorios para Cimbra',
+      images: [{ url: ogImage, width: 800, height: 800, alt: product.name }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
       title: `${product.name} | DFAC`,
-      description: cleanDesc || fallbackDesc,
-      images: product.images?.[0]?.src ? [{ url: product.images[0].src }] : [],
+      description,
+      images: [ogImage],
     },
   };
 }
