@@ -2691,14 +2691,14 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
               <h2 className="text-3xl md:text-4xl font-bold font-headline">Mira el producto en acción</h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">Videos demostrativos de uso, instalación y características técnicas</p>
             </div>
-            <div className={`grid gap-6 ${productVideos.length === 1 ? 'max-w-2xl mx-auto' : 'grid-cols-1 md:grid-cols-2'}`}>
+            <div className={`grid gap-5 ${productVideos.length === 1 ? 'max-w-xs mx-auto' : 'grid-cols-2 md:grid-cols-4'}`}>
               {productVideos.map((video) => (
                 <div key={video.src} className="group">
-                  <div className="relative rounded-xl overflow-hidden shadow-lg bg-black">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg">
                     <video
                       controls
                       preload="metadata"
-                      className="w-full aspect-video"
+                      className="w-full rounded-lg"
                     >
                       <source src={video.src} type="video/mp4" />
                       Tu navegador no soporta la reproducción de video.

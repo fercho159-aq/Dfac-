@@ -651,8 +651,8 @@ export default function Home() {
               { src: "/videos/puntal-1.mp4", title: "Puntal para cimbra", description: "Uso del puntal estándar" },
             ].map((video) => (
               <div key={video.src} className="group">
-                <div className="relative rounded-lg overflow-hidden shadow-lg bg-black">
-                  <video controls preload="metadata" className="w-full aspect-video">
+                <div className="relative rounded-lg overflow-hidden shadow-lg">
+                  <video controls preload="metadata" className="w-full rounded-lg">
                     <source src={video.src} type="video/mp4" />
                   </video>
                 </div>

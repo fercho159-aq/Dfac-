@@ -66,15 +66,14 @@ export default function VideosPage() {
         <section key={category.title} className="py-16 even:bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold font-headline mb-8">{category.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
               {category.videos.map((video) => (
                 <div key={video.src} className="group">
-                  <div className="relative rounded-lg overflow-hidden shadow-lg bg-black">
+                  <div className="relative rounded-lg overflow-hidden shadow-lg">
                     <video
                       controls
                       preload="metadata"
-                      className="w-full aspect-video"
-                      poster=""
+                      className="w-full rounded-lg"
                     >
                       <source src={video.src} type="video/mp4" />
                       Tu navegador no soporta la reproducción de video.
