@@ -15636,39 +15636,57 @@
     "images": [
       {
         "id": 6748,
-        "src": "/Image/SP450-1.jpg",
-        "thumbnail": "/Image/SP450-1-300x300.jpg",
-        "srcset": "/Image/SP450-1.jpg 1280w, /Image/SP450-1-300x300.jpg 300w, /Image/SP450-1-1024x1024.jpg 1024w, /Image/SP450-1-150x150.jpg 150w, /Image/SP450-1-768x768.jpg 768w, /Image/SP450-1-720x720.jpg 720w, /Image/SP450-1-600x600.jpg 600w, /Image/SP450-1-100x100.jpg 100w",
+        "src": "/Image/silleta-piramidal-1.png",
+        "thumbnail": "/Image/silleta-piramidal-1.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SP450-1",
-        "alt": ""
+        "name": "Silleta piramidal - vista lateral",
+        "alt": "Silleta piramidal DFAC vista lateral"
       },
       {
         "id": 6749,
-        "src": "/Image/SP125-1.jpg",
-        "thumbnail": "/Image/SP125-1-300x300.jpg",
-        "srcset": "/Image/SP125-1.jpg 1280w, /Image/SP125-1-300x300.jpg 300w, /Image/SP125-1-1024x1024.jpg 1024w, /Image/SP125-1-150x150.jpg 150w, /Image/SP125-1-768x768.jpg 768w, /Image/SP125-1-720x720.jpg 720w, /Image/SP125-1-600x600.jpg 600w, /Image/SP125-1-100x100.jpg 100w",
+        "src": "/Image/silleta-piramidal-2.png",
+        "thumbnail": "/Image/silleta-piramidal-2.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SP125-1",
-        "alt": ""
+        "name": "Silleta piramidal - vista frontal",
+        "alt": "Silleta piramidal DFAC vista frontal"
       },
       {
         "id": 6750,
-        "src": "/Image/SP200-2.jpg",
-        "thumbnail": "/Image/SP200-2-300x300.jpg",
-        "srcset": "/Image/SP200-2.jpg 1280w, /Image/SP200-2-300x300.jpg 300w, /Image/SP200-2-1024x1024.jpg 1024w, /Image/SP200-2-150x150.jpg 150w, /Image/SP200-2-768x768.jpg 768w, /Image/SP200-2-720x720.jpg 720w, /Image/SP200-2-600x600.jpg 600w, /Image/SP200-2-100x100.jpg 100w",
+        "src": "/Image/silleta-piramidal-3.png",
+        "thumbnail": "/Image/silleta-piramidal-3.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SP200-2",
-        "alt": ""
+        "name": "Silleta piramidal - vista completa",
+        "alt": "Silleta piramidal DFAC vista completa"
       },
       {
         "id": 6751,
-        "src": "/Image/SP300-2.jpg",
-        "thumbnail": "/Image/SP300-2-300x300.jpg",
-        "srcset": "/Image/SP300-2.jpg 1280w, /Image/SP300-2-300x300.jpg 300w, /Image/SP300-2-1024x1024.jpg 1024w, /Image/SP300-2-150x150.jpg 150w, /Image/SP300-2-768x768.jpg 768w, /Image/SP300-2-720x720.jpg 720w, /Image/SP300-2-600x600.jpg 600w, /Image/SP300-2-100x100.jpg 100w",
+        "src": "/Image/silleta-piramidal-4.png",
+        "thumbnail": "/Image/silleta-piramidal-4.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SP300-2",
-        "alt": ""
+        "name": "Silleta piramidal - detalle superior",
+        "alt": "Silleta piramidal DFAC detalle superior"
+      },
+      {
+        "id": 6752,
+        "src": "/Image/silleta-piramidal-5.png",
+        "thumbnail": "/Image/silleta-piramidal-5.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Silleta piramidal - con varilla",
+        "alt": "Silleta piramidal DFAC con varilla de acero"
+      },
+      {
+        "id": 6753,
+        "src": "/Image/silleta-piramidal-6.png",
+        "thumbnail": "/Image/silleta-piramidal-6.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Silleta piramidal - vista posterior",
+        "alt": "Silleta piramidal DFAC vista posterior"
       }
     ],
     "categories": [

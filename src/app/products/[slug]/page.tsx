@@ -119,6 +119,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-f': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-f.pdf',
   ],
+  'silleta-piramidal': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-piramidal.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
