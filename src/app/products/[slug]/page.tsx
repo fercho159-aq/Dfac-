@@ -924,6 +924,24 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Ideal para losas, trabes, contratrabes, prefabricados, tilt-ups y post-tensados</span></li>
                     <li className="flex items-start gap-2 text-sm md:text-base text-slate-800"><span className="text-blue-600 mt-0.5 flex-shrink-0">✓</span><span>Evita desplazamientos durante el colado</span></li>
                   </ul>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Calibre de Acero</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (Grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SF100</td><td className="px-3 py-2 text-slate-800">2 Y 2.5</td><td className="px-3 py-2 text-slate-800">1500</td><td className="px-3 py-2 text-slate-800">5.5</td><td className="px-3 py-2 text-slate-800">8.5</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
                 <div className="product-description font-sans">
@@ -1272,6 +1290,24 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     Es un separador multifuncional diseñado para brindar estabilidad y precisión en el armado de estructuras de concreto. Gracias a su amplia base, ofrece un excelente apoyo en superficies firmes o poco compactadas, evitando desplazamientos durante el colado. Cuenta con dos alturas de recubrimiento (2.0 cm y 2.5 cm) en una misma pieza, lo que lo convierte en una solución práctica y versátil para todo tipo de losas, colados en sitio, trabes y contratrabes.
                   </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Calibre de Acero</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (Grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SF100</td><td className="px-3 py-2 text-slate-800">2 Y 2.5</td><td className="px-3 py-2 text-slate-800">1500</td><td className="px-3 py-2 text-slate-800">5.5</td><td className="px-3 py-2 text-slate-800">8.5</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'tubo-cimbra3-mts-redondo' ? (
                 <div className="product-description font-sans">
