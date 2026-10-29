@@ -871,6 +871,29 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-700">
                     Se utiliza en todo tipo de losas, trabes y contratrabes, prefabricados, tilt-ups y post-tensados.
                   </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH150</td><td className="px-3 py-2 text-slate-800">4.0</td><td className="px-3 py-2 text-slate-800">400</td><td className="px-3 py-2 text-slate-800">19.0</td><td className="px-3 py-2 text-slate-800">7.8</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SH200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">300</td><td className="px-3 py-2 text-slate-800">24.0</td><td className="px-3 py-2 text-slate-800">7.4</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">250</td><td className="px-3 py-2 text-slate-800">29.0</td><td className="px-3 py-2 text-slate-800">7.4</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SH300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">225</td><td className="px-3 py-2 text-slate-800">43.0</td><td className="px-3 py-2 text-slate-800">9.9</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH350</td><td className="px-3 py-2 text-slate-800">9.0</td><td className="px-3 py-2 text-slate-800">200</td><td className="px-3 py-2 text-slate-800">47.0</td><td className="px-3 py-2 text-slate-800">9.6</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SH400</td><td className="px-3 py-2 text-slate-800">10.0</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">51.5</td><td className="px-3 py-2 text-slate-800">7.9</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'silleta-f' ? (
                 <div className="product-description font-sans">
@@ -1217,6 +1240,29 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     Gran diseño y estabilidad, sobre un eje tiene dos puntos de soporte para el acero. Excelente rendimiento en el concreto y agregados gruesos. Superficie de contacto mínima, ideal para acabados aparentes. Se utiliza en todo tipo de losas, trabes y contratrabes, prefabricados, tilt-ups y post-tensados.
                   </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH150</td><td className="px-3 py-2 text-slate-800">4.0</td><td className="px-3 py-2 text-slate-800">400</td><td className="px-3 py-2 text-slate-800">19.0</td><td className="px-3 py-2 text-slate-800">7.8</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SH200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">300</td><td className="px-3 py-2 text-slate-800">24.0</td><td className="px-3 py-2 text-slate-800">7.4</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">250</td><td className="px-3 py-2 text-slate-800">29.0</td><td className="px-3 py-2 text-slate-800">7.4</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SH300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">225</td><td className="px-3 py-2 text-slate-800">43.0</td><td className="px-3 py-2 text-slate-800">9.9</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SH350</td><td className="px-3 py-2 text-slate-800">9.0</td><td className="px-3 py-2 text-slate-800">200</td><td className="px-3 py-2 text-slate-800">47.0</td><td className="px-3 py-2 text-slate-800">9.6</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SH400</td><td className="px-3 py-2 text-slate-800">10.0</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">51.5</td><td className="px-3 py-2 text-slate-800">7.9</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'silleta-f' ? (
                 <div className="product-description font-sans">
