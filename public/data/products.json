@@ -14418,8 +14418,8 @@
     "variation": "",
     "permalink": "https://cimbrayaccesorios.com.mx/producto/disco-separador/",
     "sku": "",
-    "short_description": "<p><a href=\"/Image/DS-DISCO-SEPARADOR-FICHA-TECNICA-DFAC.jpg\"><img class=\"alignleft size-large wp-image-8257\" src=\"/Image/DS-DISCO-SEPARADOR-FICHA-TECNICA-DFAC-738x1024.jpg\" alt=\"\" width=\"738\" height=\"1024\" /></a></p>\n\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o22\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>",
-    "description": "<p>Disco para separar lateralmente el acero de refuerzo, para recubrimiento de concreto, ideal para acabados aparentes, para una carga máxima de 100 kg.</p><br><p>Distribuidor oficial de FTP</p>",
+    "short_description": "",
+    "description": "<p>Diseñado para separar lateralmente el acero de refuerzo. Ideal para acabados aparentes. Tiene un doble broche que funciona tanto para mallas como para varillas, manteniéndolas al centro del separador.</p><p>Resistencia a la carga: 100 kg</p><p><strong>Aplicaciones:</strong></p><p>Múltiples aplicaciones: muros con uno o dos armados, columnas, trabes, contratrabes y prefabricados.</p><p>Su instalación es muy sencilla: al introducirlo en el acero lo sujetará con fuerza, permitiendo la colocación de la cimbra sin perder su posición de funcionamiento.</p><p>Es importante que los discos estén colocados correctamente cada 60 a 75 cm de distancia, traslapándose. Para separar columnas deberán colocarse simultáneamente en caras opuestas, alternando en las cuatro caras del armado. En columnas circulares se distribuyen los discos por hiladas a través del diámetro total del armado.</p><p>En muros con doble armado se deberán colocar dos piezas paralelas en ambos lados del armado.</p>",
     "on_sale": false,
     "prices": {
       "price": "112900",
@@ -14442,40 +14442,40 @@
     "review_count": 0,
     "images": [
       {
-        "id": 6510,
-        "src": "/Image/DS200-IMAGEN-1.jpg",
-        "thumbnail": "/Image/DS200-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/DS200-IMAGEN-1.jpg 1280w, /Image/DS200-IMAGEN-1-300x300.jpg 300w, /Image/DS200-IMAGEN-1-1024x1024.jpg 1024w, /Image/DS200-IMAGEN-1-150x150.jpg 150w, /Image/DS200-IMAGEN-1-768x768.jpg 768w, /Image/DS200-IMAGEN-1-720x720.jpg 720w, /Image/DS200-IMAGEN-1-600x600.jpg 600w, /Image/DS200-IMAGEN-1-100x100.jpg 100w",
+        "id": 8031,
+        "src": "/Image/disco-separador-1.png",
+        "thumbnail": "/Image/disco-separador-1.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "DS200-IMAGEN",
-        "alt": ""
+        "name": "Disco separador - vista en perspectiva",
+        "alt": "Disco separador DFAC vista en perspectiva"
       },
       {
-        "id": 6511,
-        "src": "/Image/DS250-IMAGEN-1.jpg",
-        "thumbnail": "/Image/DS250-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/DS250-IMAGEN-1.jpg 1280w, /Image/DS250-IMAGEN-1-300x300.jpg 300w, /Image/DS250-IMAGEN-1-1024x1024.jpg 1024w, /Image/DS250-IMAGEN-1-150x150.jpg 150w, /Image/DS250-IMAGEN-1-768x768.jpg 768w, /Image/DS250-IMAGEN-1-720x720.jpg 720w, /Image/DS250-IMAGEN-1-600x600.jpg 600w, /Image/DS250-IMAGEN-1-100x100.jpg 100w",
+        "id": 8032,
+        "src": "/Image/disco-separador-2.png",
+        "thumbnail": "/Image/disco-separador-2.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "DS250-IMAGEN",
-        "alt": ""
+        "name": "Disco separador - vista frontal",
+        "alt": "Disco separador DFAC vista frontal"
       },
       {
-        "id": 6509,
-        "src": "/Image/DS175-IMAGEN2-1.jpg",
-        "thumbnail": "/Image/DS175-IMAGEN2-1-300x300.jpg",
-        "srcset": "/Image/DS175-IMAGEN2-1.jpg 1280w, /Image/DS175-IMAGEN2-1-300x300.jpg 300w, /Image/DS175-IMAGEN2-1-1024x1024.jpg 1024w, /Image/DS175-IMAGEN2-1-150x150.jpg 150w, /Image/DS175-IMAGEN2-1-768x768.jpg 768w, /Image/DS175-IMAGEN2-1-720x720.jpg 720w, /Image/DS175-IMAGEN2-1-600x600.jpg 600w, /Image/DS175-IMAGEN2-1-100x100.jpg 100w",
+        "id": 8033,
+        "src": "/Image/disco-separador-3.png",
+        "thumbnail": "/Image/disco-separador-3.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "DS175-IMAGEN2",
-        "alt": ""
+        "name": "Disco separador - vista lateral",
+        "alt": "Disco separador DFAC vista lateral"
       },
       {
-        "id": 6506,
-        "src": "/Image/DS125-IMAGEN2-1.jpg",
-        "thumbnail": "/Image/DS125-IMAGEN2-1-300x300.jpg",
-        "srcset": "/Image/DS125-IMAGEN2-1.jpg 1280w, /Image/DS125-IMAGEN2-1-300x300.jpg 300w, /Image/DS125-IMAGEN2-1-1024x1024.jpg 1024w, /Image/DS125-IMAGEN2-1-150x150.jpg 150w, /Image/DS125-IMAGEN2-1-768x768.jpg 768w, /Image/DS125-IMAGEN2-1-720x720.jpg 720w, /Image/DS125-IMAGEN2-1-600x600.jpg 600w, /Image/DS125-IMAGEN2-1-100x100.jpg 100w",
+        "id": 8034,
+        "src": "/Image/disco-separador-4.png",
+        "thumbnail": "/Image/disco-separador-4.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "DS125-IMAGEN2",
-        "alt": ""
+        "name": "Disco separador - modelo reforzado",
+        "alt": "Disco separador DFAC modelo reforzado"
       }
     ],
     "categories": [

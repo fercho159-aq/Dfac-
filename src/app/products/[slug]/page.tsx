@@ -138,6 +138,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-de-entrepiso-para-malla': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-de-entrepiso-para-malla.pdf',
   ],
+  'disco-separador': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-disco-separador-dfac.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -508,6 +511,34 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
                         { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
                         { href: "/products/banda-de-pvc-negra-ojillada", img: "/Image/banda-portada.jpeg", name: "Banda de PVC", desc: "Impermeabilidad en juntas frías" },
+                      ].map((item) => (
+                        <CarouselItem key={item.href} className="pl-3 basis-1/2">
+                          <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
+                            <div className="aspect-square relative w-full overflow-hidden rounded-lg mb-2">
+                              <Image src={item.img} alt={item.name} fill className="object-contain group-hover:scale-105 transition-transform" />
+                            </div>
+                            <h4 className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h4>
+                            <p className="text-xs text-slate-500 mt-1">{item.desc}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                    <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-8 w-8" />
+                  </Carousel>
+                </div>
+              )}
+
+              {/* Productos complementarios para disco separador (DS) */}
+              {product.slug === 'disco-separador' && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-bold text-slate-800 mb-3">Productos complementarios que te harían falta!</h3>
+                  <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                    <CarouselContent className="-ml-3">
+                      {[
+                        { href: "/products/tirante-tipo-mono", img: "/Image/mono-portada-new.jpeg", name: "Moños para cimbra", desc: "Tirante para sujeción de cimbra" },
+                        { href: "/products/tirante-tipo-mono-con-rondana", img: "/Image/neopreno-portada.jpeg", name: "Moño con neopreno para cimbra", desc: "Mayor sellado e impermeabilidad" },
+                        { href: "/products/cuna-de-acero", img: "/Image/cuna-portada.jpeg", name: "Cuñas de acero", desc: "Fijación firme del moño en la cimbra" },
                       ].map((item) => (
                         <CarouselItem key={item.href} className="pl-3 basis-1/2">
                           <Link href={item.href} className="group block bg-card border rounded-xl p-3 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all">
@@ -1994,6 +2025,57 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SME200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">225</td><td className="px-3 py-2 text-slate-800">17.5</td><td className="px-3 py-2 text-slate-800">4.1</td></tr>
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SME250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">175</td><td className="px-3 py-2 text-slate-800">29.0</td><td className="px-3 py-2 text-slate-800">5.3</td></tr>
                         <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SME300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">28.0</td><td className="px-3 py-2 text-slate-800">4.4</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'disco-separador' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Diseñado para separar lateralmente el acero de refuerzo. Ideal para acabados aparentes. Tiene un doble broche que funciona tanto para mallas como para varillas, manteniéndolas al centro del separador.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Resistencia a la carga</p>
+                      <p className="text-base font-bold text-slate-800">100 Kg</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-3">
+                    Múltiples aplicaciones: muros con uno o dos armados, columnas, trabes, contratrabes y prefabricados.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-3">
+                    Su instalación es muy sencilla: al introducirlo en el acero lo sujetará con fuerza, permitiendo la colocación de la cimbra sin perder su posición de funcionamiento.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-3">
+                    Es importante que los discos estén colocados correctamente cada 60 a 75 cm de distancia, traslapándose. Para separar columnas deberán colocarse simultáneamente en caras opuestas, alternando en las cuatro caras del armado. En columnas circulares se distribuyen los discos por hiladas a través del diámetro total del armado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-3">
+                    En muros con doble armado se deberán colocar dos piezas paralelas en ambos lados del armado.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Calibre de Acero</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">DS075</td><td className="px-3 py-2 text-slate-800">2.0</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 3/8&quot;</td><td className="px-3 py-2 text-slate-800">2000</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">13.2</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">DS100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 1/2&quot;</td><td className="px-3 py-2 text-slate-800">1000</td><td className="px-3 py-2 text-slate-800">11</td><td className="px-3 py-2 text-slate-800">11.2</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">DS125</td><td className="px-3 py-2 text-slate-800">3.0</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 1/2&quot;</td><td className="px-3 py-2 text-slate-800">700</td><td className="px-3 py-2 text-slate-800">18</td><td className="px-3 py-2 text-slate-800">12.8</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">DS150</td><td className="px-3 py-2 text-slate-800">4.0</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 1/2&quot;</td><td className="px-3 py-2 text-slate-800">500</td><td className="px-3 py-2 text-slate-800">19</td><td className="px-3 py-2 text-slate-800">9.7</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">DS175</td><td className="px-3 py-2 text-slate-800">4.5</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 5/16&quot;</td><td className="px-3 py-2 text-slate-800">450</td><td className="px-3 py-2 text-slate-800">16</td><td className="px-3 py-2 text-slate-800">7.4</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">DS200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">1/8 hasta 5/8&quot;</td><td className="px-3 py-2 text-slate-800">250</td><td className="px-3 py-2 text-slate-800">24</td><td className="px-3 py-2 text-slate-800">6.2</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">DS250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">3/8 hasta 1&quot;</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">57</td><td className="px-3 py-2 text-slate-800">8.7</td></tr>
+                        <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">DS300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">3/8 hasta 1&quot;</td><td className="px-3 py-2 text-slate-800">100</td><td className="px-3 py-2 text-slate-800">75</td><td className="px-3 py-2 text-slate-800">7.7</td></tr>
                       </tbody>
                     </table>
                   </div>
