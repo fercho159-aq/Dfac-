@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Link from 'next/link';
-import { ArrowLeft, Download, FileText, Play } from 'lucide-react';
+import { ArrowLeft, Download, FileText, Play, Facebook, Instagram } from 'lucide-react';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -3048,6 +3048,20 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <h3 className="mt-3 text-base font-semibold text-center">{video.title}</h3>
                 </div>
               ))}
+            </div>
+            <div className="mt-10 text-center">
+              <p className="text-sm font-semibold text-muted-foreground mb-4">Síguenos en redes sociales</p>
+              <div className="flex items-center justify-center gap-5">
+                <a href="https://www.tiktok.com/@accesorios.dfac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok de DFAC" title="TikTok" className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>
+                </a>
+                <a href="https://www.facebook.com/bandasdepvcymonosparacimbra" target="_blank" rel="noopener noreferrer" aria-label="Facebook de DFAC" title="Facebook" className="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                  <Facebook className="w-6 h-6" aria-hidden="true" />
+                </a>
+                <a href="https://www.instagram.com/dfac_cimbra?rpxt=a3k4NWJhNDVnMXM2" target="_blank" rel="noopener noreferrer" aria-label="Instagram de DFAC" title="Instagram" className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                  <Instagram className="w-6 h-6" aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
