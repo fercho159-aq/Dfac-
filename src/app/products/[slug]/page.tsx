@@ -128,6 +128,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'cilindro-para-malla': [
     '/archivos/fichas-tecnicas/ficha-tecnica-cilindro-para-malla.pdf',
   ],
+  'silleta-para-malla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-para-malla.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1849,6 +1852,52 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <tbody>
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">CM060</td><td className="px-3 py-2 text-slate-800">1.5</td><td className="px-3 py-2 text-slate-800">700</td><td className="px-3 py-2 text-slate-800">9.8</td><td className="px-3 py-2 text-slate-800">7.1</td></tr>
                         <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">CM100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">500</td><td className="px-3 py-2 text-slate-800">11.8</td><td className="px-3 py-2 text-slate-800">6.1</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'silleta-para-malla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador económico fuerte y versátil. Diseñado para losas de cimentación, con base circular que le proporciona estabilidad y apoyo.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">250 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Malla</p>
+                      <p className="text-base font-bold text-slate-800">1 a 10</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Armados de malla electrosoldada en losas de cimentación. Para calzar los armados en todo tipo de losas de cimentación.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SM100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">600</td><td className="px-3 py-2 text-slate-800">9.8</td><td className="px-3 py-2 text-slate-800">6</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SM200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">225</td><td className="px-3 py-2 text-slate-800">17.5</td><td className="px-3 py-2 text-slate-800">4.1</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SM250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">175</td><td className="px-3 py-2 text-slate-800">29.0</td><td className="px-3 py-2 text-slate-800">5.3</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SM300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">28.0</td><td className="px-3 py-2 text-slate-800">4.4</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SM350</td><td className="px-3 py-2 text-slate-800">9.0</td><td className="px-3 py-2 text-slate-800">125</td><td className="px-3 py-2 text-slate-800">40.0</td><td className="px-3 py-2 text-slate-800">5.2</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SM400</td><td className="px-3 py-2 text-slate-800">10.0</td><td className="px-3 py-2 text-slate-800">90</td><td className="px-3 py-2 text-slate-800">53.5</td><td className="px-3 py-2 text-slate-800">5.0</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SM475</td><td className="px-3 py-2 text-slate-800">12.0</td><td className="px-3 py-2 text-slate-800">85</td><td className="px-3 py-2 text-slate-800">61.0</td><td className="px-3 py-2 text-slate-800">4.8</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SM500</td><td className="px-3 py-2 text-slate-800">13.0</td><td className="px-3 py-2 text-slate-800">60</td><td className="px-3 py-2 text-slate-800">75.5</td><td className="px-3 py-2 text-slate-800">4.7</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SM600</td><td className="px-3 py-2 text-slate-800">15.0</td><td className="px-3 py-2 text-slate-800">50</td><td className="px-3 py-2 text-slate-800">89.0</td><td className="px-3 py-2 text-slate-800">4.6</td></tr>
                       </tbody>
                     </table>
                   </div>
