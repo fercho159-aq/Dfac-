@@ -14891,8 +14891,8 @@
     "variation": "",
     "permalink": "https://cimbrayaccesorios.com.mx/producto/cilindro-para-malla/",
     "sku": "",
-    "short_description": "<p><a href=\"/Image/CM-CILINDRO-PARA-MALLA-FICHA-TECNICA-DFAC.jpg\"><img class=\"alignleft size-large wp-image-8262\" src=\"/Image/CM-CILINDRO-PARA-MALLA-FICHA-TECNICA-DFAC-730x1024.jpg\" alt=\"\" width=\"730\" height=\"1024\" /></a></p>\n\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o25\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>",
-    "description": "<p>Separador para malla de 4 a 10, para recubrimiento de concreto para utilizarse sobre superficies suaves o poco compactadas, para una carga máxima de 250 kg.</p><br><p>Distribuidor oficial de FTP</p>",
+    "short_description": "",
+    "description": "<p>Separador vertical económico y de fácil instalación. Amplia base para utilizarse sobre las superficies suaves o poco compactadas.</p><p>Para un funcionamiento ideal debe colocarse la silleta en los cruces de la malla, observando al instalarlas que el alambre inferior de la malla quede insertado en los broches más profundos y el alambre superior en los broches más altos de la silleta.</p><p><strong>Aplicaciones:</strong> Losas o capas de compresión de 4 a 6 cm de espesor reforzadas con malla, sobre casetón de poliestireno, bovedilla o losa acero.</p><p>Carga máxima 250 kg</p><p>Malla: 4 a 10</p>",
     "on_sale": false,
     "prices": {
       "price": "98100",
@@ -14915,40 +14915,40 @@
     "review_count": 0,
     "images": [
       {
-        "id": 6487,
-        "src": "/Image/CM060-IMAGEN-1.jpg",
-        "thumbnail": "/Image/CM060-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/CM060-IMAGEN-1.jpg 1280w, /Image/CM060-IMAGEN-1-300x300.jpg 300w, /Image/CM060-IMAGEN-1-1024x1024.jpg 1024w, /Image/CM060-IMAGEN-1-150x150.jpg 150w, /Image/CM060-IMAGEN-1-768x768.jpg 768w, /Image/CM060-IMAGEN-1-720x720.jpg 720w, /Image/CM060-IMAGEN-1-600x600.jpg 600w, /Image/CM060-IMAGEN-1-100x100.jpg 100w",
+        "id": 7951,
+        "src": "/Image/cilindro-para-malla-1.png",
+        "thumbnail": "/Image/cilindro-para-malla-1.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "CM060-IMAGEN",
-        "alt": ""
+        "name": "Cilindro para malla - vista en perspectiva",
+        "alt": "Cilindro para malla DFAC vista en perspectiva"
       },
       {
-        "id": 6484,
-        "src": "/Image/CM100-IMGEN-1.jpg",
-        "thumbnail": "/Image/CM100-IMGEN-1-300x300.jpg",
-        "srcset": "/Image/CM100-IMGEN-1.jpg 1280w, /Image/CM100-IMGEN-1-300x300.jpg 300w, /Image/CM100-IMGEN-1-1024x1024.jpg 1024w, /Image/CM100-IMGEN-1-150x150.jpg 150w, /Image/CM100-IMGEN-1-768x768.jpg 768w, /Image/CM100-IMGEN-1-720x720.jpg 720w, /Image/CM100-IMGEN-1-600x600.jpg 600w, /Image/CM100-IMGEN-1-100x100.jpg 100w",
+        "id": 7952,
+        "src": "/Image/cilindro-para-malla-2.png",
+        "thumbnail": "/Image/cilindro-para-malla-2.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "CM100-IMGEN",
-        "alt": ""
+        "name": "Cilindro para malla - vista lateral",
+        "alt": "Cilindro para malla DFAC vista lateral"
       },
       {
-        "id": 6485,
-        "src": "/Image/CM060-3-IMAGEN-1.jpg",
-        "thumbnail": "/Image/CM060-3-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/CM060-3-IMAGEN-1.jpg 1280w, /Image/CM060-3-IMAGEN-1-300x300.jpg 300w, /Image/CM060-3-IMAGEN-1-1024x1024.jpg 1024w, /Image/CM060-3-IMAGEN-1-150x150.jpg 150w, /Image/CM060-3-IMAGEN-1-768x768.jpg 768w, /Image/CM060-3-IMAGEN-1-720x720.jpg 720w, /Image/CM060-3-IMAGEN-1-600x600.jpg 600w, /Image/CM060-3-IMAGEN-1-100x100.jpg 100w",
+        "id": 7953,
+        "src": "/Image/cilindro-para-malla-3.png",
+        "thumbnail": "/Image/cilindro-para-malla-3.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "CM060-3-IMAGEN",
-        "alt": ""
+        "name": "Cilindro para malla - vista superior",
+        "alt": "Cilindro para malla DFAC vista superior"
       },
       {
-        "id": 6488,
-        "src": "/Image/CM100-1-IMGEN-1.jpg",
-        "thumbnail": "/Image/CM100-1-IMGEN-1-300x300.jpg",
-        "srcset": "/Image/CM100-1-IMGEN-1.jpg 1280w, /Image/CM100-1-IMGEN-1-300x300.jpg 300w, /Image/CM100-1-IMGEN-1-1024x1024.jpg 1024w, /Image/CM100-1-IMGEN-1-150x150.jpg 150w, /Image/CM100-1-IMGEN-1-768x768.jpg 768w, /Image/CM100-1-IMGEN-1-720x720.jpg 720w, /Image/CM100-1-IMGEN-1-600x600.jpg 600w, /Image/CM100-1-IMGEN-1-100x100.jpg 100w",
+        "id": 7954,
+        "src": "/Image/cilindro-para-malla-4.png",
+        "thumbnail": "/Image/cilindro-para-malla-4.png",
+        "srcset": "",
         "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "CM100-1-IMGEN",
-        "alt": ""
+        "name": "Cilindro para malla - instalado en malla",
+        "alt": "Cilindro para malla DFAC instalado en malla"
       }
     ],
     "categories": [

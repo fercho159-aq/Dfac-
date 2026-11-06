@@ -125,6 +125,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-de-entrepiso': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-de-entrepiso.pdf',
   ],
+  'cilindro-para-malla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-cilindro-para-malla.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1804,6 +1807,48 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SE150</td><td className="px-3 py-2 text-slate-800">4.0</td><td className="px-3 py-2 text-slate-800">900</td><td className="px-3 py-2 text-slate-800">14.8</td><td className="px-3 py-2 text-slate-800">13.5</td></tr>
                         <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SE200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">700</td><td className="px-3 py-2 text-slate-800">17</td><td className="px-3 py-2 text-slate-800">12.1</td></tr>
                         <tr><td className="px-3 py-2 text-slate-800 font-semibold">SE250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">450</td><td className="px-3 py-2 text-slate-800">18.7</td><td className="px-3 py-2 text-slate-800">8.6</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'cilindro-para-malla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador vertical económico y de fácil instalación. Amplia base para utilizarse sobre las superficies suaves o poco compactadas.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Para un funcionamiento ideal debe colocarse la silleta en los cruces de la malla, observando al instalarlas que el alambre inferior de la malla quede insertado en los broches más profundos y el alambre superior en los broches más altos de la silleta.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">250 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Malla</p>
+                      <p className="text-base font-bold text-slate-800">4 a 10</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Losas o capas de compresión de 4 a 6 cm de espesor reforzadas con malla, sobre casetón de poliestireno, bovedilla o losa acero.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">CM060</td><td className="px-3 py-2 text-slate-800">1.5</td><td className="px-3 py-2 text-slate-800">700</td><td className="px-3 py-2 text-slate-800">9.8</td><td className="px-3 py-2 text-slate-800">7.1</td></tr>
+                        <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">CM100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">500</td><td className="px-3 py-2 text-slate-800">11.8</td><td className="px-3 py-2 text-slate-800">6.1</td></tr>
                       </tbody>
                     </table>
                   </div>
