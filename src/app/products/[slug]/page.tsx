@@ -122,6 +122,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-piramidal': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-piramidal.pdf',
   ],
+  'silleta-de-entrepiso': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-de-entrepiso.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1759,6 +1762,48 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SP300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">350</td><td className="px-3 py-2 text-slate-800">25.0</td><td className="px-3 py-2 text-slate-800">8.9</td></tr>
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SP350</td><td className="px-3 py-2 text-slate-800">9.0</td><td className="px-3 py-2 text-slate-800">300</td><td className="px-3 py-2 text-slate-800">28.0</td><td className="px-3 py-2 text-slate-800">8.6</td></tr>
                         <tr><td className="px-3 py-2 text-slate-800 font-semibold">SP450</td><td className="px-3 py-2 text-slate-800">11.0</td><td className="px-3 py-2 text-slate-800">200</td><td className="px-3 py-2 text-slate-800">43.0</td><td className="px-3 py-2 text-slate-800">8.8</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'silleta-de-entrepiso' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador fuerte, con mínima superficie de contacto, ideal para acabados aparentes. Sistema de sujeción fuerte y versátil.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">250 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Calibre de acero</p>
+                      <p className="text-base font-bold text-slate-800">Varilla y malla hasta 1/2&quot;</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Para calzar armados y las contratrabes en todo tipo de losas de cimentación. Es importante que las silletas estén distribuidas correctamente cada 60 cm de distancia traslapándolas.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SE075</td><td className="px-3 py-2 text-slate-800">1.9</td><td className="px-3 py-2 text-slate-800">2000</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">15.2</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SE100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">1500</td><td className="px-3 py-2 text-slate-800">9.0</td><td className="px-3 py-2 text-slate-800">13.7</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SE150</td><td className="px-3 py-2 text-slate-800">4.0</td><td className="px-3 py-2 text-slate-800">900</td><td className="px-3 py-2 text-slate-800">14.8</td><td className="px-3 py-2 text-slate-800">13.5</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SE200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">700</td><td className="px-3 py-2 text-slate-800">17</td><td className="px-3 py-2 text-slate-800">12.1</td></tr>
+                        <tr><td className="px-3 py-2 text-slate-800 font-semibold">SE250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">450</td><td className="px-3 py-2 text-slate-800">18.7</td><td className="px-3 py-2 text-slate-800">8.6</td></tr>
                       </tbody>
                     </table>
                   </div>
