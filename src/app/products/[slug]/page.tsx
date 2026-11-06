@@ -131,6 +131,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-para-malla': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-para-malla.pdf',
   ],
+  'silleta-flexible-para-malla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-flexible-para-malla.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1898,6 +1901,51 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SM475</td><td className="px-3 py-2 text-slate-800">12.0</td><td className="px-3 py-2 text-slate-800">85</td><td className="px-3 py-2 text-slate-800">61.0</td><td className="px-3 py-2 text-slate-800">4.8</td></tr>
                         <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SM500</td><td className="px-3 py-2 text-slate-800">13.0</td><td className="px-3 py-2 text-slate-800">60</td><td className="px-3 py-2 text-slate-800">75.5</td><td className="px-3 py-2 text-slate-800">4.7</td></tr>
                         <tr><td className="px-3 py-2 text-slate-800 font-semibold">SM600</td><td className="px-3 py-2 text-slate-800">15.0</td><td className="px-3 py-2 text-slate-800">50</td><td className="px-3 py-2 text-slate-800">89.0</td><td className="px-3 py-2 text-slate-800">4.6</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'silleta-flexible-para-malla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador innovador diseñado especialmente para su colocación sobre casetones de poliestireno. Su base flexible proporciona estabilidad y resistencia, permitiendo que los trabajadores transiten sobre la malla sin que la silleta se deforme ni se incruste en el poliestireno.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Su sistema de sujeción garantiza que la malla permanezca en la posición correcta durante el proceso de colado. Además, su diseño estructural facilita el flujo y la continuidad del concreto, favoreciendo una distribución uniforme.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Aunque está especialmente diseñado para utilizarse sobre casetones de poliestireno, también es adecuado para separar y mantener la malla electrosoldada en cualquier tipo de losa de compresión.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">300 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima sobre casetón de poliestireno densidad 12</p>
+                      <p className="text-base font-bold text-slate-800">150 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Calibre de acero compatible</p>
+                      <p className="text-base font-bold text-slate-800">Mallas del calibre 4 al 10</p>
+                    </div>
+                  </div>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Calibre de Acero</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SFM060</td><td className="px-3 py-2 text-slate-800">1.5</td><td className="px-3 py-2 text-slate-800">500</td><td className="px-3 py-2 text-slate-800">12.9</td><td className="px-3 py-2 text-slate-800">6.6</td></tr>
+                        <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SFM100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">350</td><td className="px-3 py-2 text-slate-800">15.5</td><td className="px-3 py-2 text-slate-800">5.6</td></tr>
                       </tbody>
                     </table>
                   </div>
