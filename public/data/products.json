@@ -15498,42 +15498,6 @@
         "sizes": "(max-width: 1280px) 100vw, 1280px",
         "name": "Silleta de entrepiso - vista frontal en negro",
         "alt": "Silleta de entrepiso DFAC vista frontal en negro"
-      },
-      {
-        "id": 6586,
-        "src": "/Image/SE250-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SE250-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SE250-IMAGEN-1.jpg 1280w, /Image/SE250-IMAGEN-1-300x300.jpg 300w, /Image/SE250-IMAGEN-1-1024x1024.jpg 1024w, /Image/SE250-IMAGEN-1-150x150.jpg 150w, /Image/SE250-IMAGEN-1-768x768.jpg 768w, /Image/SE250-IMAGEN-1-720x720.jpg 720w, /Image/SE250-IMAGEN-1-600x600.jpg 600w, /Image/SE250-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SE250-IMAGEN",
-        "alt": ""
-      },
-      {
-        "id": 6585,
-        "src": "/Image/SE200-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SE200-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SE200-IMAGEN-1.jpg 1280w, /Image/SE200-IMAGEN-1-300x300.jpg 300w, /Image/SE200-IMAGEN-1-1024x1024.jpg 1024w, /Image/SE200-IMAGEN-1-150x150.jpg 150w, /Image/SE200-IMAGEN-1-768x768.jpg 768w, /Image/SE200-IMAGEN-1-720x720.jpg 720w, /Image/SE200-IMAGEN-1-600x600.jpg 600w, /Image/SE200-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SE200-IMAGEN",
-        "alt": ""
-      },
-      {
-        "id": 6587,
-        "src": "/Image/SE150-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SE150-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SE150-IMAGEN-1.jpg 1280w, /Image/SE150-IMAGEN-1-300x300.jpg 300w, /Image/SE150-IMAGEN-1-1024x1024.jpg 1024w, /Image/SE150-IMAGEN-1-150x150.jpg 150w, /Image/SE150-IMAGEN-1-768x768.jpg 768w, /Image/SE150-IMAGEN-1-720x720.jpg 720w, /Image/SE150-IMAGEN-1-600x600.jpg 600w, /Image/SE150-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SE150-IMAGEN",
-        "alt": ""
-      },
-      {
-        "id": 6588,
-        "src": "/Image/SE075-IMAGEN-1.jpg",
-        "thumbnail": "/Image/SE075-IMAGEN-1-300x300.jpg",
-        "srcset": "/Image/SE075-IMAGEN-1.jpg 1280w, /Image/SE075-IMAGEN-1-300x300.jpg 300w, /Image/SE075-IMAGEN-1-1024x1024.jpg 1024w, /Image/SE075-IMAGEN-1-150x150.jpg 150w, /Image/SE075-IMAGEN-1-768x768.jpg 768w, /Image/SE075-IMAGEN-1-720x720.jpg 720w, /Image/SE075-IMAGEN-1-600x600.jpg 600w, /Image/SE075-IMAGEN-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "SE075-IMAGEN",
-        "alt": ""
       }
     ],
     "categories": [
