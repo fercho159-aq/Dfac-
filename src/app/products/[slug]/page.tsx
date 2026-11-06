@@ -135,6 +135,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'silleta-flexible-para-malla': [
     '/archivos/fichas-tecnicas/ficha-tecnica-silleta-flexible-para-malla.pdf',
   ],
+  'silleta-de-entrepiso-para-malla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-de-entrepiso-para-malla.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1947,6 +1950,50 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       <tbody>
                         <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SFM060</td><td className="px-3 py-2 text-slate-800">1.5</td><td className="px-3 py-2 text-slate-800">500</td><td className="px-3 py-2 text-slate-800">12.9</td><td className="px-3 py-2 text-slate-800">6.6</td></tr>
                         <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SFM100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">350</td><td className="px-3 py-2 text-slate-800">15.5</td><td className="px-3 py-2 text-slate-800">5.6</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'silleta-de-entrepiso-para-malla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador diseñado para losas de entrepiso y azotea, con poca superficie de contacto.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Para un funcionamiento ideal debe colocarse la silleta en los cruces de la malla, observando al instalarlas que el alambre inferior de la malla quede insertado en los broches más profundos y el alambre superior en los broches más altos de la silleta.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Carga máxima</p>
+                      <p className="text-base font-bold text-slate-800">250 Kg</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center">
+                      <p className="text-xs text-slate-500 mb-1">Malla</p>
+                      <p className="text-base font-bold text-slate-800">1 a 10</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Armados de malla electrosoldada en losas voladas. Es importante que las silletas estén distribuidas correctamente cada 60 cm de distancia traslapándolas.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SME100</td><td className="px-3 py-2 text-slate-800">2.5</td><td className="px-3 py-2 text-slate-800">600</td><td className="px-3 py-2 text-slate-800">9.8</td><td className="px-3 py-2 text-slate-800">6</td></tr>
+                        <tr className="border-b bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SME200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800">225</td><td className="px-3 py-2 text-slate-800">17.5</td><td className="px-3 py-2 text-slate-800">4.1</td></tr>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">SME250</td><td className="px-3 py-2 text-slate-800">6.5</td><td className="px-3 py-2 text-slate-800">175</td><td className="px-3 py-2 text-slate-800">29.0</td><td className="px-3 py-2 text-slate-800">5.3</td></tr>
+                        <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">SME300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800">150</td><td className="px-3 py-2 text-slate-800">28.0</td><td className="px-3 py-2 text-slate-800">4.4</td></tr>
                       </tbody>
                     </table>
                   </div>
