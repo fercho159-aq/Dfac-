@@ -15,6 +15,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Autoplay from "embla-carousel-autoplay"
 import { Dialog, DialogContent, DialogTrigger, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { ContactSection } from '@/components/contact-section';
+import { SocialVideoLinks } from '@/components/social-video-links';
 import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -661,6 +662,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <SocialVideoLinks className="mt-10" />
           <div className="text-center mt-10">
             <Button asChild size="lg" variant="outline">
               <Link href="/videos">Ver Todos los Videos <ArrowRight className="ml-2 w-4 h-4" /></Link>
