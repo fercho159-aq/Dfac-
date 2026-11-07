@@ -141,6 +141,10 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'disco-separador': [
     '/archivos/fichas-tecnicas/ficha-tecnica-disco-separador-dfac.pdf',
   ],
+  'disco-para-pila': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-disco-para-pila.pdf',
+    '/archivos/fichas-tecnicas/ficha-tecnica-colocacion-disco-para-pila.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2080,6 +2084,56 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     </table>
                   </div>
                 </div>
+              ) : product.slug === 'disco-para-pila' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador lateral muy fuerte, resistente al impacto, utilizado en pilas pesadas de grandes dimensiones y en muros Milán o de contención. Se colocan al momento de ir introduciendo la estructura metálica en la perforación, facilitando el armado de la columna. Ideal en ambientes corrosivos.
+                  </p>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Cimentaciones profundas para pilas y muros de contención.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Este separador aporta precisión, resistencia y soporte en los procesos constructivos más exigentes. Su diseño robusto permite trabajar con armados de varilla pesada, asegurando que el acero mantenga la distancia correcta respecto a las paredes de la excavación durante el descenso del armado y el colado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Su geometría tipo disco permite que el armado de acero se deslice suavemente por la perforación o cimbra, garantizando un recubrimiento uniforme en toda la circunferencia del elemento.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                      <p className="text-xs text-slate-500 mb-1">Capacidad de carga</p>
+                      <p className="text-sm font-bold text-slate-800">Alta resistencia (diseñado para armados de acero pesados)</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                      <p className="text-xs text-slate-500 mb-1">Compatibilidad</p>
+                      <p className="text-sm font-bold text-slate-800">Varilla corrugada de calibres gruesos para cimentación profunda y pilas</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                      <p className="text-xs text-slate-500 mb-1">Material</p>
+                      <p className="text-sm font-bold text-slate-800">Polipropileno de alta densidad (PPH)</p>
+                    </div>
+                  </div>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Especificaciones</h4>
+                  <div className="border border-slate-200 rounded-lg overflow-hidden overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-slate-100">
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Clave</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Recubrimiento de Concreto (cm)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Calibre de Acero</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Piezas por Empaque</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Pieza (grs)</th>
+                          <th className="px-3 py-2 text-left font-semibold text-slate-700">Peso Empaque (Kgs)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b"><td className="px-3 py-2 text-slate-800 font-semibold">DP200</td><td className="px-3 py-2 text-slate-800">5.0</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">Hasta 5/8&quot;</td><td className="px-3 py-2 text-slate-800">80</td><td className="px-3 py-2 text-slate-800">98</td><td className="px-3 py-2 text-slate-800">8.0</td></tr>
+                        <tr className="bg-slate-50"><td className="px-3 py-2 text-slate-800 font-semibold">DP300</td><td className="px-3 py-2 text-slate-800">7.5</td><td className="px-3 py-2 text-slate-800 whitespace-nowrap">Hasta 3/4&quot;</td><td className="px-3 py-2 text-slate-800">30</td><td className="px-3 py-2 text-slate-800">195</td><td className="px-3 py-2 text-slate-800">6.0</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
@@ -2144,7 +2198,7 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     >
                       <FileText className="w-6 h-6 shrink-0" />
                       <span className="flex flex-col items-start leading-tight">
-                        <span className="text-base">Descargar ficha técnica{fichaTecnicaUrls.length > 1 ? ` ${i + 1}` : ''}</span>
+                        <span className="text-base">{url.includes('ficha-tecnica-colocacion-') ? 'Descargar ficha de colocación' : `Descargar ficha técnica${fichaTecnicaUrls.length > 1 && !fichaTecnicaUrls.some((u) => u.includes('ficha-tecnica-colocacion-')) ? ` ${i + 1}` : ''}`}</span>
                         <span className="text-xs font-medium text-amber-50">PDF con medidas y especificaciones</span>
                       </span>
                       <Download className="w-5 h-5 shrink-0" />
