@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         destination: '/products/tirante-tipo-mono',
         permanent: true,
       },
+      {
+        source: '/products/silletas-de-mortero',
+        destination: '/products/clip-moretero',
+        permanent: true,
+      },
     ]
   },
   typescript: {
