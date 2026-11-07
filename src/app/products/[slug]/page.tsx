@@ -145,6 +145,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
     '/archivos/fichas-tecnicas/ficha-tecnica-disco-para-pila.pdf',
     '/archivos/fichas-tecnicas/ficha-tecnica-colocacion-disco-para-pila.pdf',
   ],
+  'funda-plate-dowel': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-funda-plate-dowel.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2133,6 +2136,53 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'funda-plate-dowel' ? (
+                <div className="product-description font-sans">
+                  <p className="text-base md:text-lg font-semibold text-slate-800 mb-3">
+                    Sistema de transferencia de cargas para juntas de concreto.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Plate Dowel es un sistema bicomponente diseñado para garantizar una transferencia eficiente de cargas en las juntas de construcción de pisos y pavimentos de concreto. Está compuesto por dos elementos que trabajan en conjunto:
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                      <p className="text-sm font-bold text-slate-800 mb-1">Funda plástica</p>
+                      <p className="text-sm text-slate-700">Fabricada en plástico de alta resistencia, con diseño triangular que permite alojar y mantener correctamente posicionada la placa metálica, facilitando su libre movimiento.</p>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                      <p className="text-sm font-bold text-slate-800 mb-1">Placa metálica</p>
+                      <p className="text-sm text-slate-700">Fabricada en acero, con dimensiones de 11.5 × 11.5 cm y disponible en espesores de 1/4&quot; y 3/8&quot;, de acuerdo con las especificaciones del proyecto.</p>
+                    </div>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Ventajas</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    A diferencia del sistema tradicional de barras pasajuntas redondas, Plate Dowel ofrece importantes ventajas durante su instalación y funcionamiento:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-slate-700 mb-4">
+                    <li><strong className="text-slate-800">Instalación sencilla:</strong> No requiere perforar la cimbra ni engrasar las barras.</li>
+                    <li><strong className="text-slate-800">Alineación precisa:</strong> Mantiene la placa correctamente centrada dentro de la funda.</li>
+                    <li><strong className="text-slate-800">Libre movimiento:</strong> Su diseño permite el desplazamiento necesario para absorber los movimientos de contracción y expansión del concreto.</li>
+                    <li><strong className="text-slate-800">Transferencia eficiente de cargas:</strong> Distribuye las cargas entre secciones de losas, favoreciendo su estabilidad y desempeño estructural.</li>
+                    <li><strong className="text-slate-800">Mayor durabilidad:</strong> Su funda de alta resistencia soporta el impacto de los vibradores de concreto sin fracturarse.</li>
+                  </ul>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Este sistema proporciona una transferencia positiva de cargas, ayuda a reducir los movimientos diferenciales entre secciones de concreto, evita la formación de desniveles y contribuye a prevenir fracturas en las losas, además de favorecer el correcto funcionamiento del sellado de juntas.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mt-6 mb-3">Aplicaciones</h4>
+                  <p className="text-sm md:text-base text-slate-700 mb-4">
+                    Ideal para proyectos que requieren pisos y pavimentos de concreto sometidos a tránsito pesado, tales como:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-slate-700 mb-4">
+                    <li>Naves industriales.</li>
+                    <li>Patios de maniobras.</li>
+                    <li>Centros de distribución y almacenes.</li>
+                    <li>Calles y carreteras.</li>
+                    <li>Supermercados y plazas comerciales.</li>
+                    <li>Estacionamientos.</li>
+                    <li>Losas de concreto sujetas a cargas y tránsito pesado.</li>
+                  </ul>
                 </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />

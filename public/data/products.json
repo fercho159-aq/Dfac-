@@ -18294,5 +18294,150 @@
     },
     "extensions": {},
     "image": "/Image/cono-colores.jpeg"
+  },
+  {
+    "id": 99950,
+    "name": "Funda Plate Dowel",
+    "slug": "funda-plate-dowel",
+    "parent": 0,
+    "type": "variable",
+    "variation": "",
+    "permalink": "https://www.cimbrayaccesorios.com.mx/products/funda-plate-dowel",
+    "sku": "",
+    "short_description": "",
+    "description": "<p><strong>Sistema de transferencia de cargas para juntas de concreto.</strong></p><p>Plate Dowel es un sistema bicomponente diseñado para garantizar una transferencia eficiente de cargas en las juntas de construcción de pisos y pavimentos de concreto. Está compuesto por dos elementos que trabajan en conjunto:</p><ul><li><strong>Funda plástica:</strong> Fabricada en plástico de alta resistencia, con diseño triangular que permite alojar y mantener correctamente posicionada la placa metálica, facilitando su libre movimiento.</li><li><strong>Placa metálica:</strong> Fabricada en acero, con dimensiones de 11.5 × 11.5 cm y disponible en espesores de 1/4\" y 3/8\", de acuerdo con las especificaciones del proyecto.</li></ul><p>A diferencia del sistema tradicional de barras pasajuntas redondas, Plate Dowel ofrece importantes ventajas durante su instalación y funcionamiento:</p><ul><li><strong>Instalación sencilla:</strong> No requiere perforar la cimbra ni engrasar las barras.</li><li><strong>Alineación precisa:</strong> Mantiene la placa correctamente centrada dentro de la funda.</li><li><strong>Libre movimiento:</strong> Su diseño permite el desplazamiento necesario para absorber los movimientos de contracción y expansión del concreto.</li><li><strong>Transferencia eficiente de cargas:</strong> Distribuye las cargas entre secciones de losas, favoreciendo su estabilidad y desempeño estructural.</li><li><strong>Mayor durabilidad:</strong> Su funda de alta resistencia soporta el impacto de los vibradores de concreto sin fracturarse.</li></ul><p>Este sistema proporciona una transferencia positiva de cargas, ayuda a reducir los movimientos diferenciales entre secciones de concreto, evita la formación de desniveles y contribuye a prevenir fracturas en las losas, además de favorecer el correcto funcionamiento del sellado de juntas.</p><p><strong>Aplicaciones</strong></p><p>Ideal para proyectos que requieren pisos y pavimentos de concreto sometidos a tránsito pesado, tales como:</p><ul><li>Naves industriales.</li><li>Patios de maniobras.</li><li>Centros de distribución y almacenes.</li><li>Calles y carreteras.</li><li>Supermercados y plazas comerciales.</li><li>Estacionamientos.</li><li>Losas de concreto sujetas a cargas y tránsito pesado.</li></ul>",
+    "on_sale": false,
+    "prices": {
+      "price": "",
+      "regular_price": "",
+      "sale_price": "",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar información",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 8071,
+        "src": "/Image/funda-plate-dowel-1.png",
+        "thumbnail": "/Image/funda-plate-dowel-1.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Funda Plate Dowel - funda con placa",
+        "alt": "Funda Plate Dowel DFAC funda con placa"
+      },
+      {
+        "id": 8072,
+        "src": "/Image/funda-plate-dowel-2.png",
+        "thumbnail": "/Image/funda-plate-dowel-2.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Funda Plate Dowel - funda y placa metálica",
+        "alt": "Funda Plate Dowel DFAC funda y placa metálica"
+      },
+      {
+        "id": 8073,
+        "src": "/Image/funda-plate-dowel-3.png",
+        "thumbnail": "/Image/funda-plate-dowel-3.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Funda Plate Dowel - colocada en junta de concreto",
+        "alt": "Funda Plate Dowel DFAC colocada en junta de concreto"
+      },
+      {
+        "id": 8074,
+        "src": "/Image/funda-plate-dowel-4.png",
+        "thumbnail": "/Image/funda-plate-dowel-4.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Funda Plate Dowel - instalación en cimbra",
+        "alt": "Funda Plate Dowel DFAC instalación en cimbra"
+      },
+      {
+        "id": 8075,
+        "src": "/Image/funda-plate-dowel-5.png",
+        "thumbnail": "/Image/funda-plate-dowel-5.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Funda Plate Dowel - junta de losa colada",
+        "alt": "Funda Plate Dowel DFAC junta de losa colada"
+      }
+    ],
+    "categories": [
+      {
+        "id": 44,
+        "name": "ACCESORIOS",
+        "slug": "accesorios",
+        "link": "https://cimbrayaccesoriosdfac.com.mx/categoria-producto/accesorios-para-cimbra/"
+      }
+    ],
+    "tags": [],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Medida",
+        "taxonomy": "pa_medida",
+        "has_variations": true,
+        "terms": [
+          {
+            "id": 301,
+            "name": "Placa 1/4\"",
+            "slug": "placa-1-4"
+          },
+          {
+            "id": 302,
+            "name": "Placa 3/8\"",
+            "slug": "placa-3-8"
+          }
+        ]
+      }
+    ],
+    "variations": [
+      {
+        "id": 99951,
+        "attributes": [
+          {
+            "name": "Medida",
+            "value": "placa-1-4"
+          }
+        ]
+      },
+      {
+        "id": 99952,
+        "attributes": [
+          {
+            "name": "Medida",
+            "value": "placa-3-8"
+          }
+        ]
+      }
+    ],
+    "has_options": true,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Elige las opciones para &ldquo;Funda Plate Dowel&rdquo;",
+      "url": "https://www.cimbrayaccesorios.com.mx/products/funda-plate-dowel",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {},
+    "image": "/Image/funda-plate-dowel-1.png"
   }
 ]
