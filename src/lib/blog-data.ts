@@ -20,6 +20,85 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "puntales-metalicos-italianos-certificados",
+    title: "Puntales metálicos italianos certificados: resistencia, seguridad y tecnología para la construcción",
+    excerpt: "Conoce los puntales metálicos extensibles italianos fabricados en acero S235JRH con certificación UNI EN 729-2:1996, sistema anti-cizallamiento y placas de distribución reforzadas. Revisa los modelos disponibles, sus alturas y capacidades de carga.",
+    image: "/Image/blog-imagenes/09-nov-puntales-italianos/portada-puntales-metalicos-italianos.webp",
+    category: "Apuntalamiento",
+    location: "México",
+    author: "Equipo DFAC",
+    date: "2026-11-09",
+    readTime: "4 min",
+    content: [
+      {
+        heading: "Puntales metálicos italianos para tus proyectos",
+        paragraphs: [
+          "En los proyectos de construcción, contar con equipos de soporte resistentes y confiables es fundamental para garantizar la estabilidad y seguridad durante los trabajos de apuntalamiento. Por ello, los puntales metálicos extensibles italianos representan una excelente alternativa para obras que requieren resistencia, durabilidad y un óptimo desempeño.",
+          "Fabricados con acero de alta resistencia S235JRH, estos puntales están diseñados para ofrecer un soporte eficiente, incorporando características que favorecen la distribución de cargas y reducen los riesgos asociados al cizallamiento.",
+        ],
+        image: "/Image/blog-imagenes/09-nov-puntales-italianos/portada-puntales-metalicos-italianos.webp",
+        imageAlt: "Puntales metálicos extensibles italianos apilados en la bodega de DFAC Accesorios para Cimbra",
+      },
+      {
+        heading: "¿Qué hace especiales a los puntales metálicos italianos?",
+        paragraphs: [
+          "Estos puntales destacan por su fabricación y características técnicas, que los convierten en una solución funcional para diferentes necesidades dentro de la construcción.",
+          "Entre sus principales características se encuentran:",
+          "• Acero S235JRH: material de alta resistencia que proporciona robustez y durabilidad.",
+          "• Certificación europea: cumplen con la certificación UNI EN 729-2:1996, de acuerdo con las especificaciones proporcionadas.",
+          "• Sistema anti-cizallamiento: diseñado para contribuir a la seguridad y estabilidad del puntal.",
+          "• Placas de distribución reforzadas: favorecen una distribución óptima de la carga.",
+          "• Diseño extensible: permite ajustar la altura de acuerdo con los requerimientos del proyecto.",
+        ],
+      },
+      {
+        heading: "Modelos disponibles y sus capacidades",
+        paragraphs: [
+          "Contamos con diferentes modelos que se adaptan a distintas alturas y necesidades de carga. Cada uno ofrece características específicas para seleccionar la opción adecuada según las condiciones de trabajo.",
+          "1. Puntal Ligero 1.80 – 3.00 m: una alternativa para trabajos que requieren alturas de soporte de hasta 3 metros.",
+          "• Altura máxima: 300 cm.",
+          "• Capacidad de carga máxima: 2,638.98 kg.",
+          "2. Puntal Ligero 2.20 – 4.00 m: diseñado para proyectos que necesitan un mayor alcance de altura, manteniendo una estructura funcional y resistente.",
+          "• Altura máxima: 400 cm.",
+          "• Capacidad de carga máxima: 2,312.68 kg.",
+          "3. Puntal B40 2.31 – 4.00 m (Reforzado): una opción reforzada para trabajos que requieren una mayor capacidad de soporte.",
+          "• Altura máxima: 400 cm.",
+          "• Capacidad de carga máxima: 3,059.15 kg.",
+          "4. Puntal B50 2.80 – 5.00 m (Extra Fuerte): el modelo de mayor alcance en altura de esta línea, ideal para proyectos que requieren apuntalamientos de hasta 5 metros.",
+          "• Altura máxima: 500 cm.",
+          "• Capacidad de carga máxima: 2,518 kg.",
+        ],
+      },
+      {
+        heading: "¿Cómo elegir el puntal adecuado para tu proyecto?",
+        paragraphs: [
+          "La elección de un puntal metálico no debe basarse únicamente en su altura o capacidad de carga. Es importante considerar las condiciones específicas de cada obra.",
+          "Antes de seleccionar un modelo, toma en cuenta:",
+          "1. Altura de trabajo: identifica la altura necesaria para realizar el apuntalamiento y verifica que el modelo seleccionado se encuentre dentro de su rango permitido.",
+          "2. Capacidad de carga: considera el peso que deberá soportar el sistema y revisa las especificaciones técnicas correspondientes.",
+          "3. Tipo de proyecto: evalúa las características de la estructura, las condiciones de instalación y las necesidades particulares de la obra.",
+          "4. Seguridad: asegúrate de que los puntales se instalen correctamente, sobre superficies adecuadas y siguiendo las indicaciones técnicas del fabricante.",
+          "Es importante recordar que las capacidades máximas indicadas corresponden a especificaciones del producto y no deben interpretarse como cargas admisibles para cualquier altura o condición de instalación.",
+        ],
+      },
+      {
+        heading: "Resistencia y seguridad para tus proyectos de construcción",
+        paragraphs: [
+          "Elegir puntales metálicos de calidad es una inversión en el desempeño y la seguridad de cualquier proyecto. Su fabricación en acero S235JRH, el sistema anti-cizallamiento y sus placas de distribución reforzadas ofrecen características importantes para trabajos profesionales de construcción.",
+          "Con diferentes modelos y capacidades disponibles, puedes encontrar una alternativa que se adapte a los requerimientos de tu obra.",
+        ],
+      },
+      {
+        heading: "Encuentra el puntal ideal para tu construcción",
+        paragraphs: [
+          "¿Buscas puntales metálicos resistentes, certificados y con diferentes opciones de altura?",
+          "Conoce nuestros modelos y solicita información sobre disponibilidad, especificaciones técnicas y cotizaciones. Nuestro equipo puede ayudarte a identificar la alternativa adecuada para las necesidades de tu proyecto.",
+          "La calidad de tus materiales es fundamental para construir con confianza.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "silleta-h-para-varilla-acero-refuerzo",
     title: "Silleta H para varilla – 4 puntos de apoyo",
     excerpt: "Conoce las características, aplicaciones y beneficios de las silletas para acero de refuerzo: soporte con contacto mínimo, control del recubrimiento y desempeño en concreto con agregados gruesos. Incluye recomendaciones para elegir el modelo adecuado para tu obra.",
