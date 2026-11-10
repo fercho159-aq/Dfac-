@@ -148,6 +148,12 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'funda-plate-dowel': [
     '/archivos/fichas-tecnicas/ficha-tecnica-funda-plate-dowel.pdf',
   ],
+  'clip-moretero': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-silleta-mortero.pdf',
+  ],
+  'clip-pinza-mortero': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-clip-pinza-mortero.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -1197,6 +1203,10 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4">
                     <p className="text-sm md:text-base text-slate-800"><strong>NOTA:</strong> SOMOS FABRICANTES. Fabricamos medidas específicas.</p>
                   </div>
+
+                  <div className="mt-6 bg-green-50 border border-green-300 rounded-lg p-4 text-center">
+                    <p className="text-base font-bold text-slate-800 mb-2">¿Te gustaría ser distribuidor? <a href="https://wa.me/5519538328?text=Hola%2C%20me%20interesa%20ser%20distribuidor%20de%20mo%C3%B1os%20para%20cimbra" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Contactanos!</a></p>
+                  </div>
                 </div>
               ) : product.slug === 'tubo-para-barra-roscada' ? (
                 <div className="product-description font-sans">
@@ -1801,6 +1811,10 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 md:p-4">
                     <p className="text-sm md:text-base text-slate-800"><strong>NOTA:</strong> SOMOS FABRICANTES. Fabricamos medidas específicas.</p>
                   </div>
+
+                  <div className="mt-6 bg-green-50 border border-green-300 rounded-lg p-4 text-center">
+                    <p className="text-base font-bold text-slate-800 mb-2">¿Te gustaría ser distribuidor? <a href="https://wa.me/5519538328?text=Hola%2C%20me%20interesa%20ser%20distribuidor%20de%20mo%C3%B1os%20con%20rondana%20para%20cimbra" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 underline">Contactanos!</a></p>
+                  </div>
                 </div>
               ) : product.slug === 'silleta-piramidal' ? (
                 <div className="product-description font-sans">
@@ -2211,6 +2225,83 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <li>Estacionamientos.</li>
                     <li>Losas de concreto sujetas a cargas y tránsito pesado.</li>
                   </ul>
+                </div>
+              ) : product.slug === 'clip-moretero' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador fabricado enteramente en concreto, con cavidades superiores para recibir y asegurar la estructura metálica (varilla).
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Calibre de acero:</strong> Recibe acero desde malla delgada hasta varillas de 1&quot;.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Aplicaciones:</strong> Se utiliza para separar las estructuras metálicas (varillas) de la cimbra o formaleta a una altura previamente especificada por el ingeniero estructural (calculista).
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-6">
+                    Medidas desde 2 cm hasta 7.5 cm, recibe mallas electro-soldadas y aceros desde 1/4&quot; hasta 1&quot;1/2, compatible con el concreto evitando fisuras en su estructura. Se usan 2 unidades por metro cuadrado.
+                  </p>
+
+                  <h4 className="text-base font-bold text-slate-800 mb-3">Especificaciones</h4>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr className="bg-slate-700 text-white">
+                          <th className="px-4 py-2 text-left font-semibold">Altura Recubrimiento</th>
+                          <th className="px-4 py-2 text-center font-semibold">20mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">25mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">30mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">40mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">50mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">60mm</th>
+                          <th className="px-4 py-2 text-center font-semibold">75mm</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b border-slate-200">
+                          <td className="px-4 py-2 font-medium text-slate-700">Peso unitario en (gr)</td>
+                          <td className="px-4 py-2 text-center text-slate-800">59</td>
+                          <td className="px-4 py-2 text-center text-slate-800">125</td>
+                          <td className="px-4 py-2 text-center text-slate-800">154</td>
+                          <td className="px-4 py-2 text-center text-slate-800">188</td>
+                          <td className="px-4 py-2 text-center text-slate-800">250</td>
+                          <td className="px-4 py-2 text-center text-slate-800">304</td>
+                          <td className="px-4 py-2 text-center text-slate-800">452</td>
+                        </tr>
+                        <tr className="border-b border-slate-200 bg-slate-50">
+                          <td className="px-4 py-2 font-medium text-slate-700">Unidades por Empaque</td>
+                          <td className="px-4 py-2 text-center text-slate-800">500</td>
+                          <td className="px-4 py-2 text-center text-slate-800">200</td>
+                          <td className="px-4 py-2 text-center text-slate-800">200</td>
+                          <td className="px-4 py-2 text-center text-slate-800">200</td>
+                          <td className="px-4 py-2 text-center text-slate-800">150</td>
+                          <td className="px-4 py-2 text-center text-slate-800">100</td>
+                          <td className="px-4 py-2 text-center text-slate-800">80</td>
+                        </tr>
+                        <tr className="border-b border-slate-200">
+                          <td className="px-4 py-2 font-medium text-slate-700">Peso Total en (kg)</td>
+                          <td className="px-4 py-2 text-center text-slate-800">29.5</td>
+                          <td className="px-4 py-2 text-center text-slate-800">25</td>
+                          <td className="px-4 py-2 text-center text-slate-800">30.8</td>
+                          <td className="px-4 py-2 text-center text-slate-800">37.6</td>
+                          <td className="px-4 py-2 text-center text-slate-800">37.5</td>
+                          <td className="px-4 py-2 text-center text-slate-800">30.4</td>
+                          <td className="px-4 py-2 text-center text-slate-800">36.1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'clip-pinza-mortero' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Separador híbrido fabricado en concreto en su parte inferior, con un clip plástico especial para menores diámetros de acero hecho en polipropileno en su parte superior, para recibir y asegurar la estructura metálica (Malla).
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Calibre de acero:</strong> Recibe mallas electrosoldadas desde 3mm hasta 3/4&quot;.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
+                  </p>
                 </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
