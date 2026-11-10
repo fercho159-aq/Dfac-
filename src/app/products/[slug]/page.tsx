@@ -2303,6 +2303,46 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
                 </div>
+              ) : product.slug === 'conector-para-varilla' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El conector de varilla es un sistema de conexión mecánica diseñado para unir dos barras de acero de refuerzo de manera eficiente, segura y confiable. Su función principal es garantizar la continuidad del acero de refuerzo en elementos estructurales de concreto, proporcionando una unión resistente que contribuye al desempeño y estabilidad de las estructuras.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gracias a su diseño, permite realizar el acoplamiento de varilla con mayor rapidez y facilidad, reduciendo la necesidad de procedimientos tradicionales de traslape, amarres o conexiones que requieren trabajos adicionales. Es una solución práctica para proyectos de construcción que buscan optimizar los tiempos de instalación, mejorar la productividad en obra y contar con conexiones mecánicas de alto desempeño.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Principales beneficios:</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-4 space-y-1">
+                    <li><strong>Conexión eficiente:</strong> permite unir varilla con varilla mediante un sistema de acoplamiento mecánico.</li>
+                    <li><strong>Instalación práctica:</strong> su diseño facilita el proceso de montaje y reduce operaciones adicionales.</li>
+                    <li><strong>Ahorro de tiempo:</strong> contribuye a agilizar los trabajos de armado del acero de refuerzo.</li>
+                    <li><strong>Resistencia mecánica:</strong> está diseñado para proporcionar una conexión con capacidad de resistencia a la tensión.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones por modelo</h3>
+                  <div className="overflow-x-auto">
+                    <div className="overflow-hidden rounded-xl border shadow-sm">
+                      <table className="w-full text-sm">
+                        <thead>
+                          <tr className="bg-blue-600 text-white">
+                            <th className="p-3 text-left">Modelo</th>
+                            <th className="p-3 text-left">Calibre en Acero</th>
+                            <th className="p-3 text-left">Longitud (mm)</th>
+                            <th className="p-3 text-left">Peso (kg)</th>
+                            <th className="p-3 text-left">Diámetro Interno (mm)</th>
+                            <th className="p-3 text-left">Diámetro Externo (mm)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b"><td className="p-3 font-bold">COUPLER #5</td><td className="p-3">Hasta varilla #5 (5/8&quot;)</td><td className="p-3">114</td><td className="p-3">0.6</td><td className="p-3">20</td><td className="p-3">38</td></tr>
+                          <tr className="border-b bg-slate-50"><td className="p-3 font-bold">COUPLER #6</td><td className="p-3">Hasta varilla #6 (3/8&quot;)</td><td className="p-3">126</td><td className="p-3">0.8</td><td className="p-3">23</td><td className="p-3">43</td></tr>
+                          <tr className="border-b"><td className="p-3 font-bold">COUPLER #8</td><td className="p-3">Hasta varilla #8 (1&quot;)</td><td className="p-3">151</td><td className="p-3">1.7</td><td className="p-3">29</td><td className="p-3">56</td></tr>
+                          <tr className="border-b bg-slate-50"><td className="p-3 font-bold">COUPLER #10</td><td className="p-3">Hasta varilla #10 (1 1/4&quot;)</td><td className="p-3">172</td><td className="p-3">3</td><td className="p-3">36</td><td className="p-3">69</td></tr>
+                          <tr><td className="p-3 font-bold">COUPLER #12</td><td className="p-3">Hasta varilla #12 (1 1/2&quot;)</td><td className="p-3">203</td><td className="p-3">5.1</td><td className="p-3">42</td><td className="p-3">82</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <div className="prose prose-lg text-muted-foreground" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
               )}
