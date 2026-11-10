@@ -15380,6 +15380,15 @@
         "sizes": "(max-width: 1280px) 100vw, 1280px",
         "name": "Silleta de entrepiso - vista frontal en negro",
         "alt": "Silleta de entrepiso DFAC vista frontal en negro"
+      },
+      {
+        "id": 7906,
+        "src": "/Image/silleta-de-entrepiso-6.png",
+        "thumbnail": "/Image/silleta-de-entrepiso-6.png",
+        "srcset": "",
+        "sizes": "(max-width: 1280px) 100vw, 1280px",
+        "name": "Silleta de entrepiso - instalada en obra",
+        "alt": "Silleta de entrepiso DFAC instalada en obra de construcción"
       }
     ],
     "categories": [
