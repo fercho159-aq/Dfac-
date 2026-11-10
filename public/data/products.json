@@ -18513,7 +18513,53 @@
     "price_html": "Solicitar información",
     "average_rating": "0",
     "review_count": 0,
-    "images": [],
+    "images": [
+      {
+        "id": 9010,
+        "src": "/Image/conector-para-varilla-1.png",
+        "thumbnail": "/Image/conector-para-varilla-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "conector-para-varilla-1",
+        "alt": "Conector para varilla DFAC - medidas disponibles"
+      },
+      {
+        "id": 9011,
+        "src": "/Image/conector-para-varilla-2.png",
+        "thumbnail": "/Image/conector-para-varilla-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "conector-para-varilla-2",
+        "alt": "Conector para varilla DFAC instalado en obra"
+      },
+      {
+        "id": 9012,
+        "src": "/Image/conector-para-varilla-3.png",
+        "thumbnail": "/Image/conector-para-varilla-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "conector-para-varilla-3",
+        "alt": "Conector para varilla DFAC en estructura de acero"
+      },
+      {
+        "id": 9013,
+        "src": "/Image/conector-para-varilla-4.png",
+        "thumbnail": "/Image/conector-para-varilla-4.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "conector-para-varilla-4",
+        "alt": "Conector para varilla DFAC detalle de conexión"
+      },
+      {
+        "id": 9014,
+        "src": "/Image/conector-para-varilla-5.png",
+        "thumbnail": "/Image/conector-para-varilla-5.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "conector-para-varilla-5",
+        "alt": "Conector para varilla DFAC aplicación en columna"
+      }
+    ],
     "categories": [
       {
         "id": 200,
@@ -18564,5 +18610,103 @@
       "multiple_of": 1
     },
     "extensions": {}
+  },
+  {
+    "id": 9100,
+    "name": "Escalerilla para muros",
+    "slug": "escalerilla-para-muros",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesoriosdfac.com.mx/products/escalerilla-para-muros",
+    "sku": "",
+    "short_description": "",
+    "description": "<p>La escalerilla es un armado electrosoldado formado con dos alambres longitudinales lisos y alambres transversales perpendiculares soldados entre sí. Se coloca entre los muros para evitar grietas y sirve como refuerzo horizontal para los muros de mampostería reforzados.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar información",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 9110,
+        "src": "/Image/escalerilla-para-muros-1.png",
+        "thumbnail": "/Image/escalerilla-para-muros-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "escalerilla-para-muros-1",
+        "alt": "Escalerilla para muros DFAC"
+      },
+      {
+        "id": 9111,
+        "src": "/Image/escalerilla-para-muros-2.png",
+        "thumbnail": "/Image/escalerilla-para-muros-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "escalerilla-para-muros-2",
+        "alt": "Escalerilla para muros DFAC diagrama técnico"
+      },
+      {
+        "id": 9112,
+        "src": "/Image/escalerilla-para-muros-3.png",
+        "thumbnail": "/Image/escalerilla-para-muros-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "escalerilla-para-muros-3",
+        "alt": "Escalerilla para muros DFAC en obra"
+      },
+      {
+        "id": 9113,
+        "src": "/Image/escalerilla-para-muros-4.png",
+        "thumbnail": "/Image/escalerilla-para-muros-4.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "escalerilla-para-muros-4",
+        "alt": "Escalerilla para muros DFAC instalada en muro de tabique"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Accesorios para cimbra",
+        "slug": "accesorios-para-cimbra",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Elige las opciones para &ldquo;Escalerilla para muros&rdquo;",
+      "url": "https://cimbrayaccesoriosdfac.com.mx/products/escalerilla-para-muros",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {},
+    "image": "/Image/escalerilla-para-muros-1.png"
   }
 ]

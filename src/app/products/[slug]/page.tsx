@@ -154,6 +154,12 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'clip-pinza-mortero': [
     '/archivos/fichas-tecnicas/ficha-tecnica-clip-pinza-mortero.pdf',
   ],
+  'conector-para-varilla': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-conector-para-varilla.pdf',
+  ],
+  'escalerilla-para-muros': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-escalerilla-para-muros.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2302,6 +2308,34 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : product.slug === 'escalerilla-para-muros' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    La escalerilla es un armado electrosoldado formado con dos alambres longitudinales lisos y alambres transversales perpendiculares soldados entre sí. Se coloca entre los muros para evitar grietas y sirve como refuerzo horizontal para los muros de mampostería reforzados; también se puede colocar cada dos o tres hiladas, según sean las necesidades de la obra.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Usos:</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-4 space-y-1">
+                    <li>Refuerzo horizontal en muros de mampostería.</li>
+                    <li>Complemento de refuerzo con los castillos.</li>
+                    <li>Normalmente se coloca a cada dos hiladas.</li>
+                    <li>Se puede utilizar con castillos ahogados como con castillos normales.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características:</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-4 space-y-1">
+                    <li>Soldadura por resistencia eléctrica.</li>
+                    <li>Alambres calibre 10.</li>
+                    <li>Tramos de 30 metros.</li>
+                    <li>Transversales unidos mediante soldadura.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Ventajas:</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-4 space-y-1">
+                    <li>Alta resistencia a la fluencia.</li>
+                    <li>Proporciona estabilidad e integridad en las construcciones con muros de mampostería.</li>
+                    <li>Capacidad de sostener cargas verticales ante la acción de un sismo.</li>
+                    <li>Disminuye la aparición de grietas en los muros por hundimientos de la cimentación.</li>
+                    <li>Soldado uniforme y limpio.</li>
+                  </ul>
                 </div>
               ) : product.slug === 'conector-para-varilla' ? (
                 <div className="product-description font-sans">
