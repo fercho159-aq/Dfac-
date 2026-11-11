@@ -163,6 +163,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'corbata-tirante-plano': [
     '/archivos/fichas-tecnicas/ficha-tecnica-corbata-tirante-plano.pdf',
   ],
+  'fundas-para-corbata': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-fundas-para-corbata.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2325,6 +2328,26 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : product.slug === 'fundas-para-corbata' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Fundas para tirante plano usado en cimbras metálicas. Tienen como función envolver las corbatas (las cuales anclan un molde con otro), permitiendo que estas se recuperen una vez el concreto haya fraguado y endurecido, quedando así ahogadas en él.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Elementos fabricados de <strong>poliuretano tipo &quot;bajo-alfombra&quot;</strong>. Producto 100% compatible con el concreto.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Usar fundas para corbatas de cimbra ayuda a controlar la separación entre los paneles de la cimbra y mantiene alineado el sistema durante el colado. También facilita el desencofrado, porque la corbata sale con menos esfuerzo y no queda atrapada en el concreto.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Las fundas para corbatas de cimbra son una solución práctica para constructoras, cimbreros, residentes de obra y distribuidores de materiales para construcción que trabajan con muros, columnas, trabes y estructuras de concreto armado.
+                  </p>
+                  <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p className="text-sm md:text-base text-slate-800">
+                      <strong>Importante:</strong> Las fundas están diseñadas para evitar el deterioro o anclaje de las corbatas con el concreto y así recuperar el 100% de las corbatas. Es necesario utilizar fundas de la densidad adecuada de acuerdo al espesor de los muros.
+                    </p>
+                  </div>
                 </div>
               ) : product.slug === 'corbata-tirante-plano' ? (
                 <div className="product-description font-sans">

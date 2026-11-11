@@ -18736,5 +18736,103 @@
     },
     "extensions": {},
     "image": "/Image/corbata-tirante-plano-1.png"
+  },
+  {
+    "id": 9500,
+    "name": "Fundas para Corbata",
+    "slug": "fundas-para-corbata",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesoriosdfac.com.mx/products/fundas-para-corbata",
+    "sku": "",
+    "short_description": "",
+    "description": "<p>Fundas para tirante plano usado en cimbras metalicas. Envuelven las corbatas para permitir su recuperacion una vez que el concreto haya fraguado y endurecido.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar informacion",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 9400,
+        "src": "/Image/fundas-para-corbata-1.png",
+        "thumbnail": "/Image/fundas-para-corbata-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "fundas-para-corbata-1",
+        "alt": "DFAC Fundas para Corbata - foto 1"
+      },
+      {
+        "id": 9401,
+        "src": "/Image/fundas-para-corbata-2.png",
+        "thumbnail": "/Image/fundas-para-corbata-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "fundas-para-corbata-2",
+        "alt": "DFAC Fundas para Corbata - foto 2"
+      },
+      {
+        "id": 9402,
+        "src": "/Image/fundas-para-corbata-3.png",
+        "thumbnail": "/Image/fundas-para-corbata-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "fundas-para-corbata-3",
+        "alt": "DFAC Fundas para Corbata - foto 3"
+      },
+      {
+        "id": 9403,
+        "src": "/Image/fundas-para-corbata-4.png",
+        "thumbnail": "/Image/fundas-para-corbata-4.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "fundas-para-corbata-4",
+        "alt": "DFAC Fundas para Corbata - foto 4"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Accesorios para cimbra",
+        "slug": "accesorios-para-cimbra",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Elige las opciones para Fundas para Corbata",
+      "url": "https://cimbrayaccesoriosdfac.com.mx/products/fundas-para-corbata",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {},
+    "image": "/Image/fundas-para-corbata-1.png"
   }
 ]
