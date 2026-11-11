@@ -210,7 +210,7 @@ export default function ProductsClient() {
               </div>
             </div>
             
-            {selectedCategory === 'maquinaria' && (
+            {selectedCategory === 'maquinaria' && !debouncedSearchTerm.trim() && (
               <div className="mb-8 bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-200 rounded-xl p-6 md:p-8 shadow-sm">
                 <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Maquinaria DFAC</h2>
                 <div className="space-y-4 text-sm md:text-base text-slate-700 leading-relaxed">
