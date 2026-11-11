@@ -210,6 +210,29 @@ export default function ProductsClient() {
               </div>
             </div>
             
+            {selectedCategory === 'maquinaria' && (
+              <div className="mb-8 bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-200 rounded-xl p-6 md:p-8 shadow-sm">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Maquinaria DFAC</h2>
+                <div className="space-y-4 text-sm md:text-base text-slate-700 leading-relaxed">
+                  <p>
+                    Somos una empresa especializada en la <strong>comercialización de maquinaria ligera y mediana</strong> para la industria de la construcción. Ofrecemos soluciones integrales que incluyen <strong>importación, venta, renta, suministro de refacciones y servicio técnico preventivo y correctivo</strong>.
+                  </p>
+                  <p>
+                    Contamos con más de <strong>10 años de experiencia</strong> en el sector de la construcción, brindando productos y servicios que contribuyen al desarrollo eficiente y seguro de proyectos de distintas magnitudes.
+                  </p>
+                  <p>
+                    Nuestro catálogo abarca una amplia variedad de equipos y herramientas, desde <strong>herramienta eléctrica y equipos para el acabado de concreto</strong>, hasta <strong>discos diamantados</strong> y maquinaria de mayor capacidad, como <strong>generadores, compresores y torres de iluminación diésel</strong>.
+                  </p>
+                  <p>
+                    Entre nuestros principales productos se encuentran: cortadoras de piso, malacates, polipastos, hamacas, vibradores de concreto, revolvedoras, bailarinas, bachas, rodillos, torres de iluminación, motobombas, generadores eléctricos, martillos demoledores, pulsetas, entre muchos otros.
+                  </p>
+                  <p>
+                    En <strong>DFAC</strong> trabajamos para ofrecer soluciones confiables que respondan a las necesidades de cada proyecto, respaldadas por nuestra experiencia, variedad de productos y compromiso con nuestros clientes.
+                  </p>
+                </div>
+              </div>
+            )}
+
             {filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
                 {filteredProducts.map(product => (
