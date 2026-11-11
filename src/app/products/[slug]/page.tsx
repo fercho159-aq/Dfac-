@@ -172,14 +172,28 @@ const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
   'tirante-tipo-mono-con-rondana': [
     { src: '/videos/mono-rondana.mp4', title: 'Moño con rondana' },
     { src: '/videos/monos-1.mp4', title: 'Moños para cimbra' },
+    { src: '/videos/monos-y-cunas.mp4', title: 'Moños y cuñas' },
     { src: '/videos/mono-3.mp4', title: 'Moño — Demostración' },
     { src: '/videos/mono-medidas.mp4', title: 'Moño — Medidas' },
   ],
   'tirante-tipo-mono': [
     { src: '/videos/monos-1.mp4', title: 'Moños para cimbra' },
+    { src: '/videos/monos-y-cunas.mp4', title: 'Moños y cuñas' },
     { src: '/videos/mono-3.mp4', title: 'Moño — Demostración' },
     { src: '/videos/mono-rondana.mp4', title: 'Moño con rondana' },
     { src: '/videos/mono-medidas.mp4', title: 'Moño — Medidas' },
+  ],
+  'cuna-de-acero': [
+    { src: '/videos/monos-y-cunas.mp4', title: 'Moños y cuñas' },
+  ],
+  'barra-roscada-2': [
+    { src: '/videos/barra-roscada-1.mp4', title: 'Barra roscada' },
+    { src: '/videos/barra-roscada-2.mp4', title: 'Barra roscada — Aplicación' },
+    { src: '/videos/barra-roscada-tuerca-mariposa.mp4', title: 'Barra roscada con tuerca mariposa' },
+  ],
+  'tuerca-mariposa-con-base': [
+    { src: '/videos/barra-roscada-tuerca-mariposa.mp4', title: 'Tuerca mariposa con barra roscada' },
+    { src: '/videos/barra-roscada-1.mp4', title: 'Barra roscada' },
   ],
   'silleta-h-para-varilla': [
     { src: '/videos/silletas.mp4', title: 'Silletas para construcción' },
