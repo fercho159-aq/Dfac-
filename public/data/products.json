@@ -5780,40 +5780,40 @@
     "review_count": 0,
     "images": [
       {
-        "id": 9010,
-        "src": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-dimensiones.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "tubo-barra-roscada-dimensiones",
-        "alt": "Tubo para barra roscada DFAC con dimensiones - diámetro 22 mm"
+        "id": 9200,
+        "src": "/Image/tubo-para-barra-roscada-1.png",
+        "thumbnail": "/Image/tubo-para-barra-roscada-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "tubo-para-barra-roscada-1",
+        "alt": "DFAC Tubo para Barra Roscada - foto 1"
       },
       {
-        "id": 9011,
-        "src": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-instalado.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-instalado.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-instalado.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "tubo-barra-roscada-instalado",
-        "alt": "Tubo para barra roscada instalado con tuercas mariposa y conos DFAC"
+        "id": 9201,
+        "src": "/Image/tubo-para-barra-roscada-2.png",
+        "thumbnail": "/Image/tubo-para-barra-roscada-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "tubo-para-barra-roscada-2",
+        "alt": "DFAC Tubo para Barra Roscada - foto 2"
       },
       {
-        "id": 9012,
-        "src": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-detalle.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-detalle.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-detalle.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "tubo-barra-roscada-detalle",
-        "alt": "Tubo para barra roscada DFAC detalle del tubo verde"
+        "id": 9202,
+        "src": "/Image/tubo-para-barra-roscada-3.png",
+        "thumbnail": "/Image/tubo-para-barra-roscada-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "tubo-para-barra-roscada-3",
+        "alt": "DFAC Tubo para Barra Roscada - foto 3"
       },
       {
-        "id": 9013,
-        "src": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-paquete.jpeg",
-        "thumbnail": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-paquete.jpeg",
-        "srcset": "/Image/dfac-cimbra-septiembre/tubo-barra-roscada-paquete.jpeg 1080w",
-        "sizes": "(max-width: 1080px) 100vw, 1080px",
-        "name": "tubo-barra-roscada-paquete",
-        "alt": "Paquete de tubos para barra roscada DFAC"
+        "id": 9203,
+        "src": "/Image/tubo-para-barra-roscada-4.png",
+        "thumbnail": "/Image/tubo-para-barra-roscada-4.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "tubo-para-barra-roscada-4",
+        "alt": "DFAC Tubo para Barra Roscada - foto 4"
       }
     ],
     "categories": [
@@ -14407,31 +14407,31 @@
     "review_count": 0,
     "images": [
       {
-        "id": 6614,
-        "src": "/Image/silleta-f-portada.png",
-        "thumbnail": "/Image/silleta-f-portada.png",
-        "srcset": "/Image/silleta-f-portada.png 800w",
-        "sizes": "(max-width: 800px) 100vw, 800px",
-        "name": "silleta-f-portada",
-        "alt": "Silleta F para varilla DFAC"
+        "id": 9200,
+        "src": "/Image/silleta-f-1.png",
+        "thumbnail": "/Image/silleta-f-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "silleta-f-1",
+        "alt": "DFAC Silleta F para varilla - foto 1"
       },
       {
-        "id": 6613,
-        "src": "/Image/silleta-f-detalle.png",
-        "thumbnail": "/Image/silleta-f-detalle.png",
-        "srcset": "/Image/silleta-f-detalle.png 800w",
-        "sizes": "(max-width: 800px) 100vw, 800px",
-        "name": "silleta-f-detalle",
-        "alt": "Silleta F para varilla detalle"
+        "id": 9201,
+        "src": "/Image/silleta-f-2.png",
+        "thumbnail": "/Image/silleta-f-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "silleta-f-2",
+        "alt": "DFAC Silleta F para varilla - foto 2"
       },
       {
-        "id": 6615,
-        "src": "/Image/silleta-f-uso.png",
-        "thumbnail": "/Image/silleta-f-uso.png",
-        "srcset": "/Image/silleta-f-uso.png 800w",
-        "sizes": "(max-width: 800px) 100vw, 800px",
-        "name": "silleta-f-uso",
-        "alt": "Silleta F para varilla en uso"
+        "id": 9202,
+        "src": "/Image/silleta-f-3.png",
+        "thumbnail": "/Image/silleta-f-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "silleta-f-3",
+        "alt": "DFAC Silleta F para varilla - foto 3"
       }
     ],
     "categories": [
@@ -18127,25 +18127,40 @@
     "review_count": 0,
     "images": [
       {
-        "id": 0,
-        "src": "/Image/cono-colores.jpeg",
-        "thumbnail": "/Image/cono-colores.jpeg",
-        "name": "cono-mono-colores",
-        "alt": "Conos para moño de cimbra DFAC - varios colores"
+        "id": 9200,
+        "src": "/Image/cono-para-mono-de-cimbra-1.png",
+        "thumbnail": "/Image/cono-para-mono-de-cimbra-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "cono-para-mono-de-cimbra-1",
+        "alt": "DFAC Cono para moño de cimbra - foto 1"
       },
       {
-        "id": 1,
-        "src": "/Image/cono-atados.jpeg",
-        "thumbnail": "/Image/cono-atados.jpeg",
-        "name": "cono-mono-atados",
-        "alt": "Conos para moño de cimbra DFAC - atados para distribución"
+        "id": 9201,
+        "src": "/Image/cono-para-mono-de-cimbra-2.png",
+        "thumbnail": "/Image/cono-para-mono-de-cimbra-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "cono-para-mono-de-cimbra-2",
+        "alt": "DFAC Cono para moño de cimbra - foto 2"
       },
       {
-        "id": 2,
-        "src": "/Image/cono-bodega.jpeg",
-        "thumbnail": "/Image/cono-bodega.jpeg",
-        "name": "cono-mono-bodega",
-        "alt": "Conos para moño de cimbra DFAC en bodega"
+        "id": 9202,
+        "src": "/Image/cono-para-mono-de-cimbra-3.png",
+        "thumbnail": "/Image/cono-para-mono-de-cimbra-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "cono-para-mono-de-cimbra-3",
+        "alt": "DFAC Cono para moño de cimbra - foto 3"
+      },
+      {
+        "id": 9203,
+        "src": "/Image/cono-para-mono-de-cimbra-4.png",
+        "thumbnail": "/Image/cono-para-mono-de-cimbra-4.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "cono-para-mono-de-cimbra-4",
+        "alt": "DFAC Cono para moño de cimbra - foto 4"
       }
     ],
     "categories": [
@@ -18632,5 +18647,94 @@
     },
     "extensions": {},
     "image": "/Image/escalerilla-para-muros-1.png"
+  },
+  {
+    "id": 9300,
+    "name": "Corbata para cimbra (Tirante Plano)",
+    "slug": "corbata-tirante-plano",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "https://cimbrayaccesoriosdfac.com.mx/products/corbata-tirante-plano",
+    "sku": "",
+    "short_description": "",
+    "description": "<p>Pieza metalica plana con ojillos en los extremos, utilizada como tirante para unir y asegurar la cimbra durante el colado del concreto.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar informacion",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 9200,
+        "src": "/Image/corbata-tirante-plano-1.png",
+        "thumbnail": "/Image/corbata-tirante-plano-1.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "corbata-tirante-plano-1",
+        "alt": "DFAC Corbata para cimbra Tirante Plano - foto 1"
+      },
+      {
+        "id": 9201,
+        "src": "/Image/corbata-tirante-plano-2.png",
+        "thumbnail": "/Image/corbata-tirante-plano-2.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "corbata-tirante-plano-2",
+        "alt": "DFAC Corbata para cimbra Tirante Plano - foto 2"
+      },
+      {
+        "id": 9202,
+        "src": "/Image/corbata-tirante-plano-3.png",
+        "thumbnail": "/Image/corbata-tirante-plano-3.png",
+        "srcset": "",
+        "sizes": "",
+        "name": "corbata-tirante-plano-3",
+        "alt": "DFAC Corbata para cimbra Tirante Plano - foto 3"
+      }
+    ],
+    "categories": [
+      {
+        "id": 200,
+        "name": "Accesorios para cimbra",
+        "slug": "accesorios-para-cimbra",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/accesorios-para-cimbra/"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "Elige las opciones para Corbata para cimbra",
+      "url": "https://cimbrayaccesoriosdfac.com.mx/products/corbata-tirante-plano",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {},
+    "image": "/Image/corbata-tirante-plano-1.png"
   }
 ]

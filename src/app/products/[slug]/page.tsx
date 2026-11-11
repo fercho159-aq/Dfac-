@@ -160,6 +160,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'escalerilla-para-muros': [
     '/archivos/fichas-tecnicas/ficha-tecnica-escalerilla-para-muros.pdf',
   ],
+  'corbata-tirante-plano': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-corbata-tirante-plano.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2322,6 +2325,18 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : product.slug === 'corbata-tirante-plano' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los tirantes planos son recuperables con una vida útil de hasta 20 usos. Funcionan con la cimbra metálica únicamente; el tirante plano se encarga de proporcionar el espesor del muro y absorber la presión originada por el empuje del concreto. Su longitud varía según la necesidad de la obra.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones:</h3>
+                  <ol className="list-decimal list-inside text-sm md:text-base text-slate-800 mb-4 space-y-2">
+                    <li>Para una altura de 2.40 m se deben colocar mínimo 9 tirantes planos a lo largo de los 2.40 m, pero en la base la distancia es de 15 cm y 30 cm, después a cada 30 cm hasta llegar a 2.40 m.</li>
+                    <li>La velocidad de colado no debe sobrepasar 1.40 m/hr, esto quiere decir que en una hora se alcanzará la altura de 1.00 m.</li>
+                    <li>Al armar la cimbra antes del colado, no debe de aplicarse fuerza excesiva a las cuñas porque se podría degollar el tirante plano en la parte del orificio.</li>
+                  </ol>
                 </div>
               ) : product.slug === 'escalerilla-para-muros' ? (
                 <div className="product-description font-sans">
