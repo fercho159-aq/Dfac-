@@ -169,6 +169,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'revolvedora-mpower': [
     '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-mpower.pdf',
   ],
+  'revolvedora-dfac': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-dfac.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2331,6 +2334,51 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : (product.slug === 'revolvedora-dfac-13-hp' || product.slug === 'revolvedora-dfac') ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Nuestra revolvedora de concreto línea clásica de <strong>{product.slug === 'revolvedora-dfac' ? '2 sacos' : '1 saco'}</strong> cuenta con un chasis reforzado y <strong>3 aspas</strong> en el interior diseñadas para obtener un mezclado homogéneo del cemento. Es una revolvedora de fácil transportación, operación y mínimo mantenimiento.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Está fabricada <strong>totalmente de acero</strong>, el puente de la olla semi-elíptica es de placa de acero, lo cual es más resistente y evita deformaciones. Su columna frontal de apoyo es de PTR. La olla está totalmente balanceada para facilitarle el manejo al operador sin que genere un mayor esfuerzo.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Principales características</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-4 space-y-1">
+                    <li>Sólida y de fácil transportación</li>
+                    <li>Boca de carga y descarga reforzada</li>
+                    <li>Flecha de olla desarmable</li>
+                    <li>Base de motor sin barrenos</li>
+                    <li>Calidad, diseño e ingeniería para una larga vida</li>
+                    {product.slug === 'revolvedora-dfac' && <li><strong>Motor Mpower de 15 HP</strong></li>}
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'DFAC'],
+                          ['Modelo', product.slug === 'revolvedora-dfac' ? 'CLÁSICO DFAC-2' : 'CLÁSICO DFAC-1'],
+                          ['Olla', 'Acero'],
+                          ['Motor', 'Gasolina / Eléctrico'],
+                          ['RPM Motor', '2,400'],
+                          ['Capacidad de Mezcla – Lts (pies cub)', '255 (9.00)'],
+                          ['Volumen de Olla (pies cub)', '350 (12.35)'],
+                          ['Producción – Mts cub/Hr', '5 (180)'],
+                          ['Ciclo de producción – Min', '3'],
+                          ['Velocidad de Olla – RPM', '28'],
+                          ['Peso – Kgs', '235'],
+                          ['Dimensiones', '2052 x 1160 x 1397 mm'],
+                          ['Llantas', 'Rin 13'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'revolvedora-mpower' ? (
                 <div className="product-description font-sans">
