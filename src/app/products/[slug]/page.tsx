@@ -166,6 +166,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'fundas-para-corbata': [
     '/archivos/fichas-tecnicas/ficha-tecnica-fundas-para-corbata.pdf',
   ],
+  'revolvedora-mpower': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-mpower.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2328,6 +2331,54 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : product.slug === 'revolvedora-mpower' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Revolvedora de concreto, motor <strong>Mpower de 9hp</strong>, capacidad de 1 saco de cemento más agregados. Indispensable para proyectos de construcción y flotillas de renta.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Equipo para mezclar concreto de manera homogénea y rápida, <strong>fabricada en México</strong> con mano de obra nacional y con los más altos estándares de calidad en procesos de corte, soldadura, pintura y ensamble. Olla de acero robusta, fabricada sólo en dos partes utilizando un proceso de formado que da mayor equilibrio y resistencia de la olla.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Corona y piñón resistentes de hierro fundido. Sistema de transmisión de una sola banda, eliminando partes innecesarias de movimiento. Mesa de motor universal preparada para permitir el montaje de diferentes motores. Fácil operación, su diseño optimiza la carga de materiales y descarga de mezcla.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Revolvedora <strong>remolcable a una velocidad máxima de 50 km/hr</strong>. De fácil movilidad dentro de la obra gracias a sus llantas neumáticas de 12&quot;. Fácil acceso al motor, con eje de olla libre de mantenimiento.
+                  </p>
+                  <div className="mt-4 mb-6 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <p className="text-sm md:text-base text-slate-800">
+                      <strong>Garantía:</strong> Todos los equipos Mpower ofrecen una garantía de <strong>6 meses</strong> contra defectos de fábrica.
+                    </p>
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'Mpower'],
+                          ['Modelo', 'POWERMIX9BB'],
+                          ['Olla', 'Acero'],
+                          ['Motor', 'Mpower 9 HP'],
+                          ['RPM Motor', '2,400'],
+                          ['Capacidad de Mezcla – Lts (pies cub)', '255 (9.00)'],
+                          ['Volumen de Olla (pies cub)', '350 (12.35)'],
+                          ['Producción – Mts cub/Hr', '5 (180)'],
+                          ['Ciclo de producción – Min', '3'],
+                          ['Velocidad de Olla – RPM', '28'],
+                          ['Peso con Motor – Kgs (Lbs)', '200 (441)'],
+                          ['Dimensiones', '2052 x 1160 x 1397 mm'],
+                          ['Llantas', 'Rin 12'],
+                          ['Color', 'Azul con Negro'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'fundas-para-corbata' ? (
                 <div className="product-description font-sans">
