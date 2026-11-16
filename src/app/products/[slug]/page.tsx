@@ -172,6 +172,15 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'revolvedora-dfac': [
     '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-dfac.pdf',
   ],
+  'vibrador-para-concreto-electrico-mpower-dfac': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-mpower-electrico-cdmx.pdf',
+  ],
+  'vibrador-para-concreto-externo-wacker-neuson-dfac': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-externo-wacker-neuson-ar26-cdmx.pdf',
+  ],
+  'vibrador-para-concreto-de-alta-frecuencia-i-spyder-dfac': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-i-spyder-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2422,6 +2431,136 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
                             <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-electrico-mpower-dfac' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Nuestros <strong>Vibradores para concreto eléctricos MPOWER</strong> están fabricados con materiales de la mejor calidad para asegurar su rendimiento. Además son fáciles de usar y completamente seguros para el usuario.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Son útiles para diferentes estructuras como <strong>cimientos, domos, muros y columnas</strong>, entre otros. Figuran como parte de la maquinaria indispensable para los mejores acabados del concreto en su proyecto de construcción. Cuentan con una <strong>carcasa de poliamida</strong> que lo hace más resistente ante los impactos que pudiera sufrir. Gracias a esto, los vibradores requieren poco mantenimiento pero tienen una larga vida útil.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Además sus <strong>chicotes son intercambiables</strong> con opción de 4 o 6 m, con un radio de 28 a 38 mm. Estos vibradores alcanzan una frecuencia de <strong>18,000 RPM</strong> gracias a sus 110 V y 60 Hz de vibración.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    También pueden ser equipados con un motor eléctrico <strong>MONOFÁSICO de 3 HP y una potencia de 2,300 W</strong>. Las ventajas de un equipo con motor eléctrico son la reducción de ruido y el ahorro de combustible. Gracias a sus dimensiones y la flexibilidad de su chicote reforzado, son fáciles de transportar y manipular.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Modelo', 'JCGA2804'],
+                          ['Descripción', 'Vibrador 4 m c/motor eléctrico 28 mm'],
+                          ['Voltaje', '110 V'],
+                          ['Frecuencia', '60 Hz'],
+                          ['Potencia', '2,300 W'],
+                          ['Vibraciones', '18,000 VPM'],
+                          ['Diámetro del Cabezal', '28 mm'],
+                          ['Longitud', 'Manguera de 4 mts'],
+                          ['Dimensiones de Vibrador', '425 x 270 x 270 mm'],
+                          ['Dimensiones de Conjunto', '800 x 55 x 55 mm'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Los <strong>vibradores externos de Wacker Neuson</strong> ofrecen un rendimiento excepcional en el llenado, la compactación, el transporte y el tamizado de material a granel. Gracias a sus <strong>3,000 revoluciones por minuto como máximo</strong>, se encargan de mantener el material a granel en movimiento continuo, evitan que se formen aglomeraciones y, de este modo, está listo para su uso posterior.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Motor asíncrono de régimen estable.</strong> Gracias al potente motor eléctrico con un número de revoluciones estable, el equipo ofrece un alto y fiable rendimiento en funcionamiento continuo.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Modelo AR 26</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Corriente Nominal', '1,3 A'],
+                          ['Tensión Nominal', '230 V'],
+                          ['Frecuencia Nominal', '60 Hz'],
+                          ['Potencia Nominal (P)', '0,4 kW'],
+                          ['Fases', '3 –'],
+                          ['Fuerza Centrífuga', '3 kN'],
+                          ['Fuerza Centrífuga Máx.', '3,44 kN'],
+                          ['Longitud', '274 mm'],
+                          ['Anchura', '190 mm'],
+                          ['Altura', '102 mm'],
+                          ['Peso', '5,42 Kg'],
+                          ['Ensamblado masa excéntrica / posición lateral 1', '18,0'],
+                          ['Ensamblado masa excéntrica / posición lateral 2', '4,0'],
+                          ['Modelo de Motor', 'Motor asíncrono'],
+                          ['Cuadro indic. Funcionamiento', 'No'],
+                          ['Ajuste de la Frecuencia', 'No'],
+                          ['Índice de Protección', 'I / Conexión a tierra'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-de-alta-frecuencia-i-spyder-dfac' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>i-SPYDER de ENAR</strong> es un sistema de vibración de concreto de última generación que incorpora un <strong>convertidor electrónico integrado</strong>, diseñado para proporcionar un funcionamiento eficiente, confiable y de alto desempeño.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Ofrece hasta <strong>3 veces más fuerza</strong> que un vibrador convencional, gracias a su cabezal con <strong>tratamiento térmico</strong>, que proporciona mayor resistencia al desgaste, la abrasión y el rozamiento durante su operación. Esto se traduce en una mayor vida útil y un rendimiento constante incluso en condiciones de trabajo exigentes.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Su <strong>manguera de 7 metros</strong> de longitud brinda mayor alcance y libertad de movimiento en obra, mientras que su diseño compacto y ligero facilita la manipulación, el transporte y las jornadas prolongadas de trabajo.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características principales</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li><strong>Convertidor electrónico integrado:</strong> alimenta directamente el vibrador de alta frecuencia, por lo que está listo para enchufar y trabajar.</li>
+                    <li><strong>Alto rendimiento:</strong> frecuencia de vibración de 12,000 vibraciones por minuto (vpm).</li>
+                    <li><strong>Cabezal reforzado:</strong> tratamiento térmico que mejora la resistencia al desgaste y prolonga su durabilidad.</li>
+                    <li><strong>Mayor alcance:</strong> manguera estándar de 7 metros para facilitar el trabajo en diferentes zonas de la obra.</li>
+                    <li><strong>Diseño compacto y ligero:</strong> facilita su manejo y operación.</li>
+                    <li><strong>Arranque progresivo:</strong> evita picos de corriente durante el encendido, protegiendo el equipo.</li>
+                    <li><strong>Indicador LED tricolor:</strong> permite identificar visualmente las incidencias y el estado de funcionamiento mediante el sistema Pair i-Spyder Button.</li>
+                    <li><strong>Sistema PRCD opcional:</strong> desconecta automáticamente el equipo ante una fuga de corriente de 10 mA, proporcionando mayor protección al usuario y al equipo.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Modelos disponibles</h3>
+                  <div className="overflow-x-auto rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <thead className="bg-slate-100">
+                        <tr>
+                          <th className="p-3 text-left font-semibold text-slate-700">Modelo</th>
+                          <th className="p-3 text-left font-semibold text-slate-700">Peso total (Kg)</th>
+                          <th className="p-3 text-left font-semibold text-slate-700">Longitud (mm)</th>
+                          <th className="p-3 text-left font-semibold text-slate-700">Diámetro (mm)</th>
+                          <th className="p-3 text-left font-semibold text-slate-700">Entrada potencia (kW)</th>
+                          <th className="p-3 text-left font-semibold text-slate-700">Rendimiento (m³/h)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {[
+                          ['I-SPYDER 230V-38', '13', '370', '38', '0,75', 'Hasta 20'],
+                          ['I-SPYDER 230V-50', '17', '365', '50', '1,1', 'Hasta 30'],
+                          ['I-SPYDER 230V-60', '19', '400', '58', '1,5', 'Hasta 35'],
+                        ].map((row, i) => (
+                          <tr key={row[0]} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            {row.map((cell, j) => (
+                              <td key={j} className="p-3 text-slate-800">{cell}</td>
+                            ))}
                           </tr>
                         ))}
                       </tbody>
