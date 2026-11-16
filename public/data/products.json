@@ -1334,7 +1334,12 @@
       {
         "id": 1000,
         "src": "/Image/vibrador-i-spyder-1.png",
-        "name": "vibrador-para-concreto-de-alta-frecuencia-i-spyder-dfac-1"
+        "name": "vibrador-i-spyder-1"
+      },
+      {
+        "id": 1001,
+        "src": "/Image/vibrador-i-spyder-2.png",
+        "name": "vibrador-i-spyder-2"
       }
     ],
     "categories": [
