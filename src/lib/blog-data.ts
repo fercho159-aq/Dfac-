@@ -20,6 +20,71 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cuna-de-acero-dfac-para-cimbra",
+    title: "Cuña de acero DFAC: resistencia y seguridad para trabajos de cimbra",
+    excerpt: "Un accesorio metálico pequeño que hace una gran diferencia en la estabilidad de la cimbra. Te explicamos para qué sirve la cuña de acero DFAC, cómo se coloca sobre los moños y cuáles son sus especificaciones técnicas y ventajas.",
+    image: "/Image/portada-cuna-de-acero-dfac-para-cimbra.png",
+    category: "Accesorios de cimbra",
+    location: "México",
+    author: "Equipo DFAC",
+    date: "2026-11-15",
+    readTime: "2 min",
+    content: [
+      {
+        heading: "¿Para qué sirve una cuña de acero?",
+        paragraphs: [
+          "La cuña de acero DFAC es un accesorio metálico diseñado para utilizarse en sistemas de cimbra, proporcionando una sujeción firme y segura durante los trabajos de construcción. Su función principal es complementar el tirante, moño o separador, manteniéndolo en su lugar mediante presión en la parte exterior de la cimbra.",
+          "Fabricada con placa de acero de alta resistencia, ofrece durabilidad y un excelente desempeño en aplicaciones que requieren estabilidad y soporte.",
+          "Las cuñas metálicas son elementos fundamentales en los sistemas de cimbra, ya que permiten asegurar los moños y mantener una correcta sujeción de los elementos durante el proceso constructivo.",
+          "Su diseño facilita la distribución de la presión y ayuda a mantener las columnas perfectamente alineadas, contribuyendo a la estabilidad del sistema de cimbra.",
+        ],
+      },
+      {
+        heading: "Proceso de aplicación",
+        paragraphs: [
+          "La instalación de la cuña de acero DFAC es sencilla y práctica:",
+          "• Se inserta sobre las cabezas de los moños.",
+          "• Se ajusta ligeramente mediante un golpe con un martillo liviano.",
+          "• Se verifica que la cuña quede perfectamente embonada en el moño.",
+          "Su correcta colocación permite conseguir una sujeción firme y confiable durante los trabajos de construcción.",
+        ],
+      },
+      {
+        heading: "Ventajas de las cuñas de acero DFAC",
+        paragraphs: [
+          "• Reutilizables: pueden utilizarse más de 70 veces.",
+          "• Fácil instalación: su colocación es rápida y sencilla.",
+          "• Alta resistencia: fabricadas para soportar condiciones exigentes de trabajo.",
+          "• Durabilidad: no se rompen con facilidad.",
+          "• Gran capacidad de carga: diseñadas para soportar caídas y trabajos pesados.",
+        ],
+      },
+      {
+        heading: "Especificaciones técnicas",
+        paragraphs: [
+          "• Marca: DFAC.",
+          "• Material: placa de acero de alta resistencia.",
+          "• Tipo de troquelado: en frío.",
+          "• Grosor: estándar de 3/16\".",
+          "• Capacidad de acuñe: 25 mm.",
+          "• Medidas: 7 cm de largo × 2 cm de ancho × 15 cm de alto.",
+          "• Peso aproximado: 400 gramos.",
+          "• Piezas por atado: 25 piezas.",
+          "• Capacidad de carga: 1,350 kg (3,000 lb).",
+          "• Factor de seguridad: 800 kg.",
+        ],
+      },
+      {
+        heading: "DFAC: calidad y resistencia para tus proyectos de construcción",
+        paragraphs: [
+          "En DFAC somos fabricantes de accesorios para cimbra, comprometidos con ofrecer productos resistentes, funcionales y duraderos para el sector de la construcción.",
+          "Nuestra cuña de acero es una solución práctica para quienes buscan seguridad, facilidad de instalación y reutilización en sus procesos de trabajo.",
+          "¡Equipa tus proyectos con productos DFAC! Contáctanos y solicita información sobre nuestras cuñas de acero y demás accesorios para cimbra.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "puntales-metalicos-italianos-certificados",
     title: "Puntales metálicos italianos certificados: resistencia, seguridad y tecnología para la construcción",
     excerpt: "Los puntales extensibles italianos en acero de alta resistencia ofrecen sistema anti-cizallamiento y placas de distribución reforzadas. Te mostramos los modelos disponibles, sus alturas y capacidades, además de los puntos clave para elegir el indicado para tu obra.",
