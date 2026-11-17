@@ -3066,6 +3066,11 @@
         "id": 1001,
         "src": "/Image/revolvedora-13hp-1.png",
         "name": "revolvedora-13hp-1"
+      },
+      {
+        "id": 1002,
+        "src": "/Image/revolvedora-13hp-2.png",
+        "name": "revolvedora-13hp-2"
       }
     ],
     "categories": [
@@ -3159,9 +3164,14 @@
     "review_count": 0,
     "images": [
       {
-        "id": 1002,
+        "id": 1003,
         "src": "/Image/revolvedora-dfac-1.png",
         "name": "revolvedora-dfac-1"
+      },
+      {
+        "id": 1004,
+        "src": "/Image/revolvedora-dfac-2.png",
+        "name": "revolvedora-dfac-2"
       }
     ],
     "categories": [
