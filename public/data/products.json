@@ -3259,15 +3259,15 @@
   },
   {
     "id": 9900,
-    "name": "REVOLVEDORA ELu00c9CTRICA DE 1/2 HP OAKLAND",
+    "name": "REVOLVEDORA ELÉCTRICA DE 1/2 HP OAKLAND",
     "slug": "revolvedora-electrica-oakland",
     "parent": 0,
     "type": "simple",
     "variation": "",
     "permalink": "",
     "sku": "RE-1360",
-    "short_description": "<p>Revolvedora elu00e9ctrica OAKLAND modelo Re-1360, motor 1/3 HP, 120V/60Hz, capacidad 60 L, ideal para obras residenciales y remodelaciones.</p>",
-    "description": "<p>Revolvedora elu00e9ctrica OAKLAND Re-1360 u2014 verde, 35 kg, 125 kg/hora de produccciu00f3n.</p>",
+    "short_description": "<p>Revolvedora eléctrica OAKLAND modelo Re-1360, motor 1/3 HP, 120V/60Hz, capacidad 60 L, ideal para obras residenciales y remodelaciones.</p>",
+    "description": "<p>Revolvedora eléctrica OAKLAND Re-1360 — verde, 35 kg, 125 kg/hora de producción.</p>",
     "on_sale": false,
     "prices": {
       "price": "0",
@@ -3290,13 +3290,13 @@
         "id": 9901,
         "src": "/Image/revolvedora-electrica-oakland-1.png",
         "name": "revolvedora-electrica-oakland-1",
-        "alt": "Revolvedora elu00e9ctrica Oakland 1/2 HP verde vista frontal"
+        "alt": "Revolvedora eléctrica Oakland 1/2 HP verde vista frontal"
       },
       {
         "id": 9902,
         "src": "/Image/revolvedora-electrica-oakland-2.png",
         "name": "revolvedora-electrica-oakland-2",
-        "alt": "Revolvedora elu00e9ctrica Oakland Re-1360 con motor visible"
+        "alt": "Revolvedora eléctrica Oakland Re-1360 con motor visible"
       }
     ],
     "categories": [
