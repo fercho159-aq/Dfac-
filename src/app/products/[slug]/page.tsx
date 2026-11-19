@@ -172,6 +172,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'revolvedora-dfac': [
     '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-dfac.pdf',
   ],
+  'revolvedora-dfac-13-hp': [
+    '/archivos/fichas-tecnicas/ficha-tecnica-revolvedora-13hp.pdf',
+  ],
   'vibrador-para-concreto-electrico-mpower-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-mpower-electrico-cdmx.pdf',
   ],
