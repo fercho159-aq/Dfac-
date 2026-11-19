@@ -175,6 +175,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'vibrador-para-concreto-electrico-mpower-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-mpower-electrico-cdmx.pdf',
   ],
+  'vibrador-para-concreto-electrico-makita': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-makita-cdmx.pdf',
+  ],
   'vibrador-para-concreto-externo-wacker-neuson-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-externo-wacker-neuson-ar26-cdmx.pdf',
   ],
@@ -2466,6 +2469,42 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           ['Longitud', 'Manguera de 4 mts'],
                           ['Dimensiones de Vibrador', '425 x 270 x 270 mm'],
                           ['Dimensiones de Conjunto', '800 x 55 x 55 mm'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-electrico-makita' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>Vibrador Makita Eléctrico VR1000 (3 HP)</strong> es un vibrador para concreto de alta durabilidad, con <strong>construcción a prueba de agua</strong>, cubierta de goma y longitud de eje de hasta 4.5 m. Cuenta con un <strong>poderoso motor de 1,900 W</strong> y un diámetro de vibrador de 35 mm, ideal para obras residenciales, comerciales e industriales en CDMX y Zona Metropolitana.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Equipado con <strong>extracción de manguera tipo palanca</strong> para mayor maniobrabilidad y <strong>tecnología IPX4</strong> que protege la herramienta contra salpicaduras de agua. La durabilidad del chicote flexible se ha mejorado al reducir la vibración por minuto, prolongando la vida útil del equipo.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Incluye <strong>arnés universal 125516-5</strong> y correa P-81000 azul para hombro con almohadilla y ganchos delantero y trasero para una operación cómoda durante largas jornadas. <em>NO incluye eje flexible — se vende por separado en longitudes de 1.5 m, 3.5 m o 4.5 m.</em>
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Modelo VR1000</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Modelo', 'VR1000 (3 HP)'],
+                          ['Potencia', '1,900 W'],
+                          ['Diámetro del vibrador', '35 mm (1-3/8")'],
+                          ['Inserción', '8 mm (5/16")'],
+                          ['Conjunto de eje flexible', '1,500 // 3,500 // 4,500 mm'],
+                          ['Vibraciones por minuto', '16,000 VPM'],
+                          ['Dimensiones (LxAxA)', '387 x 109 x 123 mm'],
+                          ['Peso neto', '3.6 Kg'],
+                          ['Cable de conexión', '5.0 m'],
+                          ['Protección', 'IPX4 (contra salpicaduras)'],
                         ].map(([label, value], i) => (
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>

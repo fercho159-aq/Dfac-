@@ -2648,13 +2648,34 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8170,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-MAKITA-DFAC-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELÉCTRICO-MAKITA-DFAC",
-        "alt": ""
+        "id": 9701,
+        "src": "/Image/vibrador-makita-1.png",
+        "name": "vibrador-makita-1",
+        "alt": "Vibrador Makita Elu00e9ctrico VR1000 3HP operando en obra"
+      },
+      {
+        "id": 9702,
+        "src": "/Image/vibrador-makita-2.png",
+        "name": "vibrador-makita-2",
+        "alt": "Vibrador Makita Elu00e9ctrico con chicote flexible"
+      },
+      {
+        "id": 9703,
+        "src": "/Image/vibrador-makita-3.png",
+        "name": "vibrador-makita-3",
+        "alt": "Vibrador Makita Elu00e9ctrico 1900W detalle motor"
+      },
+      {
+        "id": 9704,
+        "src": "/Image/vibrador-makita-4.png",
+        "name": "vibrador-makita-4",
+        "alt": "Vibrador Makita con accesorios incluidos"
+      },
+      {
+        "id": 9705,
+        "src": "/Image/vibrador-makita-5.png",
+        "name": "vibrador-makita-5",
+        "alt": "Vibrador Makita con arnu00e9s universal 125516-5"
       }
     ],
     "categories": [
