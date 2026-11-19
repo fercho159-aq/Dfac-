@@ -178,6 +178,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'vibrador-para-concreto-electrico-makita': [
     '/archivos/fichas-tecnicas/ficha-vibrador-makita-cdmx.pdf',
   ],
+  'revolvedora-electrica-oakland': [
+    '/archivos/fichas-tecnicas/ficha-revolvedora-electrica-oakland-cdmx.pdf',
+  ],
   'vibrador-para-concreto-externo-wacker-neuson-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-externo-wacker-neuson-ar26-cdmx.pdf',
   ],
@@ -2346,6 +2349,48 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     <strong>Aplicaciones:</strong> Se utiliza en losas, muros de contención, entrepisos, pavimentos rígidos, trabajos hidráulicos.
                   </p>
+                </div>
+              ) : product.slug === 'revolvedora-electrica-oakland' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    La <strong>Revolvedora Eléctrica OAKLAND Re-1360 (1/2 HP)</strong> es ideal para mezclar diversas pastas usadas en obras de construcción y remodelación. Funciona con un <strong>motor de 1/3 HP</strong> conectado a <strong>120 V / 60 Hz</strong>, lo que la hace perfecta para contratistas y proyectos residenciales en CDMX y Zona Metropolitana donde se requiere movilidad y bajo consumo.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Su estructura cuenta con un <strong>tanque de 60 L</strong> de capacidad junto con una <strong>base tubular</strong> para colocarse de manera estable en el suelo. Sus llantas neumáticas permiten trasladarla de un sitio a otro con sencillez y sin esfuerzo. Está elaborada en <strong>metal recubierto de pintura verde</strong> para hacerla resistente al uso rudo.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Producción de 125 kg por hora</strong>. Es compatible con extensiones de calibre 14 o 12. Sus dimensiones compactas (1.05 × 1.40 m × 70 cm) la hacen ideal para espacios reducidos.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Modelo Re-1360</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'Oakland'],
+                          ['Modelo', 'Re-1360'],
+                          ['Tipo', 'Eléctrica'],
+                          ['Potencia', '1/3 HP'],
+                          ['Tipo de corriente', '120 V / 60 Hz'],
+                          ['Capacidad', '60 L'],
+                          ['Producción', '125 kg/hora'],
+                          ['Material', 'Metal'],
+                          ['Acabado', 'Mate'],
+                          ['Color', 'Verde'],
+                          ['Largo', '105 cm'],
+                          ['Ancho', '70 cm'],
+                          ['Profundidad', '140 cm'],
+                          ['Alto', '105 cm'],
+                          ['Peso', '35 Kg'],
+                          ['Garantía', '1 año'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : (product.slug === 'revolvedora-dfac-13-hp' || product.slug === 'revolvedora-dfac') ? (
                 <div className="product-description font-sans">

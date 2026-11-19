@@ -3258,6 +3258,85 @@
     "image": "/Image/revolvedora-dfac-1.png"
   },
   {
+    "id": 9900,
+    "name": "REVOLVEDORA ELu00c9CTRICA DE 1/2 HP OAKLAND",
+    "slug": "revolvedora-electrica-oakland",
+    "parent": 0,
+    "type": "simple",
+    "variation": "",
+    "permalink": "",
+    "sku": "RE-1360",
+    "short_description": "<p>Revolvedora elu00e9ctrica OAKLAND modelo Re-1360, motor 1/3 HP, 120V/60Hz, capacidad 60 L, ideal para obras residenciales y remodelaciones.</p>",
+    "description": "<p>Revolvedora elu00e9ctrica OAKLAND Re-1360 u2014 verde, 35 kg, 125 kg/hora de produccciu00f3n.</p>",
+    "on_sale": false,
+    "prices": {
+      "price": "0",
+      "regular_price": "0",
+      "sale_price": "0",
+      "price_range": null,
+      "currency_code": "MXN",
+      "currency_symbol": "$",
+      "currency_minor_unit": 2,
+      "currency_decimal_separator": ".",
+      "currency_thousand_separator": ",",
+      "currency_prefix": "$",
+      "currency_suffix": ""
+    },
+    "price_html": "Solicitar informaciu00f3n",
+    "average_rating": "0",
+    "review_count": 0,
+    "images": [
+      {
+        "id": 9901,
+        "src": "/Image/revolvedora-electrica-oakland-1.png",
+        "name": "revolvedora-electrica-oakland-1",
+        "alt": "Revolvedora elu00e9ctrica Oakland 1/2 HP verde vista frontal"
+      },
+      {
+        "id": 9902,
+        "src": "/Image/revolvedora-electrica-oakland-2.png",
+        "name": "revolvedora-electrica-oakland-2",
+        "alt": "Revolvedora elu00e9ctrica Oakland Re-1360 con motor visible"
+      }
+    ],
+    "categories": [
+      {
+        "id": 263,
+        "name": "Revolvedora",
+        "slug": "revolvedora",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/revolvedora/"
+      },
+      {
+        "id": 45,
+        "name": "MAQUINARIA LIGERA",
+        "slug": "maquinaria-ligera",
+        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
+      }
+    ],
+    "tags": [],
+    "attributes": [],
+    "variations": [],
+    "has_options": false,
+    "is_purchasable": true,
+    "is_in_stock": true,
+    "is_on_backorder": false,
+    "low_stock_remaining": null,
+    "stock_availability": {
+      "text": "",
+      "class": ""
+    },
+    "sold_individually": false,
+    "add_to_cart": {
+      "text": "Ver detalles",
+      "description": "",
+      "url": "",
+      "minimum": 1,
+      "maximum": 9999,
+      "multiple_of": 1
+    },
+    "extensions": {}
+  },
+  {
     "id": 6078,
     "name": "REVOLVEDORA MPOWER",
     "slug": "revolvedora-mpower",
