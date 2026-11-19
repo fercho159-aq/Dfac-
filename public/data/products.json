@@ -2648,16 +2648,16 @@
     "review_count": 0,
     "images": [
       {
-        "id": 9701,
-        "src": "/Image/vibrador-makita-1.png",
-        "name": "vibrador-makita-1",
-        "alt": "Vibrador Makita Elu00e9ctrico VR1000 3HP operando en obra"
-      },
-      {
         "id": 9702,
         "src": "/Image/vibrador-makita-2.png",
         "name": "vibrador-makita-2",
         "alt": "Vibrador Makita Elu00e9ctrico con chicote flexible"
+      },
+      {
+        "id": 9701,
+        "src": "/Image/vibrador-makita-1.png",
+        "name": "vibrador-makita-1",
+        "alt": "Vibrador Makita Elu00e9ctrico VR1000 3HP operando en obra"
       },
       {
         "id": 9703,
