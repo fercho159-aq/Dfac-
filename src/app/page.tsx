@@ -649,7 +649,7 @@ export default function Home() {
             {[
               { src: "/videos/silletas.mp4", title: "Silletas para construcción", description: "Tipos y usos de silletas" },
               { src: "/videos/monos-1.mp4", title: "Moños para cimbra", description: "Características de moños para cimbra" },
-              { src: "/videos/puntal-1.mp4", title: "Puntal para cimbra", description: "Uso del puntal estándar" },
+              { src: "/videos/puntal-1.mp4", title: "¿Sabes cuánto pesa un puntal?", description: "Peso real de un puntal metálico y qué significa para tu obra" },
             ].map((video) => (
               <div key={video.src} className="group">
                 <div className="relative rounded-lg overflow-hidden shadow-lg">

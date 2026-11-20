@@ -194,10 +194,10 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
   'puntal-metalico-extensible-italiano': [
-    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
-    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
-    { src: '/videos/puntal-4.mp4', title: 'Puntal — Instalación' },
-    { src: '/videos/puntal-5.mp4', title: 'Puntal — Especificaciones' },
+    { src: '/videos/puntal-1.mp4', title: '¿Sabes cuánto pesa un puntal?' },
+    { src: '/videos/puntal-3.mp4', title: 'Del polín al puntal' },
+    { src: '/videos/puntal-4.mp4', title: 'Guía rápida de puntales' },
+    { src: '/videos/puntal-5.mp4', title: 'Metal vs. madera' },
   ],
   'tirante-tipo-mono-con-rondana': [
     { src: '/videos/mono-rondana.mp4', title: 'Moño con rondana' },
@@ -280,12 +280,12 @@ const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
     { src: '/videos/vibradores-electrico-y-gasolina.mp4', title: 'Vibradores eléctrico y a gasolina' },
   ],
   'cabezal-para-puntal': [
-    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
-    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
+    { src: '/videos/puntal-1.mp4', title: '¿Sabes cuánto pesa un puntal?' },
+    { src: '/videos/puntal-3.mp4', title: 'Del polín al puntal' },
   ],
   'base-estabilizadora': [
-    { src: '/videos/puntal-1.mp4', title: 'Puntal para cimbra' },
-    { src: '/videos/puntal-3.mp4', title: 'Puntal — Demostración' },
+    { src: '/videos/puntal-1.mp4', title: '¿Sabes cuánto pesa un puntal?' },
+    { src: '/videos/puntal-3.mp4', title: 'Del polín al puntal' },
   ],
   'malacate': [
     { src: '/videos/malacate.mp4', title: 'Malacate' },

@@ -12,10 +12,10 @@ const videoCategories = [
   {
     title: "Puntales",
     videos: [
-      { src: "/videos/puntal-1.mp4", title: "Puntal para cimbra", description: "Características y uso del puntal estándar" },
-      { src: "/videos/puntal-3.mp4", title: "Puntal — Demostración", description: "Demostración del funcionamiento del puntal" },
-      { src: "/videos/puntal-4.mp4", title: "Puntal — Instalación", description: "Proceso de instalación del puntal en obra" },
-      { src: "/videos/puntal-5.mp4", title: "Puntal — Especificaciones", description: "Especificaciones técnicas del puntal" },
+      { src: "/videos/puntal-1.mp4", title: "¿Sabes cuánto pesa un puntal?", description: "Peso real de un puntal metálico y qué significa para tu obra" },
+      { src: "/videos/puntal-3.mp4", title: "Del polín al puntal", description: "Por qué el puntal metálico sustituye al polín de madera" },
+      { src: "/videos/puntal-4.mp4", title: "Guía rápida de puntales", description: "Medidas, calidad y reparación de puntales metálicos" },
+      { src: "/videos/puntal-5.mp4", title: "Metal vs. madera", description: "Comparativo entre puntal metálico y polín de madera" },
     ]
   },
   {
