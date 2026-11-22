@@ -1034,13 +1034,34 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8180,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELECTRICO-ENAR-DINGO-DFAC-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-ELÉCTRICO-ENAR-DINGO-DFAC",
-        "alt": ""
+        "id": 90001,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-dingo-1.png",
+        "name": "Vibrador Eléctrico DINGO - vista lateral",
+        "alt": "Vibrador para concreto eléctrico Dingo ENAR"
+      },
+      {
+        "id": 90002,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-dingo-2.png",
+        "name": "Vibrador Eléctrico DINGO - perfil con aguja",
+        "alt": "Vibrador Dingo con aguja vibrante"
+      },
+      {
+        "id": 90003,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-dingo-3.png",
+        "name": "Vibrador Eléctrico DINGO - vista inferior",
+        "alt": "Base del vibrador Dingo"
+      },
+      {
+        "id": 90004,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-dingo-4.png",
+        "name": "Vibrador Eléctrico DINGO - vista frontal",
+        "alt": "Vibrador Dingo frontal"
+      },
+      {
+        "id": 90005,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-dingo-5.png",
+        "name": "Vibrador Eléctrico DINGO - en obra",
+        "alt": "Vibrador Dingo en uso en obra"
       }
     ],
     "categories": [
@@ -1429,13 +1450,16 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8135,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-GASOLINA-BACKPACK-ENAR",
-        "alt": ""
+        "id": 90101,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-backpack-1.png",
+        "name": "Vibrador Backpack ENAR - vista frontal",
+        "alt": "Vibrador para concreto a gasolina tipo mochila ENAR Honda GX35"
+      },
+      {
+        "id": 90102,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-backpack-2.png",
+        "name": "Vibrador Backpack ENAR - vista lateral",
+        "alt": "Vibrador tipo mochila con motor Honda GX35"
       }
     ],
     "categories": [

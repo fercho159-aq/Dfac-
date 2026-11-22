@@ -190,6 +190,12 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'vibrador-para-concreto-de-alta-frecuencia-i-spyder-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-i-spyder-cdmx.pdf',
   ],
+  'vibrador-para-concreto-electrico-dingo': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-dingo-cdmx.pdf',
+  ],
+  'vibrador-para-concreto-gasolina-backpack-enar': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-backpack-enar-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2562,6 +2568,67 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-electrico-dingo' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>Vibrador Eléctrico DINGO</strong> está diseñado para garantizar una <strong>compactación eficiente y uniforme del concreto</strong>, ayudando a eliminar las burbujas de aire y reducir los vacíos durante el proceso de colado. Su funcionamiento permite mejorar la homogeneidad y densidad del concreto, favoreciendo un acabado de mayor calidad en elementos estructurales.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Cuenta con un <strong>motor eléctrico monofásico</strong> y una carcasa de alta resistencia que protege sus componentes frente a impactos y salpicaduras. Su diseño portátil incorpora <strong>tres asas ergonómicas y correa de transporte ajustable</strong>, facilitando su manejo y desplazamiento durante las jornadas de trabajo.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Integra un sistema de filtración que protege el motor contra la entrada de impurezas, además de <strong>rodamientos lubricados con aceite y doble retén</strong> para favorecer su durabilidad.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Ideal para:</strong> trabajos de cimentación, columnas, trabes, muros y elementos de concreto armado que requieren una compactación adecuada.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – ENAR DINGO</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'ENAR'],
+                          ['Modelo', 'DINGO'],
+                          ['Tipo', 'Vibrador portátil eléctrico'],
+                          ['Alimentación', 'Monofásica'],
+                          ['Voltaje de la versión comercializada en la página', '115 V'],
+                          ['Frecuencia eléctrica', '50–60 Hz'],
+                          ['Potencia a 115 V', '1,800 W'],
+                          ['Peso del motor', '5.8 kg'],
+                          ['Dimensiones', '345 × 244 × 229 mm'],
+                          ['Frecuencia de vibración', '12,000 vibraciones/min'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-gasolina-backpack-enar' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Equipo portátil diseñado para la <strong>compactación y vibrado interno del concreto</strong>, ideal para trabajos en obra donde se requiere movilidad y autonomía. Funciona mediante un <strong>motor de gasolina HONDA GX35 de 4 tiempos</strong>, por lo que no necesita conexión eléctrica.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Su diseño ergonómico <strong>tipo mochila</strong> proporciona comodidad y libertad de movimiento al operador, facilitando su uso durante jornadas prolongadas y en zonas de difícil acceso. Cuenta con <strong>embrague centrífugo</strong>, controles integrados en la empuñadura y un sistema de conexión práctica para la transmisión y aguja vibrante.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Es una excelente solución para <strong>eliminar el aire atrapado en el concreto fresco</strong>, favorecer una compactación uniforme y obtener elementos de concreto más resistentes y con mejores acabados.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Ideal para</strong> trabajos de construcción, cimentaciones, columnas, muros, trabes y diferentes elementos de concreto.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Ventajas</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li><strong>Mayor movilidad:</strong> permite trabajar en lugares sin suministro eléctrico.</li>
+                    <li><strong>Comodidad de operación:</strong> su diseño tipo mochila distribuye el peso y facilita el desplazamiento.</li>
+                    <li><strong>Fácil manejo:</strong> controles accesibles para una operación práctica.</li>
+                    <li><strong>Versatilidad:</strong> permite configurar diferentes longitudes de transmisión y diámetros de aguja según las necesidades de la obra.</li>
+                  </ul>
                 </div>
               ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
                 <div className="product-description font-sans">
