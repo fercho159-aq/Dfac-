@@ -20,6 +20,88 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "silleta-clip-pinza-mortero",
+    title: "Silleta Clip Pinza Mortero: características, medidas y aplicaciones en la construcción",
+    excerpt: "Un separador híbrido que combina base de concreto y clip de polipropileno para recibir y asegurar mallas electrosoldadas. Revisa sus características, alturas disponibles y en qué elementos constructivos se utiliza.",
+    image: "/Image/portada-silleta-clip-pinza-mortero.png",
+    category: "Separadores",
+    location: "México",
+    author: "Equipo DFAC",
+    date: "2026-11-22",
+    readTime: "3 min",
+    content: [
+      {
+        heading: "¿Qué es la Silleta Clip Pinza Mortero?",
+        paragraphs: [
+          "En los proyectos de construcción, mantener el acero de refuerzo en la posición adecuada durante el colado del concreto es fundamental. Para lograrlo, se utilizan separadores que ayudan a mantener la distancia y el recubrimiento necesario entre el acero y la superficie de concreto.",
+          "La Silleta Clip Pinza Mortero es una solución híbrida diseñada para recibir y asegurar mallas electrosoldadas, combinando una base de concreto con un clip plástico que facilita la sujeción del acero de refuerzo.",
+          "La Silleta Clip Pinza Mortero es un separador fabricado con concreto en su parte inferior y un clip especial de polipropileno en su parte superior, diseñado para recibir y asegurar estructuras metálicas como mallas electrosoldadas.",
+          "Su diseño permite sujetar el acero de refuerzo y mantenerlo en la posición requerida durante los trabajos de construcción, ofreciendo una solución práctica para diferentes aplicaciones en obra.",
+        ],
+      },
+      {
+        heading: "Características de la Silleta Clip Pinza Mortero",
+        paragraphs: [
+          "Este separador cuenta con un diseño híbrido que combina materiales para facilitar el apoyo y la sujeción de las mallas de acero.",
+          "• Base de concreto: proporciona la parte inferior del separador.",
+          "• Clip plástico de polipropileno: diseñado para recibir y asegurar el acero de refuerzo.",
+          "• Compatibilidad con diferentes diámetros: recibe mallas electrosoldadas desde 3 mm hasta 3/4\".",
+          "• Diferentes alturas disponibles: permite elegir la medida de acuerdo con las necesidades y especificaciones del proyecto.",
+          "• Diseño funcional: facilita la colocación y sujeción de la estructura metálica en diferentes trabajos constructivos.",
+        ],
+      },
+      {
+        heading: "¿Para qué sirve la Silleta Clip Pinza Mortero?",
+        paragraphs: [
+          "Su principal función es apoyar y asegurar la malla electrosoldada, ayudando a mantenerla en la posición adecuada durante la preparación y ejecución de los elementos de concreto.",
+          "El uso de separadores adecuados contribuye a mantener el recubrimiento especificado para el acero de refuerzo, favoreciendo una correcta colocación de las mallas y facilitando los trabajos previos al colado.",
+        ],
+      },
+      {
+        heading: "Aplicaciones de la Silleta Clip Pinza Mortero",
+        paragraphs: [
+          "Por su diseño y características, la Silleta Clip Pinza Mortero puede utilizarse en diferentes aplicaciones dentro de la industria de la construcción:",
+          "• Losas: ayuda a mantener la malla electrosoldada en la posición requerida durante el colado.",
+          "• Muros de contención: facilita el apoyo y posicionamiento del acero de refuerzo.",
+          "• Entrepisos: permite colocar y asegurar mallas electrosoldadas en elementos de concreto.",
+          "• Pavimentos rígidos: se utiliza en trabajos de pavimentación que requieren estructuras de acero de refuerzo.",
+          "• Trabajos hidráulicos: es una alternativa para diferentes elementos y estructuras de concreto en proyectos hidráulicos.",
+        ],
+      },
+      {
+        heading: "Medidas disponibles",
+        paragraphs: [
+          "La Silleta Clip Pinza Mortero está disponible en diferentes alturas para adaptarse a los requerimientos de recubrimiento y especificaciones de cada proyecto.",
+          "• 20 mm",
+          "• 25 mm",
+          "• 30 mm",
+          "• 40 mm",
+          "• 50 mm",
+          "• 60 mm",
+          "• 75 mm",
+          "La selección de la medida debe realizarse considerando los planos estructurales, el recubrimiento de concreto requerido y las características del elemento constructivo.",
+        ],
+      },
+      {
+        heading: "¿Por qué utilizar separadores para malla electrosoldada?",
+        paragraphs: [
+          "En los trabajos de construcción, el uso de separadores permite mantener el acero de refuerzo en la posición adecuada, evitando que se desplace durante las diferentes etapas de ejecución.",
+          "Elegir un separador adecuado ayuda a facilitar la instalación de las mallas electrosoldadas, mantener el recubrimiento especificado y contribuir a una correcta disposición del acero dentro de los elementos de concreto.",
+          "La Silleta Clip Pinza Mortero es una alternativa funcional para proyectos que requieren un sistema de apoyo y sujeción para mallas de acero, gracias a su combinación de concreto y clip plástico.",
+        ],
+      },
+      {
+        heading: "Cotiza la Silleta Clip Pinza Mortero para tu proyecto",
+        paragraphs: [
+          "Si buscas un separador para malla electrosoldada que facilite la colocación del acero de refuerzo en tus obras, la Silleta Clip Pinza Mortero es una opción que puedes considerar.",
+          "Cuenta con diferentes medidas y aplicaciones en losas, muros de contención, entrepisos, pavimentos rígidos y trabajos hidráulicos.",
+          "Solicita tu cotización y consulta las medidas disponibles para encontrar la opción adecuada para las necesidades de tu proyecto de construcción.",
+          "Precio a cotizar.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "cuna-de-acero-dfac-para-cimbra",
     title: "Cuña de acero DFAC: resistencia y seguridad para trabajos de cimbra",
     excerpt: "Un accesorio metálico pequeño que hace una gran diferencia en la estabilidad de la cimbra. Te explicamos para qué sirve la cuña de acero DFAC, cómo se coloca sobre los moños y cuáles son sus especificaciones técnicas y ventajas.",
