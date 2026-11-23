@@ -1257,13 +1257,22 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8158,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL-1-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-DE-ALTA-FRECUENCIA-ENAR-BOXEL",
-        "alt": ""
+        "id": 90201,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-boxel-1.png",
+        "name": "Convertidor BOXEL ENAR - vista frontal",
+        "alt": "Convertidor electrónico BOXEL 325 ENAR vista frontal con cable"
+      },
+      {
+        "id": 90202,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-boxel-2.png",
+        "name": "Convertidor BOXEL ENAR - vista superior",
+        "alt": "Convertidor BOXEL vista superior"
+      },
+      {
+        "id": 90203,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-boxel-3.png",
+        "name": "Convertidor BOXEL ENAR - perspectiva",
+        "alt": "Convertidor BOXEL perspectiva con cable"
       }
     ],
     "categories": [

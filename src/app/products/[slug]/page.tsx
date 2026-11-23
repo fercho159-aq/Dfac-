@@ -196,6 +196,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'vibrador-para-concreto-gasolina-backpack-enar': [
     '/archivos/fichas-tecnicas/ficha-vibrador-backpack-enar-cdmx.pdf',
   ],
+  'vibrador-para-concreto-de-alta-frecuencia-boxel-dfac': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-boxel-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2629,6 +2632,47 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                     <li><strong>Fácil manejo:</strong> controles accesibles para una operación práctica.</li>
                     <li><strong>Versatilidad:</strong> permite configurar diferentes longitudes de transmisión y diámetros de aguja según las necesidades de la obra.</li>
                   </ul>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-de-alta-frecuencia-boxel-dfac' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Convertidor electrónico</strong> diseñado para alimentar <strong>vibradores de hormigón de alta frecuencia</strong>, ofreciendo un excelente rendimiento, eficiencia energética y facilidad de manejo. Su tecnología electrónica permite mantener una <strong>frecuencia y tensión estables</strong>, optimizando el proceso de vibrado y permitiendo conectar varias agujas vibrantes de alta frecuencia de manera simultánea.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gracias a su diseño <strong>compacto y ligero</strong>, es una solución práctica y resistente para trabajos profesionales de construcción que requieren un funcionamiento confiable y continuo.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características principales</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li><strong>Control electrónico de frecuencia:</strong> mantiene condiciones óptimas de funcionamiento para obtener un vibrado uniforme y eficiente.</li>
+                    <li><strong>Alto rendimiento:</strong> su sistema de refrigeración indirecta favorece un funcionamiento estable y eficiente.</li>
+                    <li><strong>Protección contra la humedad:</strong> cuenta con un diseño que protege los componentes internos frente a la entrada de agua y agentes externos.</li>
+                    <li><strong>Seguridad para el operario:</strong> proporciona una tensión de salida de seguridad de 42 V.</li>
+                    <li><strong>Aislamiento galvánico:</strong> incorpora un transformador que proporciona aislamiento eléctrico entre la entrada y la salida.</li>
+                    <li><strong>Alta resistencia:</strong> su carcasa de aluminio ofrece protección frente a impactos y condiciones exigentes de trabajo.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Ventajas y beneficios</h3>
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">LIGERO Y COMPACTO</p>
+                      <p className="text-sm md:text-base text-slate-800">Su diseño reduce el peso y el volumen en comparación con los convertidores tradicionales, facilitando su transporte, manipulación y uso en obra. Cuenta con una carcasa de aluminio resistente que brinda una excelente protección contra golpes.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">RENDIMIENTO SUPERIOR</p>
+                      <p className="text-sm md:text-base text-slate-800">Su sistema electrónico inteligente mantiene la frecuencia y el voltaje en niveles óptimos, favoreciendo un funcionamiento constante y permitiendo realizar el proceso de vibrado de manera más eficiente.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">PROTECCIÓN INTEGRAL</p>
+                      <p className="text-sm md:text-base text-slate-800">Incorpora una placa resinada que protege sus componentes frente al agua, las altas temperaturas, las sobretensiones, las sobrecargas y las condiciones eléctricas anormales. Su grado de protección <strong>IP65</strong> brinda una mayor seguridad frente al polvo y al agua.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">EFICIENCIA Y BAJO MANTENIMIENTO</p>
+                      <p className="text-sm md:text-base text-slate-800">Su tecnología está diseñada para reducir las necesidades de mantenimiento y evitar el uso de repuestos periódicos. Además, ofrece un funcionamiento silencioso y una <strong>eficiencia energética de hasta el 90%</strong>, contribuyendo al ahorro de energía y a una operación más eficiente.</p>
+                    </div>
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Aplicaciones</h3>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Ideal para trabajos de <strong>compactación y vibrado de concreto</strong> en obras de construcción, donde se requiere un equipo confiable, seguro y de alto rendimiento para alimentar agujas vibrantes de alta frecuencia.
+                  </p>
                 </div>
               ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
                 <div className="product-description font-sans">
