@@ -211,6 +211,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'chicote-para-vibrador-a-gasolina-mpower': [
     '/archivos/fichas-tecnicas/ficha-chicote-vibrador-6m-cdmx.pdf',
   ],
+  'chicote-para-vibrador-a-gasolina-enar': [
+    '/archivos/fichas-tecnicas/ficha-chicote-vibrador-6m-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2774,6 +2777,34 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'chicote-para-vibrador-a-gasolina-enar' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>chicote para vibrador de concreto ENAR</strong> es un accesorio diseñado para transmitir la vibración desde la unidad motriz hasta el cabezal vibrador, permitiendo realizar una adecuada <strong>compactación del concreto</strong> durante los trabajos de construcción.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Fabricado para ofrecer un desempeño confiable y eficiente, facilita la <strong>eliminación de burbujas de aire</strong> y contribuye a obtener una mezcla de concreto más homogénea y compacta. Su <strong>longitud de 6 metros</strong> proporciona un amplio alcance y mayor facilidad de movimiento durante las labores de vibrado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Es una solución práctica para trabajos de cimentación, columnas, trabes, losas y diferentes elementos de concreto.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características principales</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li><strong>Marca:</strong> ENAR.</li>
+                    <li><strong>Longitud:</strong> 6 metros.</li>
+                    <li><strong>Tipo:</strong> Chicote o manguera flexible para vibrador de concreto.</li>
+                    <li><strong>Función:</strong> Transmitir la vibración de la unidad motriz al cabezal vibrador.</li>
+                    <li><strong>Aplicación:</strong> Compactación y vibrado de concreto en obra.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Aplicaciones</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li>Cimentaciones.</li>
+                    <li>Columnas y trabes.</li>
+                    <li>Losas de concreto.</li>
+                    <li>Muros y elementos estructurales.</li>
+                    <li>Trabajos generales de construcción.</li>
+                  </ul>
                 </div>
               ) : product.slug === 'chicote-para-vibrador-a-gasolina-mpower' ? (
                 <div className="product-description font-sans">
