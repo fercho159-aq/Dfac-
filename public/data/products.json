@@ -620,7 +620,7 @@
   },
   {
     "id": 8199,
-    "name": "CHICOTE PARA VIBRADOR A GASOLINA MPOWER",
+    "name": "CHICOTE PARA VIBRADOR DE CONCRETO 6 METROS",
     "slug": "chicote-para-vibrador-a-gasolina-mpower",
     "parent": 0,
     "type": "variable",
@@ -648,13 +648,34 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8201,
-        "src": "/Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER.jpg",
-        "thumbnail": "/Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER.jpg 1280w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-300x300.jpg 300w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-1024x1024.jpg 1024w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-150x150.jpg 150w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-768x768.jpg 768w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-720x720.jpg 720w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-600x600.jpg 600w, /Image/PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-CHICOTE-PARA-VIBRADOR-A-GASOLINA-MPOWER",
-        "alt": ""
+        "id": 90601,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-1.png",
+        "name": "Chicote para vibrador 6 m - vista completa",
+        "alt": "Chicote para vibrador de concreto 6 metros con cabezal"
+      },
+      {
+        "id": 90602,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-2.png",
+        "name": "Chicote para vibrador 6 m - cabezal",
+        "alt": "Cabezal vibrador 38 mm"
+      },
+      {
+        "id": 90603,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-3.png",
+        "name": "Chicote para vibrador 6 m - detalle acople",
+        "alt": "Acople del chicote para vibrador"
+      },
+      {
+        "id": 90604,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-4.png",
+        "name": "Chicote para vibrador 6 m - manguera",
+        "alt": "Manguera flexible del chicote vibrador"
+      },
+      {
+        "id": 90605,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-5.png",
+        "name": "Chicote para vibrador 6 m - conjunto",
+        "alt": "Conjunto vibratorio completo"
       }
     ],
     "categories": [
@@ -2544,117 +2565,6 @@
     "extensions": {}
   },
   {
-    "id": 6101,
-    "name": "CHICOTE",
-    "slug": "chicote",
-    "parent": 0,
-    "type": "variable",
-    "variation": "",
-    "permalink": "https://cimbrayaccesorios.com.mx/producto/chicote/",
-    "sku": "",
-    "short_description": "<div class=\"wpcf7 no-js\" id=\"wpcf7-f7888-o22\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"7888\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\"></p> <ul></ul></div>\n\n<fieldset class=\"hidden-fields-container\">\n</fieldset>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-tel\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"></span>\n</p>\n<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" class=\"wpcf7-form-control wpcf7-textarea\" name=\"your-message\"></textarea></span>\n</p>\n<p><button type=\"submit\">Solicitar información</button>\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n\n</div>",
-    "description": "<p>Chicote Mpower 4 o 7 metros con cabezal de 38 mm</p>",
-    "on_sale": false,
-    "prices": {
-      "price": "360000",
-      "regular_price": "360000",
-      "sale_price": "360000",
-      "price_range": {
-        "min_amount": "360000",
-        "max_amount": "390000"
-      },
-      "currency_code": "MXN",
-      "currency_symbol": "$",
-      "currency_minor_unit": 2,
-      "currency_decimal_separator": ".",
-      "currency_thousand_separator": ",",
-      "currency_prefix": "$",
-      "currency_suffix": ""
-    },
-    "price_html": "Solicitar información",
-    "average_rating": "0",
-    "review_count": 0,
-    "images": [
-      {
-        "id": 6104,
-        "src": "/Image/imagen_2023-06-16_145056190.png",
-        "thumbnail": "/Image/imagen_2023-06-16_145056190-300x300.png",
-        "srcset": "/Image/imagen_2023-06-16_145056190.png 529w, /Image/imagen_2023-06-16_145056190-300x226.png 300w",
-        "sizes": "(max-width: 529px) 100vw, 529px",
-        "name": "imagen_2023-06-16_145056190",
-        "alt": ""
-      }
-    ],
-    "categories": [
-      {
-        "id": 45,
-        "name": "Chicote",
-        "slug": "Chicote",
-        "link": "https://cimbrayaccesorios.com.mx/categoria-producto/maquinaria-ligera/"
-      }
-    ],
-    "tags": [],
-    "attributes": [
-      {
-        "id": 1,
-        "name": "Medida",
-        "taxonomy": "pa_medida",
-        "has_variations": true,
-        "terms": [
-          {
-            "id": 242,
-            "name": "4 metros",
-            "slug": "4-metros"
-          },
-          {
-            "id": 243,
-            "name": "7 metros",
-            "slug": "7-metros"
-          }
-        ]
-      }
-    ],
-    "variations": [
-      {
-        "id": 6102,
-        "attributes": [
-          {
-            "name": "Medida",
-            "value": "4-metros"
-          }
-        ]
-      },
-      {
-        "id": 6103,
-        "attributes": [
-          {
-            "name": "Medida",
-            "value": "7-metros"
-          }
-        ]
-      }
-    ],
-    "has_options": true,
-    "is_purchasable": true,
-    "is_in_stock": true,
-    "is_on_backorder": false,
-    "low_stock_remaining": null,
-    "stock_availability": {
-      "text": "",
-      "class": ""
-    },
-    "sold_individually": false,
-    "add_to_cart": {
-      "text": "Ver detalles",
-      "description": "Elige las opciones para &ldquo;CHICOTE&rdquo;",
-      "url": "https://cimbrayaccesorios.com.mx/producto/chicote/",
-      "minimum": 1,
-      "maximum": 9999,
-      "multiple_of": 1
-    },
-    "extensions": {}
-  },
-  {
     "id": 6098,
     "name": "VIBRADOR PARA CONCRETO ELÉCTRICO MAKITA",
     "slug": "vibrador-para-concreto-electrico-makita",
@@ -2918,13 +2828,16 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8114,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC-.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC-.jpg 960w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC--100x100.jpg 100w",
-        "sizes": "(max-width: 960px) 100vw, 960px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-DFAC-",
-        "alt": ""
+        "id": 90501,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-vibrospeed-dfac-1.png",
+        "name": "Vibrador DFAC Vibrospeed 6.5 HP - vista frontal",
+        "alt": "Vibrador DFAC Vibrospeed 6.5 HP motor rojo gasolina"
+      },
+      {
+        "id": 90502,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-vibrospeed-dfac-2.png",
+        "name": "Vibrador DFAC Vibrospeed 6.5 HP - con manguera",
+        "alt": "Vibrador DFAC Vibrospeed con conjunto vibratorio"
       }
     ],
     "categories": [
