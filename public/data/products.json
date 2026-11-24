@@ -1558,13 +1558,16 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8127,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-CIPSA",
-        "alt": ""
+        "id": 90401,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-cipsa-gasolina-1.png",
+        "name": "Vibrador CIPSA a Gasolina - vista frontal",
+        "alt": "Vibrador para concreto a gasolina CIPSA 6.5 HP vista frontal"
+      },
+      {
+        "id": 90402,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-cipsa-gasolina-2.png",
+        "name": "Vibrador CIPSA a Gasolina - con manguera",
+        "alt": "Vibrador CIPSA a gasolina con conjunto vibratorio"
       }
     ],
     "categories": [
@@ -3021,13 +3024,22 @@
     "review_count": 0,
     "images": [
       {
-        "id": 8121,
-        "src": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER.jpg",
-        "thumbnail": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-300x300.jpg",
-        "srcset": "/Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER.jpg 1280w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-300x300.jpg 300w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-1024x1024.jpg 1024w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-150x150.jpg 150w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-768x768.jpg 768w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-720x720.jpg 720w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-600x600.jpg 600w, /Image/PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER-100x100.jpg 100w",
-        "sizes": "(max-width: 1280px) 100vw, 1280px",
-        "name": "PORTADA-DE-VIBRADOR-PARA-CONCRETO-MPOWER",
-        "alt": ""
+        "id": 90301,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-mpower-gasolina-1.png",
+        "name": "Vibrador Mpower a Gasolina - vista frontal",
+        "alt": "Vibrador para concreto a gasolina Mpower 5.5 HP vista frontal"
+      },
+      {
+        "id": 90302,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-mpower-gasolina-2.png",
+        "name": "Vibrador Mpower a Gasolina - con manguera",
+        "alt": "Vibrador Mpower a gasolina con conjunto vibratorio"
+      },
+      {
+        "id": 90303,
+        "src": "/Image/dfac-cimbra-septiembre/vibrador-mpower-gasolina-3.png",
+        "name": "Vibrador Mpower a Gasolina - vista lateral",
+        "alt": "Vibrador Mpower a gasolina vista lateral marco acero"
       }
     ],
     "categories": [

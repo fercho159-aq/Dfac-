@@ -199,6 +199,12 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'vibrador-para-concreto-de-alta-frecuencia-boxel-dfac': [
     '/archivos/fichas-tecnicas/ficha-vibrador-boxel-cdmx.pdf',
   ],
+  'vibrador-para-concreto-a-gasolina-mpower': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-mpower-gasolina-cdmx.pdf',
+  ],
+  'vibrador-para-concreto-a-gasolina-cipsa-dfac': [
+    '/archivos/fichas-tecnicas/ficha-vibrador-cipsa-gasolina-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2673,6 +2679,56 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     Ideal para trabajos de <strong>compactación y vibrado de concreto</strong> en obras de construcción, donde se requiere un equipo confiable, seguro y de alto rendimiento para alimentar agujas vibrantes de alta frecuencia.
                   </p>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-a-gasolina-mpower' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>vibrador para concreto Mpower</strong> cuenta con una unidad motriz Mpower y es perfecta tanto para constructores y contratistas para facilitar el movimiento de exceso de aire y burbujas en el concreto crudo. Lista para acoplarse a <strong>conjuntos vibratorios de 4 y 7 metros</strong> de longitud.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Es un equipo de <strong>bajo costo para trabajos a corto plazo</strong> donde la exigencia sea mínima y se desee sacar el trabajo de manera óptima e inmediata. Incluye <strong>acoplamiento universal tipo Dynapac</strong> para usos con diferentes marcas.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Su <strong>base de motor tiene 10 cm de altura</strong> en relación con el suelo para evitar que el motor tenga contacto con la mezcla de concreto.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li>Vibrador para concreto económico.</li>
+                    <li>Motor a gasolina <strong>Mpower de 5.5 HP</strong>.</li>
+                    <li>Conjunto vibratorio de <strong>4 y 7 metros</strong> de longitud.</li>
+                    <li>Cabezal vibrante de <strong>38 mm estándar</strong>.</li>
+                    <li>No intercambiable.</li>
+                    <li>Marco de acero tubular.</li>
+                    <li>Acople rápido tipo muela.</li>
+                  </ul>
+                </div>
+              ) : product.slug === 'vibrador-para-concreto-a-gasolina-cipsa-dfac' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>vibrador a gasolina CIPSA</strong> es un equipo diseñado para proporcionar un alto rendimiento en los trabajos de <strong>compactación de concreto</strong>.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Su funcionamiento permite transmitir vibraciones al concreto fresco, facilitando la <strong>eliminación de burbujas de aire y vacíos</strong>, lo que contribuye a obtener estructuras más compactas, resistentes y uniformes.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Gracias a su <strong>motor a gasolina y sistema de arranque retráctil</strong>, ofrece autonomía y practicidad durante las jornadas de trabajo, siendo una excelente opción para obras de cimentación, losas, columnas, muros y elementos prefabricados.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características principales</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li>Sistema de arranque retráctil.</li>
+                    <li>Diseño compacto y estructura protectora para facilitar su manejo y traslado.</li>
+                    <li>Compatible con chicotes para vibradores CIPSA.</li>
+                    <li>Ideal para trabajos de compactación de concreto en diferentes aplicaciones de construcción.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Aplicaciones</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li>Cimentaciones de concreto armado.</li>
+                    <li>Losas y firmes.</li>
+                    <li>Columnas y trabes.</li>
+                    <li>Muros de concreto.</li>
+                    <li>Muros prefabricados.</li>
+                    <li>Diferentes elementos estructurales de concreto.</li>
+                  </ul>
                 </div>
               ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
                 <div className="product-description font-sans">
