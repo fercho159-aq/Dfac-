@@ -620,15 +620,15 @@
   },
   {
     "id": 8199,
-    "name": "CHICOTE PARA VIBRADOR DE CONCRETO 6 METROS",
+    "name": "CHICOTE PARA VIBRADOR MPOWER 7 Y 4 METROS",
     "slug": "chicote-para-vibrador-a-gasolina-mpower",
     "parent": 0,
     "type": "variable",
     "variation": "",
     "permalink": "https://cimbrayaccesorios.com.mx/producto/chicote-para-vibrador-a-gasolina-mpower/",
     "sku": "",
-    "short_description": "<p>CHICOTE PARA VIBRADOR DE CONCRETO 6 METROS – ENAR. Longitud 6 metros, cabezal 38 mm.</p>",
-    "description": "<p>CHICOTE PARA VIBRADOR DE CONCRETO 6 METROS – ENAR</p>",
+    "short_description": "<p>Chicote Mpower con cabezal de 38 mm tipo pendular, disponible en 7 y 4 metros.</p>",
+    "description": "<p>CHICOTE PARA VIBRADOR MPOWER 7 Y 4 METROS – Cabezal 38 mm tipo pendular, acoplamiento Dynapac.</p>",
     "on_sale": false,
     "prices": {
       "price": "0",
@@ -648,34 +648,22 @@
     "review_count": 0,
     "images": [
       {
-        "id": 90601,
-        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-1.png",
-        "name": "Chicote para vibrador 6 m - vista completa",
-        "alt": "Chicote para vibrador de concreto 6 metros con cabezal"
+        "id": 90801,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-mpower-7-4-mts-1.png",
+        "name": "Chicote Mpower 7/4 m - cabezal 38 mm",
+        "alt": "Chicote para vibrador Mpower 7 y 4 metros cabezal 38 mm pendular"
       },
       {
-        "id": 90602,
-        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-2.png",
-        "name": "Chicote para vibrador 6 m - cabezal",
-        "alt": "Cabezal vibrador 38 mm"
+        "id": 90802,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-mpower-7-4-mts-2.png",
+        "name": "Chicote Mpower 7/4 m - detalle cabezal",
+        "alt": "Detalle cabezal 38 mm chicote Mpower"
       },
       {
-        "id": 90603,
-        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-3.png",
-        "name": "Chicote para vibrador 6 m - detalle acople",
-        "alt": "Acople del chicote para vibrador"
-      },
-      {
-        "id": 90604,
-        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-4.png",
-        "name": "Chicote para vibrador 6 m - manguera",
-        "alt": "Manguera flexible del chicote vibrador"
-      },
-      {
-        "id": 90605,
-        "src": "/Image/dfac-cimbra-septiembre/chicote-vibrador-mpower-5.png",
-        "name": "Chicote para vibrador 6 m - conjunto",
-        "alt": "Conjunto vibratorio completo"
+        "id": 90803,
+        "src": "/Image/dfac-cimbra-septiembre/chicote-mpower-7-4-mts-3.png",
+        "name": "Chicote Mpower 7/4 m - conjunto completo",
+        "alt": "Conjunto completo chicote Mpower con cabezal pendular"
       }
     ],
     "categories": [
@@ -715,7 +703,7 @@
     "sold_individually": false,
     "add_to_cart": {
       "text": "Ver detalles",
-      "description": "Elige las opciones para \"CHICOTE PARA VIBRADOR DE CONCRETO 6 METROS\"",
+      "description": "Elige las opciones para \"CHICOTE PARA VIBRADOR MPOWER 7 Y 4 METROS\"",
       "url": "https://cimbrayaccesorios.com.mx/producto/chicote-para-vibrador-a-gasolina-mpower/",
       "minimum": 1,
       "maximum": 9999,
