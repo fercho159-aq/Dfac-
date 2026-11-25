@@ -217,6 +217,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'motor-5-5-h-p': [
     '/archivos/fichas-tecnicas/ficha-motor-mpower-5-5hp-cdmx.pdf',
   ],
+  'motor-7-hp': [
+    '/archivos/fichas-tecnicas/ficha-motor-mpower-7hp-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2862,6 +2865,54 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           ['Flecha', 'Cuñero 3/4"'],
                           ['Peso Neto', '15.5 Kg'],
                           ['Dimensiones', '410 x 380 x 400 mm'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'motor-7-hp' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El <strong>motor 170F-BH</strong> combina una potencia de <strong>7 HP</strong> con una <strong>caja reductora de relación 6:1</strong>, diseñada para proporcionar mayor torque y bajas revoluciones de salida. Cuenta con motor <strong>OHV de 4 tiempos</strong>, <strong>212 cc</strong> y <strong>torque máximo de 69 N·m</strong>, ofreciendo un rendimiento confiable en aplicaciones de trabajo pesado.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Es ideal para <strong>malacates, sistemas de elevación y maquinaria industrial o agrícola</strong>. Incorpora arranque retráctil, filtro de aire dual y flecha con <strong>cuñero de 1"</strong>, facilitando su instalación y operación en condiciones exigentes.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    El motor MPower 170F-BH está diseñado para aplicaciones que requieren <strong>potencia, fuerza y bajas revoluciones de salida</strong>. Su diseño OHV de 4 tiempos, arranque retráctil y filtro de aire dual ofrecen un funcionamiento confiable y eficiente para malacates, equipos de elevación y maquinaria que requiere fuerza de arrastre.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Características principales</h3>
+                  <ul className="list-disc list-inside text-sm md:text-base text-slate-800 mb-6 space-y-2">
+                    <li>Motor a gasolina de <strong>7 HP</strong>.</li>
+                    <li>Caja reductora con relación <strong>6:1</strong>.</li>
+                    <li>Torque máximo de <strong>69 N·m</strong>.</li>
+                    <li>Sistema de arranque <strong>retráctil</strong>.</li>
+                    <li>Filtro de aire <strong>dual</strong>.</li>
+                    <li>Flecha de salida con <strong>cuñero de 1"</strong>.</li>
+                  </ul>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Motor Mpower 170F-BH</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Tipo de Motor', 'Gasolina, OHV Monocilíndrico, 4 Tiempos'],
+                          ['Potencia Máxima', '7 HP'],
+                          ['Reductor', '6:1'],
+                          ['Desplazamiento', '212 cc'],
+                          ['Velocidad del Motor', '3,600 RPM'],
+                          ['Cilindro (Diámetro × Carrera)', '70 × 55 mm'],
+                          ['Compresión', '8:1'],
+                          ['Torque Máximo', '69 N·m / 420 RPM'],
+                          ['Sistema de Ignición', 'Transistorizada sin contacto'],
+                          ['Arranque', 'Retráctil'],
+                          ['Filtro de Aire', 'Dual'],
+                          ['Capacidad de Aceite', '0.6 L'],
+                          ['Flecha', 'Cuñero 1"'],
                         ].map(([label, value], i) => (
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
