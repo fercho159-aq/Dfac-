@@ -223,6 +223,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'motor-9-hp': [
     '/archivos/fichas-tecnicas/ficha-motor-mpower-9hp-cdmx.pdf',
   ],
+  'motor-13-hp': [
+    '/archivos/fichas-tecnicas/ficha-motor-mpower-13hp-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2958,6 +2961,44 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           ['Consumo de Combustible', '1.86 L/Hr'],
                           ['Flecha', 'Cuñero 1"'],
                           ['Dimensiones', '480 × 40 × 510 mm'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'motor-13-hp' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Motor MPower 13 HP a gasolina</strong>, mono cilíndrico, 4 tiempos, con alerta de aceite, enfriado con aire, <strong>OHV</strong>, con eje horizontal <strong>cuñero 1"</strong>, y <strong>válvulas a la cabeza</strong>. Ofrece gran potencia a equipos de construcción como revolvedoras de concreto, vibradores, reglas vibratorias, placas vibratorias, entre otros.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Ideal para uso en <strong>equipos agrícolas</strong>, como picadoras, molinos, desgranadoras, motocultores y más. También usados en <strong>compresores, motobombas y generadores</strong>.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Motor Mpower 13 HP</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'Mpower'],
+                          ['Tipo de Motor', 'Cilíndrico inclinado con sistema de enfriado por aire'],
+                          ['Potencia Máxima', '13 HP / 3,600 RPM'],
+                          ['Desplazamiento', '389 cc'],
+                          ['Cilindro', '88 × 64 mm'],
+                          ['Compresión', '8.0:1'],
+                          ['Torque Máximo', '2.7 Kg·m / 2,500 RPM'],
+                          ['Sistema de Ignición', 'Transistorizada sin contacto'],
+                          ['Arranque de Motor', 'Polea Retráctil'],
+                          ['Filtro de Aire', 'Tipo Semiseco'],
+                          ['Capacidad de Aceite', '1.1 Lts'],
+                          ['Cap. de Tanque de Combustible', '6.5 Lts'],
+                          ['Consumo de combustible', '230 g / HP·Hr'],
+                          ['Dimensiones', '485 × 455 × 525 mm'],
+                          ['Peso', '33 Kg'],
                         ].map(([label, value], i) => (
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
