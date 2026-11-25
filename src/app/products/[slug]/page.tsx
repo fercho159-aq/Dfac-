@@ -220,6 +220,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'motor-7-hp': [
     '/archivos/fichas-tecnicas/ficha-motor-mpower-7hp-cdmx.pdf',
   ],
+  'motor-9-hp': [
+    '/archivos/fichas-tecnicas/ficha-motor-mpower-9hp-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -2913,6 +2916,48 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           ['Filtro de Aire', 'Dual'],
                           ['Capacidad de Aceite', '0.6 L'],
                           ['Flecha', 'Cuñero 1"'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ) : product.slug === 'motor-9-hp' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Motor a gasolina y potencia de <strong>9 HP</strong>, con tipo de motor <strong>OHV, de 4 tiempos</strong>, con un único cilindro de <strong>73 × 58 mm</strong> y eje horizontal <strong>cuñero 1"</strong>. Para ponerlo en marcha cuenta con un avanzado sistema de <strong>ignición transistorizada sin contacto</strong> y <strong>arranque manual/retráctil</strong>.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Para el mejor rendimiento, su diseño compacto de <strong>480 × 40 × 510 mm</strong> incluye un tanque de aceite con capacidad de <strong>1 L</strong> y uno de combustible con una capacidad de <strong>6 L</strong>, con un consumo eficaz de <strong>1.86 L por hora</strong>. Cuenta con una <strong>alerta de aceite</strong> que te mantendrá al tanto de tu motor y evitará su desgaste. Igualmente, cuenta con un <strong>filtro de aire dual</strong> para que el motor se conserve en la temperatura ideal y funcione correctamente.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Sus características y su gran potencia lo convierten en el motor ideal para una amplia variedad de equipos de construcción como <strong>revolvedoras de concreto, reglas y placas vibratorias</strong>, entre otros. También es útil para equipos agrícolas como <strong>molinos, desgranadoras, picadoras</strong> y más. Las características del motor igualmente pueden ser aprovechadas en <strong>compresores y motobombas</strong>.
+                  </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Motor Mpower 9 HP</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'Mpower'],
+                          ['Tipo de Motor', 'Gasolina, OHV Monocilíndrico, 4 tiempos'],
+                          ['Potencia Máxima', '9 HP'],
+                          ['Desplazamiento', '242 cc'],
+                          ['Velocidad del motor', '3,600 RPM'],
+                          ['Cilindro', '73 × 58 mm'],
+                          ['Compresión', '8.2:1'],
+                          ['Torque Máximo', '1.7 Kg·m / 2,500 RPM'],
+                          ['Sistema de Ignición', 'Transistorizada sin contacto'],
+                          ['Arranque', 'Manual / Retráctil'],
+                          ['Filtro de Aire', 'Dual'],
+                          ['Capacidad de Aceite', '1 L'],
+                          ['Capacidad de Combustible', '6 L'],
+                          ['Consumo de Combustible', '1.86 L/Hr'],
+                          ['Flecha', 'Cuñero 1"'],
+                          ['Dimensiones', '480 × 40 × 510 mm'],
                         ].map(([label, value], i) => (
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
