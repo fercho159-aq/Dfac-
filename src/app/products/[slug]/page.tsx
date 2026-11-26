@@ -2957,13 +2957,14 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                           ['Compresión', '8.2:1'],
                           ['Torque Máximo', '1.7 Kg·m / 2,500 RPM'],
                           ['Sistema de Ignición', 'Transistorizada sin contacto'],
-                          ['Arranque', 'Manual / Retráctil'],
+                          ['Arranque', 'Retráctil / Manual'],
                           ['Filtro de Aire', 'Dual'],
-                          ['Capacidad de Aceite', '1 L'],
+                          ['Capacidad de Aceite', '1.1 L'],
                           ['Capacidad de Combustible', '6 L'],
                           ['Consumo de Combustible', '1.86 L/Hr'],
                           ['Flecha', 'Cuñero 1"'],
-                          ['Dimensiones', '480 × 40 × 510 mm'],
+                          ['Peso Neto', '25 Kg'],
+                          ['Dimensiones', '480 × 460 × 510 mm'],
                         ].map(([label, value], i) => (
                           <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
                             <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
@@ -3020,6 +3021,37 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                   <p className="text-sm md:text-base text-slate-800 mb-4">
                     Ideal para uso en <strong>equipos agrícolas</strong>, como picadoras, molinos, desgranadoras, motocultores y más. También usados en <strong>compresores, motobombas y generadores</strong>.
                   </p>
+                  <h3 className="text-base font-bold text-slate-900 mt-6 mb-3">Especificaciones técnicas – Motor Mpower 6.5 HP</h3>
+                  <div className="overflow-hidden rounded-xl border shadow-sm">
+                    <table className="w-full text-sm">
+                      <tbody>
+                        {[
+                          ['Marca', 'Mpower'],
+                          ['Tipo de Motor', 'Gasolina, OHV Monocilíndrico, 4 tiempos'],
+                          ['Potencia Máxima', '6.5 HP'],
+                          ['Desplazamiento', '196 cc'],
+                          ['Velocidad del motor', '3,600 RPM'],
+                          ['Cilindro', '68 × 54 mm'],
+                          ['Compresión', '8.5:1'],
+                          ['Torque Máximo', '10.7 N·m / 2,500 RPM'],
+                          ['Sistema de Ignición', 'Transistorizada sin contacto'],
+                          ['Arranque', 'Retráctil'],
+                          ['Filtro de Aire', 'Dual'],
+                          ['Capacidad de Aceite', '0.6 L'],
+                          ['Capacidad de Combustible', '3 L'],
+                          ['Consumo de Combustible', '1.3 L/Hr'],
+                          ['Flecha', 'Cuñero 3/4"'],
+                          ['Peso Neto', '15.5 Kg'],
+                          ['Dimensiones', '410 × 380 × 400 mm'],
+                        ].map(([label, value], i) => (
+                          <tr key={label} className={`border-b border-slate-200 ${i % 2 === 1 ? 'bg-slate-50' : ''}`}>
+                            <td className="p-3 font-medium text-slate-700 align-top">{label}</td>
+                            <td className="p-3 text-slate-800">{value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
                 <div className="product-description font-sans">
