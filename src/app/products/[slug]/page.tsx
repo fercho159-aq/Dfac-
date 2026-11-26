@@ -226,6 +226,9 @@ const FICHAS_TECNICAS: Record<string, string[]> = {
   'motor-13-hp': [
     '/archivos/fichas-tecnicas/ficha-motor-mpower-13hp-cdmx.pdf',
   ],
+  'motor-6-5-hp': [
+    '/archivos/fichas-tecnicas/ficha-motor-mpower-6-5hp-cdmx.pdf',
+  ],
 };
 
 const PRODUCT_VIDEOS: Record<string, { src: string; title: string }[]> = {
@@ -3008,6 +3011,15 @@ function ProductDetailsClient({ product, relatedProducts, searchParams }: { prod
                       </tbody>
                     </table>
                   </div>
+                </div>
+              ) : product.slug === 'motor-6-5-hp' ? (
+                <div className="product-description font-sans">
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    <strong>Motor MPower 6.5 HP a gasolina</strong>, mono cilíndrico, 4 tiempos, con alerta de aceite, enfriado con aire, <strong>OHV</strong>, con eje horizontal <strong>cuñero 3/4"</strong>. Ofrece gran potencia a equipos de construcción como vibradores, reglas vibratorias, placas vibratorias, entre otros.
+                  </p>
+                  <p className="text-sm md:text-base text-slate-800 mb-4">
+                    Ideal para uso en <strong>equipos agrícolas</strong>, como picadoras, molinos, desgranadoras, motocultores y más. También usados en <strong>compresores, motobombas y generadores</strong>.
+                  </p>
                 </div>
               ) : product.slug === 'vibrador-para-concreto-externo-wacker-neuson-dfac' ? (
                 <div className="product-description font-sans">
